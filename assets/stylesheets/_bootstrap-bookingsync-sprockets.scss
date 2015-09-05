@@ -3,7 +3,7 @@
  * Licensed under MIT (https://github.com/BookingSync/bootstrap-bookingsync-sass/blob/master/LICENSE)
  */
 
-@import "boostrap-sprocket";
+@import "bootstrap-sprockets";
 
 @function bs-font-path($path) {
   @return font-path($path);

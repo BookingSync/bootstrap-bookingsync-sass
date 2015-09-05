@@ -2,6 +2,8 @@
  * Copyright 2015 BookingSync SAS.
  * Licensed under MIT (https://github.com/BookingSync/bootstrap-bookingsync-sass/blob/master/LICENSE)
  */
+$bootstrap-bookingsync-sass-asset-helper: false !default;
+
 
 $heading-gray:                  #292c33;
 $darkblue:                      #1e3264;
@@ -39,6 +41,23 @@ $font-size-h2:                  22px;
 $font-size-h3:                  18px;
 $font-size-h4:                  16px;
 $headings-color:                $heading-gray;
+
+//== Iconography
+//
+//## Specify custom location and filename of the included Smiles icon font.
+//## Useful for those including Bootstrap BookingSync via Bower.
+
+//** Load fonts from this directory.
+
+// If $bootstrap-bookingsync-sass-asset-helper if used, provide path relative to the assets load path.
+// This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
+$smiles-font-path: if($bootstrap-bookingsync-sass-asset-helper, "bookingsync/", "../fonts/bookingsync/") !default;
+
+//** File name for all font files.
+$smiles-font-name:          "bookingsync-smiles" !default;
+//** Element ID within SVG icon file.
+$smiles-font-svg-id:        "bookingsync_smiles" !default;
+
 
 //== Components
 //
@@ -79,6 +98,8 @@ $menu-default-toggle-icon-bar-bg: $gray-light;
 //
 $btn-primary-bg:                $brand-success;
 $btn-primary-border:            darken($btn-success-bg, 5%);
+$btn-border-radius-base:        $border-radius-base;
+$btn-border-radius-small:       $border-radius-small;
 $btn-border-radius-large:       $border-radius-large;
 
 //== Forms
@@ -110,6 +131,8 @@ $label-color-disabled:          rgba(106, 117, 141, 0.5);
 $input-group-addon-bg:          transparent;
 $input-group-addon-height:      ($input-height-base + $label-padding-focus);
 $input-group-addon-padding-top: ($label-padding-focus + ($padding-base-vertical / 2));
+
+$help-text:                     $gray-light;
 
 $state-success-text:            #2db859;
 $state-success-bg:              rgba($brand-success, 1);

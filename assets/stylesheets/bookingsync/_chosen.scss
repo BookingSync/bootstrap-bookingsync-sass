@@ -1,0 +1,83 @@
+.chosen-container {
+  font-size: inherit;
+
+  .chosen-single,
+  .chosen-choices {
+    background: none;
+    background-color: $input-bg;
+    border: none;
+    border-bottom: 1px solid $input-border;
+    border-radius: $input-border-radius;
+    @include box-shadow(none);
+    padding: 0 $grid-gutter-width 0 0;
+    height: $input-height-base;
+
+    &.chosen-default span {
+      visibility: hidden;
+    }
+
+    div b {
+      background-position: 0 (($input-height-base - 18) / 2);
+    }
+  }
+
+  .chosen-drop {
+    @include box-shadow(none);
+    border-radius: 0 0 ($border-radius-base * 2) ($border-radius-base * 2);
+    border: 2px solid $gray-lighter;
+    border-top: 0;
+    padding-top: 10px;
+  }
+
+  .chosen-results {
+    padding: 0;
+    margin: 0;
+
+    li {
+      line-height: 34px;
+      padding: 0 ceil($grid-gutter-width / 2);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    li.highlighted {
+      background: none;
+      background-color: $gray-lightest;
+      color: $input-color;
+    }
+  }
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single,
+.chosen-container-active.chosen-with-drop .chosen-choices {
+  background: none;
+  @include box-shadow(none);
+  border-radius: ($border-radius-base * 2) ($border-radius-base * 2) 0 0;
+  border: 2px solid $gray-lighter;
+  border-bottom: 0;
+  padding: 5px ceil($grid-gutter-width / 2);
+
+  div b {
+    background-position: 0 (($input-height-base - 18 + 10) / 2);
+  }
+}
+
+.chosen-container-multi .chosen-choices {
+  li.search-choice {
+    background: none;
+    background-color: $input-bg;
+    border: 0;
+    @include box-shadow(none);
+    margin: 0 10px 0 0;
+    padding: 5px 20px 5px 0;
+
+    .search-choice-close {
+      top: floor((($input-height-base - 12) / 2));
+    }
+  }
+
+  li.search-field input[type="text"] {
+    height: $input-height-base;
+  }
+}

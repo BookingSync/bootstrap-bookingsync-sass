@@ -188,6 +188,10 @@ fieldset[disabled] .form-control {
   border-left: 1px solid $input-group-addon-border-color;
 }
 
+.help-block {
+  color: $help-text;
+}
+
 // Feedback states
 .has-success,
 .has-warning,
@@ -210,6 +214,10 @@ fieldset[disabled] .form-control {
       box-shadow: none;
     }
   }
+
+  .help-block {
+    color: $help-text;
+  }
 }
 
 .has-success .input-group-addon {
@@ -220,8 +228,14 @@ fieldset[disabled] .form-control {
   border-color: $state-warning-border;
 }
 
-.has-danger .input-group-addon {
-  border-color: $state-danger-border;
+.has-error {
+  .input-group-addon {
+    border-color: $state-danger-border;
+  }
+
+  .error-message {
+    color: $state-danger-text;
+  }
 }
 
 .has-feedback label {

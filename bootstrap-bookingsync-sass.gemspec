@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version  = Bootstrap::BookingSync::VERSION
   s.authors  = ["Sebastien Grosjean"]
   s.email    = ["dev@bookingsync.com"]
-  s.summary  = "Twitter's Bootstrap with BookingSync Theme, ready to drop into Rails or Compass"
+  s.summary  = "Twitter's Bootstrap with BookingSync Theme, ready to drop into Rails"
   s.homepage = "https://github.com/BookingSync/bootstrap-bookingsync-sass"
   s.license  = 'MIT'
 
