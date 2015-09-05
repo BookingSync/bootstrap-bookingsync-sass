@@ -1,0 +1,99 @@
+/*!
+ * Copyright 2015 BookingSync SAS.
+ * Licensed under MIT (https://github.com/BookingSync/bootstrap-bookingsync-sass/blob/master/LICENSE)
+ */
+
+body {
+  height: 100vh;
+  padding-top: $navbar-height;
+}
+
+.navbar.navbar-fixed-top {
+  margin-bottom: 0;
+
+  & > .container {
+    .navbar-brand {
+      margin: 0 15px 0 0;
+      padding: 0;
+    }
+  }
+
+  .navbar-nav > li > a {
+    line-height: 40px;
+  }
+
+  h1,
+  .navbar-brand {
+    font-size: 18px;
+    line-height: $navbar-height;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    .navbar-header > div {
+      padding: 0 60px;
+    }
+
+    &.navbar-bs-core .navbar-header > div {
+      padding: 0 40px;
+    }
+
+    div > .navbar-brand {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+#content {
+  overflow: auto;
+  height: 100vh;
+  font-size: 12px; // FIXME: Temporary fix for easier migration
+
+  &.with-navbar {
+    padding-top: $navbar-height + 1; // navbar border
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .menu-toggle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+  }
+
+  .menu {
+    position: absolute;
+    left: 0;
+    top: $navbar-height;
+    width: 100%;
+    height: calc(100vh - 70px);
+
+    &:hover {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &.collapse {
+      visibility: visible;
+    }
+  }
+
+  body.accounts.index .navbar.navbar-fixed-top,
+  body.accounts.index #container {
+    margin-left: 0;
+  }
+}

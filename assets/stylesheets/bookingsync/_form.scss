@@ -1,0 +1,251 @@
+/*!
+ * Copyright 2015 BookingSync SAS.
+ * Licensed under MIT (https://github.com/BookingSync/bootstrap-bookingsync-sass/blob/master/LICENSE)
+ */
+
+//
+// Forms
+// --------------------------------------------------
+
+// Form groups
+//
+// Designed to help with the organization and spacing of vertical forms. For
+// horizontal forms, use the predefined grid classes.
+
+.form-group {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  padding: $label-padding-focus 0 $padding-base-vertical;
+
+  label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%; // Force IE8 to wrap long content
+                     // (see https://github.com/twbs/bootstrap/issues/13141)
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: left;
+    color: $input-color;
+    pointer-events: none;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+  }
+
+  .label-lg {
+    font-size: 18px;
+    top: 28px;
+  }
+
+  .input-group-addon {
+    transition-duration: .2s;
+    -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+  }
+
+  &.filled label {
+    color: $label-color-filled;
+    font-size: $label-font-size-filled;
+    top: 0;
+    visibility: visible;
+  }
+
+  &.focused {
+    label {
+      color: $label-color-focus;
+      font-size: $label-font-size-focus;
+      top: 0;
+      visibility: visible;
+
+      &:after {
+        left: 0;
+        visibility: visible;
+        width: 100%;
+      }
+    }
+
+    .input-group label:after {
+      visibility: hidden;
+    }
+
+    .input-group-addon {
+      box-shadow: 0 1px 0 $label-border-focus;
+      border-color: $label-color-focus;
+    }
+  }
+}
+
+// FIXME: :not(.readonly) should be used
+.form-group label:after {
+  background-color: $label-border-focus;
+  bottom: 5px;
+  content: '';
+  height: 2px;
+  left: 45%;
+  position: absolute;
+  visibility: hidden;
+  width: 10%;
+  transition-duration: .2s;
+  -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.form-group.disabled label,
+.form-group.readonly label,
+.checkbox.disabled label,
+.radio.disabled label,
+fieldset[disabled] label {
+  color: $label-color-disabled;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  opacity: .5;
+}
+
+// Common form controls
+//
+// Shared size and type resets for form controls. Apply `.form-control` to any
+// of the following form controls:
+//
+// select
+// textarea
+// input[type="text"]
+// input[type="password"]
+// input[type="datetime"]
+// input[type="datetime-local"]
+// input[type="date"]
+// input[type="month"]
+// input[type="time"]
+// input[type="week"]
+// input[type="number"]
+// input[type="email"]
+// input[type="url"]
+// input[type="search"]
+// input[type="tel"]
+// input[type="color"]
+.form-control {
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid $input-border;
+  box-shadow: none;
+  transition-duration: .3s;
+  -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+
+  &:focus {
+    border-color: $label-border-focus;
+    box-shadow: 0 1px 0 $label-border-focus;
+  }
+
+  // read-only inputs
+  &[readonly] {
+    box-shadow: none;
+  }
+}
+
+// Input group
+.input-group {
+  margin-top: (-1 * ($padding-base-vertical + $label-font-size-focus));
+
+  label {
+    left: auto;
+    right: auto;
+    padding-left: $padding-base-horizontal;
+    z-index: 1000;
+    top: 17px;
+  }
+
+  .form-control {
+    padding-left: $padding-base-horizontal;
+    margin-top: ($label-padding-focus - ($padding-base-vertical / 2));
+  }
+}
+
+.input-group-addon {
+  border-top: 0;
+  padding-top: $input-group-addon-padding-top;
+}
+
+.input-group-addon:first-child {
+  border-left: 0;
+  border-right: 1px solid $input-group-addon-border-color;
+}
+
+.input-group-addon:last-child {
+  border-right: 0;
+  border-left: 1px solid $input-group-addon-border-color;
+}
+
+// Feedback states
+.has-success,
+.has-warning,
+.has-error {
+  &.focused {
+    label:after {
+      visibility: hidden;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 1px 0 $label-border-focus;
+      border-color: $label-border-focus;
+    }
+  }
+
+  .form-control {
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.has-success .input-group-addon {
+  border-color: $state-success-border;
+}
+
+.has-warning .input-group-addon {
+  border-color: $state-warning-border;
+}
+
+.has-danger .input-group-addon {
+  border-color: $state-danger-border;
+}
+
+.has-feedback label {
+  & ~ .form-control-feedback {
+    top: ($line-height-computed - 2);
+  }
+}
+
+.has-feedback .input-group ~ .form-control-feedback {
+  top: $label-font-size-focus;
+}
+
+.form-inline .has-feedback .form-control-feedback {
+  top: ($label-font-size-focus + ($padding-base-vertical / 2));
+}
+
+.has-feedback label.sr-only ~ .form-control-feedback {
+  top: $label-font-size-focus;
+}
+
+
+// Navbar form
+//
+.navbar-form {
+  margin-top: 4.5px;
+  margin-bottom: 4.5px;
+}

@@ -1,0 +1,60 @@
+/*!
+ * Copyright 2015 BookingSync SAS.
+ * Licensed under MIT (https://github.com/BookingSync/bootstrap-bookingsync-sass/blob/master/LICENSE)
+ */
+
+@at-root {
+  @font-face {
+    font-family: 'bookingsync-smiles';
+    src: url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icon-font-path}#{$icon-font-name}.eot'), '#{$icon-font-path}#{$icon-font-name}.eot'));
+    src: url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icon-font-path}#{$icon-font-name}.eot?#iefix'), '#{$icon-font-path}#{$icon-font-name}.eot?#iefix')) format('embedded-opentype'),
+         url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icon-font-path}#{$icon-font-name}.woff2'), '#{$icon-font-path}#{$icon-font-name}.woff2')) format('woff2'),
+         url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icon-font-path}#{$icon-font-name}.woff'), '#{$icon-font-path}#{$icon-font-name}.woff')) format('woff'),
+         url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icon-font-path}#{$icon-font-name}.ttf'), '#{$icon-font-path}#{$icon-font-name}.ttf')) format('truetype'),
+         url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}'), '#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+.bs-icon {
+  font-family: 'bookingsync-smiles';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bs-bigboss:before {
+  content: "\e600";
+}
+.bs-boss:before {
+  content: "\e601";
+}
+.bs-bookingsync:before {
+  content: "\e602";
+}
+.bs-laughting:before {
+  content: "\e603";
+}
+.bs-lemonface:before {
+  content: "\e604";
+}
+.bs-sadface:before {
+  content: "\e605";
+}
+.bs-tongue:before {
+  content: "\e606";
+}
+.bs-winkface:before {
+  content: "\e607";
+}
+.bs-winktongue:before {
+  content: "\e608";
+}
