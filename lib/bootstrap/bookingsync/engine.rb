@@ -2,6 +2,8 @@ module Bootstrap
   module BookingSync
     module Rails
       class Engine < ::Rails::Engine
+        require 'bootstrap-sass'
+
         initializer 'bootstrap-bookingsync-sass.assets.precompile' do |app|
           %w(stylesheets javascripts fonts images).each do |sub|
             app.config.assets.paths << root.join('assets', sub).to_s

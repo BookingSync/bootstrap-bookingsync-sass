@@ -1,15 +1,14 @@
 # Bootstrap BookingSync SASS
 
-`bootstrap-bookingsync-sass` is a Sass-powered version of [Bootstrap](http://github.com/twbs/bootstrap) with [BookingSync theme](http:://styleguide.bookingsync.com), ready to drop right into your Sass powered applications.
+`bootstrap-bookingsync-sass` is a Sass-powered version of [Bootstrap](http://github.com/twbs/bootstrap) with [BookingSync theme](http://styleguide.bookingsync.com), ready to drop right into your Sass powered applications.
 
 ## Installation
 
 `bootstrap-bookingsync-sass` is easy to drop into Rails with the asset pipeline.
 
-In your Gemfile you need to add the `bootstrap-bookingsync-sass` gem, and ensure that the `bootstrap-sass` gem is present.
+In your Gemfile you need to add the `bootstrap-bookingsync-sass` gem.
 
 ```ruby
-gem 'bootstrap-sass', '~> 3.3.5'
 gem 'bootstrap-bookingsync-sass'
 ```
 
