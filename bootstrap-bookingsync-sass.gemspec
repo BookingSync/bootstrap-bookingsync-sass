@@ -12,4 +12,6 @@ Gem::Specification.new do |s|
   s.license  = 'MIT'
 
   s.add_runtime_dependency 'bootstrap-sass', '>= 3.3.5'
+
+  s.files    = `git ls-files`.split("\n")
 end
