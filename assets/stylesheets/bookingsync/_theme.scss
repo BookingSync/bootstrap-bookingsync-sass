@@ -287,10 +287,18 @@ h1, h2, h3, h4, h5, h6,
 .flex-col {
   display: flex;
   flex-direction: column;
+
+  &.collapse {
+    display: none;
+  }
 }
 
 .flex-row {
   display: flex;
+
+  &.collapse {
+    display: none;
+  }
 }
 
 .flex-1 {
