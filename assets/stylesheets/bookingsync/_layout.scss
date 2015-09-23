@@ -89,6 +89,10 @@ body {
 
     &.collapse {
       visibility: visible;
+
+      &.flex-col {
+        display: flex;
+      }
     }
   }
 }
