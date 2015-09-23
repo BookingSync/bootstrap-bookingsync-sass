@@ -2,8 +2,9 @@
  * Copyright 2015 BookingSync SAS.
  * Licensed under MIT (https://github.com/BookingSync/bootstrap-bookingsync-sass/blob/master/LICENSE)
  */
-$bootstrap-bookingsync-sass-asset-helper: false !default;
+@import 'bootstrap/variables';
 
+$bootstrap-bookingsync-sass-asset-helper: false !default;
 
 $heading-gray:                  #292c33;
 $darkblue:                      #1e3264;
