@@ -291,6 +291,10 @@ h1, h2, h3, h4, h5, h6,
   &.collapse {
     display: none;
   }
+
+  &.collapse.in {
+    display: flex;
+  }
 }
 
 .flex-row {
@@ -298,6 +302,10 @@ h1, h2, h3, h4, h5, h6,
 
   &.collapse {
     display: none;
+  }
+
+  &.collapse.in {
+    display: flex;
   }
 }
 
