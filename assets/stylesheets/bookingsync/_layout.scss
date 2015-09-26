@@ -47,8 +47,7 @@ body {
 }
 
 #content {
-  overflow: auto;
-  height: 100vh;
+  min-height: 100vh;
   font-size: 12px; // FIXME: Temporary fix for easier migration
 
   &.with-navbar {
