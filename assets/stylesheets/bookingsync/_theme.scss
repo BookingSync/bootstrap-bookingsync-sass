@@ -52,15 +52,15 @@ h1, h2, h3, h4, h5, h6,
     width: 230px;
 
     .body {
-      overflow-y: overlay;
+      overflow-y: auto;
     }
 
     .menu-dropdown ol {
-      overflow-y: overlay;
+      overflow-y: auto;
     }
 
     .menu-dropright {
-      overflow-y: overlay;
+      overflow-y: auto;
     }
   }
 
