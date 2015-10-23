@@ -3,21 +3,17 @@
  * Licensed under MIT (https://github.com/BookingSync/bootstrap-bookingsync-sass/blob/master/LICENSE)
  */
 @import 'bootstrap/variables';
+@import 'colors';
 
 $bootstrap-bookingsync-sass-asset-helper: false !default;
 
-$heading-gray:                  #292c33;
-$darkblue:                      #1e3264;
-$blue:                          #199bd7;
-$green:                         #2db859;
+$brand-primary:                 $bs-lightblue;
+$brand-success:                 $bs-green;
+$brand-info:                    $bs-lightblue;
+$brand-warning:                 $bs-yellow;
+$brand-danger:                  $bs-red;
 
-$brand-primary:                 $blue;
-$brand-success:                 $green;
-$brand-info:                    #199bd7;
-$brand-warning:                 #f8c432;
-$brand-danger:                  #e74c3c; // #ef5f36;
-
-$gray-base:                     $darkblue;
+$gray-base:                     $bs-darkblue;
 $gray-darker:                   $gray-base;
 $gray-dark:                     rgba($gray-base, .75);
 $gray:                          rgba($gray-base, .75);
@@ -41,7 +37,7 @@ $font-size-h1:                  26px;
 $font-size-h2:                  22px;
 $font-size-h3:                  18px;
 $font-size-h4:                  16px;
-$headings-color:                $heading-gray;
+$headings-color:                $bs-darkgray;
 
 //== Iconography
 //
