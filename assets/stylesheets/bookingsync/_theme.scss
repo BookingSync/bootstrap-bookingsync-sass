@@ -51,14 +51,8 @@ h1, h2, h3, h4, h5, h6,
   &:hover {
     width: 230px;
 
-    .body {
-      overflow-y: auto;
-    }
-
-    .menu-dropdown ol {
-      overflow-y: auto;
-    }
-
+    .body,
+    .menu-dropdown ol,
     .menu-dropright {
       overflow-y: auto;
     }
