@@ -107,7 +107,8 @@ h1, h2, h3, h4, h5, h6,
   header {
     background-color: $menu-header-bg;
     color: $menu-header-color;
-    position: relative;
+    z-index: 1000;
+    position: static;
 
     a {
       color: $menu-header-link-color;
@@ -119,8 +120,7 @@ h1, h2, h3, h4, h5, h6,
       background-color: $menu-header-bg;
       width: 100%;
       position: absolute;
-      z-index: 1000;
-      max-height: 100vh;
+      max-height: 100%;
       overflow: hidden;
 
       a:hover {
@@ -139,6 +139,11 @@ h1, h2, h3, h4, h5, h6,
 
       &.open {
         top: $menu-header-height;
+        bottom: 0;
+        @media (max-width: $screen-xs-max) {
+          position: fixed;
+          top: $menu-header-height + $navbar-height;
+        }
       }
     }
   }
