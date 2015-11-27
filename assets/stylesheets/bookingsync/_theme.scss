@@ -48,6 +48,16 @@ h1, h2, h3, h4, h5, h6,
   transition: width 0.2s cubic-bezier(.4,0,.2,1);
   border-radius: 0;
 
+
+  @media (max-width: $screen-xs-max) {
+    .body,
+    .menu-dropdown ol,
+    .menu-dropright {
+      overflow-y: auto;
+    }
+  }
+
+
   &:hover {
     width: 230px;
 
