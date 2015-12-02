@@ -6,6 +6,14 @@
 body {
   min-height: 100vh;
   padding-top: $navbar-height;
+
+  // Kill scroll on the body when the mobile menu is opened
+  &.menu-open {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .navbar.navbar-fixed-top {
@@ -67,11 +75,11 @@ body {
   }
 
   .menu {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: $navbar-height;
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100% - 70px);
 
     &:hover {
       width: 100%;
