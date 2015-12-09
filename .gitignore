@@ -1,2 +1,5 @@
-Gemfile.lock
 *.gem
+Gemfile.lock
+docs/output
+docs/tmp
+docs/crash.log

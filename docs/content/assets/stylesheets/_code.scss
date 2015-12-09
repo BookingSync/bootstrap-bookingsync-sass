@@ -1,0 +1,18 @@
+/*
+ * Code blocks
+ */
+.example {
+  border: 1px solid $gray-lighter;
+  background-color: #fff;
+  border-radius: 3px 3px 0 0;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+pre {
+  border: 1px solid $gray-lighter;
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+  background-color: $body-bg;
+  margin-bottom: 15px;
+}
