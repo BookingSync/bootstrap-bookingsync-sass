@@ -1,5 +1,7 @@
 ### Unreleased
 
+### 0.0.15 - 2015-12-09
+
 * bug fixes
   * fix scrolling and visibility issues in menu lists
   * resolve menu position and height issues on iOS
