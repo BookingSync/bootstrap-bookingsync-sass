@@ -1,5 +1,10 @@
 ### Unreleased
 
+### 0.0.16 - 2015-12-14
+
+* improvement
+  * add styling for `descriptions`
+
 ### 0.0.15 - 2015-12-09
 
 * bug fixes
