@@ -1,0 +1,42 @@
+$line-height: 1.5;
+$dl-horizontal-breakpoint: 768px;
+$dl-horizontal-narrow-offset: 120px;
+
+dl + dl {
+  border-top: 1px solid rgba($gray-base, .05);;
+  padding-top: 8px;
+  padding-bottom: 13px;
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: normal;
+  font-size: 0.8333em;
+  line-height: ($line-height / 0.83333);
+}
+
+dd {
+  line-height: $line-height;
+}
+
+@media (max-width: $dl-horizontal-breakpoint) {
+  dl {
+    font-size: 14px;
+  }
+
+  dd {
+    margin-bottom: 0.7em;
+  }
+}
+
+@media (min-width: $dl-horizontal-breakpoint) {
+  .dl-narrow {
+    dt {
+      width: ($dl-horizontal-narrow-offset - 20);
+    }
+
+    dd {
+      margin-left: $dl-horizontal-narrow-offset;
+    }
+  }
+}
