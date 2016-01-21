@@ -291,43 +291,6 @@ h1, h2, h3, h4, h5, h6,
   left: 0;
 }
 
-//
-// Utilities
-// --------------------------------------------------
-.flex-col {
-  display: flex;
-  flex-direction: column;
-
-  &.collapse {
-    display: none;
-  }
-
-  &.collapse.in {
-    display: flex;
-  }
-}
-
-.flex-row {
-  display: flex;
-
-  &.collapse {
-    display: none;
-  }
-
-  &.collapse.in {
-    display: flex;
-  }
-}
-
-.flex-1 {
-  flex: 1;
-}
-
-.flex-middle {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 @media (max-width: $screen-xs-max) {
   .navbar-form {
     border-top: none;
