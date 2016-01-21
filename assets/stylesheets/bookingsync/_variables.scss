@@ -178,3 +178,18 @@ $sheet-border-radius:               3px;
 $sheet-margin:                      ($grid-gutter-width / 2);
 $sheet-padding:                     $sheet-margin;
 $sheet-inner-border:                $gray-lightest;
+
+
+//== Typography
+//
+$switch-label-size: 10px;
+$switch-off-border: $gray-lighter;
+$switch-off-bg: #fff;
+$switch-off-color: $gray-lightest;
+
+
+//== Typography
+//
+$line-height: 1.5;
+$dl-horizontal-breakpoint: 768px;
+$dl-horizontal-narrow-offset: 120px;
