@@ -291,43 +291,6 @@ h1, h2, h3, h4, h5, h6,
   left: 0;
 }
 
-//
-// Utilities
-// --------------------------------------------------
-.flex-col {
-  display: flex;
-  flex-direction: column;
-
-  &.collapse {
-    display: none;
-  }
-
-  &.collapse.in {
-    display: flex;
-  }
-}
-
-.flex-row {
-  display: flex;
-
-  &.collapse {
-    display: none;
-  }
-
-  &.collapse.in {
-    display: flex;
-  }
-}
-
-.flex-1 {
-  flex: 1;
-}
-
-.flex-middle {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 @media (max-width: $screen-xs-max) {
   .navbar-form {
     border-top: none;
@@ -361,34 +324,6 @@ h1, h2, h3, h4, h5, h6,
 
   .icon-bar + .icon-bar {
     margin-top: 3px;
-  }
-}
-
-// Sheet
-//
-// Custom wrapper to simulate a paper sheet container
-
-.sheet {
-  width: auto;
-  position: relative;
-  border: 1px solid $sheet-border;
-  background-color: $sheet-bg;
-  border-radius: $sheet-border-radius;
-  margin: $sheet-margin;
-  padding: $sheet-padding;
-}
-
-.sheet-header {
-  margin: (-1 * $sheet-padding);
-  margin-bottom: $sheet-padding;
-  padding: $sheet-padding;
-  border-bottom: 1px solid $sheet-inner-border;
-
-  h1, h2, h3, h4, h5, h6,
-  .h1, .h2, .h3, .h4, .h5, .h6,
-  p {
-    padding: 0;
-    margin: 0;
   }
 }
 

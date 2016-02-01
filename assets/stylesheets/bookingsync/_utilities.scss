@@ -2,3 +2,39 @@
 .valign-top             { vertical-align: top; }
 .valign-middle          { vertical-align: middle; }
 .valign-bottom          { vertical-align: bottom; }
+
+// Flex
+// --------------------------------------------------
+.flex-col {
+  display: flex;
+  flex-direction: column;
+
+  &.collapse {
+    display: none;
+  }
+
+  &.collapse.in {
+    display: flex;
+  }
+}
+
+.flex-row {
+  display: flex;
+
+  &.collapse {
+    display: none;
+  }
+
+  &.collapse.in {
+    display: flex;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-middle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
