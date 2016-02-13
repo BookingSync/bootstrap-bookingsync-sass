@@ -496,7 +496,8 @@ We remove the default `outline` styles on some form controls and adjust labels a
   <form>
     <div class="form-group focused">
       <label for="focusedInput2">Focus state</label>
-      <input class="form-control" id="focusedInput2" type="text" value="  Demonstrative focus state">
+      <input class="form-control" id="focusedInput2" type="text"
+             value="Demonstrative focus state">
     </div>
     <div class="form-group focused">
       <label for="focusedTextarea">Comment</label>
@@ -510,7 +511,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 ~~~ html
 <div class="form-group focused">
   <label for="focusedInput2">Focus state</label>
-  <input class="form-control" id="focusedInput2" type="text" value="Demonstrative focus state">
+  <input class="form-control" id="focusedInput2" type="text"
+         value="Demonstrative focus state">
 </div>
 <div class="form-group focused">
   <label for="focusedTextarea">Comment</label>
@@ -531,7 +533,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
   <form>
     <div class="form-group filled">
       <label for="filledInput">Filled state</label>
-      <input class="form-control" id="filledInput" type="text" value="  Demonstrative filled state">
+      <input class="form-control" id="filledInput" type="text"
+             value="Demonstrative filled state">
     </div>
     <div class="form-group filled">
       <label for="filledTextarea">Comment</label>
@@ -545,7 +548,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 ~~~ html
 <div class="form-group filled">
   <label for="filledInput">Filled state</label>
-  <input class="form-control" id="filledInput" type="text" value="Demonstrative filled state">
+  <input class="form-control" id="filledInput" type="text"
+         value="Demonstrative filled state">
 </div>
 <div class="form-group filled">
   <label for="filledTextarea">Comment</label>
@@ -568,7 +572,8 @@ Add the `disabled` boolean attribute on an input to prevent user interactions. D
   <form>
     <div class="form-group">
       <label for="disabledInput">Disabled state</label>
-      <input class="form-control" id="disabledInput" type="text" value="Disabled  input here…" disabled>
+      <input class="form-control" id="disabledInput" type="text"
+             value="Disabled input here…" disabled>
     </div>
     <div class="form-group">
       <label for="disabledEmptyInput">Disabled state on empty input</label>
@@ -601,7 +606,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 ~~~ html
 <div class="form-group">
   <label for="disabledInput">Disabled state</label>
-  <input class="form-control" id="disabledInput" type="text" value="Disabled input here…" disabled>
+  <input class="form-control" id="disabledInput" type="text"
+         value="Disabled input here…" disabled>
 </div>
 <div class="form-group">
   <label for="disabledEmptyInput">Disabled state on empty input</label>
@@ -649,7 +655,7 @@ Add the `disabled` attribute to a `<fieldset>` to disable all the controls withi
     <fieldset disabled>
       <div class="form-group">
         <label for="disabledInputFromFieldset">Disabled state</label>
-        <input class="form-control" id="disabledInputFromFieldset" type="text"  value="Disabled input here…">
+        <input class="form-control" id="disabledInputFromFieldset" type="text"       value="Disabled input here…">
       </div>
       <div class="form-group">
         <label for="disabledEmptyInputFromFieldset">Disabled state on empty   input</label>
@@ -662,8 +668,9 @@ Add the `disabled` attribute to a `<fieldset>` to disable all the controls withi
         </textarea>
       </div>
       <div class="form-group">
-        <label for="disabledEmptyTextareaFromFieldset">Disabled comment on empty  textarea</label>
-        <textarea class="form-control" id="disabledEmptyTextareaFromFieldset"   rows="5" disabled></textarea>
+        <label for="disabledEmptyTextareaFromFieldset">Disabled comment on empty textarea</label>
+        <textarea class="form-control" id="disabledEmptyTextareaFromFieldset"
+                  rows="5" disabled></textarea>
       </div>
       <div class="form-group">
         <label for="disabledSelectFromFieldset">Disabled select menu</label>
@@ -686,7 +693,8 @@ Add the `disabled` attribute to a `<fieldset>` to disable all the controls withi
   <fieldset disabled>
     <div class="form-group">
       <label for="disabledInputFromFieldset">Disabled state</label>
-      <input class="form-control" id="disabledInputFromFieldset" type="text" value="Disabled input here…">
+      <input class="form-control" id="disabledInputFromFieldset" type="text"
+             value="Disabled input here…">
     </div>
     <div class="form-group">
       <label for="disabledEmptyInputFromFieldset">Disabled state on empty input</label>
@@ -726,7 +734,8 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
   <form>
     <div class="form-group">
       <label for="readonlyInput">Readonly state</label>
-      <input class="form-control" id="readonlyInput" type="text" value="Disabled  input here…" readonly>
+      <input class="form-control" id="readonlyInput" type="text"
+             value="Readonly input here…" readonly>
     </div>
     <div class="form-group">
       <label for="readonlyEmptyInput">Readonly state on empty input</label>
@@ -748,7 +757,8 @@ Add the `readonly` boolean attribute on an input to prevent modification of the 
 ~~~ html
 <div class="form-group">
   <label for="readonlyInput">Readonly state</label>
-  <input class="form-control" id="readonlyInput" type="text" value="Disabled input here…" readonly>
+  <input class="form-control" id="readonlyInput" type="text"
+         value="Readonly input here…" readonly>
 </div>
 <div class="form-group">
   <label for="readonlyEmptyInput">Readonly state on empty input</label>
