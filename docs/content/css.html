@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-3 col-md-push-9">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <%= link_to("Forms", "#forms") %>
+        </h3>
+      </div>
+      <div class="list-group">
+        <%= link_to("Basic example", "#basic-example", class: "list-group-item") %>
+        <%= link_to("Inline form", "#inline-form", class: "list-group-item") %>
+        <%= link_to("Horizontal form", "#horizontal-form", class: "list-group-item") %>
+        <%= link_to("Supported controls", "#supported-controls", class: "list-group-item") %>
+        <%= link_to("Static control", "#static-control", class: "list-group-item") %>
+        <%= link_to("Focus state", "#focus-state", class: "list-group-item") %>
+        <%= link_to("Filled state", "#filled-state", class: "list-group-item") %>
+        <%= link_to("Disabled state", "#disabled-state", class: "list-group-item") %>
+        <%= link_to("Readonly state", "#readonly-state", class: "list-group-item") %>
+        <%= link_to("Help text", "#help-text", class: "list-group-item") %>
+        <%= link_to("Validation states", "#validation-states", class: "list-group-item") %>
+        <%= link_to("Control sizing", "#control-sizing", class: "list-group-item") %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-9 col-md-pull-3">
+    <div class="panel panel-default">
+      <div class="panel-body reference-body">
+        <%= items['/css/forms/'].compiled_content %>
+      </div>
+    </div>
+  </div>
+</div>

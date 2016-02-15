@@ -1,1 +1,0 @@
-# BookingSync Styleguide
