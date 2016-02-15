@@ -1,10 +1,3 @@
----
-layout: default
-title: CSS
-slug: css
-lead: "Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system."
----
-
 # Forms
 
 ## Basic example

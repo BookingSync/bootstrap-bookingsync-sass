@@ -7,6 +7,15 @@ body {
   padding: 0;
 }
 
+.navbar-nav >li >a {
+  line-height: 40px;
+}
+
+.menu {
+  position: relative;
+  height: auto;
+}
+
 .content {
   padding-top: 10px;
   padding-bottom: 40px;

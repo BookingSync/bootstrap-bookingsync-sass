@@ -5,17 +5,8 @@
     <div class="page-wrapper flex-1 flex-col">
       <%= render "navbar" %>
       <div class="container content">
-        <div class="row">
-          <div class="col-md-3 col-md-push-9">
-            <%= render "sidebar" %>
-          </div>
-        <div class="col-md-9 col-md-pull-3">
-          <div class="panel panel-default">
-            <div class="panel-body reference-body">
-              <%= yield %>
-            </div>
-          </div>
-        </div>
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>
