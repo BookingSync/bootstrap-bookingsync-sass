@@ -1,4 +1,10 @@
 // Vertical Alignment
-.valign-top             { vertical-align: top; }
-.valign-middle          { vertical-align: middle; }
-.valign-bottom          { vertical-align: bottom; }
+.valign-top {
+  vertical-align: top !important;
+}
+.valign-middle {
+  vertical-align: middle !important;
+}
+.valign-bottom {
+  vertical-align: bottom !important;
+}
