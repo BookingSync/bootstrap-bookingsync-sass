@@ -1,0 +1,58 @@
+#!/usr/bin/env ruby
+
+# A few helpful tips about the Rules file:
+#
+# * The string given to #compile and #route are matching patterns for
+#   identifiers--not for paths. Therefore, you can’t match on extension.
+#
+# * The order of rules is important: for each item, only the first matching
+#   rule is applied.
+#
+# * Item identifiers start and end with a slash (e.g. “/about/” for the file
+#   “content/about.html”). To select all children, grandchildren, … of an
+#   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
+#   because “*” matches zero or more characters.
+
+ignore '/assets/(stylesheets|javascripts)/_*'
+
+compile '/static/*' do
+end
+
+compile '/CNAME/' do
+end
+
+compile '/highlight/' do
+  filter :erb
+end
+
+compile %r{/assets/(stylesheets|javascripts)/.+/} do
+  filter :sprockets, {
+    :css_compressor => :scss,
+    :js_compressor  => :uglifier
+  }
+end
+
+compile '*' do
+  filter :erb
+  filter :kramdown, toc_levels: [2], header_offset: 1, enable_coderay: false
+  filter :colorize_syntax, default_colorizer: :pygmentsrb
+  layout item[:layout] || 'default'
+end
+
+route '/assets/*/' do
+  Nanoc::Sprockets::Helper.asset_path(item)
+end
+
+route '/CNAME' do
+  '/CNAME'
+end
+
+route '/highlight' do
+  '/highlight.css'
+end
+
+route '*' do
+  item.identifier + 'index.html'
+end
+
+layout '*', :erb
