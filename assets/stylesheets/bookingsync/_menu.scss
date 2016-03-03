@@ -2,15 +2,6 @@
 // Menu
 // --------------------------------------------------
 
-// Recommended addition
-//
-// .menu {
-//   height: 100vh;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-// }
-//
 .menu {
   background-color: $menu-bg;
   color: $menu-color;
@@ -232,6 +223,13 @@
   .icon-bar {
     background-color: $menu-default-toggle-icon-bar-bg;
   }
+}
+
+.menu-fixed {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 @media (max-width: $screen-xs-max) {
