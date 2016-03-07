@@ -1,5 +1,7 @@
 ## Menu
 
+### Basic example
+
 <div class="example">
   <nav class="menu flex-col">
     <header class="dropdown">
@@ -171,14 +173,12 @@
 </nav>
 ~~~
 
-<div class="bs-callout bs-callout-info" id="callout-menu-styling">
-  <h4>Recommended for full height sticky menu</h4>
-  <p><pre>
-  .menu {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  </pre></p>
-</div>
+### Full height fixed position menu
+
+Add `.menu-fixed` class to make the menu fixed to the left viewport edge.
+
+~~~ html
+<nav class="menu menu-fixed flex-col">
+  ...
+</nav>
+~~~
