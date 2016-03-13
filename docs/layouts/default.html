@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <%= render "head" %>
+  <body class="flex-col">
+    <div class="page-wrapper flex-1 flex-col">
+      <%= render "navbar" %>
+      <div class="container content">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
