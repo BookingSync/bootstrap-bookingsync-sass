@@ -1,5 +1,14 @@
 ### Unreleased
 
+* improvement
+  * add documentation
+  * move the menu and sheet components into separate files
+  * move flex helpers into utilities file
+  * move all variable declarations into one file
+  * add !default to all variable declarations
+  * add !important rule to make the vertical align helpers usable in table cell
+  * provide the fixed position menu as a component variant
+
 ### 0.0.16 - 2015-12-14
 
 * improvement
