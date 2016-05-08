@@ -3,6 +3,7 @@
     <div class="panel panel-default">
       <div class="list-group">
         <%= link_to("Menu", "#menu", class: "list-group-item") %>
+        <%= link_to("Dropdown", "#dropdown", class: "list-group-item") %>
         <%= link_to("Sheet", "#sheet", class: "list-group-item") %>
         <%= link_to("Chosen", "#chosen", class: "list-group-item") %>
         <%= link_to("Switch", "#switch", class: "list-group-item") %>
@@ -14,6 +15,7 @@
     <div class="panel panel-default">
       <div class="panel-body reference-body">
         <%= items['/components/menu/'].compiled_content %>
+        <%= items['/components/dropdown/'].compiled_content %>
         <%= items['/components/sheet/'].compiled_content %>
         <%= items['/components/chosen/'].compiled_content %>
         <%= items['/components/switch/'].compiled_content %>

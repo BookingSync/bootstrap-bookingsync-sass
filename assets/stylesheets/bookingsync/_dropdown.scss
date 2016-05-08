@@ -1,0 +1,8 @@
+// The dropdown menu (ul)
+.dropdown-menu {
+  border-radius: $dropdown-border-radius;
+
+  > li > a {
+    padding: 8px 20px;
+  }
+}

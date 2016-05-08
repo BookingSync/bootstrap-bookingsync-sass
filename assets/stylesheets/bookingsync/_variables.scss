@@ -16,18 +16,19 @@ $gray-darker:                   $gray-base !default;
 $gray-dark:                     rgba($gray-base, .75) !default;
 $gray:                          rgba($gray-base, .75) !default;
 $gray-light:                    rgba($gray-base, .5) !default;
-$gray-lighter:                  rgba($gray-base, .25) !default;
-$gray-lightest:                 rgba($gray-base, .15) !default;
+$gray-lighter:                  #C7CCD8 !default; // rgba($gray-base, .25) !default;
+$gray-lightest:                 #DDE0E8 !default; // rgba($gray-base, .15) !default;
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 $text-color:                    $gray-dark !default;
-$body-bg:                       #edeff4 !default;
+$body-bg:                       $bs-lightpurple !default;
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
+$line-height:                   1.5 !default;
 $font-family-sans-serif:        "Open Sans", Helvetica, Arial, sans-serif !default;
 $font-family-base:              $font-family-sans-serif !default;
 $font-size-base:                14px !default;
@@ -36,6 +37,9 @@ $font-size-h2:                  22px !default;
 $font-size-h3:                  18px !default;
 $font-size-h4:                  16px !default;
 $headings-color:                $bs-darkgray !default;
+
+$dl-horizontal-breakpoint:      768px !default;
+$dl-horizontal-narrow-offset:   120px !default;
 
 //== Iconography
 //
@@ -181,22 +185,36 @@ $table-caption-color:               $gray !default;
 //
 $sheet-bg:                          #fff !default;
 $sheet-border:                      $gray-lighter !default;
-$sheet-border-radius:               3px !default;
+$sheet-border-radius:               $border-radius-large !default;
 $sheet-margin:                      ($grid-gutter-width / 2) !default;
 $sheet-padding:                     $sheet-margin !default;
 $sheet-inner-border:                $gray-lightest !default;
 
 
+//== Sheet Tabs
+//
+$sheet-navbar-tabs-bg:              $bs-lightpurple !default;
+$sheet-navbar-tabs-bg-hover:        #FAFBFC !default; // rgba(255, 255, 255, 0.75);
+
+
 //== Switch
 //
-$switch-label-size: 10px !default;
-$switch-off-border: $gray-lighter !default;
-$switch-off-bg: #fff !default;
-$switch-off-color: $gray-lightest !default;
+$switch-label-size:                 10px !default;
+$switch-off-border:                 $gray-lighter !default;
+$switch-off-bg:                     #fff !default;
+$switch-off-color:                  $gray-lightest !default;
 
 
-//== Typography
+//== Dropdown
 //
-$line-height: 1.5 !default;
-$dl-horizontal-breakpoint: 768px !default;
-$dl-horizontal-narrow-offset: 120px !default;
+$dropdown-border:                   $gray-lighter !default;
+$dropdown-fallback-border:          $bs-lightpurple !default;
+$dropdown-divider-bg:               $gray-lightest !default;
+$dropdown-link-color:               $gray-dark !default;
+$dropdown-link-hover-color:         $gray-dark !default;
+$dropdown-link-hover-bg:            $bs-lightpurple !default;
+$dropdown-link-active-color:        $gray-dark !default;
+$dropdown-link-active-bg:           $gray-dark !default;
+$dropdown-link-disabled-color:      $gray-light !default;
+$dropdown-header-color:             $gray-light !default;
+$dropdown-border-radius:            $border-radius-large !default;
