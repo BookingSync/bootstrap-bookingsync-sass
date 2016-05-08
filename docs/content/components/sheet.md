@@ -1,7 +1,9 @@
-## Sheet
+# Sheet
 
 <div class="example">
-  <h2 id="sheet-example">Basic example</h2>
+  <div class="sheet-header">
+    <h3 id="sheet-example">Basic example</h3>
+  </div>
   <p>Highly inspired from the <code>panel</code> component, the sheet will auto scale and have a relative position to ease children positioning.</p>
   <div class="bs-example bs-sheet" data-example-id="sheet-example">
     <div class="sheet">
@@ -16,7 +18,9 @@
 ~~~
 
 <div class="example">
-  <h2 id="sheet-example-with-header">Example with header</h2>
+  <div class="sheet-header">
+    <h3 id="sheet-example-with-header">Example with header</h3>
+  </div>
   <div class="bs-example bs-sheet-with-header"
        data-example-id="sheet-example-with-header">
     <div class="sheet">
@@ -37,7 +41,9 @@
 ~~~
 
 <div class="example">
-  <h2 id="sheet-example-with-tabs">Example with tabs</h2>
+  <div class="sheet-header">
+    <h3 id="sheet-example-with-tabs">Example with tabs</h3>
+  </div>
   <div class="bs-example bs-sheet" data-example-id="sheet-example-with-tabs">
     <div class="sheet">
       <ul class="nav nav-tabs">
@@ -65,7 +71,9 @@
 ~~~
 
 <div class="example">
-  <h2 id="sheet-example-with-stacked-tabs">Example with stacked tabs</h2>
+  <div class="sheet-header">
+    <h3 id="sheet-example-with-stacked-tabs">Example with stacked tabs</h3>
+  </div>
   <div class="bs-example bs-sheet"
        data-example-id="sheet-example-with-stacked-tabs">
     <div class="sheet">
@@ -112,9 +120,11 @@
 ~~~
 
 <div class="example">
-  <h2 id="sheet-example-with-auto-stackable-tabs">
-    Example with auto-stackable tabs
-  </h2>
+  <div class="sheet-header">
+    <h3 id="sheet-example-with-auto-stackable-tabs">
+      Example with auto-stackable tabs
+    </h3>
+  </div>
 
   <div class="bs-callout bs-callout-danger">
     <h4>Plugin dependency</h4>
@@ -231,7 +241,9 @@
 ~~~
 
 <div class="example">
-  <h2 id="sheet-example-with-nested-tabs">Example with nested tabs</h2>
+  <div class="sheet-header">
+    <h3 id="sheet-example-with-nested-tabs">Example with nested tabs</h3>
+  </div>
   <div class="bs-example bs-sheet"
        data-example-id="sheet-example-with-nested-tab">
     <div class="sheet">
