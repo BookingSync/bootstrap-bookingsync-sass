@@ -17,6 +17,7 @@
       var $targetList = $target.children('ul');
       var targetListWidth, maxItemsWidth;
       var currentWidth = 0;
+      var stackNextItems = false;
 
       // Get width of stacked tab
       $target.removeClass('hide');
@@ -34,9 +35,10 @@
         var $item = $(item);
         var itemWidth = $item.width();
 
-        if (currentWidth + itemWidth < maxItemsWidth) {
+        if (stackNextItems !== true && currentWidth + itemWidth < maxItemsWidth) {
           currentWidth += itemWidth;
         } else {
+          stackNextItems = true;
           $target.removeClass('hide');
           $targetList.append($item.detach());
         }

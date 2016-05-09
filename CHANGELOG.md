@@ -1,8 +1,14 @@
 ### Unreleased
 
+* bug fixes
+  * Fix `stackable` so items order can't be altered
+
+* improvements
+  * Update ReadMe to explain how to use single javascript plugins
+
 ### 0.0.18 - 2016-05-09
 
-* improvement
+* improvements
   * add `tabs` with improved design when first element of a `sheet`
   * add `stackable.js`, used to auto-stack list or tabs to always fit on single lines
   * improve dropdown style through new `dropdown` stylesheet file
@@ -10,7 +16,7 @@
 
 ### 0.0.17 - 2016-04-08
 
-* improvement
+* improvements
   * add documentation
   * move the menu and sheet components into separate files
   * move flex helpers into utilities file
@@ -21,7 +27,7 @@
 
 ### 0.0.16 - 2015-12-14
 
-* improvement
+* improvements
   * add styling for `descriptions`
 
 ### 0.0.15 - 2015-12-09
