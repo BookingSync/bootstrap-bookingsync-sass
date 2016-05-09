@@ -1,4 +1,4 @@
-## Switch
+# Switch
 
 Turns checkboxes and radio buttons in toggle switches
 
@@ -20,8 +20,13 @@ Turns checkboxes and radio buttons in toggle switches
 </div>
 
 <div class="example">
-  <div class="make-switch switch-small">
-    <input type="checkbox" checked>
+  <div class="sheet-header">
+    <h3 id="switch-example">Basic example</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="switch-example">
+    <div class="make-switch switch-small">
+      <input type="checkbox" checked>
+    </div>
   </div>
 </div>
 ~~~ HTML
@@ -30,11 +35,14 @@ Turns checkboxes and radio buttons in toggle switches
 </div>
 ~~~
 
-### Disabled state
-
 <div class="example">
-  <div class="make-switch switch-small">
-    <input type="checkbox" checked disabled>
+  <div class="sheet-header">
+    <h3 id="switch-example-disabled">Disabled state</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="switch-example-disabled">
+    <div class="make-switch switch-small">
+      <input type="checkbox" checked disabled>
+    </div>
   </div>
 </div>
 ~~~ HTML
