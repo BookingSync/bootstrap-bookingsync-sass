@@ -1,5 +1,13 @@
 ### Unreleased
 
+### 0.0.18 - 2016-05-09
+
+* improvement
+  * add `tabs` with improved design when first element of a `sheet`
+  * add `stackable.js`, used to auto-stack list or tabs to always fit on single lines
+  * improve dropdown style through new `dropdown` stylesheet file
+  * restructure docs examples
+
 ### 0.0.17 - 2016-04-08
 
 * improvement
