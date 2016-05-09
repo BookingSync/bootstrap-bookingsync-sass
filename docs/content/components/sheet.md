@@ -173,9 +173,8 @@
         <li><a href="#">Tab 4</a></li>
         <li><a href="#">Tab 5</a></li>
         <li><a href="#">Tab 6</a></li>
-        <li><a href="#">Tab 7</a></li>
-        <li><a href="#">Tab 8</a></li>
-        <li><a href="#">Tab Last</a></li>
+        <li><a href="#">Tab 7 (with long name)</a></li>
+        <li><a href="#">Tab 8 (last)</a></li>
         <li class="dropdown pull-right stackable-dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
             More <span class="caret"></span>
@@ -194,7 +193,7 @@
           data-target=".stackable-dropdown">
         <li><a href="#">Tab 1</a></li>
         <li class="active"><a href="#">Tab 2</a></li>
-        <li><a href="#">Tab Last</a></li>
+        <li><a href="#">Tab 3 (last)</a></li>
         <li class="dropdown pull-right stackable-dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
             More <span class="caret"></span>
