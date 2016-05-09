@@ -14,6 +14,8 @@ gem 'bootstrap-bookingsync-sass'
 
 `bundle install` and restart your server to make the files available through the pipeline.
 
+### Stylesheets
+
 Import Bootstrap styles in `app/assets/stylesheets/application.scss`:
 
 ```scss
@@ -35,6 +37,8 @@ Then, remove all the `*= require_self` and `*= require_tree .` statements from t
 
 Do not use `*= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Bootstrap BookingSync mixins or variables.
 
+### Javascripts
+
 Require Bootstrap BookingSync Javascripts in `app/assets/javascripts/application.js`:
 
 ```js
@@ -42,7 +46,13 @@ Require Bootstrap BookingSync Javascripts in `app/assets/javascripts/application
 //= require bootstrap-bookingsync-sprockets
 ```
 
-`bootstrap-bookingsync-sprockets` provides individual Bootstrap BookingSync Javascript files (`form.js` or `switch.js`, for example).
+`bootstrap-bookingsync-sprockets` loads all individual Bootstrap BookingSync Javascript files:
+
+* `form.js`
+* `switch.js`
+* `stackable.js`
+
+You can load each file individually using `bookingsync/stackable` for example.
 
 `bootstrap-bookingsync-sprockets` won't load any Boostrap javascripts, you have to load them manually if you need them.
 
