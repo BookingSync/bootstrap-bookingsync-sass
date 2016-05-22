@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Bootstrap BookingSync SASS documentation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
+  <link rel="stylesheet" href="/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="/assets/javascripts/application.js"></script>
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.8.0">
+</head>
+
+  <body class="flex-col">
+    <div class="page-wrapper flex-1 flex-col">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle sidebar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/">
+        BookingSync Styleguide
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="">
+          <a href="/css">CSS</a>
+        </li>
+        <li class="active">
+          <a href="/components">Components</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container content">
+        <h2 id="chosen">Chosen</h2>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>External dependency</h4>
+  <p>
+    This component requires the
+    <a href="http://harvesthq.github.io/chosen/">Chosen</a> library.
+  </p>
+
+  <p>Custom styles for select boxes provided by
+  <a href="http://harvesthq.github.io/chosen/">Chosen</a>.</p>
+</div>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="chosen-example">Standard Select</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="chosen-example">
+    <select class="form-control chosen">
+      <option value=""></option>
+      <option value="One">One</option>
+      <option value="Two">Two</option>
+      <option value="Three">Three</option>
+      <option value="Four">Four</option>
+    </select>
+  </div>
+</div>
+<pre><code class="language-HTML"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control chosen"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"One"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Two"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Three"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Four"</span><span class="nt">&gt;</span>Four<span class="nt">&lt;/option&gt;</span>
+<span class="nt">&lt;/select&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="chosen-example-multiselect">Multiple Select</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="chosen-example-multiselect">
+    <select class="form-control chosen" multiple tabindex="3">
+      <option value=""></option>
+      <option value="One">One</option>
+      <option value="Two">Two</option>
+      <option value="Three">Three</option>
+      <option value="Four">Four</option>
+    </select>
+  </div>
+</div>
+<pre><code class="language-HTML"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control chosen"</span> <span class="na">multiple</span> <span class="na">tabindex=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"One"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Two"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Three"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Four"</span><span class="nt">&gt;</span>Four<span class="nt">&lt;/option&gt;</span>
+<span class="nt">&lt;/select&gt;</span></code></pre>
+
+      </div>
+    </div>
+  </body>
+</html>

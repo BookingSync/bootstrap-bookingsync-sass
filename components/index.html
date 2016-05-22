@@ -1,0 +1,744 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Bootstrap BookingSync SASS documentation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
+  <link rel="stylesheet" href="/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="/assets/javascripts/application.js"></script>
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.8.0">
+</head>
+
+  <body class="flex-col">
+    <div class="page-wrapper flex-1 flex-col">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle sidebar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/">
+        BookingSync Styleguide
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="">
+          <a href="/css">CSS</a>
+        </li>
+        <li class="active">
+          <a href="/components">Components</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container content">
+        <div class="row">
+  <div class="col-md-3 col-md-push-9">
+    <div class="panel panel-default">
+      <div class="list-group">
+        <a class="list-group-item" href="#menu">Menu</a>
+        <a class="list-group-item" href="#dropdown">Dropdown</a>
+        <a class="list-group-item" href="#sheet">Sheet</a>
+        <a class="list-group-item" href="#chosen">Chosen</a>
+        <a class="list-group-item" href="#switch">Switch</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-9 col-md-pull-3">
+    <div class="reference-body">
+      <h2 id="menu">Menu</h2>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="menu-example">Basic example</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="menu-example">
+    <nav class="menu flex-col">
+      <header class="dropdown">
+        <div class="bar">
+          <img src="http://placehold.it/24x24" class="img-responsive img-circle brand" alt="Fullname">
+          <p>
+            Vacation Rentals<br>
+            <small>
+              <a data-target="#menu-header-submenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu-switch-account">Switch account
+                <span class="caret"></span></a>
+            </small>
+           </p>
+        </div>
+        <div id="menu-header-submenu" class="menu-dropdown" aria-labelledby="menu-switch-account">
+          <ol>
+            <li role="presentation">
+              <a href="#">Bed and Breakfast</a>
+            </li>
+            <li role="presentation" class="active">
+              <a href="#">City Apartments</a>
+            </li>
+          </ol>
+        </div>
+      </header>
+      <div class="body flex-1">
+        <ol>
+          <li role="presentation" class="active">
+            <a href="#">
+              <i class="fa fa-calendar fa-fw"></i>
+              <span>Bookings</span>
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#">
+              <i class="fa fa-users fa-fw"></i>
+              <span>Clients</span>
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#">
+              <i class="fa fa-envelope-o fa-fw"></i>
+              <span>Inquiries</span></a>
+          </li>
+          <li role="presentation">
+            <a href="#">
+              <i class="fa fa-home fa-fw"></i>
+              <span>Rentals</span>
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#">
+              <i class="fa fa-star fa-fw"></i>
+              <span>Reviews</span>
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#">
+              <i class="fa fa-globe fa-fw"></i>
+              <span>Website</span>
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#">
+              <i class="fa fa-cubes fa-fw"></i>
+              <span>Apps</span>
+            </a>
+          </li>
+        </ol>
+      </div>
+      <footer>
+        <div class="bar">
+          <img src="http://placehold.it/24x24" class="img-responsive img-circle avatar" alt="John Doe">
+          <p>
+            John Doe<br>
+            <small>
+              <a data-target="#menu-footer-submenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu-manage-account">Manage Account
+                <i class="fa fa-gear"></i></a>
+            </small>
+          </p>
+        </div>
+        <div id="menu-footer-submenu" class="menu-dropright flex-col" aria-labelledby="menu-manage-account">
+          <ol class="flex-1">
+            <li class="back text-center" role="presentation">
+              <a data-target="#menu-footer-submenu" href="#" data-toggle="dropdown">
+                <i class="fa fa-long-arrow-left fa-fw"></i>
+                <span class="sr-only">Back</span>
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#">
+                <i class="fa fa-user fa-fw"></i>
+                <span>Personal Information</span>
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#">
+                <i class="fa fa-calendar-o fa-fw"></i>
+                <span>Calendar Preferences</span>
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="#">
+                <i class="fa fa-clock-o fa-fw"></i>
+                <span>Time Format</span>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </footer>
+    </nav>
+  </div>
+</div>
+
+<pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"menu flex-col"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bar"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/24x24"</span> <span class="na">class=</span><span class="s">"img-responsive img-circle brand"</span>
+           <span class="na">alt=</span><span class="s">"Fullname"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        Vacation Rentals<span class="nt">&lt;br&gt;</span>
+        <span class="nt">&lt;small&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">data-target=</span><span class="s">"#menu-header-submenu"</span> <span class="na">href=</span><span class="s">"#"</span>
+             <span class="na">data-toggle=</span><span class="s">"dropdown"</span>
+             <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
+             <span class="na">id=</span><span class="s">"menu-switch-account"</span><span class="nt">&gt;</span>Switch account
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/small&gt;</span>
+       <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"menu-header-submenu"</span> <span class="na">class=</span><span class="s">"menu-dropdown"</span>
+         <span class="na">aria-labelledby=</span><span class="s">"menu-switch-account"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ol&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bed and Breakfast<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>City Apartments<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"body flex-1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-calendar fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span&gt;</span>Bookings<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-users fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span&gt;</span>Clients<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope-o fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span&gt;</span>Inquiries<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-home fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span&gt;</span>Rentals<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-star fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span&gt;</span>Reviews<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-globe fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span&gt;</span>Website<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-cubes fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span&gt;</span>Apps<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;footer&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bar"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/24x24"</span>
+           <span class="na">class=</span><span class="s">"img-responsive img-circle avatar"</span> <span class="na">alt=</span><span class="s">"John Doe"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>
+        John Doe<span class="nt">&lt;br&gt;</span>
+        <span class="nt">&lt;small&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">data-target=</span><span class="s">"#menu-footer-submenu"</span> <span class="na">href=</span><span class="s">"#"</span>
+             <span class="na">data-toggle=</span><span class="s">"dropdown"</span>
+             <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
+             <span class="na">id=</span><span class="s">"menu-manage-account"</span><span class="nt">&gt;</span>Manage Account
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-gear"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/small&gt;</span>
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"menu-footer-submenu"</span> <span class="na">class=</span><span class="s">"menu-dropright flex-col"</span>
+         <span class="na">aria-labelledby=</span><span class="s">"menu-manage-account"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"flex-1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"back text-center"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">data-target=</span><span class="s">"#menu-footer-submenu"</span> <span class="na">href=</span><span class="s">"#"</span>
+             <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-long-arrow-left fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Back<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-user fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Personal Information<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-calendar-o fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Calendar Preferences<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-clock-o fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;span&gt;</span>Time Format<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="menu-example">Full height fixed position menu</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="menu-example">
+    <p>Add <code>.menu-fixed</code> class to make the menu fixed to the left viewport edge.</p>
+  </div>
+</div>
+
+<pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/nav&gt;</span></code></pre>
+
+      <h2 id="dropdown">Dropdown</h2>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="dropdown-example">Basic example</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="dropdown-example">
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Dropdown
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li class="dropdown-header">Dropdown header</li>
+        <li><a href="#">Action</a></li>
+        <li class="disabled"><a href="#">Disabled link</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"> </li>
+        <li class="dropdown-header">Dropdown header</li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span>
+          <span class="na">id=</span><span class="s">"dropdownMenu1"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span>
+          <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    Dropdown
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"dropdownMenu1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown-header"</span><span class="nt">&gt;</span>Dropdown header<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Disabled link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;</span> <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown-header"</span><span class="nt">&gt;</span>Dropdown header<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+      <h2 id="sheet">Sheet</h2>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="sheet-example">Basic example</h3>
+  </div>
+  <p>Highly inspired from the <code>panel</code> component, the sheet will auto scale and have a relative position to ease children positioning.</p>
+  <div class="bs-example bs-sheet" data-example-id="sheet-example">
+    <div class="sheet">
+      <p>Text...</p>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="sheet-example-with-header">Example with header</h3>
+  </div>
+  <div class="bs-example bs-sheet-with-header" data-example-id="sheet-example-with-header">
+    <div class="sheet">
+      <div class="sheet-header">
+        <h2>Header</h2>
+      </div>
+      <p>Text...</p>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Header<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="sheet-example-with-tabs">Example with tabs</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="sheet-example-with-tabs">
+    <div class="sheet">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Tab 1</a></li>
+        <li><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+      </ul>
+      <div>
+        <p>Text...</p>
+      </div>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="sheet-example-with-stacked-tabs">Example with stacked tabs</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="sheet-example-with-stacked-tabs">
+    <div class="sheet">
+      <ul class="nav nav-tabs">
+        <li><a href="#">Tab 1</a></li>
+        <li class="active"><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+        <li class="dropdown pull-right">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            More <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Tab 4</a></li>
+            <li><a href="#">Tab 5</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div>
+        <p>Text...</p>
+      </div>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown pull-right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        More <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="sheet-example-with-auto-stackable-tabs">
+      Example with auto-stackable tabs
+    </h3>
+  </div>
+
+  <div class="bs-callout bs-callout-danger">
+    <h4>Plugin dependency</h4>
+    <p>
+      This component requires customized bootstrapStackable JS plugin provided by the bootstrap-bookingsync-sass gem.
+    </p>
+  </div>
+
+  <div class="bs-example bs-sheet" data-example-id="sheet-example-with-auto-stackable-tabs">
+    <div class="sheet">
+      <ul class="nav nav-tabs" data-toggle="stackable" data-target=".stackable-dropdown">
+        <li><a href="#">Tab 1</a></li>
+        <li class="active"><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+        <li><a href="#">Tab 4</a></li>
+        <li><a href="#">Tab 5</a></li>
+        <li><a href="#">Tab 6</a></li>
+        <li><a href="#">Tab 7</a></li>
+        <li><a href="#">Tab 8</a></li>
+        <li><a href="#">Tab 9</a></li>
+        <li><a href="#">Tab 10</a></li>
+        <li><a href="#">Tab 11</a></li>
+        <li><a href="#">Tab 12</a></li>
+        <li><a href="#">Tab Last</a></li>
+        <li class="dropdown pull-right stackable-dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            More <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+          </ul>
+        </li>
+      </ul>
+      <div>
+        <p>Text...</p>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <ul class="nav nav-tabs" data-toggle="stackable" data-target=".stackable-dropdown">
+        <li><a href="#">Tab 1</a></li>
+        <li class="active"><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+        <li><a href="#">Tab 4</a></li>
+        <li><a href="#">Tab 5</a></li>
+        <li><a href="#">Tab 6</a></li>
+        <li><a href="#">Tab 7 (with long name)</a></li>
+        <li><a href="#">Tab 8 (last)</a></li>
+        <li class="dropdown pull-right stackable-dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            More <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+          </ul>
+        </li>
+      </ul>
+      <div>
+        <p>Text...</p>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <ul class="nav nav-tabs" data-toggle="stackable" data-target=".stackable-dropdown">
+        <li><a href="#">Tab 1</a></li>
+        <li class="active"><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3 (last)</a></li>
+        <li class="dropdown pull-right stackable-dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            More <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+          </ul>
+        </li>
+      </ul>
+      <div>
+        <p>Text...</p>
+      </div>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span> <span class="na">data-toggle=</span><span class="s">"stackable"</span>
+      <span class="na">data-target=</span><span class="s">".stackable-dropdown"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 7<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 8<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 9<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 10<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 11<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 12<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab Last<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown pull-right stackable-dropdown"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        More <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="sheet-example-with-nested-tabs">Example with nested tabs</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="sheet-example-with-nested-tab">
+    <div class="sheet">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Tab 1</a></li>
+        <li><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+      </ul>
+      <div>
+        <p>Text...</p>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Tab 1</a></li>
+          <li><a href="#">Tab 2</a></li>
+          <li><a href="#">Tab 3</a></li>
+        </ul>
+        <div>
+          <p>Text...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+      <h2 id="chosen">Chosen</h2>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>External dependency</h4>
+  <p>
+    This component requires the
+    <a href="http://harvesthq.github.io/chosen/">Chosen</a> library.
+  </p>
+
+  <p>Custom styles for select boxes provided by
+  <a href="http://harvesthq.github.io/chosen/">Chosen</a>.</p>
+</div>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="chosen-example">Standard Select</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="chosen-example">
+    <select class="form-control chosen">
+      <option value=""></option>
+      <option value="One">One</option>
+      <option value="Two">Two</option>
+      <option value="Three">Three</option>
+      <option value="Four">Four</option>
+    </select>
+  </div>
+</div>
+<pre><code class="language-HTML"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control chosen"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"One"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Two"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Three"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Four"</span><span class="nt">&gt;</span>Four<span class="nt">&lt;/option&gt;</span>
+<span class="nt">&lt;/select&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="chosen-example-multiselect">Multiple Select</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="chosen-example-multiselect">
+    <select class="form-control chosen" multiple tabindex="3">
+      <option value=""></option>
+      <option value="One">One</option>
+      <option value="Two">Two</option>
+      <option value="Three">Three</option>
+      <option value="Four">Four</option>
+    </select>
+  </div>
+</div>
+<pre><code class="language-HTML"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control chosen"</span> <span class="na">multiple</span> <span class="na">tabindex=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"One"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Two"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Three"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Four"</span><span class="nt">&gt;</span>Four<span class="nt">&lt;/option&gt;</span>
+<span class="nt">&lt;/select&gt;</span></code></pre>
+
+      <h2 id="switch">Switch</h2>
+
+<p>Turns checkboxes and radio buttons in toggle switches</p>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Plugin dependency</h4>
+  <p>
+    This component requires customized bootstrapSwitch JS plugin provided by the
+    bootstrap-bookingsync-sass gem.
+  </p>
+</div>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Sizes</h4>
+  <p>
+    BootstrapSwitch plugin provides various size variants. The only variant
+    currently supported by bootstrap-bookingsync-sass is the
+    <code>switch-small</code>.
+  </p>
+</div>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="switch-example">Basic example</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="switch-example">
+    <div class="make-switch switch-small">
+      <input type="checkbox" checked>
+    </div>
+  </div>
+</div>
+<pre><code class="language-HTML"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"make-switch switch-small"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="switch-example-disabled">Disabled state</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="switch-example-disabled">
+    <div class="make-switch switch-small">
+      <input type="checkbox" checked disabled>
+    </div>
+  </div>
+</div>
+<pre><code class="language-HTML"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"make-switch switch-small"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </body>
+</html>

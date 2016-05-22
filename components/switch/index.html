@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Bootstrap BookingSync SASS documentation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
+  <link rel="stylesheet" href="/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="/assets/javascripts/application.js"></script>
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 3.8.0">
+</head>
+
+  <body class="flex-col">
+    <div class="page-wrapper flex-1 flex-col">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle sidebar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/">
+        BookingSync Styleguide
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="">
+          <a href="/css">CSS</a>
+        </li>
+        <li class="active">
+          <a href="/components">Components</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container content">
+        <h2 id="switch">Switch</h2>
+
+<p>Turns checkboxes and radio buttons in toggle switches</p>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Plugin dependency</h4>
+  <p>
+    This component requires customized bootstrapSwitch JS plugin provided by the
+    bootstrap-bookingsync-sass gem.
+  </p>
+</div>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Sizes</h4>
+  <p>
+    BootstrapSwitch plugin provides various size variants. The only variant
+    currently supported by bootstrap-bookingsync-sass is the
+    <code>switch-small</code>.
+  </p>
+</div>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="switch-example">Basic example</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="switch-example">
+    <div class="make-switch switch-small">
+      <input type="checkbox" checked>
+    </div>
+  </div>
+</div>
+<pre><code class="language-HTML"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"make-switch switch-small"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="switch-example-disabled">Disabled state</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="switch-example-disabled">
+    <div class="make-switch switch-small">
+      <input type="checkbox" checked disabled>
+    </div>
+  </div>
+</div>
+<pre><code class="language-HTML"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"make-switch switch-small"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+      </div>
+    </div>
+  </body>
+</html>
