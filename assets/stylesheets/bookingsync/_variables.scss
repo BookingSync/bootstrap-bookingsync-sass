@@ -24,6 +24,7 @@ $gray-lightest:                 #DDE0E8 !default; // rgba($gray-base, .15) !defa
 //## Settings for some of the most global styles.
 $text-color:                    $gray-dark !default;
 $body-bg:                       $bs-lightpurple !default;
+$headings-color:                #292C33 !default;
 
 //== Typography
 //
@@ -36,7 +37,6 @@ $font-size-h1:                  26px !default;
 $font-size-h2:                  22px !default;
 $font-size-h3:                  18px !default;
 $font-size-h4:                  16px !default;
-$headings-color:                $bs-darkgray !default;
 
 $dl-horizontal-breakpoint:      768px !default;
 $dl-horizontal-narrow-offset:   120px !default;
@@ -101,6 +101,12 @@ $btn-success-bg:                $brand-success !default;
 
 $btn-primary-bg:                $brand-success !default;
 $btn-primary-border:            darken($btn-success-bg, 5%) !default;
+$btn-secondary-color:           $gray-dark !default;
+$btn-secondary-bg:              transparent !default;
+$btn-secondary-border:          $gray-lighter !default;
+$btn-default-color:             $btn-secondary-color !default;
+$btn-default-bg:                $btn-secondary-bg !default;
+$btn-default-border:            $btn-secondary-border !default;
 $btn-border-radius-base:        $border-radius-base !default;
 $btn-border-radius-small:       $border-radius-small !default;
 $btn-border-radius-large:       $border-radius-large !default;
