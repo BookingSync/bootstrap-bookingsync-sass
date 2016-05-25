@@ -1,0 +1,9 @@
+/*!
+ * Copyright 2015 BookingSync SAS.
+ * Licensed under MIT (https://github.com/BookingSync/bootstrap-bookingsync-sass/blob/master/LICENSE)
+ */
+
+.btn-default,
+.btn-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
