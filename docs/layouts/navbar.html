@@ -15,8 +15,14 @@
 
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav navbar-right">
-        <li class="<%= "active" if @item_rep.path.start_with?("/css") %>">
-          <%= link_to("CSS", "/css") %>
+        <li class="<%= "active" if @item_rep.path.start_with?("/brand") %>">
+          <%= link_to("Brand", "/brand") %>
+        </li>
+        <li class="<%= "active" if @item_rep.path.start_with?("/forms") %>">
+          <%= link_to("Forms", "/forms") %>
+        </li>
+        <li class="<%= "active" if @item_rep.path.start_with?("/utilities") %>">
+          <%= link_to("Utilities", "/utilities") %>
         </li>
         <li class="<%= "active" if @item_rep.path.start_with?("/components") %>">
           <%= link_to("Components", "/components") %>

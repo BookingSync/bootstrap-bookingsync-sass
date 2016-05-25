@@ -40,3 +40,25 @@ body {
 .reference-body .nav-pills a {
   border-radius: 0;
 }
+
+.color {
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+}
+
+.color-darkblue {
+  background-color: $bs-darkblue;
+}
+
+.color-darkgray {
+  background-color: $bs-darkgray;
+}
+
+.color-lightblue {
+  background-color: $bs-lightblue;
+}
+
+.color-gray-dark {
+  background-color: $gray-dark;
+}
