@@ -2,7 +2,14 @@
 
 `bootstrap-bookingsync-sass` is a Sass-powered version of [Bootstrap](http://github.com/twbs/bootstrap) with [BookingSync theme](http://styleguide.bookingsync.com), ready to drop right into your Sass powered applications.
 
-## Installation
+Support for:
+
+* [Rails Applications](#rails-applications)
+* [Ember Applications](#ember-applications)
+
+## Rails Applications
+
+### Installation
 
 `bootstrap-bookingsync-sass` is easy to drop into Rails with the asset pipeline.
 
@@ -14,7 +21,7 @@ gem 'bootstrap-bookingsync-sass'
 
 `bundle install` and restart your server to make the files available through the pipeline.
 
-### Stylesheets
+#### Stylesheets
 
 Import Bootstrap styles in `app/assets/stylesheets/application.scss`:
 
@@ -37,7 +44,7 @@ Then, remove all the `*= require_self` and `*= require_tree .` statements from t
 
 Do not use `*= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Bootstrap BookingSync mixins or variables.
 
-### Javascripts
+#### Javascripts
 
 Require Bootstrap BookingSync Javascripts in `app/assets/javascripts/application.js`:
 
@@ -57,7 +64,7 @@ You can load each file individually using `bookingsync/stackable` for example.
 `bootstrap-bookingsync-sprockets` won't load any Boostrap javascripts, you have to load them manually if you need them.
 
 
-## Using SimpleForm?
+### Using SimpleForm?
 
 The following initializer will make your inputs formatted to work best to Boostrap BookingSync Forms.
 Note that you need [SimpleForm](https://github.com/plataformatec/simple_form) 3.1+.
@@ -131,7 +138,7 @@ end
 SimpleForm::Inputs::Base.send(:include, SimpleForm::Components::Addons)
 ```
 
-### Usage
+#### Usage
 
 ```ruby
 <%= f.input :title %>
@@ -140,3 +147,48 @@ SimpleForm::Inputs::Base.send(:include, SimpleForm::Components::Addons)
 <%= f.input :pecentage, wrapper: :bs_addon, append_addon: '%' %>
 <%= f.input :money, wrapper: :bs_addon, prepend_addon: '$', append_addon: 'USD' %>
 ```
+
+## Ember Applications
+
+### Installation
+
+``` sh
+npm install ember-cli-bootstrap-bookingsync-sass
+```
+
+While in development, you will need to install the blueprints manually with:
+
+``` sh
+ember g ember-cli-bootstrap-bookingsync-sass
+```
+
+Ember CLI Bootstrap BookingSync SASS uses fonts from Google Fonts, so the URL to them has to be white listed. You can set this by adding to the Content Security Policy defined in config/environment.js like so:
+
+ENV.contentSecurityPolicy = {
+  'default-src': "'none'",
+  'script-src': "'self' 'unsafe-inline'",
+  'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com",
+  'font-src': "'self' fonts.gstatic.com",
+  'connect-src': "'self'",
+  'img-src': "'self' data:",
+  'media-src': "'self'"
+}
+
+You can find out more information on the CSP addon page [here](https://github.com/rwjblue/ember-cli-content-security-policy#ember-cli-content-security-policy).
+
+### Running
+
+* `ember server`
+* Visit your app at http://localhost:4200 or from your Rails application if tight together.
+
+### Running Tests
+
+* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
+* `ember test`
+* `ember test --server`
+
+### Building
+
+* `ember build`
+
+For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
