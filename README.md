@@ -152,14 +152,49 @@ SimpleForm::Inputs::Base.send(:include, SimpleForm::Components::Addons)
 
 ### Installation
 
+#### When this Addon will be released
+
 ``` sh
 npm install ember-cli-bootstrap-bookingsync-sass
 ```
 
-While in development, you will need to install the blueprints manually with:
+#### While in development
+
+Clone the styleguide repo and expose it to your local NPM packages
+
+``` sh
+git clone https://github.com/BookingSync/bootstrap-bookingsync-sass
+cd bootstrap-bookingsync-sass
+npm link
+```
+
+From your Ember App:
+
+1) Install the package from your local NPM packages.
+
+``` sh
+npm link ember-cli-bootstrap-bookingsync-sass
+```
+
+2) Edit `package.js` and add `"ember-cli-bootstrap-bookingsync-sass": "*",` in your `devDependencies"`.
+
+3) Run the blueprints manually as not done automatically in development mode.
 
 ``` sh
 ember g ember-cli-bootstrap-bookingsync-sass
+```
+
+#### All the time
+
+Add in your `ember-cli-build.js`
+
+``` js
+  var app = new EmberApp(defaults, {
+    'ember-cli-bootstrap-sassy': {
+      'js': false,
+      'glyphicons': false
+    }
+  });
 ```
 
 Ember CLI Bootstrap BookingSync SASS uses fonts from Google Fonts, so the URL to them has to be white listed. You can set this by adding to the Content Security Policy defined in config/environment.js like so:
