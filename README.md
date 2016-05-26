@@ -211,6 +211,16 @@ ENV.contentSecurityPolicy = {
 
 You can find out more information on the CSP addon page [here](https://github.com/rwjblue/ember-cli-content-security-policy#ember-cli-content-security-policy).
 
+#### Stylesheets
+
+The blueprints should generate this setup for you on install but if needed you can manually install Bootstrap BookingSync styles in `app/styles/app.scss` using:
+
+```scss
+@import "bootstrap-bookingsync";
+```
+
+Make sure the file has `.scss` extension (or `.sass` for Sass syntax). If you have just generated a new Ember app, it may come with a `.css` file instead.
+
 ### Running
 
 * `ember server`
