@@ -1,5 +1,8 @@
 ### Unreleased
 
+* improvements
+  * Add Ember Addon: ember-cli-bootstrap-bookingsync-sass
+
 ### 0.0.19 - 2016-05-09
 
 * bug fixes
