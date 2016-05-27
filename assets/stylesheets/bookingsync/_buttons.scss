@@ -7,3 +7,11 @@
 .btn-secondary {
   @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
 }
+
+.btn-secondary-inverse {
+  @include button-variant($btn-secondary-inverse-color, $btn-secondary-inverse-bg, $btn-secondary-inverse-border);
+}
+
+.btn-round {
+  border-radius: 50%;
+}
