@@ -5,7 +5,7 @@
 
 body {
   min-height: 100vh;
-  padding-top: $navbar-height;
+  padding-top: $navbar-height + 1; // for the navbar-fixed-top border
 }
 
 .navbar.navbar-fixed-top {
@@ -31,7 +31,7 @@ body {
   }
 
   @media (max-width: $screen-xs-max) {
-    .navbar-header > div {
+    .navbar-brand-container {
       padding: 0 60px;
     }
 
@@ -39,13 +39,18 @@ body {
       padding: 0 40px;
     }
 
-    div > .navbar-brand {
+    .navbar-brand {
       text-align: center;
       width: 100%;
     }
   }
 }
 
+.main-content {
+  overflow: auto;
+}
+
+// Deprecated
 #content {
   min-height: 100vh;
   font-size: 12px; // FIXME: Temporary fix for easier migration

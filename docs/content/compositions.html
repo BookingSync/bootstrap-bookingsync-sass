@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-3 col-md-push-9">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <%= link_to("Compositions", "#compositions") %>
+        </h3>
+      </div>
+      <div class="list-group">
+        <%= link_to("Section", "#compositions-example-section",
+              class: "list-group-item") %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-9 col-md-pull-3">
+    <div class="reference-body">
+      <%= items['/compositions/compositions/'].compiled_content %>
+    </div>
+  </div>
+</div>

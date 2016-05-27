@@ -1,0 +1,18 @@
+.bs-example {
+  .navbar-fixed-top {
+    position: inherit;
+  }
+
+  #content {
+    min-height: inherit;
+
+    &.with-navbar {
+      padding-top: 0;
+    }
+  }
+
+  &.bs-example-composition-body {
+    background-color: $body-bg;
+    border: 1px solid $gray-lightest;
+  }
+}
