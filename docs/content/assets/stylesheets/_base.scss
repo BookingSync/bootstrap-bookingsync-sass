@@ -29,6 +29,10 @@ body {
   margin-top: 2em;
 }
 
+.reference-body > h2:first-of-type {
+  margin: 0;
+}
+
 .reference-body > h3+h4 {
   margin-top: 1em;
 }
