@@ -30,6 +30,9 @@
         <li class="<%= "active" if @item_rep.path.start_with?("/components") %>">
           <%= link_to("Components", "/components") %>
         </li>
+        <li class="<%= "active" if @item_rep.path.start_with?("/compositions") %>">
+          <%= link_to("Compositions", "/compositions") %>
+        </li>
       </ul>
     </div>
   </div>

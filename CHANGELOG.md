@@ -1,5 +1,12 @@
 ### Unreleased
 
+* deprecations
+  * deprecate `#content` in favor of `.main-content`
+
+* bug fixes
+  * Fix `navbar-btn` positioning
+  * Fix fixed navbars with collapseable menus
+
 * improvements
   * Add Ember Addon: ember-cli-bootstrap-bookingsync-sass
 

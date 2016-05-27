@@ -1,0 +1,15 @@
+.navbar-btn {
+  // 2 for the button border width
+  @include navbar-vertical-align(($font-size-base * $line-height-base) + (2 * $padding-base-vertical) + 2);
+}
+
+@media (min-width: $grid-float-breakpoint) {
+  .navbar-fixed-top,
+  .navbar-static-top,
+  .navbar-fixed-bottom {
+    & > .container-fluid > .navbar-collapse {
+      padding-left: $navbar-padding-horizontal;
+      padding-right: $navbar-padding-horizontal;
+    }
+  }
+}
