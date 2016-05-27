@@ -87,4 +87,7 @@
   margin: 0;
   border: 0;
   border-radius: 0;
+  min-height: 100vh;
+  margin-top: - ($navbar-height + 1); // for the navbar-fixed-top border
+  padding-top: $navbar-height + 1 + $sheet-padding; // for the navbar-fixed-top border
 }
