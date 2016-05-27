@@ -9,6 +9,10 @@
 
 * improvements
   * Add Ember Addon: ember-cli-bootstrap-bookingsync-sass
+  * Add `btn-secondary-inverse` and `btn-round`
+  * Add `sheet-fullscreen`
+  * Add documentation for tabulated content composition
+  * Add documentation for fullscreen modal composition
 
 ### 0.0.19 - 2016-05-09
 

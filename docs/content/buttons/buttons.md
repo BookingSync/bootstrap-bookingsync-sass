@@ -34,22 +34,30 @@
   <p>Use any of the available button classes to quickly create a styled button.</p>
 
   <div class="bs-example bs-sheet" data-example-id="forms-example-options">
-    <button type="button" class="btn btn-default">Default</button>
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-default">Default</button>
+    <button class="btn btn-secondary-inverse btn-round" type="button">
+      <i class="fa fa-close"></i>
+    </button>
     <button type="button" class="btn btn-danger">Danger</button>
     <button type="button" class="btn btn-link">Link</button>
   </div>
 </div>
 ~~~ html
-<!-- DEPRECATED, kept for Bootstap 3.x support: Standard button -->
-<button type="button" class="btn btn-default">Default</button>
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 <button type="button" class="btn btn-primary">Primary</button>
 
 <!-- Secondary, outline button -->
 <button type="button" class="btn btn-secondary">Secondary</button>
+<!-- DEPRECATED, kept for Bootstap 3.x support: Standard button -->
+<button type="button" class="btn btn-default">Default</button>
+
+<!-- Secondary inverse -->
+<button class="btn btn-secondary-inverse btn-round" type="button">
+  <i class="fa fa-close"></i>
+</button>
 
 <!-- Indicates a dangerous or potentially negative action -->
 <button type="button" class="btn btn-danger">Danger</button>

@@ -7,7 +7,7 @@
   .navbar-fixed-top,
   .navbar-static-top,
   .navbar-fixed-bottom {
-    & > .container-fluid > .navbar-collapse {
+    & > .container-fluid .navbar-right {
       padding-left: $navbar-padding-horizontal;
       padding-right: $navbar-padding-horizontal;
     }
