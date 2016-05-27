@@ -71,6 +71,8 @@
       </div>
       <div class="list-group">
         <a class="list-group-item" href="#compositions-example-section">Section</a>
+        <a class="list-group-item" href="#compositions-example-tabulated-content">Tabulated content</a>
+        <a class="list-group-item" href="#compositions-example-fullscreen-modal">Fullscreen modal</a>
       </div>
     </div>
   </div>
@@ -103,8 +105,8 @@
         </div>
         <div class="collapse navbar-collapse navbar-top-collapse">
           <div class="navbar-right">
-            <button class="btn btn-secondary navbar-btn" type="submit">Button</button>
-            <button class="btn btn-primary navbar-btn" type="submit">Call to action</button>
+            <button class="btn btn-secondary navbar-btn" type="button">Button</button>
+            <button class="btn btn-primary navbar-btn" type="button">Call to action</button>
           </div>
         </div>
       </div>
@@ -134,8 +136,8 @@
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse navbar-top-collapse"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-right"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary navbar-btn"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary navbar-btn"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Call to action<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary navbar-btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary navbar-btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Call to action<span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -143,6 +145,151 @@
 <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"main-content"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;p&gt;</span>Body<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="compositions-example-tabulated-content">Tabulated content</h3>
+  </div>
+
+  <div class="bs-example bs-sheet bs-example-composition-body" data-example-id="compositions-example-tabulated-content">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle navbar-toggle-context" data-toggle="collapse" data-target=".navbar-top-collapse">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand-container">
+            <span class="navbar-brand">
+              <h1>
+<i class="fa fa-star"></i> Section Name</h1>
+            </span>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse navbar-top-collapse">
+          <div class="navbar-right">
+            <button class="btn btn-secondary navbar-btn" type="button">Button</button>
+            <button class="btn btn-primary navbar-btn" type="button">Call to action</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="main-content">
+      <div class="sheet">
+        <ul class="nav nav-tabs" data-toggle="stackable" data-target=".stackable-dropdown">
+          <li class="active"><a href="#">Tab 1</a></li>
+          <li><a href="#">Tab 2</a></li>
+          <li class="dropdown pull-right stackable-dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              More <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+        </ul>
+        <div>
+          <p>Text...</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default navbar-fixed-top"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle navbar-toggle-context"</span>
+              <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">".navbar-top-collapse"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Navigation<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-brand-container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-brand"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h1&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-star"</span><span class="nt">&gt;&lt;/i&gt;</span> Section Name<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse navbar-top-collapse"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-right"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary navbar-btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary navbar-btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Call to action<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"main-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span> <span class="na">data-toggle=</span><span class="s">"stackable"</span> <span class="na">data-target=</span><span class="s">".stackable-dropdown"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown pull-right stackable-dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          More <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="compositions-example-fullscreen-modal">Fullscreen modal</h3>
+  </div>
+
+  <div class="bs-example bs-sheet bs-example-composition-body" data-example-id="compositions-example-fullscreen-modal">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-brand-container">
+            <span class="navbar-brand">
+              <h1>
+<i class="fa fa-star"></i> Section Name</h1>
+            </span>
+          </div>
+        </div>
+        <div class="navbar-right">
+          <button class="btn btn-sm btn-secondary-inverse btn-round navbar-btn" type="button">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section class="main-content">
+      <div class="sheet sheet-fullscreen">
+        <p>Text...</p>
+      </div>
+    </section>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default navbar-fixed-top"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-brand-container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-brand"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h1&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-star"</span><span class="nt">&gt;&lt;/i&gt;</span> Section Name<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-right"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-sm btn-secondary-inverse btn-round navbar-btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-close"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"main-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet sheet-fullscreen"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/section&gt;</span></code></pre>
 
