@@ -155,7 +155,7 @@ SimpleForm::Inputs::Base.send(:include, SimpleForm::Components::Addons)
 #### When this Addon will be released
 
 ``` sh
-npm install ember-cli-bootstrap-bookingsync-sass
+ember install ember-cli-bootstrap-bookingsync-sass
 ```
 
 #### While in development
