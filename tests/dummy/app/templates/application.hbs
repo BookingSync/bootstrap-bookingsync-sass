@@ -26,6 +26,79 @@
   <div class="sheet">
     <h1>Welcome to Ember</h1>
 
+    <h2>Forms</h2>
+    {{currentValue}}
+    <br>
+    <form>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        {{one-way-input
+          value=currentEmail
+          update=(action (mut currentEmail))
+          class="form-control"
+          type="email"
+          id="email"
+        }}
+      </div>
+
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+          <label class="control-label" for="amount">Amount</label>
+          {{one-way-input
+            value=currentAmount
+            update=(action (mut currentAmount))
+            class="form-control"
+            type="number"
+            id="amount"
+          }}
+          <div class="input-group-addon">.00</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        {{one-way-textarea
+          value=currentComment
+          update=(action (mut currentComment))
+          class="form-control"
+          id="comment"
+          rows=3
+        }}
+      </div>
+
+      <div class="checkbox">
+        <label>
+          {{one-way-checkbox
+            isChecked
+            update=(action (mut isChecked))
+          }}
+          Check me out
+        </label>
+      </div>
+
+      <div class="radio">
+        <label>
+          {{one-way-radio
+            selectedGender
+            option="female"
+            update=(action (mut selectedGender))
+          }}
+          Female
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          {{one-way-radio
+            selectedGender
+            option="male"
+            update=(action (mut selectedGender))
+          }}
+          Male
+        </label>
+      </div>
+    </form>
+
     {{outlet}}
   </div>
 </section>
