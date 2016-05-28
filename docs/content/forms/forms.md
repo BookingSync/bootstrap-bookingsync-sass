@@ -58,6 +58,10 @@
     <input type="password" class="form-control" id="exampleInputPassword1">
   </div>
   <div class="form-group">
+    <label for="exampleTextarea1">Comment</label>
+    <textarea class="form-control" id="exampleTextarea1" rows="5"></textarea>
+  </div>
+  <div class="form-group">
     <label for="exampleInputFile">File input</label>
     <input type="file" id="exampleInputFile">
     <p class="help-block">Example block-level help text here.</p>
@@ -276,7 +280,9 @@
 </div>
 
 ~~~ html
-<textarea class="form-control" rows="3"></textarea>
+<div class="form-group">
+  <textarea class="form-control" rows="3"></textarea>
+</div>
 ~~~
 
 <div class="example">
