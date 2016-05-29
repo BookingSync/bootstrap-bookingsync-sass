@@ -1,0 +1,21 @@
+.annotated-section {
+  @include make-row;
+  margin: $sheet-margin;
+}
+
+.annotated-section-annotation {
+  @include make-sm-column(4);
+  padding-left: 27px;
+}
+
+.annotated-section-title {
+  margin-top: $sheet-padding;
+}
+
+.annotated-section-content {
+  @include make-sm-column(8);
+  border: 1px solid $sheet-border;
+  background-color: $sheet-bg;
+  border-radius: $sheet-border-radius;
+  padding: $sheet-padding;
+}

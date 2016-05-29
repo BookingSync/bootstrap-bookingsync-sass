@@ -16,6 +16,7 @@
   * Add documentation for fullscreen modal composition
   * Add documentation for radio buttons
   * Add documentation for modals
+  * Add `annotated-section` support
 
 ### 0.0.19 - 2016-05-09
 
