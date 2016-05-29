@@ -1,6 +1,6 @@
 <section class="annotated-section">
   <header class="annotated-section-annotation">
-    <h3 class="annotated-section-title">Forms</h3>
+    <h2 class="annotated-section-title">Forms</h2>
   </header>
   <div class="annotated-section-content">
     <form>
@@ -13,6 +13,32 @@
           type="email"
           id="email"
         }}
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="firstname">First name</label>
+            {{one-way-input
+              value=currentFirstName
+              update=(action (mut currentFirstName))
+              class="form-control"
+              id="firstname"
+            }}
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="lastname">Last name</label>
+            {{one-way-input
+              value=currentLastName
+              update=(action (mut currentLastName))
+              class="form-control"
+              id="lastname"
+            }}
+          </div>
+        </div>
       </div>
 
       <div class="form-group">
@@ -68,30 +94,96 @@
       <div class="radio">
         <label>
           {{one-way-radio
-            selectedGender
-            option="female"
-            update=(action (mut selectedGender))
+            selectedRentalType
+            option="apartment"
+            update=(action (mut selectedRentalType))
           }}
-          Female
+          Apartment
         </label>
       </div>
       <div class="radio">
         <label>
           {{one-way-radio
-            selectedGender
-            option="male"
-            update=(action (mut selectedGender))
+            selectedRentalType
+            option="house"
+            update=(action (mut selectedRentalType))
           }}
-          Male
+          House
         </label>
       </div>
+      <div class="radio">
+        <label>
+          {{one-way-radio
+            selectedRentalType
+            option="villa"
+            update=(action (mut selectedRentalType))
+          }}
+          Villa
+        </label>
+      </div>
+
+      <h3>Radio buttons</h3>
+      <div class="btn-group" role="group" aria-label="...">
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            {{one-way-radio
+              selectedRentalType
+              option="apartment"
+              update=(action (mut selectedRentalType))
+            }}
+            Apartment
+          </label>
+          <label class="btn btn-secondary">
+            {{one-way-radio
+              selectedRentalType
+              option="house"
+              update=(action (mut selectedRentalType))
+            }}
+            House
+          </label>
+          <label class="btn btn-secondary">
+            {{one-way-radio
+              selectedRentalType
+              option="villa"
+              update=(action (mut selectedRentalType))
+            }}
+            Villa
+          </label>
+        </div>
+      </div>
+    </form>
+
+    <h3>Inline form</h3>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="name2">Name</label>
+        {{one-way-input
+          value=currentName
+          update=(action (mut currentName))
+          class="form-control"
+          id="name2"
+        }}
+      </div>
+
+      <div class="form-group">
+        <label for="email2">Email address</label>
+        {{one-way-input
+          value=currentEmail
+          update=(action (mut currentEmail))
+          class="form-control"
+          type="email"
+          id="email2"
+        }}
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send invitation</button>
     </form>
   </div>
 </section>
 
 <section class="annotated-section">
   <header class="annotated-section-annotation">
-    <h3 class="annotated-section-title">Modal</h3>
+    <h2 class="annotated-section-title">Modal</h2>
   </header>
   <div class="annotated-section-content">
     <button class="btn btn-primary" {{action "toggleModal"}}>Toggle Modal</button>

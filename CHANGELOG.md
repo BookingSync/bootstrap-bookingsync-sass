@@ -7,6 +7,7 @@
   * Fix `navbar-btn` positioning
   * Fix fixed navbars with collapseable menus
   * Fix select labels, needs to wrap `select`s in a `div` with a `select` class.
+  * Fix addon validation state background color
 
 * improvements
   * Add Ember Addon: ember-cli-bootstrap-bookingsync-sass
@@ -17,6 +18,7 @@
   * Add documentation for radio buttons
   * Add documentation for modals
   * Add `annotated-section` support
+  * Improve form inputs spacing
 
 ### 0.0.19 - 2016-05-09
 

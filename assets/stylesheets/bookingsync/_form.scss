@@ -7,6 +7,14 @@
 // Forms
 // --------------------------------------------------
 
+.form-inline {
+  .btn,
+  .checkbox,
+  .radio {
+    margin-top: 25px;
+  }
+}
+
 // Form groups
 //
 // Designed to help with the organization and spacing of vertical forms. For
@@ -17,7 +25,7 @@
   display: block;
   box-sizing: border-box;
   max-width: 100%;
-  margin: 0;
+  margin: 25px 0 0 0;
   padding: $label-padding-focus 0 $padding-base-vertical;
 
   label {
@@ -33,6 +41,10 @@
     max-width: 100%; // Force IE8 to wrap long content
                      // (see https://github.com/twbs/bootstrap/issues/13141)
     margin-bottom: 0;
+    font-weight: normal;
+    text-align: left;
+    color: $input-color;
+    pointer-events: none;
     transition-duration: .2s;
     -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-timing-function: cubic-bezier(.4,0,.2,1);
@@ -81,12 +93,13 @@
   }
 }
 
-.form-group,
 .select {
+  margin-top: 25px;
+
   label {
+    color: $label-color-filled;
+    font-size: $label-font-size-filled;
     font-weight: normal;
-    text-align: left;
-    color: $input-color;
     pointer-events: none;
   }
 }

@@ -147,17 +147,16 @@ $input-group-addon-padding-top: ($label-padding-focus + ($padding-base-vertical 
 $help-text:                     $gray-light !default;
 
 $state-success-text:            #2db859 !default;
-$state-success-bg:              rgba($brand-success, 1) !default;
+$state-success-bg:              transparent !default;
 $state-success-border:          $state-success-text !default;
 
 $state-warning-text:            #f39c12 !default;
-$state-warning-bg:              rgba($brand-warning, 1) !default;
+$state-warning-bg:              transparent !default;
 $state-warning-border:          $state-warning-text !default;
 
 $state-danger-text:             #e74c3c !default;
-$state-danger-bg:               rgba($brand-danger, 1) !default;
+$state-danger-bg:               transparent !default;
 $state-danger-border:           $state-danger-text !default;
-
 
 //== Grid system
 //

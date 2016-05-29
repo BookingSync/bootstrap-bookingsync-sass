@@ -5,11 +5,18 @@
 
 .annotated-section-annotation {
   @include make-sm-column(4);
-  padding-left: 27px;
+
+  @media (min-width: $screen-sm-min) {
+    padding-left: 27px;
+  }
 }
 
 .annotated-section-title {
   margin-top: $sheet-padding;
+}
+
+h2.annotated-section-title {
+  font-size: $font-size-h3;
 }
 
 .annotated-section-content {
