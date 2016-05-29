@@ -6,6 +6,7 @@
 * bug fixes
   * Fix `navbar-btn` positioning
   * Fix fixed navbars with collapseable menus
+  * Fix select labels, needs to wrap `select`s in a `div` with a `select` class.
 
 * improvements
   * Add Ember Addon: ember-cli-bootstrap-bookingsync-sass

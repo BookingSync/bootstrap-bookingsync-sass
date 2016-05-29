@@ -489,25 +489,31 @@
 
   <div class="bs-example bs-sheet" data-example-id="forms-example-select">
     <form>
-      <select class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
+      <div class="select">
+        <label for="destination">Destination</label>
+        <select class="form-control" id="destination">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
     </form>
   </div>
 </div>
 
 ~~~ html
-<select class="form-control">
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-</select>
+<div class="select">
+  <label for="destination">Destination</label>
+  <select class="form-control" id="destination">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+</div>
 ~~~
 
 <div class="example">
@@ -526,25 +532,30 @@
 
   <div class="bs-example bs-sheet" data-example-id="forms-example-multiple-select">
     <form>
-      <select multiple class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
+      <div class="select">
+        <label for="destinations">Destinations</label>
+        <select multiple class="form-control" id="destinations">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
     </form>
   </div>
 </div>
-
 ~~~ html
-<select multiple class="form-control">
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
-</select>
+<div class="select">
+  <label for="destinations">Destinations</label>
+  <select multiple class="form-control" id="destinations">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+</div>
 ~~~
 
 <div class="example">
