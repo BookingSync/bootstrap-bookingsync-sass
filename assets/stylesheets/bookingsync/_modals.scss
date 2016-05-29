@@ -1,0 +1,24 @@
+.ember-modal-wrapper .modal.in {
+  display: block;
+}
+
+.modal-content {
+  border-radius: $modal-border-radius;
+  @include box-shadow(0 3px 30px $gray-lightest);
+}
+
+.modal-header {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.modal-footer {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.btn-modal-close {
+  position: absolute;
+  top: -($modal-title-padding / 2);
+  right: -($modal-title-padding / 2);
+}

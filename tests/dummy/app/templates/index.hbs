@@ -1,0 +1,133 @@
+<section class="annotated-section">
+  <header class="annotated-section-annotation">
+    <h3 class="annotated-section-title">Forms</h3>
+  </header>
+  <div class="annotated-section-content">
+    <form>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        {{one-way-input
+          value=currentEmail
+          update=(action (mut currentEmail))
+          class="form-control"
+          type="email"
+          id="email"
+        }}
+      </div>
+
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+          <label class="control-label" for="amount">Amount</label>
+          {{one-way-input
+            value=currentAmount
+            update=(action (mut currentAmount))
+            class="form-control"
+            type="number"
+            id="amount"
+          }}
+          <div class="input-group-addon">.00</div>
+        </div>
+      </div>
+
+      <div class="select">
+        <label for="destination">Destination</label>
+        {{#power-select
+          selected=destination
+          options=cities
+          onchange=(action (mut destination))
+          id="destination"
+          class="form-control"
+          as |name|
+        }}
+          {{name}}
+        {{/power-select}}
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        {{one-way-textarea
+          value=currentComment
+          update=(action (mut currentComment))
+          class="form-control"
+          id="comment"
+          rows=3
+        }}
+      </div>
+
+      <div class="checkbox">
+        <label>
+          {{one-way-checkbox
+            isChecked
+            update=(action (mut isChecked))
+          }}
+          Check me out
+        </label>
+      </div>
+
+      <div class="radio">
+        <label>
+          {{one-way-radio
+            selectedGender
+            option="female"
+            update=(action (mut selectedGender))
+          }}
+          Female
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          {{one-way-radio
+            selectedGender
+            option="male"
+            update=(action (mut selectedGender))
+          }}
+          Male
+        </label>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="annotated-section">
+  <header class="annotated-section-annotation">
+    <h3 class="annotated-section-title">Modal</h3>
+  </header>
+  <div class="annotated-section-content">
+    <button class="btn btn-primary" {{action "toggleModal"}}>Toggle Modal</button>
+
+    {{#if isShowingModal}}
+      {{#modal-dialog close="toggleModal"
+                      targetAttachment="none"
+                      translucentOverlay=true
+                      overlay-class='modal in'
+                      container-class='modal-dialog'}}
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn btn-sm btn-secondary-inverse btn-round btn-modal-close"
+                    type="button" {{action "toggleModal"}}>
+              <span>&times;</span>
+            </button>
+            <h3 class="modal-title">Modal Name or Headline</h3>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec luctus felis. Nulla a lacus libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam mollis tortor sodales libero euismod, eget suscipit arcu mollis. Nam nibh libero, tempus eu urna convallis, tempor efficitur ex. Donec molestie nibh ac luctus imperdiet. Nulla vitae vulputate ipsum. Phasellus porta gravida odio, in iaculis quam cursus et. Ut ac vehicula erat. Nulla sapien turpis, dapibus vel pellentesque sed, suscipit sit amet nibh. Pellentesque rhoncus nibh porttitor, posuere nulla quis, auctor nunc. Pellentesque fermentum tempor justo, a interdum nulla. Nullam lacus odio, posuere ut posuere hendrerit, semper non velit.</p>
+            <p>Cras sed consequat nunc. Phasellus sed sagittis nibh. Aliquam a vulputate risus. Vestibulum molestie bibendum dolor, vel blandit ipsum malesuada et. Praesent enim nibh, finibus vel luctus id, bibendum vitae eros. Aliquam vel semper diam. Cras elementum molestie eros, ac venenatis quam. Proin fermentum ante eros, mollis vestibulum eros consequat eu. Cras quis lorem vel metus hendrerit porttitor. Nunc hendrerit vitae nunc ut pellentesque. Etiam quis urna ac lorem eleifend ornare. Donec nibh ante, bibendum id pellentesque non, dignissim ut urna. Phasellus congue ultricies ipsum, ut luctus augue pulvinar nec.</p>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-default btn-block" {{action "toggleModal"}}>
+                  Close
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-primary btn-block">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/modal-dialog}}
+    {{/if}}
+  </div>
+</section>

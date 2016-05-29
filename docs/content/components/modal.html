@@ -1,0 +1,120 @@
+# Modal
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="modal-example-static">Static example</h3>
+  </div>
+
+  <p>A rendered modal with header, body, and set of actions in the footer.</p>
+
+  <div class="bs-callout bs-callout-warning">
+    <h4>Caution</h4>
+    <p>
+      The close button need to replace the <code>close</code> class with <code>btn-modal-close</code>.
+    </p>
+  </div>
+
+  <div class="bs-example bs-example-modal bs-sheet" data-example-id="modal-example-static">
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn btn-sm btn-secondary-inverse btn-round btn-modal-close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">Modal title</h3>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec luctus felis. Nulla a lacus libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam mollis tortor sodales libero euismod, eget suscipit arcu mollis. Nam nibh libero, tempus eu urna convallis, tempor efficitur ex. Donec molestie nibh ac luctus imperdiet. Nulla vitae vulputate ipsum. Phasellus porta gravida odio, in iaculis quam cursus et. Ut ac vehicula erat. Nulla sapien turpis, dapibus vel pellentesque sed, suscipit sit amet nibh. Pellentesque rhoncus nibh porttitor, posuere nulla quis, auctor nunc. Pellentesque fermentum tempor justo, a interdum nulla. Nullam lacus odio, posuere ut posuere hendrerit, semper non velit.</p>
+            <p>Cras sed consequat nunc. Phasellus sed sagittis nibh. Aliquam a vulputate risus. Vestibulum molestie bibendum dolor, vel blandit ipsum malesuada et. Praesent enim nibh, finibus vel luctus id, bibendum vitae eros. Aliquam vel semper diam. Cras elementum molestie eros, ac venenatis quam. Proin fermentum ante eros, mollis vestibulum eros consequat eu. Cras quis lorem vel metus hendrerit porttitor. Nunc hendrerit vitae nunc ut pellentesque. Etiam quis urna ac lorem eleifend ornare. Donec nibh ante, bibendum id pellentesque non, dignissim ut urna. Phasellus congue ultricies ipsum, ut luctus augue pulvinar nec.</p>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-default btn-block" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-primary btn-block">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+~~~ html
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn btn-sm btn-secondary-inverse btn-round btn-modal-close"
+                data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title">Modal title</h3>
+      </div>
+      <div class="modal-body">
+        <p>...</p>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col-xs-6">
+            <button type="button" class="btn btn-default btn-block" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+          <div class="col-xs-6">
+            <button type="button" class="btn btn-primary btn-block">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+~~~
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="modal-example-live">Live example</h3>
+  </div>
+
+  <p>Toggle a modal via JavaScript by clicking the button below.</p>
+
+  <div class="bs-example bs-sheet" data-example-id="modal-example-live">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Launch demo modal
+    </button>
+
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn btn-sm btn-secondary-inverse btn-round btn-modal-close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h3 class="modal-title">Modal title</h3>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec luctus felis. Nulla a lacus libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam mollis tortor sodales libero euismod, eget suscipit arcu mollis. Nam nibh libero, tempus eu urna convallis, tempor efficitur ex. Donec molestie nibh ac luctus imperdiet. Nulla vitae vulputate ipsum. Phasellus porta gravida odio, in iaculis quam cursus et. Ut ac vehicula erat. Nulla sapien turpis, dapibus vel pellentesque sed, suscipit sit amet nibh. Pellentesque rhoncus nibh porttitor, posuere nulla quis, auctor nunc. Pellentesque fermentum tempor justo, a interdum nulla. Nullam lacus odio, posuere ut posuere hendrerit, semper non velit.</p>
+            <p>Cras sed consequat nunc. Phasellus sed sagittis nibh. Aliquam a vulputate risus. Vestibulum molestie bibendum dolor, vel blandit ipsum malesuada et. Praesent enim nibh, finibus vel luctus id, bibendum vitae eros. Aliquam vel semper diam. Cras elementum molestie eros, ac venenatis quam. Proin fermentum ante eros, mollis vestibulum eros consequat eu. Cras quis lorem vel metus hendrerit porttitor. Nunc hendrerit vitae nunc ut pellentesque. Etiam quis urna ac lorem eleifend ornare. Donec nibh ante, bibendum id pellentesque non, dignissim ut urna. Phasellus congue ultricies ipsum, ut luctus augue pulvinar nec.</p>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-default btn-block" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-primary btn-block">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

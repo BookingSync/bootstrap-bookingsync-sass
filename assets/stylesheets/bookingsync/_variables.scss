@@ -227,3 +227,13 @@ $dropdown-link-active-bg:           $gray-dark !default;
 $dropdown-link-disabled-color:      $gray-light !default;
 $dropdown-header-color:             $gray-light !default;
 $dropdown-border-radius:            $border-radius-large !default;
+
+
+//== Modals
+//
+$modal-content-fallback-border-color: $gray-base !default;
+$modal-content-border-color:          $gray-lighter !default;
+$modal-border-radius:                 6px !default;
+$modal-inner-padding:                 30px !default;
+$modal-title-padding:                 $modal-inner-padding !default;
+$modal-backdrop-bg:                   transparent;
