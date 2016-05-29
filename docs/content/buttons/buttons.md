@@ -123,7 +123,7 @@
 
   <p>This is done via <code>.btn-loading</code>.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-active-state">
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-loading">
     <button type="button" class="btn btn-primary btn-loading">Loading...</button>
     <button type="button" class="btn btn-secondary btn-loading">Loading...</button>
     <a href="#" class="btn btn-primary btn-loading" role="button">Loading...</a>
@@ -144,7 +144,7 @@
 
   <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-active-state">
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-group">
     <div class="btn-group" role="group" aria-label="...">
       <button type="button" class="btn btn-secondary">Left</button>
       <button type="button" class="btn btn-secondary">Middle</button>
@@ -167,7 +167,7 @@
 
   <p>Place a .btn-group within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-active-state">
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-nesting">
     <div class="btn-group" role="group" aria-label="...">
       <button type="button" class="btn btn-secondary">1</button>
       <button type="button" class="btn btn-secondary">2</button>
@@ -199,6 +199,41 @@
       <li><a href="#">Dropdown link</a></li>
       <li><a href="#">Dropdown link</a></li>
     </ul>
+  </div>
+</div>
+~~~
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="buttons-example-radio-buttons">Radio buttons</h3>
+  </div>
+
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-radio-buttons">
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+      </label>
+    </div>
+  </div>
+</div>
+~~~ html
+<div class="btn-group" role="group" aria-label="...">
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-secondary active">
+      <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+    </label>
+    <label class="btn btn-secondary">
+      <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+    </label>
+    <label class="btn btn-secondary">
+      <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+    </label>
   </div>
 </div>
 ~~~
