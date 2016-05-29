@@ -216,9 +216,9 @@
     <section class="main-content">
       <section class="annotated-section">
         <header class="annotated-section-annotation">
-          <h3 class="annotated-section-title">Section Name</h3>
+          <h2 class="annotated-section-title">Section Name</h2>
           <p>Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-          <p><a href="">More Information</a></p>
+          <p><a href="#">More Information</a></p>
         </header>
         <div class="annotated-section-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit et tellus eget elementum. Praesent in cursus massa, nec laoreet elit. Nullam eleifend consectetur ligula et dictum. Praesent dignissim sodales nulla laoreet vehicula. Quisque at convallis lacus, at ornare lectus. Cras dapibus placerat sem, iaculis tincidunt ligula sodales non. Suspendisse dolor augue, ultricies condimentum pharetra sed, suscipit sit amet magna. In quis convallis sem. Sed cursus placerat tellus vitae tincidunt. Fusce molestie nisi et nisl pulvinar pulvinar. Nam id mauris lectus. Vivamus nisl neque, tempor nec efficitur quis, tincidunt quis justo. Curabitur pharetra auctor augue a consectetur. Integer lorem elit, fermentum non nulla quis, lobortis tincidunt ex.</p>
@@ -229,9 +229,9 @@
     <section class="main-content">
       <section class="annotated-section">
         <header class="annotated-section-annotation">
-          <h3 class="annotated-section-title">Section Name</h3>
+          <h2 class="annotated-section-title">Section Name</h2>
           <p>Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-          <p><a href="">More Information</a></p>
+          <p><a href="#">More Information</a></p>
         </header>
         <div class="annotated-section-content">
           <p>Body</p>
@@ -247,14 +247,23 @@
 <section class="main-content">
   <section class="annotated-section">
     <header class="annotated-section-annotation">
-      <h3 class="annotated-section-title">Section Name</h3>
+      <h2 class="annotated-section-title">Section Name</h2>
       <p>Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-      <p><a href="">More Information</a></p>
+      <p><a href="#">More Information</a></p>
+    </header>
+    <div class="annotated-section-content">
+      <p>Lorem ipsum dolor sit amet,...</p>
+    </div>
+  </section>
+  <section class="annotated-section">
+    <header class="annotated-section-annotation">
+      <h2 class="annotated-section-title">Section Name</h2>
+      <p>Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+      <p><a href="#">More Information</a></p>
     </header>
     <div class="annotated-section-content">
       <p>Body</p>
     </div>
   </section>
-
 </section>
 ~~~
