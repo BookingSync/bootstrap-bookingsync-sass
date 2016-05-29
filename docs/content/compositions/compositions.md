@@ -181,7 +181,7 @@
         </div>
         <div class="navbar-right">
           <button class="btn btn-sm btn-secondary-inverse btn-round navbar-btn" type="button">
-            <i class="fa fa-close"></i>
+            <span>&times;</span>
           </button>
         </div>
       </div>
@@ -205,7 +205,7 @@
     </div>
     <div class="navbar-right">
       <button class="btn btn-sm btn-secondary-inverse btn-round navbar-btn" type="button">
-        <i class="fa fa-close"></i>
+        <span>&times;</span>
       </button>
     </div>
   </div>

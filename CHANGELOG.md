@@ -13,6 +13,8 @@
   * Add `sheet-fullscreen`
   * Add documentation for tabulated content composition
   * Add documentation for fullscreen modal composition
+  * Add documentation for radio buttons
+  * Add documentation for modals
 
 ### 0.0.19 - 2016-05-09
 
