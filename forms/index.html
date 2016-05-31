@@ -15,7 +15,7 @@
   <script src="/assets/javascripts/application.js"></script>
 
   <!-- you don't need to keep this, but it's cool for stats! -->
-  <meta name="generator" content="nanoc 3.8.0">
+  <meta name="generator" content="nanoc 4.1.6">
 </head>
 
   <body class="flex-col">
@@ -158,6 +158,10 @@
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputPassword1"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputPassword1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleTextarea1"</span><span class="nt">&gt;</span>Comment<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleTextarea1"</span> <span class="na">rows=</span><span class="s">"5"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputFile"</span><span class="nt">&gt;</span>File input<span class="nt">&lt;/label&gt;</span>
@@ -368,7 +372,9 @@
   </div>
 </div>
 
-<pre><code class="language-html"><span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span></code></pre>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
 
 <div class="example">
   <div class="sheet-header">
@@ -568,24 +574,30 @@
 
   <div class="bs-example bs-sheet" data-example-id="forms-example-select">
     <form>
-      <select class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
+      <div class="select">
+        <label for="destination">Destination</label>
+        <select class="form-control" id="destination">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
     </form>
   </div>
 </div>
 
-<pre><code class="language-html"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span></code></pre>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"select"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"destination"</span><span class="nt">&gt;</span>Destination<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"destination"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
 
 <div class="example">
   <div class="sheet-header">
@@ -603,24 +615,29 @@
 
   <div class="bs-example bs-sheet" data-example-id="forms-example-multiple-select">
     <form>
-      <select multiple class="form-control">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
+      <div class="select">
+        <label for="destinations">Destinations</label>
+        <select multiple class="form-control" id="destinations">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
     </form>
   </div>
 </div>
-
-<pre><code class="language-html"><span class="nt">&lt;select</span> <span class="na">multiple</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
-  <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span></code></pre>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"select"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"destinations"</span><span class="nt">&gt;</span>Destinations<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">multiple</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"destinations"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
 
 <div class="example">
   <div class="sheet-header">

@@ -15,7 +15,7 @@
   <script src="/assets/javascripts/application.js"></script>
 
   <!-- you don't need to keep this, but it's cool for stats! -->
-  <meta name="generator" content="nanoc 3.8.0">
+  <meta name="generator" content="nanoc 4.1.6">
 </head>
 
   <body class="flex-col">
@@ -77,6 +77,7 @@
         <a class="list-group-item" href="#buttons-example-loading">Loading</a>
         <a class="list-group-item" href="#buttons-example-group">Group</a>
         <a class="list-group-item" href="#buttons-example-nesting">Nesting</a>
+        <a class="list-group-item" href="#buttons-example-radio">Radio</a>
       </div>
     </div>
   </div>
@@ -199,7 +200,7 @@
 
   <p>This is done via <code>.btn-loading</code>.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-active-state">
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-loading">
     <button type="button" class="btn btn-primary btn-loading">Loading...</button>
     <button type="button" class="btn btn-secondary btn-loading">Loading...</button>
     <a href="#" class="btn btn-primary btn-loading" role="button">Loading...</a>
@@ -218,7 +219,7 @@
 
   <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-active-state">
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-group">
     <div class="btn-group" role="group" aria-label="...">
       <button type="button" class="btn btn-secondary">Left</button>
       <button type="button" class="btn btn-secondary">Middle</button>
@@ -239,7 +240,7 @@
 
   <p>Place a .btn-group within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-active-state">
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-nesting">
     <div class="btn-group" role="group" aria-label="...">
       <button type="button" class="btn btn-secondary">1</button>
       <button type="button" class="btn btn-secondary">2</button>
@@ -270,6 +271,39 @@
       <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dropdown link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
       <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dropdown link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="buttons-example-radio-buttons">Radio buttons</h3>
+  </div>
+
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-radio-buttons">
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+      </label>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">data-toggle=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary active"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option1"</span> <span class="na">autocomplete=</span><span class="s">"off"</span> <span class="na">checked</span><span class="nt">&gt;</span> Radio 1 (preselected)
+    <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option2"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> Radio 2
+    <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option3"</span> <span class="na">autocomplete=</span><span class="s">"off"</span><span class="nt">&gt;</span> Radio 3
+    <span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre>
 

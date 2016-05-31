@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Bootstrap BookingSync SASS documentation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
+  <link rel="stylesheet" href="/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="/assets/javascripts/application.js"></script>
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 4.1.6">
+</head>
+
+  <body class="flex-col">
+    <div class="page-wrapper flex-1 flex-col">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle sidebar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/">
+        BookingSync Styleguide
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="/brand">Brand</a>
+        </li>
+        <li class="">
+          <a href="/forms">Forms</a>
+        </li>
+        <li class="">
+          <a href="/buttons">Buttons</a>
+        </li>
+        <li class="">
+          <a href="/utilities">Utilities</a>
+        </li>
+        <li class="">
+          <a href="/components">Components</a>
+        </li>
+        <li class="">
+          <a href="/compositions">Compositions</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container content">
+        <h2 id="iconography">Iconography</h2>
+
+<div class="example">
+  <div class="bs-example bs-sheet bs-example-icons">
+    <ul class="list-unstyled">
+      <li>
+<i class="icon-invoice"></i> invoice</li>
+      <li>
+<i class="icon-rental"></i> rental</li>
+      <li>
+<i class="icon-photo"></i> photo</li>
+      <li>
+<i class="icon-video"></i> video</li>
+      <li>
+<i class="icon-description"></i> description</li>
+      <li>
+<i class="icon-contract"></i> contract</li>
+      <li>
+<i class="icon-reservation"></i> reservation</li>
+      <li>
+<i class="icon-rates"></i> rates</li>
+      <li>
+<i class="icon-payments"></i> payments</li>
+      <li>
+<i class="icon-help"></i> help</li>
+      <li>
+<i class="icon-map"></i> map</li>
+      <li>
+<i class="icon-calendar"></i> calendar</li>
+      <li>
+<i class="icon-inbox"></i> inbox</li>
+      <li>
+<i class="icon-clients"></i> clients</li>
+      <li>
+<i class="icon-owner"></i> owner</li>
+      <li>
+<i class="icon-search"></i> search</li>
+      <li>
+<i class="icon-checkin"></i> check-in</li>
+      <li>
+<i class="icon-settings"></i> settings</li>
+      <li>
+<i class="icon-maintenance"></i> maintenance</li>
+      <li>
+<i class="icon-reports"></i> reports</li>
+      <li>
+<i class="icon-cleaning"></i> cleaning</li>
+      <li>
+<i class="icon-notifications"></i> notifications</li>
+      <li>
+<i class="icon-instant"></i> instant</li>
+      <li>
+<i class="icon-applications"></i> applications</li>
+      <li>
+<i class="icon-website"></i> website</li>
+      <li>
+<i class="icon-reviews"></i> reviews</li>
+      <li>
+<i class="icon-widget"></i> widget</li>
+    </ul>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-invoice"</span><span class="nt">&gt;&lt;/i&gt;</span> invoice<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-rental"</span><span class="nt">&gt;&lt;/i&gt;</span> rental<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-photo"</span><span class="nt">&gt;&lt;/i&gt;</span> photo<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-video"</span><span class="nt">&gt;&lt;/i&gt;</span> video<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-description"</span><span class="nt">&gt;&lt;/i&gt;</span> description<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-contract"</span><span class="nt">&gt;&lt;/i&gt;</span> contract<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-reservation"</span><span class="nt">&gt;&lt;/i&gt;</span> reservation<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-rates"</span><span class="nt">&gt;&lt;/i&gt;</span> rates<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-payments"</span><span class="nt">&gt;&lt;/i&gt;</span> payments<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-help"</span><span class="nt">&gt;&lt;/i&gt;</span> help<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-map"</span><span class="nt">&gt;&lt;/i&gt;</span> map<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-calendar"</span><span class="nt">&gt;&lt;/i&gt;</span> calendar<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-inbox"</span><span class="nt">&gt;&lt;/i&gt;</span> inbox<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-clients"</span><span class="nt">&gt;&lt;/i&gt;</span> clients<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-owner"</span><span class="nt">&gt;&lt;/i&gt;</span> owner<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-search"</span><span class="nt">&gt;&lt;/i&gt;</span> search<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-checkin"</span><span class="nt">&gt;&lt;/i&gt;</span> check-in<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-settings"</span><span class="nt">&gt;&lt;/i&gt;</span> settings<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-maintenance"</span><span class="nt">&gt;&lt;/i&gt;</span> maintenance<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-reports"</span><span class="nt">&gt;&lt;/i&gt;</span> reports<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-cleaning"</span><span class="nt">&gt;&lt;/i&gt;</span> cleaning<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-notifications"</span><span class="nt">&gt;&lt;/i&gt;</span> notifications<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-instant"</span><span class="nt">&gt;&lt;/i&gt;</span> instant<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-applications"</span><span class="nt">&gt;&lt;/i&gt;</span> applications<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-website"</span><span class="nt">&gt;&lt;/i&gt;</span> website<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-reviews"</span><span class="nt">&gt;&lt;/i&gt;</span> reviews<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-widget"</span><span class="nt">&gt;&lt;/i&gt;</span> widget<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
+
+      </div>
+    </div>
+  </body>
+</html>

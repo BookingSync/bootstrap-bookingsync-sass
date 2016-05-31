@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Bootstrap BookingSync SASS documentation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
+  <link rel="stylesheet" href="/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="/assets/javascripts/application.js"></script>
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 4.1.6">
+</head>
+
+  <body class="flex-col">
+    <div class="page-wrapper flex-1 flex-col">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle sidebar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/">
+        BookingSync Styleguide
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="">
+          <a href="/brand">Brand</a>
+        </li>
+        <li class="">
+          <a href="/forms">Forms</a>
+        </li>
+        <li class="">
+          <a href="/buttons">Buttons</a>
+        </li>
+        <li class="">
+          <a href="/utilities">Utilities</a>
+        </li>
+        <li class="active">
+          <a href="/components">Components</a>
+        </li>
+        <li class="">
+          <a href="/compositions">Compositions</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <div class="container content">
+        <h2 id="modal">Modal</h2>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="modal-example-static">Static example</h3>
+  </div>
+
+  <p>A rendered modal with header, body, and set of actions in the footer.</p>
+
+  <div class="bs-callout bs-callout-warning">
+    <h4>Caution</h4>
+    <p>
+      The close button need to replace the <code>close</code> class with <code>btn-modal-close</code>.
+    </p>
+  </div>
+
+  <div class="bs-example bs-example-modal bs-sheet" data-example-id="modal-example-static">
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn btn-sm btn-secondary-inverse btn-round btn-modal-close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h3 class="modal-title">Modal title</h3>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec luctus felis. Nulla a lacus libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam mollis tortor sodales libero euismod, eget suscipit arcu mollis. Nam nibh libero, tempus eu urna convallis, tempor efficitur ex. Donec molestie nibh ac luctus imperdiet. Nulla vitae vulputate ipsum. Phasellus porta gravida odio, in iaculis quam cursus et. Ut ac vehicula erat. Nulla sapien turpis, dapibus vel pellentesque sed, suscipit sit amet nibh. Pellentesque rhoncus nibh porttitor, posuere nulla quis, auctor nunc. Pellentesque fermentum tempor justo, a interdum nulla. Nullam lacus odio, posuere ut posuere hendrerit, semper non velit.</p>
+            <p>Cras sed consequat nunc. Phasellus sed sagittis nibh. Aliquam a vulputate risus. Vestibulum molestie bibendum dolor, vel blandit ipsum malesuada et. Praesent enim nibh, finibus vel luctus id, bibendum vitae eros. Aliquam vel semper diam. Cras elementum molestie eros, ac venenatis quam. Proin fermentum ante eros, mollis vestibulum eros consequat eu. Cras quis lorem vel metus hendrerit porttitor. Nunc hendrerit vitae nunc ut pellentesque. Etiam quis urna ac lorem eleifend ornare. Donec nibh ante, bibendum id pellentesque non, dignissim ut urna. Phasellus congue ultricies ipsum, ut luctus augue pulvinar nec.</p>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-default btn-block" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-primary btn-block">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-sm btn-secondary-inverse btn-round btn-modal-close"</span>
+                <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-block"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>
+              Close
+            <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-block"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="modal-example-live">Live example</h3>
+  </div>
+
+  <p>Toggle a modal via JavaScript by clicking the button below.</p>
+
+  <div class="bs-example bs-sheet" data-example-id="modal-example-live">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Launch demo modal
+    </button>
+
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn btn-sm btn-secondary-inverse btn-round btn-modal-close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h3 class="modal-title">Modal title</h3>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec luctus felis. Nulla a lacus libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam mollis tortor sodales libero euismod, eget suscipit arcu mollis. Nam nibh libero, tempus eu urna convallis, tempor efficitur ex. Donec molestie nibh ac luctus imperdiet. Nulla vitae vulputate ipsum. Phasellus porta gravida odio, in iaculis quam cursus et. Ut ac vehicula erat. Nulla sapien turpis, dapibus vel pellentesque sed, suscipit sit amet nibh. Pellentesque rhoncus nibh porttitor, posuere nulla quis, auctor nunc. Pellentesque fermentum tempor justo, a interdum nulla. Nullam lacus odio, posuere ut posuere hendrerit, semper non velit.</p>
+            <p>Cras sed consequat nunc. Phasellus sed sagittis nibh. Aliquam a vulputate risus. Vestibulum molestie bibendum dolor, vel blandit ipsum malesuada et. Praesent enim nibh, finibus vel luctus id, bibendum vitae eros. Aliquam vel semper diam. Cras elementum molestie eros, ac venenatis quam. Proin fermentum ante eros, mollis vestibulum eros consequat eu. Cras quis lorem vel metus hendrerit porttitor. Nunc hendrerit vitae nunc ut pellentesque. Etiam quis urna ac lorem eleifend ornare. Donec nibh ante, bibendum id pellentesque non, dignissim ut urna. Phasellus congue ultricies ipsum, ut luctus augue pulvinar nec.</p>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-default btn-block" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button type="button" class="btn btn-primary btn-block">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </body>
+</html>
