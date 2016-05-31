@@ -13,33 +13,35 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-ignore '/assets/(stylesheets|javascripts)/_*'
+ignore %r{/assets/(stylesheets|javascripts)/_.+}
 
-compile '/static/*' do
+passthrough '/assets/fonts/**/*'
+
+compile '/static/**/*' do
 end
 
-compile '/CNAME/' do
+compile '/CNAME' do
 end
 
-compile '/highlight/' do
+compile '/highlight.css' do
   filter :erb
 end
 
-compile %r{/assets/(stylesheets|javascripts)/.+/} do
+compile %r{/assets/(stylesheets|javascripts)/.+} do
   filter :sprockets, {
     :css_compressor => :scss,
     :js_compressor  => :uglifier
   }
 end
 
-compile '*' do
+compile '/**/*.{erb,html,md,mmd}' do
   filter :erb
   filter :kramdown, toc_levels: [2], header_offset: 1, enable_coderay: false
   filter :colorize_syntax, default_colorizer: :pygmentsrb
-  layout item[:layout] || 'default'
+  layout item[:layout] || '/default.*'
 end
 
-route '/assets/*/' do
+route '/assets/**/*' do
   Nanoc::Sprockets::Helper.asset_path(item)
 end
 
@@ -51,8 +53,16 @@ route '/highlight' do
   '/highlight.css'
 end
 
-route '*' do
-  item.identifier + 'index.html'
+route '/**/*.{erb,html,md,mmd}' do
+  if item.identifier =~ '/index.*'
+    '/index.html'
+  else
+    item.identifier.without_ext + '/index.html'
+  end
 end
 
-layout '*', :erb
+route '/**/*' do
+  item.identifier.to_s
+end
+
+layout '/**/*', :erb

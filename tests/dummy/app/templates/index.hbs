@@ -56,18 +56,55 @@
         </div>
       </div>
 
-      <div class="select">
-        <label for="destination">Destination</label>
-        {{#power-select
-          selected=destination
-          options=cities
-          onchange=(action (mut destination))
-          id="destination"
-          class="form-control"
-          as |name|
-        }}
-          {{name}}
-        {{/power-select}}
+      <div class="row">
+        <div class="col-xs-4">
+          <div class="select">
+            <label for="destination">Destination</label>
+            {{#power-select
+              selected=currentDestination
+              options=cities
+              onchange=(action (mut currentDestination))
+              id="destination"
+              class="form-control"
+              as |name|
+            }}
+              {{name}}
+            {{/power-select}}
+          </div>
+        </div>
+
+        <div class="col-xs-4">
+          <div class="select">
+            <label for="destination2">Destination</label>
+            {{#power-select
+              selected=currentDestination
+              options=cities
+              searchEnabled=false
+              onchange=(action (mut currentDestination))
+              id="destination2"
+              class="form-control"
+              as |name|
+            }}
+              {{name}}
+            {{/power-select}}
+          </div>
+        </div>
+
+        <div class="col-xs-4">
+          <div class="select">
+            <label for="destinations">Destinations</label>
+            {{#power-select-multiple
+              selected=currentDestinations
+              options=cities
+              onchange=(action (mut currentDestinations))
+              id="destinations"
+              class="form-control"
+              as |name|
+            }}
+              {{name}}
+            {{/power-select-multiple}}
+          </div>
+        </div>
       </div>
 
       <div class="form-group">

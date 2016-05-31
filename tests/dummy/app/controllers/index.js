@@ -10,7 +10,8 @@ export default Ember.Controller.extend({
 
   // Used for select
   cities: ['Barcelona', 'Nevache', 'Sivota'],
-  destination: 'Nevache',
+  currentDestination: 'Nevache',
+  currentDestinations: ['Nevache', 'Sivota'],
 
   // Used by radio
   selectedRentalType: 'apartment',
