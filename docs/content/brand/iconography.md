@@ -19,7 +19,7 @@
       <li><i class="icon-clients"></i> clients</li>
       <li><i class="icon-owner"></i> owner</li>
       <li><i class="icon-search"></i> search</li>
-      <li><i class="icon-checkin"></i> check-in</li>
+      <li><i class="icon-checkin"></i> checkin</li>
       <li><i class="icon-settings"></i> settings</li>
       <li><i class="icon-maintenance"></i> maintenance</li>
       <li><i class="icon-reports"></i> reports</li>
