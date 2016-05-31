@@ -1,0 +1,113 @@
+/*!
+ * Copyright 2016 BookingSync SAS.
+ * Licensed under MIT (https://github.com/BookingSync/bootstrap-bookingsync-sass/blob/master/LICENSE)
+ */
+
+ @font-face {
+  font-family: '#{$icons-font-name}';
+  src: url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icons-font-path}#{$icons-font-name}.eot'), '#{$icons-font-path}#{$icons-font-name}.eot'));
+  src: url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icons-font-path}#{$icons-font-name}.eot?#iefix'), '#{$icons-font-path}#{$icons-font-name}.eot?#iefix')) format('embedded-opentype'),
+       url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icons-font-path}#{$icons-font-name}.woff2'), '#{$icons-font-path}#{$icons-font-name}.woff2')) format('woff2'),
+       url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icons-font-path}#{$icons-font-name}.woff'), '#{$icons-font-path}#{$icons-font-name}.woff')) format('woff'),
+       url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icons-font-path}#{$icons-font-name}.ttf'), '#{$icons-font-path}#{$icons-font-name}.ttf')) format('truetype'),
+       url(if($bootstrap-bookingsync-sass-asset-helper, bs-font-path('#{$icons-font-path}#{$icons-font-name}.svg##{$icons-font-svg-id}'), '#{$icons-font-path}#{$icons-font-name}.svg##{$icons-font-svg-id}')) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icons-font-name}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-invoice:before {
+  content: $icon-invoice;
+}
+.icon-rental:before {
+  content: $icon-rental;
+}
+.icon-photo:before {
+  content: $icon-photo;
+}
+.icon-video:before {
+  content: $icon-video;
+}
+.icon-description:before {
+  content: $icon-description;
+}
+.icon-contract:before {
+  content: $icon-contract;
+}
+.icon-reservation:before {
+  content: $icon-reservation;
+}
+.icon-rates:before {
+  content: $icon-rates;
+}
+.icon-payments:before {
+  content: $icon-payments;
+}
+.icon-help:before {
+  content: $icon-help;
+}
+.icon-map:before {
+  content: $icon-map;
+}
+.icon-calendar:before {
+  content: $icon-calendar;
+}
+.icon-inbox:before {
+  content: $icon-inbox;
+}
+.icon-clients:before {
+  content: $icon-clients;
+}
+.icon-owner:before {
+  content: $icon-owner;
+}
+.icon-search:before {
+  content: $icon-search;
+}
+.icon-checkin:before {
+  content: $icon-checkin;
+}
+.icon-settings:before {
+  content: $icon-settings;
+}
+.icon-maintenance:before {
+  content: $icon-maintenance;
+}
+.icon-reports:before {
+  content: $icon-reports;
+}
+.icon-cleaning:before {
+  content: $icon-cleaning;
+}
+.icon-notifications:before {
+  content: $icon-notifications;
+}
+.icon-instant:before {
+  content: $icon-instant;
+}
+.icon-applications:before {
+  content: $icon-applications;
+}
+.icon-website:before {
+  content: $icon-website;
+}
+.icon-reviews:before {
+  content: $icon-reviews;
+}
+.icon-widget:before {
+  content: $icon-widget;
+}

@@ -52,11 +52,58 @@ $dl-horizontal-narrow-offset:   120px !default;
 // This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
 $smiles-font-path: if($bootstrap-bookingsync-sass-asset-helper, "bookingsync/", "../fonts/bookingsync/") !default;
 
-//** File name for all font files.
+//** File name for smiles font files.
 $smiles-font-name:          "bookingsync-smiles" !default;
 //** Element ID within SVG icon file.
 $smiles-font-svg-id:        "bookingsync_smiles" !default;
 
+$bs-icon-bigboss:           "\e600" !default;
+$bs-icon-boss:              "\e601" !default;
+$bs-icon-bookingsync:       "\e602" !default;
+$bs-icon-laughting:         "\e603" !default;
+$bs-icon-lemonface:         "\e604" !default;
+$bs-icon-sadface:           "\e605" !default;
+$bs-icon-tongue:            "\e606" !default;
+$bs-icon-winkface:          "\e607" !default;
+$bs-icon-winktongue:        "\e608" !default;
+
+// If $bootstrap-bookingsync-sass-asset-helper if used, provide path relative to the assets load path.
+// This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
+$icons-font-path: if($bootstrap-bookingsync-sass-asset-helper, "bookingsync/", "../fonts/bookingsync/") !default;
+
+//** File name for icons font files.
+$icons-font-name:           "bookingsync-icons" !default;
+//** Element ID within SVG icon file.
+$icons-font-svg-id:         "bookingsync_icons" !default;
+
+
+$icon-invoice:              "\e900" !default;
+$icon-rental:               "\e904" !default;
+$icon-photo:                "\e93b" !default;
+$icon-video:                "\e965" !default;
+$icon-description:          "\e9ae" !default;
+$icon-contract:             "\e9eb" !default;
+$icon-reservation:          "\e9f9" !default;
+$icon-rates:                "\ea12" !default;
+$icon-payments:             "\ea16" !default;
+$icon-help:                 "\ea1b" !default;
+$icon-map:                  "\ea38" !default;
+$icon-calendar:             "\ea62" !default;
+$icon-inbox:                "\ea80" !default;
+$icon-clients:              "\eb0c" !default;
+$icon-owner:                "\eb0d" !default;
+$icon-search:               "\eb36" !default;
+$icon-checkin:              "\eb4a" !default;
+$icon-settings:             "\eb5f" !default;
+$icon-maintenance:          "\eb6c" !default;
+$icon-reports:              "\eb8b" !default;
+$icon-cleaning:             "\ebfb" !default;
+$icon-notifications:        "\ec09" !default;
+$icon-instant:              "\ec49" !default;
+$icon-applications:         "\ec5d" !default;
+$icon-website:              "\ec97" !default;
+$icon-reviews:              "\ece2" !default;
+$icon-widget:               "\eecd" !default;
 
 //== Components
 //
@@ -157,6 +204,11 @@ $state-warning-border:          $state-warning-text !default;
 $state-danger-text:             #e74c3c !default;
 $state-danger-bg:               transparent !default;
 $state-danger-border:           $state-danger-text !default;
+
+$select-multiple-options-color:             #fff !default;
+$select-multiple-options-bg:                $gray-light !default;
+$select-multiple-options-selected-color:    $gray-lighter !default;
+$select-multiple-options-selected-bg:       #fff !default;
 
 //== Grid system
 //

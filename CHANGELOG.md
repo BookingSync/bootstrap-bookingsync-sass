@@ -1,5 +1,8 @@
 ### Unreleased
 
+* breaking changes
+  * Smiles definition changed from `bs-icon bs-*` to `bs-icon-*`
+
 * deprecations
   * deprecate `#content` in favor of `.main-content`
 
@@ -19,6 +22,9 @@
   * Add documentation for modals
   * Add `annotated-section` support
   * Improve form inputs spacing
+  * Add documentation for smiles
+  * Add icons font and documentation
+  * Add styling for Ember Power Select
 
 ### 0.0.19 - 2016-05-09
 

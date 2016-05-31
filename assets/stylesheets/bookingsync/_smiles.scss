@@ -15,7 +15,7 @@
   font-style: normal;
 }
 
-.bs-icon {
+[class^="bs-icon-"], [class*=" bs-icon-"] {
   font-family: '#{$smiles-font-name}';
   speak: none;
   font-style: normal;
@@ -29,30 +29,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.bs-bigboss:before {
-  content: "\e600";
+.bs-icon-bigboss:before {
+  content: $bs-icon-bigboss;
 }
-.bs-boss:before {
-  content: "\e601";
+.bs-icon-boss:before {
+  content: $bs-icon-boss;
 }
-.bs-bookingsync:before {
-  content: "\e602";
+.bs-icon-bookingsync:before {
+  content: $bs-icon-bookingsync;
 }
-.bs-laughting:before {
-  content: "\e603";
+.bs-icon-laughting:before {
+  content: $bs-icon-laughting;
 }
-.bs-lemonface:before {
-  content: "\e604";
+.bs-icon-lemonface:before {
+  content: $bs-icon-lemonface;
 }
-.bs-sadface:before {
-  content: "\e605";
+.bs-icon-sadface:before {
+  content: $bs-icon-sadface;
 }
-.bs-tongue:before {
-  content: "\e606";
+.bs-icon-tongue:before {
+  content: $bs-icon-tongue;
 }
-.bs-winkface:before {
-  content: "\e607";
+.bs-icon-winkface:before {
+  content: $bs-icon-winkface;
 }
-.bs-winktongue:before {
-  content: "\e608";
+.bs-icon-winktongue:before {
+  content: $bs-icon-winktongue;
 }

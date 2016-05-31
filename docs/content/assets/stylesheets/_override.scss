@@ -28,3 +28,23 @@
     display: block;
   }
 }
+
+.bs-example-icons {
+  li {
+    width: 49%;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+
+    @media (min-width: $screen-sm-min) {
+      width: 19%;
+    }
+  }
+
+  i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    display: block;
+    color: $gray-light;
+  }
+}
