@@ -2,6 +2,7 @@
 
 * breaking changes
   * Smiles definition changed from `bs-icon bs-*` to `bs-icon-*`
+  * Fix `laughing` smile name (was with a typo `laughting`)
 
 * deprecations
   * deprecate `#content` in favor of `.main-content`
