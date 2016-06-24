@@ -3,9 +3,63 @@
  * Licensed under MIT (https://github.com/BookingSync/bootstrap-bookingsync-sass/blob/master/LICENSE)
  */
 
+.btn-primary {
+  &:focus,
+  &.focus,
+  &:hover {
+    color: $btn-primary-active-color;
+    background-color: $btn-primary-active-bg;
+    border-color: $btn-primary-active-border;
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $btn-primary-active-color;
+    background-color: $btn-primary-active-bg;
+    background-image: none;
+    border-color: $btn-primary-active-border;
+    @include box-shadow(none);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $btn-primary-active-color;
+      background-color: $btn-primary-active-bg;
+      border-color: $btn-primary-active-border;
+    }
+  }
+}
+
 .btn-default,
 .btn-secondary {
   @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+
+  &:focus,
+  &.focus,
+  &:hover {
+    color: $btn-secondary-active-color;
+    background-color: $btn-secondary-active-bg;
+    border-color: $btn-secondary-active-border;
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $btn-secondary-active-color;
+    background-color: $btn-secondary-active-bg;
+    background-image: none;
+    border-color: $btn-secondary-active-border;
+    @include box-shadow(none);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $btn-secondary-active-color;
+      background-color: $btn-secondary-active-bg;
+      border-color: $btn-secondary-active-border;
+    }
+  }
 }
 
 .btn-secondary-inverse {

@@ -26,6 +26,7 @@
   * Add documentation for smiles
   * Add icons font and documentation
   * Add styling for Ember Power Select
+  * Improve Buttons styling
 
 ### 0.0.19 - 2016-05-09
 
