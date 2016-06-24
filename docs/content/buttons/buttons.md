@@ -128,6 +128,13 @@
     <button type="button" class="btn btn-secondary btn-loading">Loading...</button>
     <a href="#" class="btn btn-primary btn-loading" role="button">Loading...</a>
     <a href="#" class="btn btn-secondary btn-loading" role="button">Loading...</a>
+
+    <hr>
+
+    <button type="button" class="btn btn-sm btn-primary btn-loading">Loading...</button>
+    <button type="button" class="btn btn-sm btn-secondary btn-loading">Loading...</button>
+    <a href="#" class="btn btn-sm btn-primary btn-loading" role="button">Loading...</a>
+    <a href="#" class="btn btn-sm btn-secondary btn-loading" role="button">Loading...</a>
   </div>
 </div>
 ~~~ html
@@ -135,6 +142,13 @@
 <button type="button" class="btn btn-secondary btn-loading">Loading...</button>
 <a href="#" class="btn btn-primary btn-loading" role="button">Loading...</a>
 <a href="#" class="btn btn-secondary btn-loading" role="button">Loading...</a>
+
+<hr>
+
+<button type="button" class="btn btn-sm btn-primary btn-loading">Loading...</button>
+<button type="button" class="btn btn-sm btn-secondary btn-loading">Loading...</button>
+<a href="#" class="btn btn-sm btn-primary btn-loading" role="button">Loading...</a>
+<a href="#" class="btn btn-sm btn-secondary btn-loading" role="button">Loading...</a>
 ~~~
 
 <div class="example">
