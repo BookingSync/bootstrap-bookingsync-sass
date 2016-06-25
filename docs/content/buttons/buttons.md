@@ -118,16 +118,23 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="buttons-example-loading">Loading</h3>
+    <h3 id="buttons-example-loading-state">Loading State</h3>
   </div>
 
   <p>This is done via <code>.btn-loading</code>.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-loading">
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-loading-state">
     <button type="button" class="btn btn-primary btn-loading">Loading...</button>
     <button type="button" class="btn btn-secondary btn-loading">Loading...</button>
     <a href="#" class="btn btn-primary btn-loading" role="button">Loading...</a>
     <a href="#" class="btn btn-secondary btn-loading" role="button">Loading...</a>
+
+    <hr>
+
+    <button type="button" class="btn btn-sm btn-primary btn-loading">Loading...</button>
+    <button type="button" class="btn btn-sm btn-secondary btn-loading">Loading...</button>
+    <a href="#" class="btn btn-sm btn-primary btn-loading" role="button">Loading...</a>
+    <a href="#" class="btn btn-sm btn-secondary btn-loading" role="button">Loading...</a>
   </div>
 </div>
 ~~~ html
@@ -135,6 +142,70 @@
 <button type="button" class="btn btn-secondary btn-loading">Loading...</button>
 <a href="#" class="btn btn-primary btn-loading" role="button">Loading...</a>
 <a href="#" class="btn btn-secondary btn-loading" role="button">Loading...</a>
+
+<hr>
+
+<button type="button" class="btn btn-sm btn-primary btn-loading">Loading...</button>
+<button type="button" class="btn btn-sm btn-secondary btn-loading">Loading...</button>
+<a href="#" class="btn btn-sm btn-primary btn-loading" role="button">Loading...</a>
+<a href="#" class="btn btn-sm btn-secondary btn-loading" role="button">Loading...</a>
+~~~
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="buttons-example-disabled-state">Disabled State</h3>
+  </div>
+
+  <p>For <code>&lt;button&gt;</code> elements, this is done via <code>disabled</code> attribute or <code>.disabled</code> class. It's also possible to disable buttons from a parent disabled fieldset.</p>
+
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-disabled-state">
+    <button type="button" class="btn btn-primary disabled">Primary button</button>
+    <button type="button" class="btn btn-secondary disabled">Button</button>
+    <a href="#" class="btn btn-primary disabled" role="button">Primary link</a>
+    <a href="#" class="btn btn-secondary disabled" role="button">Link</a>
+
+    <hr>
+
+    <button type="button" class="btn btn-primary" disabled>Primary button</button>
+    <button type="button" class="btn btn-secondary" disabled>Button</button>
+    <a href="#" class="btn btn-primary" disabled role="button">Primary link</a>
+    <a href="#" class="btn btn-secondary" disabled role="button">Link</a>
+
+    <hr>
+
+    <form>
+      <fieldset disabled>
+        <button type="button" class="btn btn-primary">Primary button</button>
+        <button type="button" class="btn btn-secondary">Button</button>
+        <a href="#" class="btn btn-primary" role="button">Primary link</a>
+        <a href="#" class="btn btn-secondary" role="button">Link</a>
+      </fieldset>
+    </form>
+  </div>
+</div>
+~~~ html
+<button type="button" class="btn btn-primary disabled">Primary button</button>
+<button type="button" class="btn btn-secondary disabled">Button</button>
+<a href="#" class="btn btn-primary disabled" role="button">Primary link</a>
+<a href="#" class="btn btn-secondary disabled" role="button">Link</a>
+
+<hr>
+
+<button type="button" class="btn btn-primary" disabled>Primary button</button>
+<button type="button" class="btn btn-secondary" disabled>Button</button>
+<a href="#" class="btn btn-primary" disabled role="button">Primary link</a>
+<a href="#" class="btn btn-secondary" disabled role="button">Link</a>
+
+<hr>
+
+<form>
+  <fieldset disabled>
+    <button type="button" class="btn btn-primary">Primary button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <a href="#" class="btn btn-primary" role="button">Primary link</a>
+    <a href="#" class="btn btn-secondary" role="button">Link</a>
+  </fieldset>
+</form>
 ~~~
 
 <div class="example">

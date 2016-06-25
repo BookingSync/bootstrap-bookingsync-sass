@@ -146,11 +146,20 @@ $menu-default-toggle-icon-bar-bg: $gray-light !default;
 //
 $btn-success-bg:                $brand-success !default;
 
+$btn-primary-color:             #fff !default;
 $btn-primary-bg:                $brand-success !default;
-$btn-primary-border:            darken($btn-success-bg, 5%) !default;
+$btn-primary-border:            $btn-primary-bg !default;
+$btn-primary-loading:           #fff !default;
+$btn-primary-active-color:      $btn-primary-color !default;
+$btn-primary-active-bg:         #32D165 !default;
+$btn-primary-active-border:     $btn-primary-active-bg !default;
 $btn-secondary-color:           $gray-dark !default;
-$btn-secondary-bg:              transparent !default;
+$btn-secondary-bg:              #fff !default;
 $btn-secondary-border:          $gray-lighter !default;
+$btn-secondary-loading:         $gray-light !default;
+$btn-secondary-active-color:    $btn-secondary-color !default;
+$btn-secondary-active-bg:       #F4F5F7 !default;
+$btn-secondary-active-border:   $btn-secondary-border !default;
 $btn-secondary-inverse-color:   #fff !default;
 $btn-secondary-inverse-bg:      $btn-secondary-color !default;
 $btn-secondary-inverse-border:  $btn-secondary-inverse-bg !default;
