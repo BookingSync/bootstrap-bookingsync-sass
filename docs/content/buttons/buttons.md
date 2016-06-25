@@ -118,12 +118,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="buttons-example-loading">Loading</h3>
+    <h3 id="buttons-example-loading-state">Loading State</h3>
   </div>
 
   <p>This is done via <code>.btn-loading</code>.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-loading">
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-loading-state">
     <button type="button" class="btn btn-primary btn-loading">Loading...</button>
     <button type="button" class="btn btn-secondary btn-loading">Loading...</button>
     <a href="#" class="btn btn-primary btn-loading" role="button">Loading...</a>
