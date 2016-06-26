@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const { computed, Component } = Ember;
+const { computed } = Ember;
 import layout from '../templates/components/bsy-button';
 
 export default Ember.Component.extend({
