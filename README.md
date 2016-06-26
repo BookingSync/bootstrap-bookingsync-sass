@@ -236,4 +236,8 @@ Make sure the file has `.scss` extension (or `.sass` for Sass syntax). If you ha
 
 * `ember build`
 
+### Deploying Ember documentation to global styleguide documentation
+
+* `ember deploy production`
+
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
