@@ -50,7 +50,8 @@
     "ember-cli-babel": "^5.1.5",
     "ember-one-way-controls": "^0.8.0",
     "ember-power-select": "^0.10.9",
-    "ember-modal-dialog": "^0.8.4"
+    "ember-modal-dialog": "^0.8.4",
+    "ember-cli-htmlbars": "^1.0.8"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",

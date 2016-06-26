@@ -213,8 +213,23 @@
         }}
       </div>
 
-      <button type="submit" class="btn btn-primary">Send invitation</button>
+      {{#bsy-button type="submit" loadingLabel="Sending..."}}Send invitation{{/bsy-button}}
     </form>
+  </div>
+</section>
+
+<section class="annotated-section">
+  <header class="annotated-section-annotation">
+    <h2 class="annotated-section-title">Buttons</h2>
+  </header>
+  <div class="annotated-section-content">
+    {{#bsy-button type="primary"}}Primary{{/bsy-button}}
+    {{#bsy-button type="secondary"}}Secondary{{/bsy-button}}
+    {{#bsy-button type="secondary-inverse" class="btn-round" loadingLabel=""}}
+      <span>&times;</span>
+    {{/bsy-button}}
+    {{#bsy-button type="danger"}}Danger{{/bsy-button}}
+    {{#bsy-button type="link"}}Link{{/bsy-button}}
   </div>
 </section>
 
@@ -223,7 +238,7 @@
     <h2 class="annotated-section-title">Modal</h2>
   </header>
   <div class="annotated-section-content">
-    <button class="btn btn-primary" {{action "toggleModal"}}>Toggle Modal</button>
+    {{#bsy-button type="primary" click=(action "toggleModal")}}Toggle Modal{{/bsy-button}}
 
     {{#if isShowingModal}}
       {{#modal-dialog close="toggleModal"
@@ -233,10 +248,10 @@
                       container-class='modal-dialog'}}
         <div class="modal-content">
           <div class="modal-header">
-            <button class="btn btn-sm btn-secondary-inverse btn-round btn-modal-close"
-                    type="button" {{action "toggleModal"}}>
+            {{#bsy-button type="secondary-inverse" class="btn-sm btn-round btn-modal-close"
+                          loadingLabel="" click=(action "toggleModal")}}
               <span>&times;</span>
-            </button>
+            {{/bsy-button}}
             <h3 class="modal-title">Modal Name or Headline</h3>
           </div>
           <div class="modal-body">
@@ -246,12 +261,10 @@
           <div class="modal-footer">
             <div class="row">
               <div class="col-xs-6">
-                <button type="button" class="btn btn-default btn-block" {{action "toggleModal"}}>
-                  Close
-                </button>
+                {{#bsy-button type="secondary" class="btn-block" click=(action "toggleModal")}}Close{{/bsy-button}}
               </div>
               <div class="col-xs-6">
-                <button type="button" class="btn btn-primary btn-block">Save changes</button>
+                {{#bsy-button type="primary" class="btn-block"}}Save Changes{{/bsy-button}}
               </div>
             </div>
           </div>
