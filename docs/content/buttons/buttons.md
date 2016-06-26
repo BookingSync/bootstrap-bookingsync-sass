@@ -118,53 +118,6 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="buttons-example-loading-state">Loading State</h3>
-  </div>
-
-  <p>This is done via <code>.btn-loading</code> and it's good practice to add <code>disabled</code> attribute as well.</p>
-
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-loading-state">
-    <button type="button" class="btn btn-primary btn-loading" disabled>Loading...</button>
-    <button type="button" class="btn btn-secondary btn-loading" disabled>Loading...</button>
-    <a href="#" class="btn btn-primary btn-loading" role="button" disabled>Loading...</a>
-    <a href="#" class="btn btn-secondary btn-loading" role="button" disabled>Loading...</a>
-    <button type="button" class="btn btn-secondary-inverse btn-round btn-loading" disabled>
-      <span>&times;</span>
-    </button>
-
-    <hr>
-
-    <button type="button" class="btn btn-sm btn-primary btn-loading" disabled>Loading...</button>
-    <button type="button" class="btn btn-sm btn-secondary btn-loading" disabled>Loading...</button>
-    <a href="#" class="btn btn-sm btn-primary btn-loading" role="button" disabled>Loading...</a>
-    <a href="#" class="btn btn-sm btn-secondary btn-loading" role="button" disabled>Loading...</a>
-    <button type="button" class="btn btn-sm btn-secondary-inverse btn-round btn-loading" disabled>
-      <span>&times;</span>
-    </button>
-  </div>
-</div>
-~~~ html
-<button type="button" class="btn btn-primary btn-loading" disabled>Loading...</button>
-<button type="button" class="btn btn-secondary btn-loading" disabled>Loading...</button>
-<a href="#" class="btn btn-primary btn-loading" role="button" disabled>Loading...</a>
-<a href="#" class="btn btn-secondary btn-loading" role="button" disabled>Loading...</a>
-<button type="button" class="btn btn-secondary-inverse btn-round btn-loading" disabled>
-  <span>&times;</span>
-</button>
-
-<hr>
-
-<button type="button" class="btn btn-sm btn-primary btn-loading" disabled>Loading...</button>
-<button type="button" class="btn btn-sm btn-secondary btn-loading" disabled>Loading...</button>
-<a href="#" class="btn btn-sm btn-primary btn-loading" role="button" disabled>Loading...</a>
-<a href="#" class="btn btn-sm btn-secondary btn-loading" role="button" disabled>Loading...</a>
-<button type="button" class="btn btn-sm btn-secondary-inverse btn-round btn-loading" disabled>
-  <span>&times;</span>
-</button>
-~~~
-
-<div class="example">
-  <div class="sheet-header">
     <h3 id="buttons-example-disabled-state">Disabled State</h3>
   </div>
 
@@ -218,6 +171,53 @@
     <a href="#" class="btn btn-secondary" role="button">Link</a>
   </fieldset>
 </form>
+~~~
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="buttons-example-loading-state">Loading State</h3>
+  </div>
+
+  <p>This is done via <code>.btn-loading</code> and it's good practice to add <code>disabled</code> attribute as well.</p>
+
+  <div class="bs-example bs-sheet" data-example-id="buttons-example-loading-state">
+    <button type="button" class="btn btn-primary btn-loading" disabled>Loading...</button>
+    <button type="button" class="btn btn-secondary btn-loading" disabled>Loading...</button>
+    <a href="#" class="btn btn-primary btn-loading" role="button" disabled>Loading...</a>
+    <a href="#" class="btn btn-secondary btn-loading" role="button" disabled>Loading...</a>
+    <button type="button" class="btn btn-secondary-inverse btn-round btn-loading" disabled>
+      <span>&times;</span>
+    </button>
+
+    <hr>
+
+    <button type="button" class="btn btn-sm btn-primary btn-loading" disabled>Loading...</button>
+    <button type="button" class="btn btn-sm btn-secondary btn-loading" disabled>Loading...</button>
+    <a href="#" class="btn btn-sm btn-primary btn-loading" role="button" disabled>Loading...</a>
+    <a href="#" class="btn btn-sm btn-secondary btn-loading" role="button" disabled>Loading...</a>
+    <button type="button" class="btn btn-sm btn-secondary-inverse btn-round btn-loading" disabled>
+      <span>&times;</span>
+    </button>
+  </div>
+</div>
+~~~ html
+<button type="button" class="btn btn-primary btn-loading" disabled>Loading...</button>
+<button type="button" class="btn btn-secondary btn-loading" disabled>Loading...</button>
+<a href="#" class="btn btn-primary btn-loading" role="button" disabled>Loading...</a>
+<a href="#" class="btn btn-secondary btn-loading" role="button" disabled>Loading...</a>
+<button type="button" class="btn btn-secondary-inverse btn-round btn-loading" disabled>
+  <span>&times;</span>
+</button>
+
+<hr>
+
+<button type="button" class="btn btn-sm btn-primary btn-loading" disabled>Loading...</button>
+<button type="button" class="btn btn-sm btn-secondary btn-loading" disabled>Loading...</button>
+<a href="#" class="btn btn-sm btn-primary btn-loading" role="button" disabled>Loading...</a>
+<a href="#" class="btn btn-sm btn-secondary btn-loading" role="button" disabled>Loading...</a>
+<button type="button" class="btn btn-sm btn-secondary-inverse btn-round btn-loading" disabled>
+  <span>&times;</span>
+</button>
 ~~~
 
 <div class="example">
