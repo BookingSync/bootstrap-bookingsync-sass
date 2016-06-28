@@ -125,3 +125,7 @@ html .ember-power-select-option[aria-selected="true"] {
     cursor: default;
   }
 }
+
+html .ember-basic-dropdown-content {
+  z-index: 2000;
+}
