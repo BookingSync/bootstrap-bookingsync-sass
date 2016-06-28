@@ -1,21 +1,23 @@
-<nav class="menu flex-col">
-  <header class="dropdown">
-    <div class="bar">
-      <img src="http://placehold.it/24x24" class="img-responsive img-circle brand"
-           alt="Fullname">
-      <p>
-        Vacation Rentals<br>
-        <small>
-          <a data-target="#menu-header-submenu" href="#"
-             data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false"
-             id="menu-switch-account">Switch account
-            <span class="caret"></span></a>
-        </small>
-       </p>
+<nav class="menu menu-fixed flex-col">
+  <header class="menu-header">
+    <div class="menu-icon menu-header-icon">
+      <i class="bs-icon-bookingsync"></i>
     </div>
-    <div id="menu-header-submenu" class="menu-dropdown"
-         aria-labelledby="menu-switch-account">
+    <div class="menu-body menu-header-body">
+      <h4 class="menu-header-heading">Vacation Rentals</h4>
+      <small>
+        <a href="#menu-header-submenu"
+           data-toggle="collapse"
+           role="button"
+           aria-expanded="false"
+           aria-controls="menu-header-submenu"
+           class="collapsed">
+          Switch account
+          <span class="caret"></span>
+        </a>
+      </small>
+    </div>
+    <nav id="menu-header-submenu" class="collapse menu-header-submenu">
       <ol>
         <li role="presentation">
           <a href="#">Bed and Breakfast</a>
@@ -24,97 +26,97 @@
           <a href="#">City Apartments</a>
         </li>
       </ol>
-    </div>
+    </nav>
   </header>
-  <div class="body flex-1">
+  <div class="menu-body flex-1">
     <ol>
       <li role="presentation" class="active">
-        <a href="#">
-          <i class="fa fa-calendar fa-fw"></i>
-          <span>Bookings</span>
+        <a href="#" class="menu-link">
+          <div class="menu-icon menu-link-icon">
+            <i class="icon-calendar"></i>
+          </div>
+          <div class="menu-body menu-link-body">
+            Bookings
+          </div>
         </a>
       </li>
       <li role="presentation">
-        <a href="#">
-          <i class="fa fa-users fa-fw"></i>
-          <span>Clients</span>
+        <a href="#" class="menu-link">
+          <div class="menu-icon menu-link-icon">
+            <i class="icon-clients"></i>
+          </div>
+          <div class="menu-body menu-link-body">
+            Clients
+          </div>
         </a>
       </li>
       <li role="presentation">
-        <a href="#">
-          <i class="fa fa-envelope-o fa-fw"></i>
-          <span>Inquiries</span></a>
-      </li>
-      <li role="presentation">
-        <a href="#">
-          <i class="fa fa-home fa-fw"></i>
-          <span>Rentals</span>
-        </a>
-      </li>
-      <li role="presentation">
-        <a href="#">
-          <i class="fa fa-star fa-fw"></i>
-          <span>Reviews</span>
-        </a>
-      </li>
-      <li role="presentation">
-        <a href="#">
-          <i class="fa fa-globe fa-fw"></i>
-          <span>Website</span>
-        </a>
-      </li>
-      <li role="presentation">
-        <a href="#">
-          <i class="fa fa-cubes fa-fw"></i>
-          <span>Apps</span>
+        <a href="#" class="menu-link">
+          <div class="menu-icon menu-link-icon">
+            <i class="icon-rental"></i>
+          </div>
+          <div class="menu-body menu-link-body">
+            Rentals
+          </div>
         </a>
       </li>
     </ol>
   </div>
-  <footer>
-    <div class="bar">
-      <img src="http://placehold.it/24x24"
-           class="img-responsive img-circle avatar" alt="John Doe">
-      <p>
-        John Doe<br>
-        <small>
-          <a data-target="#menu-footer-submenu" href="#"
-             data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false"
-             id="menu-manage-account">Manage Account
-            <i class="fa fa-gear"></i></a>
-        </small>
-      </p>
-    </div>
-    <div id="menu-footer-submenu" class="menu-dropright flex-col"
-         aria-labelledby="menu-manage-account">
-      <ol class="flex-1">
-        <li class="back text-center" role="presentation">
-          <a data-target="#menu-footer-submenu" href="#"
-             data-toggle="dropdown">
-            <i class="fa fa-long-arrow-left fa-fw"></i>
-            <span class="sr-only">Back</span>
-          </a>
-        </li>
+  <footer class="menu-footer">
+    <ol>
+      <li role="separator" class="divider"></li>
+      <li role="presentation">
+        <a href="#" class="menu-link">
+          <div class="menu-icon menu-link-icon">
+            <i class="icon-applications"></i>
+          </div>
+          <div class="menu-body menu-link-body">
+            Apps
+          </div>
+        </a>
+      </li>
+      <li role="presentation">
+        <a href="#" class="menu-link">
+          <div class="menu-icon menu-link-icon">
+            <i class="icon-settings"></i>
+          </div>
+          <div class="menu-body menu-link-body">
+            Settings
+          </div>
+        </a>
+      </li>
+      <li role="separator" class="divider"></li>
+      <li role="presentation">
+        <a href="#menu-footer-submenu"
+           data-toggle="collapse"
+           role="button"
+           aria-expanded="false"
+           aria-controls="menu-footer-submenu"
+           class="collapsed menu-link">
+          <div class="menu-icon menu-footer-icon">
+            <img src="http://lorempixel.com/100/100/people/9" alt="Jane Doe"
+                 class="img-rounded">
+          </div>
+          <div class="menu-body menu-link-body">
+            Jane Doe
+            <span class="caret"></span>
+          </div>
+        </a>
+      </li>
+    </ol>
+    <nav id="menu-footer-submenu" class="collapse menu-footer-submenu">
+      <ol>
         <li role="presentation">
-          <a href="#">
-            <i class="fa fa-user fa-fw"></i>
-            <span>Personal Information</span>
-          </a>
+          <a href="#">Help Center</a>
         </li>
+        <li role="separator" class="divider"></li>
         <li role="presentation">
-          <a href="#">
-            <i class="fa fa-calendar-o fa-fw"></i>
-            <span>Calendar Preferences</span>
-          </a>
+          <a href="#">Profile</a>
         </li>
-        <li role="presentation">
-          <a href="#">
-            <i class="fa fa-clock-o fa-fw"></i>
-            <span>Time Format</span>
-          </a>
+        <li role="presentation" class="active">
+          <a href="#">Logout</a>
         </li>
       </ol>
-    </div>
+    </nav>
   </footer>
 </nav>

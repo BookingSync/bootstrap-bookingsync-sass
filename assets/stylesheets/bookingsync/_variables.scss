@@ -117,30 +117,73 @@ $border-radius-small:           1px !default;
 
 //== BookingSync
 //
-$menu-color:                    #566da7 !default;
-$menu-bg:                       #1e3264 !default;
-$menu-header-height:            70px !default;
-$menu-header-color:             #ffffff !default;
-$menu-header-bg:                $brand-primary !default;
-$menu-header-link-color:        #ffffff !default;
-$menu-header-link-hover-color:  $menu-header-link-color !default;
-$menu-header-link-hover-bg:     #53b4e1 !default;
-$menu-link-color:               #8ea8ea !default;
-$menu-link-icon-color:          rgba($menu-link-color, 0.5) !default;
-$menu-link-bg:                  $menu-bg !default;
-$menu-link-hover-color:         #ffffff !default;
-$menu-link-hover-icon-color:    $menu-color !default;
-$menu-link-hover-bg:            #263c73 !default;
-$menu-active-color:             #ffffff !default;
-$menu-active-icon-color:        $brand-primary !default;
-$menu-active-bg:                #16264e !default;
-$menu-footer-color:             #ffffff !default;
-$menu-footer-bg:                $menu-bg !default;
-$menu-footer-link-color:        $menu-link-color !default;
-$menu-footer-back-color:        #fff !default;
+$menu-width:                            230px !default;
+$menu-collapsed-width:                  60px !default;
 
-$menu-border-radius:              $border-radius-base !default;
-$menu-default-toggle-icon-bar-bg: $gray-light !default;
+$menu-color:                            #566da7 !default;
+$menu-bg:                               #1e3264 !default;
+$menu-icon-size:                        16px !default;
+$menu-link-height:                      50px !default;
+$menu-link-color:                       #8ea8ea !default;
+$menu-link-icon-color:                  rgba($menu-link-color, 0.5) !default;
+$menu-link-bg:                          $menu-bg !default;
+$menu-link-hover-color:                 #ffffff !default;
+$menu-link-hover-icon-color:            $menu-color !default;
+$menu-link-hover-bg:                    #263c73 !default;
+$menu-active-color:                     #ffffff !default;
+$menu-active-icon-color:                $brand-primary !default;
+$menu-active-bg:                        #16264e !default;
+$menu-divider-border-color:             $menu-link-hover-bg !default;
+
+$menu-submenu-color:                    $menu-link-color !default;
+$menu-submenu-bg:                       $menu-active-bg !default;
+$menu-submenu-icon-size:                12px !default;
+$menu-submenu-link-height:              40px !default;
+$menu-submenu-link-color:               $menu-link-color !default;
+$menu-submenu-link-icon-color:          $menu-link-color !default;
+$menu-submenu-link-bg:                  $menu-submenu-bg !default;
+$menu-submenu-link-hover-color:         #ffffff !default;
+$menu-submenu-link-hover-icon-color:    #8ea8ea !default;
+$menu-submenu-link-hover-bg:            $menu-submenu-link-bg !default;
+$menu-submenu-active-color:             $menu-submenu-link-hover-color !default;
+$menu-submenu-active-icon-color:        $menu-submenu-link-hover-icon-color !default;
+$menu-submenu-active-bg:                $menu-submenu-link-hover-bg !default;
+
+
+$menu-header-height:                    70px !default;
+$menu-header-icon-size:                 24px !default;
+$menu-header-color:                     #ffffff !default;
+$menu-header-bg:                        $brand-primary !default;
+$menu-header-heading-size:              14px !default;
+$menu-header-link-color:                #ffffff !default;
+$menu-header-link-hover-color:          $menu-header-link-color !default;
+$menu-header-link-hover-bg:             $menu-header-bg !default;
+
+$menu-header-submenu-color:             $menu-header-color !default;
+$menu-header-submenu-bg:                $menu-header-bg !default;
+$menu-header-submenu-link-color:        #ffffff !default;
+$menu-header-submenu-link-hover-color:  $menu-header-link-color !default;
+$menu-header-submenu-link-hover-bg:     #53b4e1 !default;
+$menu-header-submenu-border-color:      $menu-header-submenu-link-hover-bg !default;
+
+
+$menu-footer-height:                    $menu-link-height !default;
+$menu-footer-icon-size:                 ($menu-link-height * 0.64) !default;
+$menu-footer-color:                     $menu-color !default;
+$menu-footer-bg:                        $menu-bg !default;
+$menu-footer-heading-size:              14px !default;
+$menu-footer-link-color:                $menu-link-color !default;
+$menu-footer-link-hover-color:          $menu-link-hover-color !default;
+$menu-footer-link-hover-bg:             $menu-link-hover-bg !default;
+
+$menu-footer-submenu-color:             $menu-submenu-color !default;
+$menu-footer-submenu-bg:                $menu-submenu-bg !default;
+$menu-footer-submenu-link-color:        $menu-submenu-link-color !default;
+$menu-footer-submenu-link-hover-color:  $menu-submenu-link-hover-color !default;
+$menu-footer-submenu-link-hover-bg:     $menu-submenu-link-hover-bg !default;
+$menu-footer-submenu-border-color:      $menu-link-hover-bg !default;
+
+$menu-default-toggle-icon-bar-bg:       $gray-light !default;
 
 //== Buttons
 //
