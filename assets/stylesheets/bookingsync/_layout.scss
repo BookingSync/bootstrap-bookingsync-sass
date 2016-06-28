@@ -63,13 +63,3 @@ body {
     margin-left: $menu-width;
   }
 }
-
-// Deprecated
-#content {
-  min-height: 100vh;
-  font-size: 12px; // FIXME: Temporary fix for easier migration
-
-  &.with-navbar {
-    padding-top: $navbar-height + 1; // navbar border
-  }
-}
