@@ -199,6 +199,7 @@ Add in your `ember-cli-build.js`
 
 Ember CLI Bootstrap BookingSync SASS uses fonts from Google Fonts, so the URL to them has to be white listed. You can set this by adding to the Content Security Policy defined in config/environment.js like so:
 
+```js
 ENV.contentSecurityPolicy = {
   'default-src': "'none'",
   'script-src': "'self' 'unsafe-inline'",
@@ -208,6 +209,7 @@ ENV.contentSecurityPolicy = {
   'img-src': "'self' data:",
   'media-src': "'self'"
 }
+```
 
 You can find out more information on the CSP addon page [here](https://github.com/rwjblue/ember-cli-content-security-policy#ember-cli-content-security-policy).
 
@@ -216,6 +218,8 @@ You can find out more information on the CSP addon page [here](https://github.co
 The blueprints should generate this setup for you on install but if needed you can manually install Bootstrap BookingSync styles in `app/styles/app.scss` using:
 
 ```scss
+@import "ember-power-select";
+@import "ember-modal-dialog/ember-modal-structure";
 @import "bootstrap-bookingsync";
 ```
 
