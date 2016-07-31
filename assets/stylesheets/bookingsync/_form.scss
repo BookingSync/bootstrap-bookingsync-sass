@@ -8,10 +8,8 @@
 // --------------------------------------------------
 
 .form-inline {
-  .btn,
-  .checkbox,
-  .radio {
-    margin-top: 25px;
+  .form-group {
+    margin-top: 0;
   }
 }
 
@@ -27,6 +25,10 @@
   max-width: 100%;
   margin: 25px 0 0 0;
   padding: $label-padding-focus 0 $padding-base-vertical;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
 
   label {
     position: absolute;
