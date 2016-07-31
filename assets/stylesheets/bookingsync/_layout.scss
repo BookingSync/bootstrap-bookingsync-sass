@@ -19,15 +19,22 @@ body {
   }
 
   .navbar-nav > li > a {
-    line-height: 40px;
+    line-height: 20px;
   }
 
   h1,
+  .h1,
   .navbar-brand {
     font-size: 18px;
     line-height: $navbar-height;
     padding: 0;
     margin: 0;
+  }
+
+  a.h1:focus,
+  a.h1:hover {
+    text-decoration: none;
+    color: $headings-color;
   }
 
   @media (max-width: $screen-xs-max) {
