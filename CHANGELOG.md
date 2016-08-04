@@ -26,6 +26,8 @@
   * Improve form inputs spacing
   * Add documentation for smiles
   * Add icons font and documentation
+  * Add icons with fixed width
+  * Add smiles with fixed width
   * Add styling for Ember Power Select
   * Improve Buttons styling
   * Add Buttons loading animation
