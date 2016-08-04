@@ -28,3 +28,23 @@
   <li><i class="bs-icon-winktongue"></i> winktongue</li>
 </ul>
 ~~~
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="smiles-fixed-width-example">Fixed width smiles</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="smiles-fixed-width-example">
+    <ul class="list-unstyled">
+      <li><i class="bs-icon-bookingsync bs-icon-fw"></i> &nbsp; bookingsync</li>
+      <li><i class="bs-icon-bigboss bs-icon-fw"></i> &nbsp; bigboss</li>
+      <li><i class="bs-icon-winktongue bs-icon-fw"></i> &nbsp; winktongue</li>
+    </ul>
+  </div>
+</div>
+~~~ html
+<ul class="list-unstyled">
+  <li><i class="bs-icon-bookingsync bs-icon-fw"></i> &nbsp; bookingsync</li>
+  <li><i class="bs-icon-bigboss bs-icon-fw"></i> &nbsp; bigboss</li>
+  <li><i class="bs-icon-winktongue bs-icon-fw"></i> &nbsp; winktongue</li>
+</ul>
+~~~

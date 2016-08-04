@@ -1,27 +1,7 @@
-<div class="row">
-  <div class="col-md-3 col-md-push-9">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">
-          <%= link_to("Brand", "#brand") %>
-        </h3>
-      </div>
-      <div class="list-group">
-        <%= link_to("Colors", "#colors", class: "list-group-item") %>
-        <%= link_to("Smiles", "#smiles", class: "list-group-item") %>
-        <%= link_to("Iconography", "#iconography", class: "list-group-item") %>
-        <%= link_to("Typography", "#typography", class: "list-group-item") %>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-9 col-md-pull-3">
-    <div class="reference-body">
-      <h1 class="brand">Brand</h1>
-      <%= items['/brand/colors.*'].compiled_content %>
-      <%= items['/brand/smiles.*'].compiled_content %>
-      <%= items['/brand/iconography.*'].compiled_content %>
-      <%= items['/brand/typography.*'].compiled_content %>
-    </div>
-  </div>
+<div class="reference-body">
+  <h1 class="brand">Brand</h1>
+  <%= items['/brand/colors.*'].compiled_content %>
+  <%= items['/brand/smiles.*'].compiled_content %>
+  <%= items['/brand/iconography.*'].compiled_content %>
+  <%= items['/brand/typography.*'].compiled_content %>
 </div>

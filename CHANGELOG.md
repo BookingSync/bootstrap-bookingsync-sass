@@ -4,9 +4,7 @@
   * Smiles definition changed from `bs-icon bs-*` to `bs-icon-*`
   * Fix `laughing` smile name (was with a typo `laughting`)
   * Entire rebuild of the `menu`
-
-* deprecations
-  * deprecate `#content` in favor of `.main-content`
+  * remove `#content` in favor of `.main-content`
 
 * bug fixes
   * Fix `navbar-btn` positioning
@@ -26,9 +24,13 @@
   * Improve form inputs spacing
   * Add documentation for smiles
   * Add icons font and documentation
+  * Add icons with fixed width
+  * Add smiles with fixed width
   * Add styling for Ember Power Select
   * Improve Buttons styling
   * Add Buttons loading animation
+  * Add `list-group` support with nesting and icons support 
+  * Add `.sided-content` to use with `menu`
 
 ### 0.0.19 - 2016-05-09
 

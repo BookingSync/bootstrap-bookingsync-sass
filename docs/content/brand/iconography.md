@@ -64,3 +64,23 @@
   <li><i class="icon-widget"></i> widget</li>
 </ul>
 ~~~
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="icons-fixed-width-example">Fixed width icons</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="icons-fixed-width-example">
+    <ul class="list-unstyled">
+      <li><i class="icon-rental icon-fw"></i> &nbsp; rental</li>
+      <li><i class="icon-clients icon-fw"></i> &nbsp; photo</li>
+      <li><i class="icon-applications icon-fw"></i> &nbsp; applications</li>
+    </ul>
+  </div>
+</div>
+~~~ html
+<ul class="list-unstyled">
+  <li><i class="icon-rental icon-fw"></i> &nbsp; rental</li>
+  <li><i class="icon-clients icon-fw"></i> &nbsp; photo</li>
+  <li><i class="icon-applications icon-fw"></i> &nbsp; applications</li>
+</ul>
+~~~

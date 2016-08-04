@@ -24,10 +24,16 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  display: inline-block;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fw {
+  width: (18em / 14);
+  text-align: center;
 }
 
 .icon-invoice:before {
