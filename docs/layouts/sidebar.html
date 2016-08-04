@@ -2,29 +2,50 @@
   <li class="<%= "active" if @item_rep.path.start_with?("/brand") %>">
     <%= link_to('<i class="bs-icon-bookingsync"></i><span>Brand</span>', "/brand",
       { class: "list-group-item" }) %>
+    <% if @item_rep.path.start_with?("/brand") %>
+      <%= items["/brand/_navbar.*"].compiled_content %>
+    <% end %>
   </li>
   <li class="<%= "active" if @item_rep.path.start_with?("/forms") %>">
     <%= link_to('<i class="styleguide-icon-forms"></i><span>Forms</span>', "/forms",
       { class: "list-group-item" }) %>
+    <% if @item_rep.path.start_with?("/forms") %>
+      <%= items["/forms/_navbar.*"].compiled_content %>
+    <% end %>
   </li>
   <li class="<%= "active" if @item_rep.path.start_with?("/buttons") %>">
     <%= link_to('<i class="styleguide-icon-buttons"></i><span>Buttons</span>', "/buttons",
       { class: "list-group-item" }) %>
+    <% if @item_rep.path.start_with?("/buttons") %>
+      <%= items["/buttons/_navbar.*"].compiled_content %>
+    <% end %>
   </li>
   <li class="<%= "active" if @item_rep.path.start_with?("/utilities") %>">
     <%= link_to('<i class="styleguide-icon-utilities"></i><span>Utilities</span>', "/utilities",
       { class: "list-group-item" }) %>
+    <% if @item_rep.path.start_with?("/utilities") %>
+      <%= items["/utilities/_navbar.*"].compiled_content %>
+    <% end %>
   </li>
-  <li class="<%= "active" if @item_rep.path.start_with?("/components") %>">
+  <li class="<%= "active" if @item_rep.path.start_with?("/utilities") %>">
     <%= link_to('<i class="styleguide-icon-components"></i><span>Components</span>', "/components",
       { class: "list-group-item" }) %>
+    <% if @item_rep.path.start_with?("/components") %>
+      <%= items["/components/_navbar.*"].compiled_content %>
+    <% end %>
   </li>
   <li class="<%= "active" if @item_rep.path.start_with?("/compositions") %>">
     <%= link_to('<i class="styleguide-icon-compositions"></i><span>Compositions</span>',
       "/compositions", { class: "list-group-item" }) %>
+    <% if @item_rep.path.start_with?("/compositions") %>
+      <%= items["/compositions/_navbar.*"].compiled_content %>
+    <% end %>
   </li>
   <li class="<%= "active" if @item_rep.path.start_with?("/ember") %>">
     <%= link_to('<i class="styleguide-icon-ember"></i><span>Ember Addon</span>', "/ember/",
       { class: "list-group-item" }) %>
+    <% if @item_rep.path.start_with?("/ember") %>
+      <%= items["/ember/_navbar.*"].compiled_content %>
+    <% end %>
   </li>
 </ul>
