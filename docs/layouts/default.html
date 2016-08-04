@@ -1,12 +1,19 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <%= render "/head.*" %>
-  <body class="flex-col">
-    <div class="page-wrapper flex-1 flex-col">
-      <%= render "/navbar.*" %>
-      <div class="container content">
-        <%= yield %>
+  <body>
+    <%= render "/navbar.*" %>
+    <section class="main-content container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="panel panel-default">
+            <%= render "/sidebar.*" %>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <%= yield %>
+        </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>

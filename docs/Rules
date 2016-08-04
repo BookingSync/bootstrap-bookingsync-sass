@@ -15,6 +15,7 @@
 
 ignore %r{/assets/(stylesheets|javascripts)/_.+}
 
+passthrough '/assets/images/**/*'
 passthrough '/assets/fonts/**/*'
 
 compile '/static/**/*' do
@@ -32,6 +33,13 @@ compile %r{/assets/(stylesheets|javascripts)/.+} do
     :css_compressor => :scss,
     :js_compressor  => :uglifier
   }
+end
+
+compile '/embed/*.{erb,html,md,mmd}' do
+  filter :erb
+  filter :kramdown, toc_levels: [2], header_offset: 1, enable_coderay: false
+  filter :colorize_syntax, default_colorizer: :pygmentsrb
+  layout item[:layout] || '/embed.*'
 end
 
 compile '/**/*.{erb,html,md,mmd}' do

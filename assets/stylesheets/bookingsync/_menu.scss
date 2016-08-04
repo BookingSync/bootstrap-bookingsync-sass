@@ -5,223 +5,35 @@
 .menu {
   background-color: $menu-bg;
   color: $menu-color;
-  border-radius: $menu-border-radius;
-  width: 60px;
-  height: 100%;
-  overflow: hidden;
+  width: $menu-width;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   z-index: 9000;
   transition: width 0.2s cubic-bezier(.4,0,.2,1);
-  border-radius: 0;
-
-  .body {
-    overflow: hidden;
-  }
-
-  @media (max-width: $screen-xs-max) {
-    .body,
-    .menu-dropdown ol,
-    .menu-dropright {
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-  }
-
-
-  &:hover {
-    width: 230px;
-
-    .body,
-    .menu-dropdown ol,
-    .menu-dropright {
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-  }
-
-  header,
-  footer {
-    .bar {
-      height: $menu-header-height;
-      position: relative;
-    }
-
-    .brand,
-    .avatar {
-      height: 24px;
-      width: 24px;
-      font-size: 24px;
-      position: absolute;
-      top: 18px;
-      left: 18px;
-    }
-
-    .brand {
-      font-size: 24px;
-      padding-top: 5px;
-    }
-
-    p {
-      margin: 0;
-      margin-left: 60px;
-      padding-top: 17.5px;
-      line-height: 1.24em;
-      white-space: nowrap;
-    }
-  }
-
-  header {
-    background-color: $menu-header-bg;
-    color: $menu-header-color;
-    z-index: 1000;
-    position: static;
-
-    a {
-      color: $menu-header-link-color;
-    }
-
-    ol {
-      margin-bottom: 0;
-      border-top: 1px solid $menu-header-link-hover-bg;
-      background-color: $menu-header-bg;
-      width: 100%;
-      position: absolute;
-      max-height: 100%;
-      overflow: hidden;
-
-      a:hover {
-        background-color: $menu-header-link-hover-bg;
-        color: $menu-header-link-hover-color;
-      }
-    }
-
-    .bar {
-      background-color: $menu-header-bg;
-      z-index: 2000;
-    }
-
-    #menu-header-submenu {
-      width: 100%;
-
-      &.open {
-        top: $menu-header-height;
-        bottom: 0;
-        @media (max-width: $screen-xs-max) {
-          position: fixed;
-          top: $menu-header-height + $navbar-height;
-        }
-      }
-    }
-  }
-
-  footer {
-    background-color: $menu-footer-bg;
-    color: $menu-footer-color;
-
-    a {
-      color: $menu-footer-link-color;
-    }
-
-    .back {
-      i {
-        color: $menu-footer-back-color;
-      }
-
-      a:hover i {
-        color: $menu-footer-back-color;
-      }
-    }
-
-    i {
-      margin-left: 2px;
-    }
-
-    #menu-footer-submenu {
-      top: 0;
-      width: 100%;
-      height: 100%;
-
-      ol {
-        margin-top: $menu-header-height;
-        margin-bottom: 0;
-      }
-
-      &.open {
-        ol {
-          background-color: $menu-footer-bg;
-        }
-      }
-    }
-  }
 
   ol {
-    // No need to set list-style: none; since li is block level
-    padding-left: 0; // reset padding because ul and ol
+    padding-left: 0;
+    margin: 0;
   }
 
   li {
     display: block;
 
+    &.divider {
+      border-top: 1px solid $menu-divider-border-color;
+    }
+
     a {
       display: block;
-      padding: 10px 22px;
       text-decoration: none;
       white-space: nowrap;
-      line-height: 30px;
-    }
-
-    i {
-      width: 16px;
-      height: 16px;
+      line-height: $menu-link-height;
     }
   }
 
-  .body,
-  footer {
-    li {
-      a {
-        background-color: $menu-link-bg;
-        color: $menu-link-color;
-
-        i {
-          color: $menu-link-icon-color;
-        }
-
-        span {
-          padding-left: 18px;
-          font-weight: 600;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-        }
-
-        &:hover {
-          background-color: $menu-link-hover-bg;
-          color: $menu-link-hover-color;
-
-          i {
-            color: $menu-link-hover-icon-color;
-          }
-        }
-      }
-
-      &.active a,
-      &.active:hover a,
-      &.active:focus a {
-        background-color: $menu-active-bg;
-        color: $menu-active-color;
-
-        i {
-          color: $menu-active-icon-color;
-        }
-      }
-    }
-  }
-}
-
-.menu-toggle {
-  height: $menu-header-height;
-
-  .icon-bar {
-    background-color: $menu-default-toggle-icon-bar-bg;
+  a:not(.collapsed) .caret {
+    transform: rotate(180deg);
   }
 }
 
@@ -232,51 +44,188 @@
   left: 0;
 }
 
-@media (max-width: $screen-xs-max) {
-  .menu-toggle {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2000;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 5px;
+.menu-icon,
+.menu-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.menu-icon {
+  width: $menu-collapsed-width;
+  min-width: $menu-collapsed-width;
+  text-align: center;
+
+  * {
+    width: $menu-icon-size;
+    height: $menu-icon-size;
+    font-size: $menu-icon-size;
+    line-height: 1;
+  }
+}
+
+.menu-body {
+  width: 100%;
+}
+
+.menu-link-icon {
+  color: $menu-link-icon-color;
+}
+
+.menu-link-body {
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.menu-link {
+  background-color: $menu-link-bg;
+  color: $menu-link-color;
+
+  &:hover,
+  &:focus {
+    background-color: $menu-link-hover-bg;
+    color: $menu-link-hover-color;
+
+    .menu-link-icon {
+      color: $menu-link-hover-icon-color;
+    }
   }
 
-  .menu {
-    position: fixed;
-    left: 0;
-    top: $navbar-height;
-    width: 100%;
-    height: calc(100% - 70px);
+  .active &,
+  .active:hover &,
+  .active:focus & {
+    background-color: $menu-active-bg;
+    color: $menu-active-color;
+
+    .menu-link-icon {
+      color: $menu-active-icon-color;
+    }
+  }
+}
+
+.menu-header {
+  background-color: $menu-header-bg;
+  color: $menu-header-color;
+  z-index: 1000;
+  position: static;
+
+  a {
+    color: $menu-header-link-color;
 
     &:hover {
-      width: 100%;
+      background-color: $menu-header-link-hover-bg;
+      color: $menu-header-link-hover-color;
     }
   }
 }
 
-@media (min-width: $screen-sm-min) {
-  .menu {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    &.collapse {
-      visibility: visible;
-
-      &.flex-col {
-        display: flex;
-      }
-    }
+.menu-header-icon {
+  * {
+    width: $menu-header-icon-size;
+    height: $menu-header-icon-size;
+    font-size: $menu-header-icon-size;
   }
 }
 
-// Kill scroll on the body when the mobile menu is opened
-body.menu-open {
-  position: fixed;
+.menu-header-body {
+  height: $menu-header-height;
+  position: relative;
+  color: $menu-header-color;
+}
+
+.menu-header-heading {
+  font-size: $menu-header-heading-size;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $menu-header-color;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-header-submenu {
+  position: absolute;
   width: 100%;
-  height: 100%;
+  top: $menu-header-height;
+  background-color: $menu-header-submenu-bg;
+  color: $menu-header-submenu-color;
+  border-top: 1px solid $menu-header-submenu-border-color;
+
+  a {
+    color: $menu-header-submenu-link-color;
+    padding-left: 22px;
+
+    &:hover {
+      background-color: $menu-header-submenu-link-hover-bg;
+      color: $menu-header-submenu-link-hover-color;
+    }
+  }
+}
+
+.menu-footer {
+  background-color: $menu-footer-bg;
+  color: $menu-footer-color;
+  z-index: 1000;
+  position: static;
+
+  a {
+    color: $menu-footer-link-color;
+
+    &:hover {
+      background-color: $menu-footer-link-hover-bg;
+      color: $menu-footer-link-hover-color;
+    }
+
+    &.collapsed .caret {
+      transform: rotate(180deg);
+    }
+
+    &:not(.collapsed) .caret {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.menu-footer-icon {
+  * {
+    width: $menu-footer-icon-size;
+    height: $menu-footer-icon-size;
+    font-size: $menu-footer-icon-size;
+  }
+}
+
+.menu-footer-body {
+  height: $menu-footer-height;
+  position: relative;
+  color: $menu-footer-color;
+}
+
+.menu-footer-heading {
+  font-size: $menu-footer-heading-size;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $menu-footer-color;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-footer-submenu {
+  position: absolute;
+  width: 100%;
+  bottom: $menu-footer-height;
+  background-color: $menu-footer-submenu-bg;
+  color: $menu-footer-submenu-color;
+  border-top: 1px solid $menu-footer-submenu-border-color;
+  border-bottom: 1px solid $menu-footer-submenu-border-color;
+
+  a {
+    color: $menu-footer-submenu-link-color;
+    padding-left: $menu-collapsed-width;
+
+    &:hover {
+      background-color: $menu-footer-submenu-link-hover-bg;
+      color: $menu-footer-submenu-link-hover-color;
+    }
+  }
 }

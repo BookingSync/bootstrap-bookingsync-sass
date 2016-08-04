@@ -57,6 +57,13 @@ body {
   overflow: auto;
 }
 
+.sided-content {
+  & > .navbar,
+  & > .main-content {
+    margin-left: $menu-width;
+  }
+}
+
 // Deprecated
 #content {
   min-height: 100vh;

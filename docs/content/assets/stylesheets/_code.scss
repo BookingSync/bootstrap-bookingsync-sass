@@ -7,6 +7,12 @@
   border-radius: 3px 3px 0 0;
   padding: 15px;
   margin-top: 15px;
+
+  .menu {
+    position: relative;
+    height: auto;
+    z-index: 1;
+  }
 }
 
 pre {
