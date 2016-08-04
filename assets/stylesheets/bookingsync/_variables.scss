@@ -340,3 +340,12 @@ $modal-border-radius:                 6px !default;
 $modal-inner-padding:                 30px !default;
 $modal-title-padding:                 $modal-inner-padding !default;
 $modal-backdrop-bg:                   transparent;
+
+
+//== List group
+//
+$list-group-hover-bg:                 rgba($gray-base, .05) !default;
+$list-group-active-bg:                $gray-lightest !default;
+$list-group-active-child-bg:          transparent !default;
+$list-group-active-child-border:      $list-group-active-bg !default;
+$list-group-active-child-hover-bg:    $list-group-hover-bg !default;

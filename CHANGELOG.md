@@ -31,6 +31,7 @@
   * Add styling for Ember Power Select
   * Improve Buttons styling
   * Add Buttons loading animation
+  * Add `list-group` support with nesting and icons support 
 
 ### 0.0.19 - 2016-05-09
 
