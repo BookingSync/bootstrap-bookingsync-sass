@@ -1,4 +1,4 @@
-### Unreleased
+### 1.0.0.beta1 - 2016-08-06
 
 * breaking changes
   * Smiles definition changed from `bs-icon bs-*` to `bs-icon-*`

@@ -1,5 +1,5 @@
 module Bootstrap
   module BookingSync
-    VERSION = '0.0.19'
+    VERSION = '1.0.0.beta1'
   end
 end
