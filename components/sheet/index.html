@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-  <title>Bootstrap BookingSync SASS documentation</title>
+  <title>BookingSync Styleguide</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/stylesheets/application.css">
   <link rel="stylesheet" href="/highlight.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="/assets/javascripts/application.js"></script>
@@ -18,57 +17,91 @@
   <meta name="generator" content="nanoc 4.1.6">
 </head>
 
-  <body class="flex-col">
-    <div class="page-wrapper flex-1 flex-col">
-      <nav class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container">
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle sidebar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <a class="navbar-brand" href="/">
-        BookingSync Styleguide
-      </a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navigation">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="">
-          <a href="/brand">Brand</a>
-        </li>
-        <li class="">
-          <a href="/forms">Forms</a>
-        </li>
-        <li class="">
-          <a href="/buttons">Buttons</a>
-        </li>
-        <li class="">
-          <a href="/utilities">Utilities</a>
-        </li>
-        <li class="active">
-          <a href="/components">Components</a>
-        </li>
-        <li class="">
-          <a href="/compositions">Compositions</a>
-        </li>
-      </ul>
+      <div class="navbar-brand-container">
+        <span class="navbar-brand">
+          <h1>
+            <span class="navbar-breadcrumb">
+              <a href="https://www.bookingsync.com" class="navbar-breadcrumb-brand-logo">
+                <img src="/assets/images/bookingsync.png" alt="BookingSync">
+              </a>
+              /
+            </span>
+            
+          </h1>
+        </span>
+      </div>
     </div>
   </div>
 </nav>
 
-      <div class="container content">
-        <h2 id="sheet">Sheet</h2>
+    <section class="main-content container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="panel panel-default">
+  <ul class="list-group list-group-with-icon list-unstyled">
+    <li class="">
+      <a class="list-group-item" href="/brand"><i class="bs-icon-bookingsync bs-icon-fw"></i>&nbsp; <span>Brand</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/forms"><i class="styleguide-icon-forms icon-fw"></i>&nbsp; <span>Forms</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/buttons"><i class="styleguide-icon-buttons icon-fw"></i>&nbsp; <span>Buttons</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/utilities"><i class="styleguide-icon-utilities icon-fw"></i>&nbsp; <span>Utilities</span></a>
+      
+    </li>
+    <li class="expanded active">
+      <a class="list-group-item" href="/components"><i class="styleguide-icon-components icon-fw"></i>&nbsp; <span>Components</span></a>
+      
+        <ul class="list-group list-unstyled">
+  <li><a class="list-group-item" href="#menu">Menu</a></li>
+  <li><a class="list-group-item" href="#list-group">List group</a></li>
+  <li><a class="list-group-item" href="#list-group-with-icons">List group with icons</a></li>
+  <li><a class="list-group-item" href="#nested-list-group">Nested list group</a></li>
+  <li><a class="list-group-item" href="#nested-list-group-with-icons">Nested list group with icons</a></li>
+  <li><a class="list-group-item" href="#dropdown">Dropdown</a></li>
+  <li><a class="list-group-item" href="#sheet">Sheet</a></li>
+  <li><a class="list-group-item" href="#sheet-with-header">Sheet with header</a></li>
+  <li><a class="list-group-item" href="#sheet-with-tabs">Sheet with tabs</a></li>
+  <li><a class="list-group-item" href="#sheet-with-stacked-tabs">Sheet with stacked tabs</a></li>
+  <li><a class="list-group-item" href="#sheet-with-auto-stackable-tabs">Sheet with auto-stackable tabs</a></li>
+  <li><a class="list-group-item" href="#chosen-select">Chosen select</a></li>
+  <li><a class="list-group-item" href="#chosen-multiple-select">Chosen multiple select</a></li>
+  <li><a class="list-group-item" href="#switch">Switch</a></li>
+  <li><a class="list-group-item" href="#disabled-switch">Disabled switch</a></li>
+  <li><a class="list-group-item" href="#modal">Modal</a></li>
+</ul>
 
-<div class="example">
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/compositions"><i class="styleguide-icon-compositions icon-fw"></i>&nbsp; <span>Compositions</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/ember/"><i class="styleguide-icon-ember icon-fw"></i>&nbsp; <span>Ember Addon</span></a>
+      
+    </li>
+  </ul>
+</div>
+
+        </div>
+        <div class="col-sm-9">
+          <div class="example">
   <div class="sheet-header">
-    <h3 id="sheet-example">Basic example</h3>
+    <h3 id="sheet">Sheet</h3>
   </div>
   <p>Highly inspired from the <code>panel</code> component, the sheet will auto scale and have a relative position to ease children positioning.</p>
-  <div class="bs-example bs-sheet" data-example-id="sheet-example">
+  <div class="bs-example bs-sheet" data-example-id="sheet">
     <div class="sheet">
       <p>Text...</p>
     </div>
@@ -80,9 +113,9 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="sheet-example-with-header">Example with header</h3>
+    <h3 id="sheet-with-header">Sheet with header</h3>
   </div>
-  <div class="bs-example bs-sheet-with-header" data-example-id="sheet-example-with-header">
+  <div class="bs-example bs-sheet-with-header" data-example-id="sheet-with-header">
     <div class="sheet">
       <div class="sheet-header">
         <h2>Header</h2>
@@ -100,9 +133,9 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="sheet-example-with-tabs">Example with tabs</h3>
+    <h3 id="sheet-with-tabs">Sheet with tabs</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="sheet-example-with-tabs">
+  <div class="bs-example bs-sheet" data-example-id="sheet-with-tabs">
     <div class="sheet">
       <ul class="nav nav-tabs">
         <li class="active"><a href="#">Tab 1</a></li>
@@ -128,9 +161,9 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="sheet-example-with-stacked-tabs">Example with stacked tabs</h3>
+    <h3 id="sheet-with-stacked-tabs">Sheet with stacked tabs</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="sheet-example-with-stacked-tabs">
+  <div class="bs-example bs-sheet" data-example-id="sheet-with-stacked-tabs">
     <div class="sheet">
       <ul class="nav nav-tabs">
         <li><a href="#">Tab 1</a></li>
@@ -174,8 +207,8 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="sheet-example-with-auto-stackable-tabs">
-      Example with auto-stackable tabs
+    <h3 id="sheet-with-auto-stackable-tabs">
+      Sheet with auto-stackable tabs
     </h3>
   </div>
 
@@ -186,7 +219,7 @@
     </p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="sheet-example-with-auto-stackable-tabs">
+  <div class="bs-example bs-sheet" data-example-id="sheet-with-auto-stackable-tabs">
     <div class="sheet">
       <ul class="nav nav-tabs" data-toggle="stackable" data-target=".stackable-dropdown">
         <li><a href="#">Tab 1</a></li>
@@ -286,51 +319,8 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre>
 
-<div class="example">
-  <div class="sheet-header">
-    <h3 id="sheet-example-with-nested-tabs">Example with nested tabs</h3>
-  </div>
-  <div class="bs-example bs-sheet" data-example-id="sheet-example-with-nested-tab">
-    <div class="sheet">
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#">Tab 1</a></li>
-        <li><a href="#">Tab 2</a></li>
-        <li><a href="#">Tab 3</a></li>
-      </ul>
-      <div>
-        <p>Text...</p>
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#">Tab 1</a></li>
-          <li><a href="#">Tab 2</a></li>
-          <li><a href="#">Tab 3</a></li>
-        </ul>
-        <div>
-          <p>Text...</p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-  <span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;div&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;div&gt;</span>
-      <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre>
-
-      </div>
-    </div>
+    </section>
   </body>
 </html>

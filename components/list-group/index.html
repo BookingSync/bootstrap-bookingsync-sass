@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>BookingSync Styleguide</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
+  <link rel="stylesheet" href="/highlight.css">
+
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="/assets/javascripts/application.js"></script>
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 4.1.6">
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand-container">
+        <span class="navbar-brand">
+          <h1>
+            <span class="navbar-breadcrumb">
+              <a href="https://www.bookingsync.com" class="navbar-breadcrumb-brand-logo">
+                <img src="/assets/images/bookingsync.png" alt="BookingSync">
+              </a>
+              /
+            </span>
+            
+          </h1>
+        </span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <section class="main-content container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="panel panel-default">
+  <ul class="list-group list-group-with-icon list-unstyled">
+    <li class="">
+      <a class="list-group-item" href="/brand"><i class="bs-icon-bookingsync bs-icon-fw"></i>&nbsp; <span>Brand</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/forms"><i class="styleguide-icon-forms icon-fw"></i>&nbsp; <span>Forms</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/buttons"><i class="styleguide-icon-buttons icon-fw"></i>&nbsp; <span>Buttons</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/utilities"><i class="styleguide-icon-utilities icon-fw"></i>&nbsp; <span>Utilities</span></a>
+      
+    </li>
+    <li class="expanded active">
+      <a class="list-group-item" href="/components"><i class="styleguide-icon-components icon-fw"></i>&nbsp; <span>Components</span></a>
+      
+        <ul class="list-group list-unstyled">
+  <li><a class="list-group-item" href="#menu">Menu</a></li>
+  <li><a class="list-group-item" href="#list-group">List group</a></li>
+  <li><a class="list-group-item" href="#list-group-with-icons">List group with icons</a></li>
+  <li><a class="list-group-item" href="#nested-list-group">Nested list group</a></li>
+  <li><a class="list-group-item" href="#nested-list-group-with-icons">Nested list group with icons</a></li>
+  <li><a class="list-group-item" href="#dropdown">Dropdown</a></li>
+  <li><a class="list-group-item" href="#sheet">Sheet</a></li>
+  <li><a class="list-group-item" href="#sheet-with-header">Sheet with header</a></li>
+  <li><a class="list-group-item" href="#sheet-with-tabs">Sheet with tabs</a></li>
+  <li><a class="list-group-item" href="#sheet-with-stacked-tabs">Sheet with stacked tabs</a></li>
+  <li><a class="list-group-item" href="#sheet-with-auto-stackable-tabs">Sheet with auto-stackable tabs</a></li>
+  <li><a class="list-group-item" href="#chosen-select">Chosen select</a></li>
+  <li><a class="list-group-item" href="#chosen-multiple-select">Chosen multiple select</a></li>
+  <li><a class="list-group-item" href="#switch">Switch</a></li>
+  <li><a class="list-group-item" href="#disabled-switch">Disabled switch</a></li>
+  <li><a class="list-group-item" href="#modal">Modal</a></li>
+</ul>
+
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/compositions"><i class="styleguide-icon-compositions icon-fw"></i>&nbsp; <span>Compositions</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/ember/"><i class="styleguide-icon-ember icon-fw"></i>&nbsp; <span>Ember Addon</span></a>
+      
+    </li>
+  </ul>
+</div>
+
+        </div>
+        <div class="col-sm-9">
+          <div class="example">
+  <div class="sheet-header">
+    <h3 id="list-group">List group</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="list-group">
+    <div class="panel panel-default">
+      <ul class="list-group list-unstyled">
+        <li class="active">
+          <a href="#" class="list-group-item">Vacation Rentals</a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item">City Apartments</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-unstyled"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vacation Rentals<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>City Apartments<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="list-group-with-icons">List group with icons</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="list-group-with-icons">
+    <div class="panel panel-default">
+      <ul class="list-group list-unstyled">
+        <li class="active">
+          <a href="#" class="list-group-item">
+            <i class="icon-reservation icon-fw"></i>
+              Reservations
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item">
+            <i class="icon-clients icon-fw"></i>
+              Clients
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item">
+            <i class="icon-rental icon-fw"></i>
+              Rentals
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item">
+            <i class="icon-reviews icon-fw"></i>
+              Reviews
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-unstyled"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-reservation icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="ni">&amp;nbsp;</span> Reservations
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-clients icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="ni">&amp;nbsp;</span> Clients
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-rental icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="ni">&amp;nbsp;</span> Rentals
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-reviews icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="ni">&amp;nbsp;</span> Reviews
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="nested-list-group">Nested list group</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="nested-list-group">
+    <div class="panel panel-default">
+      <ul class="list-group list-unstyled">
+        <li class="expanded active">
+          <a href="#" class="list-group-item">Reservations</a>
+          <ul class="list-group list-unstyled">
+            <li>
+              <a href="#" class="list-group-item">Planning</a>
+            </li>
+            <li>
+              <a href="#" class="list-group-item">Calendrier</a>
+            </li>
+            <li>
+              <a href="#" class="list-group-item">List</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="list-group-item">Clients</a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item">Rentals</a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item">Reviews</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-unstyled"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"expanded active"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Reservations<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-unstyled"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Planning<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Calendrier<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>List<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Clients<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Rentals<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Reviews<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="nested-list-group-with-icons">Nested list group with icons</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="nested-list-group-with-icons">
+    <div class="panel panel-default">
+      <ul class="list-group list-group-with-icon list-unstyled">
+        <li class="expanded">
+          <a href="#" class="list-group-item">
+            <i class="icon-reservation icon-fw"></i>
+              Reservations
+          </a>
+          <ul class="list-group list-unstyled">
+            <li><a href="#" class="list-group-item">Planning</a></li>
+            <li class="active">
+              <a href="#" class="list-group-item">Calendars</a>
+            </li>
+            <li><a href="#" class="list-group-item">List</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="list-group-item">
+            <i class="icon-clients icon-fw"></i>
+              Clients
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item">
+            <i class="icon-rental icon-fw"></i>
+              Rentals
+          </a>
+        </li>
+        <li>
+          <a href="#" class="list-group-item">
+            <i class="icon-reviews icon-fw"></i>
+              Reviews
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-group-with-icon list-unstyled"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"expanded"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-reservation icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="ni">&amp;nbsp;</span> Reservations
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-unstyled"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Planning<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Calendars<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>List<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-clients icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="ni">&amp;nbsp;</span> Clients
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-rental icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="ni">&amp;nbsp;</span> Rentals
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-reviews icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="ni">&amp;nbsp;</span> Reviews
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

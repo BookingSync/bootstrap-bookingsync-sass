@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-  <title>Bootstrap BookingSync SASS documentation</title>
+  <title>BookingSync Styleguide</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/stylesheets/application.css">
   <link rel="stylesheet" href="/highlight.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="/assets/javascripts/application.js"></script>
@@ -18,75 +17,110 @@
   <meta name="generator" content="nanoc 4.1.6">
 </head>
 
-  <body class="flex-col">
-    <div class="page-wrapper flex-1 flex-col">
-      <nav class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container">
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle sidebar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <a class="navbar-brand" href="/">
-        BookingSync Styleguide
-      </a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navigation">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="">
-          <a href="/brand">Brand</a>
-        </li>
-        <li class="">
-          <a href="/forms">Forms</a>
-        </li>
-        <li class="">
-          <a href="/buttons">Buttons</a>
-        </li>
-        <li class="">
-          <a href="/utilities">Utilities</a>
-        </li>
-        <li class="active">
-          <a href="/components">Components</a>
-        </li>
-        <li class="">
-          <a href="/compositions">Compositions</a>
-        </li>
-      </ul>
+      <div class="navbar-brand-container">
+        <span class="navbar-brand">
+          <h1>
+            <span class="navbar-breadcrumb">
+              <a href="https://www.bookingsync.com" class="navbar-breadcrumb-brand-logo">
+                <img src="/assets/images/bookingsync.png" alt="BookingSync">
+              </a>
+              /
+            </span>
+            
+          </h1>
+        </span>
+      </div>
     </div>
   </div>
 </nav>
 
-      <div class="container content">
-        <h2 id="switch">Switch</h2>
+    <section class="main-content container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="panel panel-default">
+  <ul class="list-group list-group-with-icon list-unstyled">
+    <li class="">
+      <a class="list-group-item" href="/brand"><i class="bs-icon-bookingsync bs-icon-fw"></i>&nbsp; <span>Brand</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/forms"><i class="styleguide-icon-forms icon-fw"></i>&nbsp; <span>Forms</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/buttons"><i class="styleguide-icon-buttons icon-fw"></i>&nbsp; <span>Buttons</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/utilities"><i class="styleguide-icon-utilities icon-fw"></i>&nbsp; <span>Utilities</span></a>
+      
+    </li>
+    <li class="expanded active">
+      <a class="list-group-item" href="/components"><i class="styleguide-icon-components icon-fw"></i>&nbsp; <span>Components</span></a>
+      
+        <ul class="list-group list-unstyled">
+  <li><a class="list-group-item" href="#menu">Menu</a></li>
+  <li><a class="list-group-item" href="#list-group">List group</a></li>
+  <li><a class="list-group-item" href="#list-group-with-icons">List group with icons</a></li>
+  <li><a class="list-group-item" href="#nested-list-group">Nested list group</a></li>
+  <li><a class="list-group-item" href="#nested-list-group-with-icons">Nested list group with icons</a></li>
+  <li><a class="list-group-item" href="#dropdown">Dropdown</a></li>
+  <li><a class="list-group-item" href="#sheet">Sheet</a></li>
+  <li><a class="list-group-item" href="#sheet-with-header">Sheet with header</a></li>
+  <li><a class="list-group-item" href="#sheet-with-tabs">Sheet with tabs</a></li>
+  <li><a class="list-group-item" href="#sheet-with-stacked-tabs">Sheet with stacked tabs</a></li>
+  <li><a class="list-group-item" href="#sheet-with-auto-stackable-tabs">Sheet with auto-stackable tabs</a></li>
+  <li><a class="list-group-item" href="#chosen-select">Chosen select</a></li>
+  <li><a class="list-group-item" href="#chosen-multiple-select">Chosen multiple select</a></li>
+  <li><a class="list-group-item" href="#switch">Switch</a></li>
+  <li><a class="list-group-item" href="#disabled-switch">Disabled switch</a></li>
+  <li><a class="list-group-item" href="#modal">Modal</a></li>
+</ul>
 
-<p>Turns checkboxes and radio buttons in toggle switches</p>
-
-<div class="bs-callout bs-callout-danger">
-  <h4>Plugin dependency</h4>
-  <p>
-    This component requires customized bootstrapSwitch JS plugin provided by the
-    bootstrap-bookingsync-sass gem.
-  </p>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/compositions"><i class="styleguide-icon-compositions icon-fw"></i>&nbsp; <span>Compositions</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/ember/"><i class="styleguide-icon-ember icon-fw"></i>&nbsp; <span>Ember Addon</span></a>
+      
+    </li>
+  </ul>
 </div>
 
-<div class="bs-callout bs-callout-danger">
-  <h4>Sizes</h4>
-  <p>
-    BootstrapSwitch plugin provides various size variants. The only variant
-    currently supported by bootstrap-bookingsync-sass is the
-    <code>switch-small</code>.
-  </p>
-</div>
-
-<div class="example">
+        </div>
+        <div class="col-sm-9">
+          <div class="example">
   <div class="sheet-header">
-    <h3 id="switch-example">Basic example</h3>
+    <h3 id="switch">Switch</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="switch-example">
+
+  Turns checkboxes and radio buttons in toggle switches
+
+  <div class="bs-callout bs-callout-danger">
+    <h4>Plugin dependency</h4>
+    <p>
+      This component requires customized bootstrapSwitch JS plugin provided by  the
+      bootstrap-bookingsync-sass gem.
+    </p>
+  </div>
+  
+  <div class="bs-callout bs-callout-danger">
+    <h4>Sizes</h4>
+    <p>
+      BootstrapSwitch plugin provides various size variants. The only variant
+      currently supported by <code>bootstrap-bookingsync-sass</code> is the
+      <code>switch-small</code>.
+    </p>
+  </div>
+
+  <div class="bs-example bs-sheet" data-example-id="switch">
     <div class="make-switch switch-small">
       <input type="checkbox" checked>
     </div>
@@ -98,9 +132,27 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="switch-example-disabled">Disabled state</h3>
+    <h3 id="disabled-switch">Disabled Switch</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="switch-example-disabled">
+
+  <div class="bs-callout bs-callout-danger">
+    <h4>Plugin dependency</h4>
+    <p>
+      This component requires customized bootstrapSwitch JS plugin provided by  the
+      bootstrap-bookingsync-sass gem.
+    </p>
+  </div>
+  
+  <div class="bs-callout bs-callout-danger">
+    <h4>Sizes</h4>
+    <p>
+      BootstrapSwitch plugin provides various size variants. The only variant
+      currently supported by <code>bootstrap-bookingsync-sass</code> is the
+      <code>switch-small</code>.
+    </p>
+  </div>
+
+  <div class="bs-example bs-sheet" data-example-id="disabled-switch">
     <div class="make-switch switch-small">
       <input type="checkbox" checked disabled>
     </div>
@@ -110,7 +162,8 @@
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span> <span class="na">disabled</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre>
 
+        </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>

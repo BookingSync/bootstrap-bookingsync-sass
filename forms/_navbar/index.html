@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>BookingSync Styleguide</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
+  <link rel="stylesheet" href="/highlight.css">
+
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="/assets/javascripts/application.js"></script>
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 4.1.6">
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand-container">
+        <span class="navbar-brand">
+          <h1>
+            <span class="navbar-breadcrumb">
+              <a href="https://www.bookingsync.com" class="navbar-breadcrumb-brand-logo">
+                <img src="/assets/images/bookingsync.png" alt="BookingSync">
+              </a>
+              /
+            </span>
+            
+          </h1>
+        </span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <section class="main-content container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="panel panel-default">
+  <ul class="list-group list-group-with-icon list-unstyled">
+    <li class="">
+      <a class="list-group-item" href="/brand"><i class="bs-icon-bookingsync bs-icon-fw"></i>&nbsp; <span>Brand</span></a>
+      
+    </li>
+    <li class="expanded active">
+      <a class="list-group-item" href="/forms"><i class="styleguide-icon-forms icon-fw"></i>&nbsp; <span>Forms</span></a>
+      
+        <ul class="list-group list-unstyled">
+  <li><a class="list-group-item" href="#basic-form">Basic form</a></li>
+  <li><a class="list-group-item" href="#inline-form">Inline form</a></li>
+  <li><a class="list-group-item" href="#inline-form-with-checkboxes">Inline form with checkboxes</a></li>
+  <li><a class="list-group-item" href="#inline-form-with-input-group">Inline form with input group</a></li>
+  <li><a class="list-group-item" href="#horizontal-form">Horizontal form</a></li>
+  <li><a class="list-group-item" href="#inputs">Inputs</a></li>
+  <li><a class="list-group-item" href="#textarea">Textarea</a></li>
+  <li><a class="list-group-item" href="#checkboxes-and-radios">Checkboxes and radios (stacked)</a></li>
+  <li><a class="list-group-item" href="#inline-checkboxes-and-radios">Inline checkboxes and radios</a></li>
+  <li><a class="list-group-item" href="#checkboxes-and-radios-without-label-text">Checkboxes and radios without label text</a></li>
+  <li><a class="list-group-item" href="#select">Select</a></li>
+  <li><a class="list-group-item" href="#multiple-select">Multiple Select</a></li>
+  <li><a class="list-group-item" href="#static-control">Static control</a></li>
+  <li><a class="list-group-item" href="#focus-state">Focus state</a></li>
+  <li><a class="list-group-item" href="#filled-state">Filled state</a></li>
+  <li><a class="list-group-item" href="#disabled-state">Disabled state</a></li>
+  <li><a class="list-group-item" href="#disabled-fieldsets">Disabled fieldsets</a></li>
+  <li><a class="list-group-item" href="#readonly-state">Readonly state</a></li>
+  <li><a class="list-group-item" href="#help-text">Help text</a></li>
+  <li><a class="list-group-item" href="#validation-states">Validation states</a></li>
+  <li><a class="list-group-item" href="#validation-with-optional-icons">Validation with optional icons</a></li>
+  <li><a class="list-group-item" href="#validation-with-optional-icons-in-horizontal-and-inline-forms">Validation with optional icons in horizontal and inline forms</a></li>
+  <li><a class="list-group-item" href="#height-sizing">Height sizing</a></li>
+  <li><a class="list-group-item" href="#horizontal-form-group-sizes">Horizontal form group sizes</a></li>
+  <li><a class="list-group-item" href="#column-sizing">Column sizing</a></li>
+</ul>
+
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/buttons"><i class="styleguide-icon-buttons icon-fw"></i>&nbsp; <span>Buttons</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/utilities"><i class="styleguide-icon-utilities icon-fw"></i>&nbsp; <span>Utilities</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/components"><i class="styleguide-icon-components icon-fw"></i>&nbsp; <span>Components</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/compositions"><i class="styleguide-icon-compositions icon-fw"></i>&nbsp; <span>Compositions</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/ember/"><i class="styleguide-icon-ember icon-fw"></i>&nbsp; <span>Ember Addon</span></a>
+      
+    </li>
+  </ul>
+</div>
+
+        </div>
+        <div class="col-sm-9">
+          <ul class="list-group list-unstyled">
+  <li><a class="list-group-item" href="#basic-form">Basic form</a></li>
+  <li><a class="list-group-item" href="#inline-form">Inline form</a></li>
+  <li><a class="list-group-item" href="#inline-form-with-checkboxes">Inline form with checkboxes</a></li>
+  <li><a class="list-group-item" href="#inline-form-with-input-group">Inline form with input group</a></li>
+  <li><a class="list-group-item" href="#horizontal-form">Horizontal form</a></li>
+  <li><a class="list-group-item" href="#inputs">Inputs</a></li>
+  <li><a class="list-group-item" href="#textarea">Textarea</a></li>
+  <li><a class="list-group-item" href="#checkboxes-and-radios">Checkboxes and radios (stacked)</a></li>
+  <li><a class="list-group-item" href="#inline-checkboxes-and-radios">Inline checkboxes and radios</a></li>
+  <li><a class="list-group-item" href="#checkboxes-and-radios-without-label-text">Checkboxes and radios without label text</a></li>
+  <li><a class="list-group-item" href="#select">Select</a></li>
+  <li><a class="list-group-item" href="#multiple-select">Multiple Select</a></li>
+  <li><a class="list-group-item" href="#static-control">Static control</a></li>
+  <li><a class="list-group-item" href="#focus-state">Focus state</a></li>
+  <li><a class="list-group-item" href="#filled-state">Filled state</a></li>
+  <li><a class="list-group-item" href="#disabled-state">Disabled state</a></li>
+  <li><a class="list-group-item" href="#disabled-fieldsets">Disabled fieldsets</a></li>
+  <li><a class="list-group-item" href="#readonly-state">Readonly state</a></li>
+  <li><a class="list-group-item" href="#help-text">Help text</a></li>
+  <li><a class="list-group-item" href="#validation-states">Validation states</a></li>
+  <li><a class="list-group-item" href="#validation-with-optional-icons">Validation with optional icons</a></li>
+  <li><a class="list-group-item" href="#validation-with-optional-icons-in-horizontal-and-inline-forms">Validation with optional icons in horizontal and inline forms</a></li>
+  <li><a class="list-group-item" href="#height-sizing">Height sizing</a></li>
+  <li><a class="list-group-item" href="#horizontal-form-group-sizes">Horizontal form group sizes</a></li>
+  <li><a class="list-group-item" href="#column-sizing">Column sizing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-  <title>Bootstrap BookingSync SASS documentation</title>
+  <title>BookingSync Styleguide</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/stylesheets/application.css">
   <link rel="stylesheet" href="/highlight.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="/assets/javascripts/application.js"></script>
@@ -18,73 +17,88 @@
   <meta name="generator" content="nanoc 4.1.6">
 </head>
 
-  <body class="flex-col">
-    <div class="page-wrapper flex-1 flex-col">
-      <nav class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container">
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle sidebar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <a class="navbar-brand" href="/">
-        BookingSync Styleguide
-      </a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navigation">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active">
-          <a href="/brand">Brand</a>
-        </li>
-        <li class="">
-          <a href="/forms">Forms</a>
-        </li>
-        <li class="">
-          <a href="/buttons">Buttons</a>
-        </li>
-        <li class="">
-          <a href="/utilities">Utilities</a>
-        </li>
-        <li class="">
-          <a href="/components">Components</a>
-        </li>
-        <li class="">
-          <a href="/compositions">Compositions</a>
-        </li>
-      </ul>
+      <div class="navbar-brand-container">
+        <span class="navbar-brand">
+          <h1>
+            <span class="navbar-breadcrumb">
+              <a href="https://www.bookingsync.com" class="navbar-breadcrumb-brand-logo">
+                <img src="/assets/images/bookingsync.png" alt="BookingSync">
+              </a>
+              /
+            </span>
+            Brand
+          </h1>
+        </span>
+      </div>
     </div>
   </div>
 </nav>
 
-      <div class="container content">
-        <div class="row">
-  <div class="col-md-3 col-md-push-9">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">
-          <a href="#brand">Brand</a>
-        </h3>
-      </div>
-      <div class="list-group">
-        <a class="list-group-item" href="#colors">Colors</a>
-        <a class="list-group-item" href="#smiles">Smiles</a>
-        <a class="list-group-item" href="#iconography">Iconography</a>
-        <a class="list-group-item" href="#typography">Typography</a>
-      </div>
-    </div>
+    <section class="main-content container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="panel panel-default">
+  <ul class="list-group list-group-with-icon list-unstyled">
+    <li class="expanded active">
+      <a class="list-group-item" href="/brand"><i class="bs-icon-bookingsync bs-icon-fw"></i>&nbsp; <span>Brand</span></a>
+      
+        <ul class="list-group list-unstyled">
+  <li><a class="list-group-item" href="#colors">Colors</a></li>
+  <li><a class="list-group-item" href="#smiles">Smiles</a></li>
+  <li><a class="list-group-item" href="#iconography">Iconography</a></li>
+  <li><a class="list-group-item" href="#headings">Headings</a></li>
+  <li><a class="list-group-item" href="#customizing-headings">Customizing headings</a></li>
+  <li><a class="list-group-item" href="#lead">Lead</a></li>
+  <li><a class="list-group-item" href="#blockquotes">Blockquotes</a></li>
+  <li><a class="list-group-item" href="#blockquotes-with-source">Blockquotes with source</a></li>
+  <li><a class="list-group-item" href="#unordered-list">Unordered list</a></li>
+  <li><a class="list-group-item" href="#ordered-list">Ordered list</a></li>
+  <li><a class="list-group-item" href="#list-unstyled">List unstyled</a></li>
+  <li><a class="list-group-item" href="#description">Description</a></li>
+  <li><a class="list-group-item" href="#horizontal-description">Horizontal description</a></li>
+</ul>
+
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/forms"><i class="styleguide-icon-forms icon-fw"></i>&nbsp; <span>Forms</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/buttons"><i class="styleguide-icon-buttons icon-fw"></i>&nbsp; <span>Buttons</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/utilities"><i class="styleguide-icon-utilities icon-fw"></i>&nbsp; <span>Utilities</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/components"><i class="styleguide-icon-components icon-fw"></i>&nbsp; <span>Components</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/compositions"><i class="styleguide-icon-compositions icon-fw"></i>&nbsp; <span>Compositions</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/ember/"><i class="styleguide-icon-ember icon-fw"></i>&nbsp; <span>Ember Addon</span></a>
+      
+    </li>
+  </ul>
+</div>
+
+        </div>
+        <div class="col-sm-9">
+          <div class="reference-body">
+  <div class="example">
+  <div class="sheet-header">
+    <h3 id="colors">Colors</h3>
   </div>
-
-  <div class="col-md-9 col-md-pull-3">
-    <div class="reference-body">
-      <h1 class="brand">Brand</h1>
-      <h2 id="colors">Colors</h2>
-
-<div class="example">
-  <div class="bs-example bs-sheet">
+  <div class="bs-example bs-sheet bs-example-colors" data-example-id="colors">
     <div class="row">
       <div class="text-center col-sm-4">
         <div class="color color-primary color-lightblue"></div>
@@ -150,7 +164,7 @@
         <div class="color color-gray-dark"></div>
         <h4>Gray Dark</h4>
         <p>
-          75% of Dark Blue<br>
+          <code>#57668b</code><br>
           <code>$gray-dark</code>
         </p>
       </div>
@@ -158,7 +172,7 @@
         <div class="color color-gray-light"></div>
         <h4>Gray Light</h4>
         <p>
-          50% of Dark Blue<br>
+          <code>#8f98b2</code><br>
           <code>$gray-light</code>
         </p>
       </div>
@@ -166,7 +180,7 @@
         <div class="color color-gray-lighter"></div>
         <h4>Gray Lighter</h4>
         <p>
-          25% of Dark Blue<br>
+          <code>#c7ccd8</code><br>
           <code>$gray-lighter</code>
         </p>
       </div>
@@ -174,7 +188,7 @@
         <div class="color color-gray-lightest"></div>
         <h4>Gray Lightest</h4>
         <p>
-          15% of Dark Blue<br>
+          <code>#dde0e8</code><br>
           <code>$gray-lightest</code>
         </p>
       </div>
@@ -182,10 +196,11 @@
   </div>
 </div>
 
-      <h2 id="smiles">Smiles</h2>
-
-<div class="example">
-  <div class="bs-example bs-sheet bs-example-icons">
+  <div class="example">
+  <div class="sheet-header">
+    <h3 id="smiles">Smiles</h3>
+  </div>
+  <div class="bs-example bs-sheet bs-example-icons" data-example-id="smiles">
     <ul class="list-unstyled">
       <li>
 <i class="bs-icon-bookingsync"></i> bookingsync</li>
@@ -220,10 +235,32 @@
   <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"bs-icon-winktongue"</span><span class="nt">&gt;&lt;/i&gt;</span> winktongue<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre>
 
-      <h2 id="iconography">Iconography</h2>
-
 <div class="example">
-  <div class="bs-example bs-sheet bs-example-icons">
+  <div class="sheet-header">
+    <h3 id="smiles-fixed-width-example">Fixed width smiles</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="smiles-fixed-width-example">
+    <ul class="list-unstyled">
+      <li>
+<i class="bs-icon-bookingsync bs-icon-fw"></i>   bookingsync</li>
+      <li>
+<i class="bs-icon-bigboss bs-icon-fw"></i>   bigboss</li>
+      <li>
+<i class="bs-icon-winktongue bs-icon-fw"></i>   winktongue</li>
+    </ul>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"bs-icon-bookingsync bs-icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> bookingsync<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"bs-icon-bigboss bs-icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> bigboss<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"bs-icon-winktongue bs-icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> winktongue<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
+
+  <div class="example">
+  <div class="sheet-header">
+    <h3 id="iconography">Iconography</h3>
+  </div>
+  <div class="bs-example bs-sheet bs-example-icons" data-example-id="iconography">
     <ul class="list-unstyled">
       <li>
 <i class="icon-invoice"></i> invoice</li>
@@ -312,14 +349,33 @@
   <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-widget"</span><span class="nt">&gt;&lt;/i&gt;</span> widget<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre>
 
-      <h2 id="typography">Typography</h2>
-
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-headings">Headings</h3>
+    <h3 id="icons-fixed-width-example">Fixed width icons</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="icons-fixed-width-example">
+    <ul class="list-unstyled">
+      <li>
+<i class="icon-rental icon-fw"></i>   rental</li>
+      <li>
+<i class="icon-clients icon-fw"></i>   photo</li>
+      <li>
+<i class="icon-applications icon-fw"></i>   applications</li>
+    </ul>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-rental icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> rental<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-clients icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> photo<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-applications icon-fw"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="ni">&amp;nbsp;</span> applications<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
+
+  <div class="example">
+  <div class="sheet-header">
+    <h3 id="headings">Headings</h3>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-headings">
+  <div class="bs-example bs-sheet" data-example-id="headings">
     <h1>h1. Bootstrap heading</h1>
     <h2>h2. Bootstrap heading</h2>
     <h3>h3. Bootstrap heading</h3>
@@ -337,10 +393,10 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-customizing-headings">Customizing headings</h3>
+    <h3 id="customizing-headings">Customizing headings</h3>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-customizing-headings">
+  <div class="bs-example bs-sheet" data-example-id="customizing-headings">
     <h3>
       Fancy display heading
       <small class="text-muted">With faded secondary text</small>
@@ -354,12 +410,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-lead">Lead</h3>
+    <h3 id="lead">Lead</h3>
   </div>
 
   <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-lead">
+  <div class="bs-example bs-sheet" data-example-id="lead">
     <p class="lead">
       Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
     </p>
@@ -371,12 +427,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-blockquotes">Blockquotes</h3>
+    <h3 id="blockquotes">Blockquotes</h3>
   </div>
 
   <p>For quoting blocks of content from another source within your document. Wrap <code>&lt;blockquote class="blockquote"&gt;</code> around any HTML as the quote..</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-blockquotes">
+  <div class="bs-example bs-sheet" data-example-id="blockquotes">
     <blockquote class="blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
     </blockquote>
@@ -388,12 +444,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-blockquotes-with-source">Blockquotes with source</h3>
+    <h3 id="blockquotes-with-source">Blockquotes with source</h3>
   </div>
 
   <p>For quoting blocks of content from another source within your document. Wrap <code>&lt;blockquote class="blockquote"&gt;</code> around any HTML as the quote.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-blockquotes-with-source">
+  <div class="bs-example bs-sheet" data-example-id="blockquotes-with-source">
     <blockquote class="blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
       <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -407,12 +463,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-unordered-list">Unordered list</h3>
+    <h3 id="unordered-list">Unordered list</h3>
   </div>
 
   <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-unordered-list">
+  <div class="bs-example bs-sheet" data-example-id="unordered-list">
     <ul>
       <li>Lorem ipsum dolor sit amet</li>
       <li>Consectetur adipiscing elit</li>
@@ -452,12 +508,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-ordered-list">Ordered list</h3>
+    <h3 id="ordered-list">Ordered list</h3>
   </div>
 
   <p>A list of items in which the order <em>does</em> explicitly matter.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-ordered-list">
+  <div class="bs-example bs-sheet" data-example-id="ordered-list">
     <ol>
       <li>Lorem ipsum dolor sit amet</li>
       <li>Consectetur adipiscing elit</li>
@@ -483,12 +539,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-list-unstyled">List unstyled</h3>
+    <h3 id="list-unstyled">List unstyled</h3>
   </div>
 
   <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-list-unstyled">
+  <div class="bs-example bs-sheet" data-example-id="list-unstyled">
     <ul class="list-unstyled">
       <li>Lorem ipsum dolor sit amet</li>
       <li>Consectetur adipiscing elit</li>
@@ -528,12 +584,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-description">Description</h3>
+    <h3 id="description">Description</h3>
   </div>
 
   <p>A list of terms with their associated descriptions.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-description">
+  <div class="bs-example bs-sheet" data-example-id="description">
     <dl>
       <dt>Description lists</dt>
       <dd>A description list is perfect for defining terms.</dd>
@@ -557,12 +613,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-horizontal-description">Horizontal description</h3>
+    <h3 id="horizontal-description">Horizontal description</h3>
   </div>
 
   <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s, but when the navbar expands, so do these. For longer terms, you can optionally add a <code>.text-truncate</code> class to truncate the text with an ellipsis.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-horizontal-description">
+  <div class="bs-example bs-sheet" data-example-id="horizontal-description">
     <dl class="dl-horizontal">
       <dt class="text-truncate">Description lists</dt>
       <dd>A description list is perfect for defining terms.</dd>
@@ -594,11 +650,10 @@
   <span class="nt">&lt;dd&gt;</span>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.<span class="nt">&lt;/dd&gt;</span>
 <span class="nt">&lt;/dl&gt;</span></code></pre>
 
-    </div>
-  </div>
 </div>
 
+        </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>

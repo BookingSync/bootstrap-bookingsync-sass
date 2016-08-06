@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-  <title>Bootstrap BookingSync SASS documentation</title>
+  <title>BookingSync Styleguide</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/stylesheets/application.css">
   <link rel="stylesheet" href="/highlight.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="/assets/javascripts/application.js"></script>
@@ -18,186 +17,124 @@
   <meta name="generator" content="nanoc 4.1.6">
 </head>
 
-  <body class="flex-col">
-    <div class="page-wrapper flex-1 flex-col">
-      <nav class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container">
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle sidebar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <a class="navbar-brand" href="/">
-        BookingSync Styleguide
-      </a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navigation">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="">
-          <a href="/brand">Brand</a>
-        </li>
-        <li class="">
-          <a href="/forms">Forms</a>
-        </li>
-        <li class="">
-          <a href="/buttons">Buttons</a>
-        </li>
-        <li class="">
-          <a href="/utilities">Utilities</a>
-        </li>
-        <li class="active">
-          <a href="/components">Components</a>
-        </li>
-        <li class="">
-          <a href="/compositions">Compositions</a>
-        </li>
-      </ul>
+      <div class="navbar-brand-container">
+        <span class="navbar-brand">
+          <h1>
+            <span class="navbar-breadcrumb">
+              <a href="https://www.bookingsync.com" class="navbar-breadcrumb-brand-logo">
+                <img src="/assets/images/bookingsync.png" alt="BookingSync">
+              </a>
+              /
+            </span>
+            
+          </h1>
+        </span>
+      </div>
     </div>
   </div>
 </nav>
 
-      <div class="container content">
-        <h2 id="menu">Menu</h2>
+    <section class="main-content container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="panel panel-default">
+  <ul class="list-group list-group-with-icon list-unstyled">
+    <li class="">
+      <a class="list-group-item" href="/brand"><i class="bs-icon-bookingsync bs-icon-fw"></i>&nbsp; <span>Brand</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/forms"><i class="styleguide-icon-forms icon-fw"></i>&nbsp; <span>Forms</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/buttons"><i class="styleguide-icon-buttons icon-fw"></i>&nbsp; <span>Buttons</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/utilities"><i class="styleguide-icon-utilities icon-fw"></i>&nbsp; <span>Utilities</span></a>
+      
+    </li>
+    <li class="expanded active">
+      <a class="list-group-item" href="/components"><i class="styleguide-icon-components icon-fw"></i>&nbsp; <span>Components</span></a>
+      
+        <ul class="list-group list-unstyled">
+  <li><a class="list-group-item" href="#menu">Menu</a></li>
+  <li><a class="list-group-item" href="#list-group">List group</a></li>
+  <li><a class="list-group-item" href="#list-group-with-icons">List group with icons</a></li>
+  <li><a class="list-group-item" href="#nested-list-group">Nested list group</a></li>
+  <li><a class="list-group-item" href="#nested-list-group-with-icons">Nested list group with icons</a></li>
+  <li><a class="list-group-item" href="#dropdown">Dropdown</a></li>
+  <li><a class="list-group-item" href="#sheet">Sheet</a></li>
+  <li><a class="list-group-item" href="#sheet-with-header">Sheet with header</a></li>
+  <li><a class="list-group-item" href="#sheet-with-tabs">Sheet with tabs</a></li>
+  <li><a class="list-group-item" href="#sheet-with-stacked-tabs">Sheet with stacked tabs</a></li>
+  <li><a class="list-group-item" href="#sheet-with-auto-stackable-tabs">Sheet with auto-stackable tabs</a></li>
+  <li><a class="list-group-item" href="#chosen-select">Chosen select</a></li>
+  <li><a class="list-group-item" href="#chosen-multiple-select">Chosen multiple select</a></li>
+  <li><a class="list-group-item" href="#switch">Switch</a></li>
+  <li><a class="list-group-item" href="#disabled-switch">Disabled switch</a></li>
+  <li><a class="list-group-item" href="#modal">Modal</a></li>
+</ul>
 
-<div class="example">
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/compositions"><i class="styleguide-icon-compositions icon-fw"></i>&nbsp; <span>Compositions</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/ember/"><i class="styleguide-icon-ember icon-fw"></i>&nbsp; <span>Ember Addon</span></a>
+      
+    </li>
+  </ul>
+</div>
+
+        </div>
+        <div class="col-sm-9">
+          <div class="example">
   <div class="sheet-header">
-    <h3 id="menu-example">Basic example</h3>
+    <h3 id="menu">Menu</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="menu-example">
-    <nav class="menu flex-col">
-      <header class="dropdown">
-        <div class="bar">
-          <img src="http://placehold.it/24x24" class="img-responsive img-circle brand" alt="Fullname">
-          <p>
-            Vacation Rentals<br>
-            <small>
-              <a data-target="#menu-header-submenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu-switch-account">Switch account
-                <span class="caret"></span></a>
-            </small>
-           </p>
-        </div>
-        <div id="menu-header-submenu" class="menu-dropdown" aria-labelledby="menu-switch-account">
-          <ol>
-            <li role="presentation">
-              <a href="#">Bed and Breakfast</a>
-            </li>
-            <li role="presentation" class="active">
-              <a href="#">City Apartments</a>
-            </li>
-          </ol>
-        </div>
-      </header>
-      <div class="body flex-1">
-        <ol>
-          <li role="presentation" class="active">
-            <a href="#">
-              <i class="fa fa-calendar fa-fw"></i>
-              <span>Bookings</span>
-            </a>
-          </li>
-          <li role="presentation">
-            <a href="#">
-              <i class="fa fa-users fa-fw"></i>
-              <span>Clients</span>
-            </a>
-          </li>
-          <li role="presentation">
-            <a href="#">
-              <i class="fa fa-envelope-o fa-fw"></i>
-              <span>Inquiries</span></a>
-          </li>
-          <li role="presentation">
-            <a href="#">
-              <i class="fa fa-home fa-fw"></i>
-              <span>Rentals</span>
-            </a>
-          </li>
-          <li role="presentation">
-            <a href="#">
-              <i class="fa fa-star fa-fw"></i>
-              <span>Reviews</span>
-            </a>
-          </li>
-          <li role="presentation">
-            <a href="#">
-              <i class="fa fa-globe fa-fw"></i>
-              <span>Website</span>
-            </a>
-          </li>
-          <li role="presentation">
-            <a href="#">
-              <i class="fa fa-cubes fa-fw"></i>
-              <span>Apps</span>
-            </a>
-          </li>
-        </ol>
-      </div>
-      <footer>
-        <div class="bar">
-          <img src="http://placehold.it/24x24" class="img-responsive img-circle avatar" alt="John Doe">
-          <p>
-            John Doe<br>
-            <small>
-              <a data-target="#menu-footer-submenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu-manage-account">Manage Account
-                <i class="fa fa-gear"></i></a>
-            </small>
-          </p>
-        </div>
-        <div id="menu-footer-submenu" class="menu-dropright flex-col" aria-labelledby="menu-manage-account">
-          <ol class="flex-1">
-            <li class="back text-center" role="presentation">
-              <a data-target="#menu-footer-submenu" href="#" data-toggle="dropdown">
-                <i class="fa fa-long-arrow-left fa-fw"></i>
-                <span class="sr-only">Back</span>
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="#">
-                <i class="fa fa-user fa-fw"></i>
-                <span>Personal Information</span>
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="#">
-                <i class="fa fa-calendar-o fa-fw"></i>
-                <span>Calendar Preferences</span>
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="#">
-                <i class="fa fa-clock-o fa-fw"></i>
-                <span>Time Format</span>
-              </a>
-            </li>
-          </ol>
-        </div>
-      </footer>
-    </nav>
+
+  <div class="bs-callout bs-callout-danger">
+    <h4>Plugin dependency</h4>
+    <p>
+      This component requires <code>menu</code> and <code>toggle</code> JS plugins provided by the bootstrap-bookingsync-sass gem.
+    </p>
+  </div>
+
+  <div class="bs-example bs-sheet" data-example-id="menu">
+    <div class="bs-example-iframe-container-desktop">
+      <iframe class="bs-example-iframe" src="/embed/menu/index.html" frameborder="0"></iframe>
+    </div>
   </div>
 </div>
 
-<pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"menu flex-col"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bar"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/24x24"</span> <span class="na">class=</span><span class="s">"img-responsive img-circle brand"</span>
-           <span class="na">alt=</span><span class="s">"Fullname"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p&gt;</span>
-        Vacation Rentals<span class="nt">&lt;br&gt;</span>
-        <span class="nt">&lt;small&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">data-target=</span><span class="s">"#menu-header-submenu"</span> <span class="na">href=</span><span class="s">"#"</span>
-             <span class="na">data-toggle=</span><span class="s">"dropdown"</span>
-             <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-             <span class="na">id=</span><span class="s">"menu-switch-account"</span><span class="nt">&gt;</span>Switch account
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/a&gt;</span>
-        <span class="nt">&lt;/small&gt;</span>
-       <span class="nt">&lt;/p&gt;</span>
+<pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"sidebar"</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"menu-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-icon menu-header-icon"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"bs-icon-bookingsync"</span><span class="nt">&gt;&lt;/i&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"menu-header-submenu"</span> <span class="na">class=</span><span class="s">"menu-dropdown"</span>
-         <span class="na">aria-labelledby=</span><span class="s">"menu-switch-account"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body menu-header-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"menu-header-heading"</span><span class="nt">&gt;</span>Vacation Rentals<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;small&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#menu-header-submenu"</span>
+           <span class="na">data-toggle=</span><span class="s">"collapse"</span>
+           <span class="na">role=</span><span class="s">"button"</span>
+           <span class="na">aria-expanded=</span><span class="s">"false"</span>
+           <span class="na">aria-controls=</span><span class="s">"menu-header-submenu"</span>
+           <span class="na">class=</span><span class="s">"collapsed"</span><span class="nt">&gt;</span>
+          Switch account
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"menu-header-submenu"</span> <span class="na">class=</span><span class="s">"collapse menu-header-submenu"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;ol&gt;</span>
         <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bed and Breakfast<span class="nt">&lt;/a&gt;</span>
@@ -206,115 +143,141 @@
           <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>City Apartments<span class="nt">&lt;/a&gt;</span>
         <span class="nt">&lt;/li&gt;</span>
       <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
   <span class="nt">&lt;/header&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"body flex-1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body flex-1"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;ol&gt;</span>
       <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-calendar fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Bookings<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-icon menu-link-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-calendar"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body menu-link-body"</span><span class="nt">&gt;</span>
+            Bookings
+          <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;/li&gt;</span>
       <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-users fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Clients<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-icon menu-link-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-clients"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body menu-link-body"</span><span class="nt">&gt;</span>
+            Clients
+          <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;/li&gt;</span>
       <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope-o fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Inquiries<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-home fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Rentals<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-star fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Reviews<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-globe fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Website<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-cubes fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
-          <span class="nt">&lt;span&gt;</span>Apps<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-icon menu-link-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-rental"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body menu-link-body"</span><span class="nt">&gt;</span>
+            Rentals
+          <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;/ol&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;footer&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bar"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/24x24"</span>
-           <span class="na">class=</span><span class="s">"img-responsive img-circle avatar"</span> <span class="na">alt=</span><span class="s">"John Doe"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p&gt;</span>
-        John Doe<span class="nt">&lt;br&gt;</span>
-        <span class="nt">&lt;small&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">data-target=</span><span class="s">"#menu-footer-submenu"</span> <span class="na">href=</span><span class="s">"#"</span>
-             <span class="na">data-toggle=</span><span class="s">"dropdown"</span>
-             <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-             <span class="na">id=</span><span class="s">"menu-manage-account"</span><span class="nt">&gt;</span>Manage Account
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-gear"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-        <span class="nt">&lt;/small&gt;</span>
-      <span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"menu-footer-submenu"</span> <span class="na">class=</span><span class="s">"menu-dropright flex-col"</span>
-         <span class="na">aria-labelledby=</span><span class="s">"menu-manage-account"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"flex-1"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"back text-center"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">data-target=</span><span class="s">"#menu-footer-submenu"</span> <span class="na">href=</span><span class="s">"#"</span>
-             <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-long-arrow-left fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Back<span class="nt">&lt;/span&gt;</span>
-          <span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"menu-footer"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-icon menu-link-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-applications"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body menu-link-body"</span><span class="nt">&gt;</span>
+            Apps
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu-link"</span> <span class="na">data-toggle=</span><span class="s">"toggle"</span> <span class="na">data-target=</span><span class="s">"#sidebar"</span>
+           <span class="na">data-value=</span><span class="s">"menu-collapsed"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-icon menu-link-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-settings"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body menu-link-body"</span><span class="nt">&gt;</span>
+            Settings
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-caret"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret-right"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#menu-footer-submenu"</span>
+           <span class="na">data-toggle=</span><span class="s">"collapse"</span>
+           <span class="na">role=</span><span class="s">"button"</span>
+           <span class="na">aria-expanded=</span><span class="s">"false"</span>
+           <span class="na">aria-controls=</span><span class="s">"menu-footer-submenu"</span>
+           <span class="na">class=</span><span class="s">"collapsed menu-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-icon menu-footer-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/100/100/people/9"</span> <span class="na">alt=</span><span class="s">"Jane Doe"</span>
+                 <span class="na">class=</span><span class="s">"img-rounded"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body menu-link-body"</span><span class="nt">&gt;</span>
+            Jane Doe
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-caret"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"menu-footer-submenu"</span> <span class="na">class=</span><span class="s">"collapse menu-footer-submenu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ol&gt;</span>
         <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-user fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
-            <span class="nt">&lt;span&gt;</span>Personal Information<span class="nt">&lt;/span&gt;</span>
-          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Help Center<span class="nt">&lt;/a&gt;</span>
         <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
         <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-calendar-o fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
-            <span class="nt">&lt;span&gt;</span>Calendar Preferences<span class="nt">&lt;/span&gt;</span>
-          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;</span>
         <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-clock-o fa-fw"</span><span class="nt">&gt;&lt;/i&gt;</span>
-            <span class="nt">&lt;span&gt;</span>Time Format<span class="nt">&lt;/span&gt;</span>
-          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Logout<span class="nt">&lt;/a&gt;</span>
         <span class="nt">&lt;/li&gt;</span>
       <span class="nt">&lt;/ol&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
   <span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col menu-submenu"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"menu-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body menu-header-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"menu-header-heading"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body flex-1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body menu-link-body"</span><span class="nt">&gt;</span>
+            General
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body menu-link-body"</span><span class="nt">&gt;</span>
+            Payments
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu-link"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-body menu-link-body"</span><span class="nt">&gt;</span>
+            Apps
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre>
 
-<div class="example">
-  <div class="sheet-header">
-    <h3 id="menu-example">Full height fixed position menu</h3>
-  </div>
-  <div class="bs-example bs-sheet" data-example-id="menu-example">
-    <p>Add <code>.menu-fixed</code> class to make the menu fixed to the left viewport edge.</p>
-  </div>
-</div>
-
-<pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col"</span><span class="nt">&gt;</span>
-  ...
-<span class="nt">&lt;/nav&gt;</span></code></pre>
-
+        </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
