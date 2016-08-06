@@ -1,7 +1,8 @@
-# Iconography
-
 <div class="example">
-  <div class="bs-example bs-sheet bs-example-icons">
+  <div class="sheet-header">
+    <h3 id="iconography">Iconography</h3>
+  </div>
+  <div class="bs-example bs-sheet bs-example-icons" data-example-id="iconography">
     <ul class="list-unstyled">
       <li><i class="icon-invoice"></i> invoice</li>
       <li><i class="icon-rental"></i> rental</li>

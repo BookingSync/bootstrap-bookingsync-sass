@@ -1,11 +1,9 @@
-# Sheet
-
 <div class="example">
   <div class="sheet-header">
-    <h3 id="sheet-example">Basic example</h3>
+    <h3 id="sheet">Sheet</h3>
   </div>
   <p>Highly inspired from the <code>panel</code> component, the sheet will auto scale and have a relative position to ease children positioning.</p>
-  <div class="bs-example bs-sheet" data-example-id="sheet-example">
+  <div class="bs-example bs-sheet" data-example-id="sheet">
     <div class="sheet">
       <p>Text...</p>
     </div>
@@ -19,10 +17,10 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="sheet-example-with-header">Example with header</h3>
+    <h3 id="sheet-with-header">Sheet with header</h3>
   </div>
   <div class="bs-example bs-sheet-with-header"
-       data-example-id="sheet-example-with-header">
+       data-example-id="sheet-with-header">
     <div class="sheet">
       <div class="sheet-header">
         <h2>Header</h2>
@@ -42,9 +40,9 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="sheet-example-with-tabs">Example with tabs</h3>
+    <h3 id="sheet-with-tabs">Sheet with tabs</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="sheet-example-with-tabs">
+  <div class="bs-example bs-sheet" data-example-id="sheet-with-tabs">
     <div class="sheet">
       <ul class="nav nav-tabs">
         <li class="active"><a href="#">Tab 1</a></li>
@@ -72,10 +70,10 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="sheet-example-with-stacked-tabs">Example with stacked tabs</h3>
+    <h3 id="sheet-with-stacked-tabs">Sheet with stacked tabs</h3>
   </div>
   <div class="bs-example bs-sheet"
-       data-example-id="sheet-example-with-stacked-tabs">
+       data-example-id="sheet-with-stacked-tabs">
     <div class="sheet">
       <ul class="nav nav-tabs">
         <li><a href="#">Tab 1</a></li>
@@ -121,8 +119,8 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="sheet-example-with-auto-stackable-tabs">
-      Example with auto-stackable tabs
+    <h3 id="sheet-with-auto-stackable-tabs">
+      Sheet with auto-stackable tabs
     </h3>
   </div>
 
@@ -134,7 +132,7 @@
   </div>
 
   <div class="bs-example bs-sheet"
-       data-example-id="sheet-example-with-auto-stackable-tabs">
+       data-example-id="sheet-with-auto-stackable-tabs">
     <div class="sheet">
       <ul class="nav nav-tabs" data-toggle="stackable"
           data-target=".stackable-dropdown">
@@ -235,53 +233,6 @@
   </ul>
   <div>
     <p>Text...</p>
-  </div>
-</div>
-~~~
-
-<div class="example">
-  <div class="sheet-header">
-    <h3 id="sheet-example-with-nested-tabs">Example with nested tabs</h3>
-  </div>
-  <div class="bs-example bs-sheet"
-       data-example-id="sheet-example-with-nested-tab">
-    <div class="sheet">
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#">Tab 1</a></li>
-        <li><a href="#">Tab 2</a></li>
-        <li><a href="#">Tab 3</a></li>
-      </ul>
-      <div>
-        <p>Text...</p>
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#">Tab 1</a></li>
-          <li><a href="#">Tab 2</a></li>
-          <li><a href="#">Tab 3</a></li>
-        </ul>
-        <div>
-          <p>Text...</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-~~~ html
-<div class="sheet">
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#">Tab 1</a></li>
-    <li><a href="#">Tab 2</a></li>
-    <li><a href="#">Tab 3</a></li>
-  </ul>
-  <div>
-    <p>Text...</p>
-    <ul class="nav nav-tabs">
-      <li class="active"><a href="#">Tab 1</a></li>
-      <li><a href="#">Tab 2</a></li>
-      <li><a href="#">Tab 3</a></li>
-    </ul>
-    <div>
-      <p>Text...</p>
-    </div>
   </div>
 </div>
 ~~~

@@ -1,8 +1,6 @@
-# Buttons
-
 <div class="example">
   <div class="sheet-header">
-    <h3 id="buttons-example-button-tags">Button tags</h3>
+    <h3 id="button-tags">Button tags</h3>
   </div>
 
   <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
@@ -12,7 +10,7 @@
     <p>While button classes can be used on <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements, only <code>&lt;button&gt;</code> elements are supported within our nav and navbar components.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-button-tags">
+  <div class="bs-example bs-sheet" data-example-id="button-tags">
     <a class="btn btn-secondary" href="#" role="button">Link</a>
     <button class="btn btn-secondary" type="submit">Button</button>
     <input class="btn btn-secondary" type="button" value="Input">
@@ -28,12 +26,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-options">Options</h3>
+    <h3 id="options">Options</h3>
   </div>
 
   <p>Use any of the available button classes to quickly create a styled button.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-options">
+  <div class="bs-example bs-sheet" data-example-id="options">
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-secondary">Secondary</button>
     <button type="button" class="btn btn-default">Default</button>
@@ -68,12 +66,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="buttons-example-sizes">Sizes</h3>
+    <h3 id="sizes">Sizes</h3>
   </div>
 
   <p>Need smaller buttons? Add <code>.btn-sm</code> for additional sizes.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-sizes">
+  <div class="bs-example bs-sheet" data-example-id="sizes">
     <p>
       <button type="button" class="btn btn-primary">Default button</button>
       <button type="button" class="btn btn-secondary">Default button</button>
@@ -97,12 +95,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="buttons-example-active-state">Active State</h3>
+    <h3 id="active-state">Active State</h3>
   </div>
 
   <p>For <code>&lt;button&gt;</code> elements, this is done via <code>:active</code>. For <code>&lt;a&gt;</code> elements, it's done with <code>.active</code>. However, you may use <code>.active</code> on <code>&lt;button&gt;</code>s (and include the <code>aria-pressed="true"</code> attribute) should you need to replicate the active state programmatically.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-active-state">
+  <div class="bs-example bs-sheet" data-example-id="active-state">
     <button type="button" class="btn btn-primary active">Primary button</button>
     <button type="button" class="btn btn-secondary active">Button</button>
     <a href="#" class="btn btn-primary active" role="button">Primary link</a>
@@ -118,12 +116,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="buttons-example-disabled-state">Disabled State</h3>
+    <h3 id="disabled-state">Disabled State</h3>
   </div>
 
   <p>For <code>&lt;button&gt;</code> elements, this is done via <code>disabled</code> attribute or <code>.disabled</code> class. It's also possible to disable buttons from a parent disabled fieldset.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-disabled-state">
+  <div class="bs-example bs-sheet" data-example-id="disabled-state">
     <button type="button" class="btn btn-primary disabled">Primary button</button>
     <button type="button" class="btn btn-secondary disabled">Button</button>
     <a href="#" class="btn btn-primary disabled" role="button">Primary link</a>
@@ -175,12 +173,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="buttons-example-loading-state">Loading State</h3>
+    <h3 id="loading-state">Loading State</h3>
   </div>
 
   <p>This is done via <code>.btn-loading</code> and it's good practice to add <code>disabled</code> attribute as well.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-loading-state">
+  <div class="bs-example bs-sheet" data-example-id="loading-state">
     <button type="button" class="btn btn-primary btn-loading" disabled>Loading...</button>
     <button type="button" class="btn btn-secondary btn-loading" disabled>Loading...</button>
     <a href="#" class="btn btn-primary btn-loading" role="button" disabled>Loading...</a>
@@ -222,12 +220,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="buttons-example-group">Group</h3>
+    <h3 id="group">Group</h3>
   </div>
 
   <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-group">
+  <div class="bs-example bs-sheet" data-example-id="group">
     <div class="btn-group" role="group" aria-label="...">
       <button type="button" class="btn btn-secondary">Left</button>
       <button type="button" class="btn btn-secondary">Middle</button>
@@ -245,12 +243,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="buttons-example-nesting">Nesting</h3>
+    <h3 id="nesting">Nesting</h3>
   </div>
 
   <p>Place a .btn-group within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-nesting">
+  <div class="bs-example bs-sheet" data-example-id="nesting">
     <div class="btn-group" role="group" aria-label="...">
       <button type="button" class="btn btn-secondary">1</button>
       <button type="button" class="btn btn-secondary">2</button>
@@ -288,10 +286,10 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="buttons-example-radio-buttons">Radio buttons</h3>
+    <h3 id="radio">Radio</h3>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="buttons-example-radio-buttons">
+  <div class="bs-example bs-sheet" data-example-id="radio">
     <div class="btn-group" data-toggle="buttons">
       <label class="btn btn-secondary active">
         <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)

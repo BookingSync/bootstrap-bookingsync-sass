@@ -1,10 +1,8 @@
-# List group
-
 <div class="example">
   <div class="sheet-header">
-    <h3 id="list-group-basic-example">Basic list group</h3>
+    <h3 id="list-group">List group</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="list-group-basic-example">
+  <div class="bs-example bs-sheet" data-example-id="list-group">
     <div class="panel panel-default">
       <ul class="list-group list-unstyled">
         <li class="active">
@@ -32,9 +30,9 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="list-group-with-icons-example">List group with icons</h3>
+    <h3 id="list-group-with-icons">List group with icons</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="list-group-with-icons-example">
+  <div class="bs-example bs-sheet" data-example-id="list-group-with-icons">
     <div class="panel panel-default">
       <ul class="list-group list-unstyled">
         <li class="active">
@@ -98,9 +96,9 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="list-group-nested-example">Nested list group</h3>
+    <h3 id="nested-list-group">Nested list group</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="list-group-nested-example">
+  <div class="bs-example bs-sheet" data-example-id="nested-list-group">
     <div class="panel panel-default">
       <ul class="list-group list-unstyled">
         <li class="expanded active">
@@ -162,9 +160,9 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="list-group-nested-with-icons-example">Nested list group with icons</h3>
+    <h3 id="nested-list-group-with-icons">Nested list group with icons</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="list-group-nested-with-icons-example">
+  <div class="bs-example bs-sheet" data-example-id="nested-list-group-with-icons">
     <div class="panel panel-default">
       <ul class="list-group list-group-with-icon list-unstyled">
         <li class="expanded">

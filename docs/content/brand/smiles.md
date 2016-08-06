@@ -1,7 +1,8 @@
-# Smiles
-
 <div class="example">
-  <div class="bs-example bs-sheet bs-example-icons">
+  <div class="sheet-header">
+    <h3 id="smiles">Smiles</h3>
+  </div>
+  <div class="bs-example bs-sheet bs-example-icons" data-example-id="smiles">
     <ul class="list-unstyled">
       <li><i class="bs-icon-bookingsync"></i> bookingsync</li>
       <li><i class="bs-icon-bigboss"></i> bigboss</li>

@@ -1,10 +1,8 @@
-# Dropdown
-
 <div class="example">
   <div class="sheet-header">
-    <h3 id="dropdown-example">Basic example</h3>
+    <h3 id="dropdown">Dropdown</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="dropdown-example">
+  <div class="bs-example bs-sheet" data-example-id="dropdown">
     <div class="dropdown">
       <button class="btn btn-default dropdown-toggle" type="button"
               id="dropdownMenu1" data-toggle="dropdown"

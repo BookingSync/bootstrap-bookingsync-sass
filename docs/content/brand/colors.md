@@ -1,7 +1,8 @@
-# Colors
-
 <div class="example">
-  <div class="bs-example bs-sheet">
+  <div class="sheet-header">
+    <h3 id="colors">Colors</h3>
+  </div>
+  <div class="bs-example bs-sheet bs-example-colors" data-example-id="colors">
     <div class="row">
       <div class="text-center col-sm-4">
         <div class="color color-primary color-lightblue"></div>
@@ -67,7 +68,7 @@
         <div class="color color-gray-dark"></div>
         <h4>Gray Dark</h4>
         <p>
-          75% of Dark Blue<br>
+          <code>#57668b</code><br>
           <code>$gray-dark</code>
         </p>
       </div>
@@ -75,7 +76,7 @@
         <div class="color color-gray-light"></div>
         <h4>Gray Light</h4>
         <p>
-          50% of Dark Blue<br>
+          <code>#8f98b2</code><br>
           <code>$gray-light</code>
         </p>
       </div>
@@ -83,7 +84,7 @@
         <div class="color color-gray-lighter"></div>
         <h4>Gray Lighter</h4>
         <p>
-          25% of Dark Blue<br>
+          <code>#c7ccd8</code><br>
           <code>$gray-lighter</code>
         </p>
       </div>
@@ -91,7 +92,7 @@
         <div class="color color-gray-lightest"></div>
         <h4>Gray Lightest</h4>
         <p>
-          15% of Dark Blue<br>
+          <code>#dde0e8</code><br>
           <code>$gray-lightest</code>
         </p>
       </div>
