@@ -1,8 +1,6 @@
-# Forms
-
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example">Basic form</h3>
+    <h3 id="basic-form">Basic form</h3>
   </div>
 
   <p>
@@ -18,7 +16,7 @@
     Instead, nest the input group inside of the form group.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example">
+  <div class="bs-example bs-sheet" data-example-id="basic-form">
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
@@ -77,7 +75,7 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-inline">Inline form</h3>
+    <h3 id="inline-form">Inline form</h3>
   </div>
 
   <p>Add <code>.form-inline</code> to your form (which doesn't have to be a
@@ -94,7 +92,7 @@
     <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using   the `.sr-only` class. There are further alternative methods of providing a label for assistive technologies, such as the `aria-label`, `aria- labelledby` or `title` attribute. If none of these is present, screen readers may resort to using the `placeholder` attribute, if present, but note  that use of `placeholder` as a replacement for other labelling methods is not advised.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-inline">
+  <div class="bs-example bs-sheet" data-example-id="inline-form">
     <form class="form-inline">
       <div class="form-group">
         <label for="exampleInputName2">Name</label>
@@ -125,9 +123,9 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-inline-checkboxes">Inline form with checkboxes</h3>
+    <h3 id="inline-form-with-checkboxes">Inline form with checkboxes</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="forms-example-inline-checkboxes">
+  <div class="bs-example bs-sheet" data-example-id="inline-form-with-checkboxes">
     <form class="form-inline">
       <div class="form-group">
         <label for="exampleInputEmail3">Email address</label>
@@ -168,9 +166,10 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-inline-input-group">Inline form with input group</h3>
+    <h3 id="inline-form-with-input-group">Inline form with input group</h3>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="forms-example-inline-input-group">
+  <div class="bs-example bs-sheet" 
+       data-example-id="inline-form-with-input-group">
     <form class="form-inline">
       <div class="form-group">
         <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
@@ -193,7 +192,6 @@
     </form>
   </div>
 </div>
-
 ~~~ html
 <form class="form-inline">
   <div class="form-group">
@@ -219,7 +217,7 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-horizontal">Horizontal form</h3>
+    <h3 id="horizontal-form">Horizontal form</h3>
   </div>
   <div class="bs-callout bs-callout-info">
     <h4>Not Recommended</h4>
@@ -229,7 +227,7 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-inputs">Inputs</h3>
+    <h3 id="inputs">Inputs</h3>
   </div>
   <p>
     Most common form control, text-based input fields. Includes support for all HTML5 types:
@@ -251,7 +249,7 @@
     component</a>.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-inputs">
+  <div class="bs-example bs-sheet" data-example-id="inputs">
     <form>
       <input type="text" class="form-control" placeholder="Text input">
     </form>
@@ -264,13 +262,13 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-textarea">Textarea</h3>
+    <h3 id="textarea">Textarea</h3>
   </div>
 
   <p>Form control which supports multiple lines of text.
   Change <code>rows</code> attribute as necessary.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-inputs">
+  <div class="bs-example bs-sheet" data-example-id="textarea">
     <form>
       <div class="form-group">
         <textarea class="form-control" rows="3" placeholder="Textarea"></textarea>
@@ -287,7 +285,7 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-checkboxes-radios">Checkboxes and radios (stacked)</h3>
+    <h3 id="checkboxes-and-radios">Checkboxes and radios (stacked)</h3>
   </div>
 
   <p>Checkboxes are for selecting one or several options in a list, while radios are for
@@ -300,7 +298,7 @@
     <code>.radio-inline</code>, <code>.checkbox</code>, or <code>.checkbox-inline</code>.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-checkboxes-radios">
+  <div class="bs-example bs-sheet" data-example-id="checkboxes-and-radios">
     <form>
       <div class="checkbox">
         <label>
@@ -336,7 +334,6 @@
     </form>
   </div>
 </div>
-
 ~~~ html
 <div class="checkbox">
   <label>
@@ -373,13 +370,13 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-inline-checkboxes-radios">Inline checkboxes and radios</h3>
+    <h3 id="inline-checkboxes-and-radios">Inline checkboxes and radios</h3>
   </div>
 
   <p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of
   checkboxes or radios for controls that appear on the same line.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-inline-checkboxes-radios">
+  <div class="bs-example bs-sheet" data-example-id="inline-checkboxes-and-radios">
     <form>
       <label class="checkbox-inline">
         <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
@@ -405,7 +402,6 @@
     </form>
   </div>
 </div>
-
 ~~~ html
 <label class="checkbox-inline">
   <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
@@ -430,7 +426,7 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-checkboxes-radios-without-label">
+    <h3 id="checkboxes-and-radios-without-label-text">
       Checkboxes and radios without label text
     </h3>
   </div>
@@ -444,7 +440,7 @@
     <p>Currently only works on non-inline checkboxes and radios.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-checkboxes-radios-without-label">
+  <div class="bs-example bs-sheet" data-example-id="checkboxes-and-radios-without-label-text">
     <form>
       <div class="checkbox">
         <label>
@@ -459,7 +455,6 @@
     </form>
   </div>
 </div>
-
 ~~~ html
 <div class="checkbox">
   <label>
@@ -475,7 +470,7 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-select">Select</h3>
+    <h3 id="select">Select</h3>
   </div>
 
   <p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that
@@ -484,10 +479,10 @@
   <div class="bs-callout bs-callout-info">
     <h4>Chosen</h4>
     <p>Using Chosen is recommended for a better design and improved experience. More details in
-    the <a href="/components/#chosen">Chosen component</a>.</p>
+    the <a href="/components/#chosen-select">Chosen component</a>.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-select">
+  <div class="bs-example bs-sheet" data-example-id="select">
     <form>
       <div class="select">
         <label for="destination">Destination</label>
@@ -518,7 +513,7 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-multiple-select">Multiple Select</h3>
+    <h3 id="multiple-select">Multiple Select</h3>
   </div>
 
   <p>For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute,
@@ -527,10 +522,10 @@
   <div class="bs-callout bs-callout-info">
     <h4>Chosen</h4>
     <p>Using Chosen is recommended for a better design and improved experience. More details in
-    the <a href="/components/#chosen">Chosen component</a>.</p>
+    the <a href="/components/#chosen-multiple-select">Chosen component</a>.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-multiple-select">
+  <div class="bs-example bs-sheet" data-example-id="multiple-select">
     <form>
       <div class="select">
         <label for="destinations">Destinations</label>
@@ -560,13 +555,13 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-static">Static control</h3>
+    <h3 id="static-control">Static control</h3>
   </div>
 
   <p>When you need to place plain text next to a form label within a form, use the
   <code>.form-control-static</code> class on a <code>&lt;p&gt;.</code></p>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-static">
+  <div class="bs-example bs-sheet" data-example-id="static-control">
     <form class="form-inline">
       <div class="form-group">
         <label class="sr-only">Email</label>
@@ -597,7 +592,7 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-focus">Focus state</h3>
+    <h3 id="focus-state">Focus state</h3>
   </div>
 
   <p>We remove the default <code>outline</code> styles on some form controls and adjust labels
@@ -610,7 +605,7 @@
     <code>.form-group .form-control</code>.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-focus">
+  <div class="bs-example bs-sheet" data-example-id="focus-state">
     <form>
       <div class="form-group focused">
         <label for="focusedInput2">Focus state</label>
@@ -643,7 +638,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-filled">Filled state</h3>
+    <h3 id="filled-state">Filled state</h3>
   </div>
 
   <div class="bs-callout bs-callout-info">
@@ -653,7 +648,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
     <code>.form-group .form-control</code>.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-filled">
+  <div class="bs-example bs-sheet" data-example-id="filled-state">
     <form>
       <div class="form-group filled">
         <label for="filledInput">Filled state</label>
@@ -686,13 +681,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-disabled">Disabled state</h3>
+    <h3 id="disabled-state">Disabled state</h3>
   </div>
 
   <p>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions.
   Disabled inputs appear lighter and add a <code>not-allowed</code> cursor.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-disabled">
+  <div class="bs-example bs-sheet" data-example-id="disabled-state">
     <form>
       <div class="form-group">
         <label for="disabledInput">Disabled state</label>
@@ -763,7 +758,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-disabled-fieldsets">Disabled fieldsets</h3>
+    <h3 id="disabled-fieldsets">Disabled fieldsets</h3>
   </div>
 
   <p>Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all
@@ -791,7 +786,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
     Use custom JavaScript to disable the fieldset in these browsers.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-disabled-fieldsets">
+  <div class="bs-example bs-sheet" data-example-id="disabled-fieldsets">
     <form>
       <fieldset disabled>
         <div class="form-group">
@@ -871,14 +866,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-readonly">Readonly state</h3>
+    <h3 id="readonly-state">Readonly state</h3>
   </div>
 
   <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of
   the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain
   the standard cursor.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-readonly">
+  <div class="bs-example bs-sheet" data-example-id="readonly-state">
     <form>
       <div class="form-group">
         <label for="readonlyInput">Readonly state</label>
@@ -927,7 +922,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-help-text">Help text</h3>
+    <h3 id="help-text">Help text</h3>
   </div>
 
   <p>Block level help text for form controls.</p>
@@ -940,7 +935,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
     control.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-help-text">
+  <div class="bs-example bs-sheet" data-example-id="help-text">
     <form>
       <div class="form-group">
         <label for="inputHelpBlock">Input with help text</label>
@@ -961,7 +956,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-validation">Validation states</h3>
+    <h3 id="validation-states">Validation states</h3>
   </div>
 
   <p>Bootstrap includes validation styles for error, warning, and success states on form controls.
@@ -969,7 +964,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
   to the parent element. Any <code>.control-label</code>, <code>.form-control</code>, and
   <code>.help-block</code> within that element will receive the validation styles.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-validation">
+  <div class="bs-example bs-sheet" data-example-id="validation-states">
     <form>
       <div class="form-group has-success">
         <label class="control-label" for="inputSuccess1">Input with success</label>
@@ -1055,7 +1050,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-validation-with-icons">Validation with optional icons</h3>
+    <h3 id="validation-with-optional-icons">Validation with optional icons</h3>
   </div>
 
   <p>You can also add optional feedback icons with the addition of <code>.has-feedback</code>
@@ -1078,7 +1073,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
     your addon.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-validation-with-icons">
+  <div class="bs-example bs-sheet" data-example-id="validation-with-optional-icons">
     <form>
       <div class="form-group has-success has-feedback">
         <label class="control-label" for="inputSuccess2">Input with success</label>
@@ -1148,7 +1143,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-validation-with-icons-horizontal-inline">
+    <h3 id="validation-with-optional-icons-in-horizontal-and-inline-forms">
       Validation with optional icons in horizontal and inline forms
     </h3>
   </div>
@@ -1159,7 +1154,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
   </div>
 
   <div class="bs-example bs-sheet"
-       data-example-id="forms-example-validation-with-icons-horizontal-inline">
+       data-example-id="validation-with-optional-icons-in-horizontal-and-inline-forms">
     <form class="form-inline">
       <div class="form-group has-success has-feedback">
         <label class="control-label" for="inputSuccess4">Input with success</label>
@@ -1209,13 +1204,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-height-sizing">Height sizing</h3>
+    <h3 id="height-sizing">Height sizing</h3>
   </div>
 
   <p>Set heights using classes like <code>.input-lg</code>. Create taller or shorter form
   controls that match button sizes.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-height-sizing">
+  <div class="bs-example bs-sheet" data-example-id="height-sizing">
     <form>
       <div class="controls">
         <input class="form-control input-lg" type="text" placeholder=".input-lg">
@@ -1248,7 +1243,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-horizontal-group-sizes">Horizontal form group sizes</h3>
+    <h3 id="horizontal-form-group-sizes">Horizontal form group sizes</h3>
   </div>
 
   <div class="bs-callout bs-callout-info">
@@ -1259,13 +1254,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-column-sizing">Column sizing</h3>
+    <h3 id="column-sizing">Column sizing</h3>
   </div>
 
   <p>Set widths using grid column classes like <code>.col-lg-*</code>. Wrap inputs in grid columns,
   or any custom parent element, to easily enforce desired widths.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-column-sizing">
+  <div class="bs-example bs-sheet" data-example-id="column-sizing">
     <form>
       <div class="row">
         <div class="col-xs-2">

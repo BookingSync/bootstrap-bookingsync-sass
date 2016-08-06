@@ -1,18 +1,16 @@
-# Menu
-
 <div class="example">
   <div class="sheet-header">
-    <h3 id="menu-example">Basic example</h3>
+    <h3 id="menu">Menu</h3>
   </div>
 
-<div class="bs-callout bs-callout-danger">
+  <div class="bs-callout bs-callout-danger">
     <h4>Plugin dependency</h4>
     <p>
       This component requires <code>menu</code> and <code>toggle</code> JS plugins provided by the bootstrap-bookingsync-sass gem.
     </p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="menu-example">
+  <div class="bs-example bs-sheet" data-example-id="menu">
     <div class="bs-example-iframe-container-desktop">
       <iframe class="bs-example-iframe" src="/embed/menu/index.html"
               frameborder="0"></iframe>

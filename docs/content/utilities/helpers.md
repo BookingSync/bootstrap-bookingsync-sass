@@ -1,8 +1,6 @@
-# Helper classes
-
 <div class="example">
   <div class="sheet-header">
-    <h3 id="helper-example-vertical-alignment">Vertical alignment</h3>
+    <h3 id="vertical-alignment">Vertical alignment</h3>
   </div>
 
   <p>Vertical align inline elements having different line height.</p>
@@ -12,7 +10,7 @@
     <p>This helper classes will not vertically align content inside block elements.</p>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="helper-example-vertical-alignment">
+  <div class="bs-example bs-sheet" data-example-id="vertical-alignment">
     <h1>
       <small class="valign-top">Top</small> aligned text.
     </h1>
@@ -32,12 +30,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="forms-example-vertical-table-alignment">Vertical table alignment</h3>
+    <h3 id="vertical-table-alignment">Vertical table alignment</h3>
   </div>
 
   <p>Vertical align elements inside table cells.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="forms-example-vertical-table-alignment">
+  <div class="bs-example bs-sheet" data-example-id="vertical-table-alignment">
     <table class="table">
       <tr>
         <th>Example<br/>row</th>

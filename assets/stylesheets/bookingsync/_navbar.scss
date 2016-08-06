@@ -13,3 +13,41 @@
     }
   }
 }
+
+.navbar-breadcrumb {
+  margin: 0;
+  color: $breadcrumb-color;
+
+  i {
+    color: $breadcrumb-icon-color;
+  }
+
+  a {
+    color: $breadcrumb-link-color;
+
+    &:hover {
+      color: $breadcrumb-link-hover-color;
+    }
+  }
+
+  img {
+    height: $navbar-breadcrumb-brand-logo-height;
+  }
+}
+
+@media (max-width: $grid-float-breakpoint) {
+  .navbar-breadcrumb-brand-logo {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: $navbar-breadcrumb-brand-logo-xs-width;
+    height: $navbar-breadcrumb-brand-logo-xs-height;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      clip: rect(0px, $navbar-breadcrumb-brand-logo-xs-width, $navbar-breadcrumb-brand-logo-xs-height, 0px);
+    }
+  }
+}

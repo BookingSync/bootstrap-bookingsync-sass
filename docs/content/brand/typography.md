@@ -1,11 +1,9 @@
-# Typography
-
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-headings">Headings</h3>
+    <h3 id="headings">Headings</h3>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-headings">
+  <div class="bs-example bs-sheet" data-example-id="headings">
     <h1>h1. Bootstrap heading</h1>
     <h2>h2. Bootstrap heading</h2>
     <h3>h3. Bootstrap heading</h3>
@@ -25,10 +23,10 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-customizing-headings">Customizing headings</h3>
+    <h3 id="customizing-headings">Customizing headings</h3>
   </div>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-customizing-headings">
+  <div class="bs-example bs-sheet" data-example-id="customizing-headings">
     <h3>
       Fancy display heading
       <small class="text-muted">With faded secondary text</small>
@@ -44,12 +42,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-lead">Lead</h3>
+    <h3 id="lead">Lead</h3>
   </div>
 
   <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-lead">
+  <div class="bs-example bs-sheet" data-example-id="lead">
     <p class="lead">
       Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
     </p>
@@ -63,12 +61,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-blockquotes">Blockquotes</h3>
+    <h3 id="blockquotes">Blockquotes</h3>
   </div>
 
   <p>For quoting blocks of content from another source within your document. Wrap <code>&lt;blockquote class="blockquote"&gt;</code> around any HTML as the quote..</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-blockquotes">
+  <div class="bs-example bs-sheet" data-example-id="blockquotes">
     <blockquote class="blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
     </blockquote>
@@ -82,13 +80,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-blockquotes-with-source">Blockquotes with source</h3>
+    <h3 id="blockquotes-with-source">Blockquotes with source</h3>
   </div>
 
   <p>For quoting blocks of content from another source within your document. Wrap <code>&lt;blockquote class="blockquote"&gt;</code> around any HTML as the quote.</p>
 
-  <div class="bs-example bs-sheet"
-       data-example-id="brand-example-typography-blockquotes-with-source">
+  <div class="bs-example bs-sheet" data-example-id="blockquotes-with-source">
     <blockquote class="blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
       <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -104,12 +101,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-unordered-list">Unordered list</h3>
+    <h3 id="unordered-list">Unordered list</h3>
   </div>
 
   <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-unordered-list">
+  <div class="bs-example bs-sheet" data-example-id="unordered-list">
     <ul>
       <li>Lorem ipsum dolor sit amet</li>
       <li>Consectetur adipiscing elit</li>
@@ -151,12 +148,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-ordered-list">Ordered list</h3>
+    <h3 id="ordered-list">Ordered list</h3>
   </div>
 
   <p>A list of items in which the order <em>does</em> explicitly matter.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-ordered-list">
+  <div class="bs-example bs-sheet" data-example-id="ordered-list">
     <ol>
       <li>Lorem ipsum dolor sit amet</li>
       <li>Consectetur adipiscing elit</li>
@@ -184,12 +181,12 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-list-unstyled">List unstyled</h3>
+    <h3 id="list-unstyled">List unstyled</h3>
   </div>
 
   <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
 
-  <div class="bs-example bs-sheet" data-example-id="brand-example-typography-list-unstyled">
+  <div class="bs-example bs-sheet" data-example-id="list-unstyled">
     <ul class="list-unstyled">
       <li>Lorem ipsum dolor sit amet</li>
       <li>Consectetur adipiscing elit</li>
@@ -231,13 +228,13 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-description">Description</h3>
+    <h3 id="description">Description</h3>
   </div>
 
   <p>A list of terms with their associated descriptions.</p>
 
   <div class="bs-example bs-sheet"
-       data-example-id="brand-example-typography-description">
+       data-example-id="description">
     <dl>
       <dt>Description lists</dt>
       <dd>A description list is perfect for defining terms.</dd>
@@ -263,13 +260,13 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="brand-example-typography-horizontal-description">Horizontal description</h3>
+    <h3 id="horizontal-description">Horizontal description</h3>
   </div>
 
   <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s, but when the navbar expands, so do these. For longer terms, you can optionally add a <code>.text-truncate</code> class to truncate the text with an ellipsis.</p>
 
   <div class="bs-example bs-sheet"
-       data-example-id="brand-example-typography-horizontal-description">
+       data-example-id="horizontal-description">
     <dl class="dl-horizontal">
       <dt class="text-truncate">Description lists</dt>
       <dd>A description list is perfect for defining terms.</dd>

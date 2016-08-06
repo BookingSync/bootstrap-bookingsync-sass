@@ -13,9 +13,9 @@ $brand-danger:                  $bs-red !default;
 
 $gray-base:                     $bs-darkblue !default;
 $gray-darker:                   $gray-base !default;
-$gray-dark:                     rgba($gray-base, .75) !default;
-$gray:                          rgba($gray-base, .75) !default;
-$gray-light:                    rgba($gray-base, .5) !default;
+$gray-dark:                     #57668B !default; // rgba($gray-base, .75) !default;
+$gray:                          #57668B !default; // rgba($gray-base, .75) !default;
+$gray-light:                    #8F98B2 !default; // rgba($gray-base, .5) !default;
 $gray-lighter:                  #C7CCD8 !default; // rgba($gray-base, .25) !default;
 $gray-lightest:                 #DDE0E8 !default; // rgba($gray-base, .15) !default;
 
@@ -272,13 +272,18 @@ $select-multiple-options-selected-bg:       #fff !default;
 $grid-columns:                     12 !default;
 $grid-gutter-width:                30px !default;
 
+
 //== Navbar
 //
-$navbar-height:                     70px !default;
-$navbar-default-bg:                 #fff !default;
-$navbar-default-color:              $gray-dark !default;
-$navbar-default-border:             $gray-lighter !default;
-$navbar-default-toggle-icon-bar-bg: $gray-light !default;
+$navbar-height:                           70px !default;
+$navbar-default-bg:                       #fff !default;
+$navbar-default-color:                    $gray-dark !default;
+$navbar-default-border:                   $gray-lighter !default;
+$navbar-default-toggle-icon-bar-bg:       $gray-light !default;
+
+$navbar-breadcrumb-brand-logo-height:     30px !default;
+$navbar-breadcrumb-brand-logo-xs-width:   50px !default;
+$navbar-breadcrumb-brand-logo-xs-height:  30px !default;
 
 
 //== Panels
@@ -354,3 +359,15 @@ $list-group-active-bg:                $gray-lightest !default;
 $list-group-active-child-bg:          transparent !default;
 $list-group-active-child-border:      $list-group-active-bg !default;
 $list-group-active-child-hover-bg:    $list-group-hover-bg !default;
+
+
+//== Breadcrumb
+//
+$breadcrumb-padding-vertical:         0 !default;
+$breadcrumb-padding-horizontal:       0 !default;
+$breadcrumb-bg:                       transparent !default;
+$breadcrumb-color:                    $gray-lighter !default;
+$breadcrumb-active-color:             $headings-color !default;
+$breadcrumb-icon-color:               $gray-light !default;
+$breadcrumb-link-color:               $gray-light !default;
+$breadcrumb-link-hover-color:         $breadcrumb-link-color !default;

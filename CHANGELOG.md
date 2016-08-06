@@ -31,6 +31,7 @@
   * Add Buttons loading animation
   * Add `list-group` support with nesting and icons support 
   * Add `.sided-content` to use with `menu`
+  * Add `.navbar-breadcrumb`
 
 ### 0.0.19 - 2016-05-09
 
