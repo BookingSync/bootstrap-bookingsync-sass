@@ -4,6 +4,14 @@
   <div class="sheet-header">
     <h3 id="menu-example">Basic example</h3>
   </div>
+
+<div class="bs-callout bs-callout-danger">
+    <h4>Plugin dependency</h4>
+    <p>
+      This component requires <code>menu</code> and <code>toggle</code> JS plugins provided by the bootstrap-bookingsync-sass gem.
+    </p>
+  </div>
+
   <div class="bs-example bs-sheet" data-example-id="menu-example">
     <div class="bs-example-iframe-container-desktop">
       <iframe class="bs-example-iframe" src="/embed/menu/index.html"
@@ -13,7 +21,7 @@
 </div>
 
 ~~~ html
-<nav class="menu menu-fixed flex-col">
+<nav id="sidebar" class="menu menu-fixed flex-col">
   <header class="menu-header">
     <div class="menu-icon menu-header-icon">
       <i class="bs-icon-bookingsync"></i>
@@ -91,12 +99,16 @@
         </a>
       </li>
       <li role="presentation">
-        <a href="#" class="menu-link">
+        <a href="#" class="menu-link" data-toggle="toggle" data-target="#sidebar"
+           data-value="menu-collapsed">
           <div class="menu-icon menu-link-icon">
             <i class="icon-settings"></i>
           </div>
           <div class="menu-body menu-link-body">
             Settings
+          </div>
+          <div class="menu-caret">
+            <span class="caret-right"></span>
           </div>
         </a>
       </li>
@@ -114,6 +126,8 @@
           </div>
           <div class="menu-body menu-link-body">
             Jane Doe
+          </div>
+          <div class="menu-caret">
             <span class="caret"></span>
           </div>
         </a>
@@ -135,20 +149,36 @@
     </nav>
   </footer>
 </nav>
-
-~~~
-
-<div class="example">
-  <div class="sheet-header">
-    <h3 id="menu-example">Full height fixed position menu</h3>
+<nav class="menu menu-fixed flex-col menu-submenu">
+  <header class="menu-header">
+    <div class="menu-body menu-header-body">
+      <h4 class="menu-header-heading">Settings</h4>
+    </div>
+  </header>
+  <div class="menu-body flex-1">
+    <ol>
+      <li role="presentation" class="active">
+        <a href="#" class="menu-link">
+          <div class="menu-body menu-link-body">
+            General
+          </div>
+        </a>
+      </li>
+      <li role="presentation">
+        <a href="#" class="menu-link">
+          <div class="menu-body menu-link-body">
+            Payments
+          </div>
+        </a>
+      </li>
+      <li role="presentation">
+        <a href="#" class="menu-link">
+          <div class="menu-body menu-link-body">
+            Apps
+          </div>
+        </a>
+      </li>
+    </ol>
   </div>
-  <div class="bs-example bs-sheet" data-example-id="menu-example">
-    <p>Add <code>.menu-fixed</code> class to make the menu fixed to the left viewport edge.</p>
-  </div>
-</div>
-
-~~~ html
-<nav class="menu menu-fixed flex-col">
-  ...
 </nav>
 ~~~
