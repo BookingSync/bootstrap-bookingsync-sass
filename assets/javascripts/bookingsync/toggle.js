@@ -9,6 +9,7 @@
   'use strict';
 
   $(document).on('click', '[data-toggle="toggle"]', function (event) {
+    event.preventDefault();
     var element = $(this);
     $(element.data('target')).toggleClass(element.data('value'));
   });

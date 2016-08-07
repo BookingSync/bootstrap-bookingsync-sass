@@ -1,7 +1,3 @@
-.main-content {
-  padding-top: 15px;
-}
-
 .reference-body > h2,
 .reference-body > h3,
 .reference-body > h4,
@@ -78,4 +74,14 @@
 
 .color-gray-lightest {
   background-color: $gray-lightest;
+}
+
+.example-responsive {
+  position: relative;
+}
+
+.example-responsive-nav {
+  position: absolute;
+  right: 15px;
+  top: 8px;
 }
