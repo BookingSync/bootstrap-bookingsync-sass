@@ -56,9 +56,21 @@
   }
 }
 
+.bs-example-iframe-container-mobile {
+  margin: 0 auto;
+  width: 320px;
+  height: 568px;
+}
+
+.bs-example-iframe-container-tablet {
+  margin: 0 auto;
+  width: 768px;
+  height: 1024px;
+}
+
 .bs-example-iframe-container-desktop {
   width: 100%;
-  height: 500px;
+  height: 568px;
 }
 
 .bs-example-iframe {

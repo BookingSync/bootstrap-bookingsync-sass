@@ -21,7 +21,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 9000;
-  transition: width 0.2s cubic-bezier(.4,0,.2,1);
+  transition: width 0.2s cubic-bezier(.4,0,.2,1), transform 0.2s cubic-bezier(.4,0,.2,1);
 
   ol {
     padding-left: 0;

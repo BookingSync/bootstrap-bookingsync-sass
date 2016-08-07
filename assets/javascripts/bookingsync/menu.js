@@ -26,4 +26,18 @@
       element.removeClass('menu-hovered');
     }
   });
+
+  $(document).on('click', '.navbar-toggle.menu-toggle', function(event) {
+    parent.postMessage("bookingsync:menu:toggle", "*");
+  });
+
+  $(window).load(function() {
+    if ($('iframe.iframe-fullscreen').length > 0) {
+      window.addEventListener("message", function(event) {
+        if (event.data === "bookingsync:menu:toggle") {
+          $('body').toggleClass("menu-open");
+        }
+      }, false);
+    }
+  });
 }(jQuery);

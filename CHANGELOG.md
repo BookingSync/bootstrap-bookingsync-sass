@@ -1,3 +1,9 @@
+### master
+
+* improvements
+  * Document more compositions examples
+  * Add support to toggle `menu` from the child iframe
+
 ### 1.0.0.beta1 - 2016-08-06
 
 * breaking changes
