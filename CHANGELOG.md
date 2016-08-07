@@ -1,4 +1,4 @@
-### master
+### 1.0.0.beta2 - 2016-08-07
 
 * improvements
   * Document more compositions examples
