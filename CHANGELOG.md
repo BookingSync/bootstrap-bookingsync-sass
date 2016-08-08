@@ -1,3 +1,9 @@
+### master
+
+* bug fixes
+  * Fix `menu-body` padding when directly succeeding a `menu-icon`
+  * Fix menu for Apps and add `menu-folded`
+ 
 ### 1.0.0.beta2 - 2016-08-07
 
 * improvements

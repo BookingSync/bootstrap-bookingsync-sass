@@ -8,8 +8,27 @@
 +function ($) {
   'use strict';
 
+  $(document).on('click', '[data-toggle="menu-expand"]', function (event) {
+    var element = $(this);
+    var menu = $(element.data('menu'))
+    var submenu = $(element.data('submenu'));
+
+    if (submenu.hasClass('menu-submenu-collapsed')) {
+      menu.find('.active').removeClass('active');
+      element.parents('li').addClass('active');
+      menu.addClass('menu-collapsed');
+      menu.removeClass('menu-hovered');
+      submenu.removeClass('menu-submenu-collapsed');
+    } else {
+      menu.removeClass('menu-collapsed');
+      menu.removeClass('menu-hovered');
+      submenu.addClass('menu-submenu-collapsed');
+    }
+  });
+
+
   var menuTimeout;
-  $(document).on('mouseenter', '.menu-collapsed', function (event) {
+  $(document).on('mouseenter', '.menu-folded, .menu-collapsed', function (event) {
     var element = $(this);
     if (!menuTimeout) {
       menuTimeout = window.setTimeout(function() {
@@ -18,7 +37,7 @@
     }
     $(element.data('target')).toggleClass(element.data('value'));
   });
-  $(document).on('mouseleave', '.menu-collapsed', function (event) {
+  $(document).on('mouseleave', '.menu-folded, .menu-collapsed', function (event) {
     var element = $(this);
     if (menuTimeout) {
       window.clearTimeout(menuTimeout);

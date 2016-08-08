@@ -1,4 +1,4 @@
-<nav id="sidebar" class="menu menu-fixed flex-col">
+<nav id="sidebar" class="menu menu-fixed flex-col menu-folded">
   <header class="menu-header">
     <div class="menu-icon menu-header-icon">
       <i class="bs-icon-bookingsync"></i>
@@ -30,7 +30,7 @@
   </header>
   <div class="menu-body flex-1">
     <ol>
-      <li role="presentation" class="active">
+      <li role="presentation">
         <a href="#" class="menu-link">
           <div class="menu-icon menu-link-icon">
             <i class="icon-calendar"></i>
@@ -65,7 +65,7 @@
   <footer class="menu-footer">
     <ol>
       <li role="separator" class="divider"></li>
-      <li role="presentation">
+      <li role="presentation" class="active">
         <a href="#" class="menu-link">
           <div class="menu-icon menu-link-icon">
             <i class="icon-applications"></i>
@@ -76,8 +76,8 @@
         </a>
       </li>
       <li role="presentation">
-        <a href="#" class="menu-link" data-toggle="toggle" data-target="#sidebar"
-           data-value="menu-collapsed">
+        <a href="#" class="menu-link" data-toggle="menu-expand" data-menu="#sidebar"
+           data-submenu="#sidebar-settings">
           <div class="menu-icon menu-link-icon">
             <i class="icon-settings"></i>
           </div>
@@ -126,4 +126,39 @@
     </nav>
   </footer>
 </nav>
-<iframe class="iframe-fullscreen" src="/embed/app_admin_content/index.html" frameborder="0"></iframe>
+<nav id="sidebar-settings" class="menu menu-fixed flex-col menu-submenu menu-submenu-collapsed">
+  <header class="menu-header">
+    <div class="menu-body menu-header-body">
+      <h4 class="menu-header-heading">Settings</h4>
+    </div>
+  </header>
+  <div class="menu-body flex-1">
+    <ol>
+      <li role="presentation" class="active">
+        <a href="#" class="menu-link">
+          <div class="menu-body menu-link-body">
+            General
+          </div>
+        </a>
+      </li>
+      <li role="presentation">
+        <a href="#" class="menu-link">
+          <div class="menu-body menu-link-body">
+            Payments
+          </div>
+        </a>
+      </li>
+      <li role="presentation">
+        <a href="#" class="menu-link">
+          <div class="menu-body menu-link-body">
+            Apps
+          </div>
+        </a>
+      </li>
+    </ol>
+  </div>
+</nav>
+<div class="sided-content-full">
+  <iframe class="iframe-fullscreen" src="/embed/app_admin__content/index.html"
+          frameborder="0"></iframe>
+</div>
