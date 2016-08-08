@@ -1,6 +1,7 @@
 //
 // Menu
 // --------------------------------------------------
+$menu-submenu-width: $menu-width - $menu-collapsed-width;
 
 .caret-right {
   display: inline-block;
@@ -48,6 +49,7 @@
   }
 }
 
+.menu-folded,
 .menu-collapsed {
   width: $menu-collapsed-width;
 
@@ -129,7 +131,13 @@
   & > .menu-body {
     padding-left: 15px;
   }
+
+  .menu-icon + .menu-body {
+    padding-left: 0;
+  }
 }
+
+
 
 .menu-header {
   background-color: $menu-header-bg;
@@ -148,6 +156,10 @@
 
   & > .menu-body {
     padding-left: 15px;
+  }
+
+  .menu-icon + .menu-body {
+    padding-left: 0;
   }
 }
 
@@ -263,7 +275,7 @@
 }
 
 .menu-submenu {
-  width: $menu-width - $menu-collapsed-width;
+  width: $menu-submenu-width;
   margin-left: $menu-collapsed-width;
   color: $menu-submenu-color;
   background-color: $menu-submenu-bg;
@@ -298,5 +310,15 @@
         color: $menu-submenu-active-icon-color;
       }
     }
+  }
+}
+
+.menu-submenu-collapsed {
+  transform: translate3d(-$menu-width, 0, 0);
+}
+
+@media (min-width: $grid-float-breakpoint) {
+  .menu-app {
+    margin-left: 0;
   }
 }

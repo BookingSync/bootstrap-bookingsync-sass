@@ -81,7 +81,8 @@ body {
 
   // .menu, // Already set
   .menu-submenu,
-  .sided-content {
+  .sided-content,
+  .sided-content-with-menu {
     transition: transform 0.2s cubic-bezier(.4, 0, .2, 1);
   }
 
@@ -91,12 +92,12 @@ body {
   }
 
   body.menu-open {
-    .menu,
-    .menu-submenu {
+    .menu:not(.menu-submenu-collapsed) {
       transform: translate3d(0, 0, 0);
     }
 
-    .sided-content {
+    .sided-content,
+    .sided-content-with-menu {
       transform: translate3d($menu-width, 0, 0);
     }
   }
@@ -104,9 +105,22 @@ body {
 
 @media (min-width: $grid-float-breakpoint) {
   .sided-content {
-    & > .navbar,
-    & > .main-content {
+    padding-left: $menu-width;
+
+    & > .navbar {
       margin-left: $menu-width;
     }
+  }
+
+  .sided-content-with-menu {
+    padding-left: $menu-width - $menu-collapsed-width;
+
+    & > .navbar {
+      margin-left: $menu-width - $menu-collapsed-width;
+    }
+  }
+
+  .sided-content-full {
+    padding-left: $menu-collapsed-width;
   }
 }

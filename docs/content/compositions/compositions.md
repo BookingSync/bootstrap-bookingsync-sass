@@ -13,6 +13,9 @@
 <nav id="sidebar" class="menu menu-fixed flex-col">
   ...
 </nav>
+<nav id="sidebar-settings" class="menu menu-fixed flex-col menu-submenu menu-submenu-collapsed">
+  ...
+</nav>
 <div class="sided-content">
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
@@ -33,7 +36,7 @@
         </button>
         <div class="navbar-brand-container">
           <span class="navbar-brand">
-            <h1><i class="icon-rental"></i> Rentals</h1>
+            <h1 class="text-overflow"><i class="icon-rental"></i> Rentals</h1>
           </span>
         </div>
       </div>
@@ -55,7 +58,7 @@
 
 <div class="example example-responsive">
   <div class="sheet-header">
-    <h3 id="app-admin">App Admin</h3>
+    <h3 id="app-admin">App admin</h3>
   </div>
 
   <div class="bs-callout bs-callout-info">
@@ -73,28 +76,107 @@
   </div>
 </div>
 ~~~ html
-<nav id="sidebar" class="menu menu-fixed flex-col">
+<nav id="sidebar" class="menu menu-fixed flex-col menu-folded">
   ...
 </nav>
-<iframe class="iframe-fullscreen" src="/embed/app_admin_content/index.html" frameborder="0"></iframe>
+<nav id="sidebar-settings" class="menu menu-fixed flex-col menu-submenu menu-submenu-collapsed">
+  ...
+</nav>
+<div class="sided-content-full">
+  <iframe class="iframe-fullscreen"
+          src="/embed/app_admin__content/index.html"
+          frameborder="0"></iframe>
+</div>
 
 <!-- iFrame content -->
-<nav class="menu menu-fixed flex-col menu-submenu">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   ...
 </nav>
-<div class="sided-content">
+<section class="main-content">
+  <div class="sheet">
+    <p>Body</p>
+  </div>
+</section>
+~~~
+
+<div class="example example-responsive">
+  <div class="sheet-header">
+    <h3 id="app-admin-with-menu">App admin with menu</h3>
+  </div>
+
+  <div class="bs-callout bs-callout-info">
+    <h4>Information</h4>
+    <p>
+      Using the <code>menu</code> plugin, the iframe will automatically post a message to the parent iframe when clicking the <code>.navbar-toggle.menu-toggle</code> button.
+      The parent iframe using this plugin will automatically monitor this message to toggle the menu on mobile devices.
+    </p>
+  </div>
+
+  <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" 
+       data-example-id="app-admin-with-menu">
+    <iframe class="bs-example-iframe" src="/embed/app_admin_with_menu/index.html"
+            frameborder="0"></iframe>
+  </div>
+</div>
+~~~ html
+<nav id="sidebar" class="menu menu-fixed flex-col menu-folded">
+  ...
+</nav>
+<nav id="sidebar-settings" class="menu menu-fixed flex-col menu-submenu menu-submenu-collapsed">
+  ...
+</nav>
+<div class="sided-content-full">
+  <iframe class="iframe-fullscreen"
+          src="/embed/app_admin_with_menu__content/index.html"
+          frameborder="0"></iframe>
+</div>
+
+<!-- iFrame content -->
+<nav class="menu menu-fixed flex-col menu-submenu menu-app">
+  ...
+</nav>
+<div class="sided-content-with-menu">
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    ...
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle menu-toggle"
+                data-toggle="toggle"
+                data-target="body" data-value="menu-open">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggle navbar-toggle-context"
+                data-toggle="collapse" data-target=".navbar-top-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand-container">
+          <span class="navbar-brand">
+            <h1 class="text-overflow"><i class="icon-rental"></i> Rentals</h1>
+          </span>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse navbar-top-collapse">
+        <div class="navbar-right">
+          <button class="btn btn-secondary navbar-btn" type="button">Button</button>
+          <button class="btn btn-primary navbar-btn" type="button">Call to action</button>
+        </div>
+      </div>
+    </div>
   </nav>
   <section class="main-content">
     <div class="sheet">
-      <p>Body</p>
+      <p>...</p>
     </div>
   </section>
 </div>
 ~~~
 
-<div class="example">
+<div class="example example-responsive">
   <div class="sheet-header">
     <h3 id="section">Section</h3>
   </div>
@@ -118,7 +200,7 @@
       </button>
       <div class="navbar-brand-container">
         <span class="navbar-brand">
-          <h1><i class="icon-rental"></i> Rentals</h1>
+          <h1 class="text-overflow"><i class="icon-rental"></i> Rentals</h1>
         </span>
       </div>
     </div>
@@ -137,7 +219,7 @@
 </section>
 ~~~
 
-<div class="example">
+<div class="example example-responsive">
   <div class="sheet-header">
     <h3 id="nested-section">Nested Section</h3>
   </div>
@@ -161,12 +243,13 @@
       </button>
       <div class="navbar-brand-container">
         <span class="navbar-brand">
-          <h1>
-            <span class="navbar-breadcrumb">
-              <i class="icon-calendar"></i>  <a href="#">Bookings</a>
+          <h1 class="text-overflow">
+            <i class="icon-calendar"></i>
+            <span class="navbar-breadcrumb hidden-xs">
+              <a href="#">Bookings</a>
               /
             </span>
-            Planning
+            A very long section name
           </h1>
         </span>
       </div>

@@ -6,7 +6,7 @@
   <div class="bs-callout bs-callout-danger">
     <h4>Plugin dependency</h4>
     <p>
-      This component requires <code>menu</code> and <code>toggle</code> JS plugins provided by the bootstrap-bookingsync-sass gem.
+      This component requires BookingSync <code>menu</code> and Bootstrap <code>collapse</code> JS plugins.
     </p>
   </div>
 
@@ -98,8 +98,8 @@
         </a>
       </li>
       <li role="presentation">
-        <a href="#" class="menu-link" data-toggle="toggle" data-target="#sidebar"
-           data-value="menu-collapsed">
+        <a href="#" class="menu-link" data-toggle="menu-expand"
+           data-menu="#sidebar" data-submenu="#sidebar-settings">
           <div class="menu-icon menu-link-icon">
             <i class="icon-settings"></i>
           </div>
@@ -148,7 +148,7 @@
     </nav>
   </footer>
 </nav>
-<nav class="menu menu-fixed flex-col menu-submenu">
+<nav id="sidebar-settings" class="menu menu-fixed flex-col menu-submenu menu-submenu-collapsed">
   <header class="menu-header">
     <div class="menu-body menu-header-body">
       <h4 class="menu-header-heading">Settings</h4>
