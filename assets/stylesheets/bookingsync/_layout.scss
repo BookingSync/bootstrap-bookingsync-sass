@@ -63,8 +63,14 @@ body {
 
 .navbar-toggle.menu-toggle {
   float: left;
-  margin-left: $navbar-padding-horizontal;
+  margin-left: $navbar-padding-horizontal - 10px;
   margin-right: 0;
+}
+
+.menu-toggle-hideable {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .iframe-fullscreen {
@@ -74,15 +80,11 @@ body {
 }
 
 @media (max-width: $grid-float-breakpoint) {
-  body.menu-open {
-    overflow: hidden;
-    max-height: 100vh;
-  }
-
   // .menu, // Already set
   .menu-submenu,
   .sided-content,
-  .sided-content-with-menu {
+  .sided-content-with-menu,
+  .menu-toggle-hideable {
     transition: transform 0.2s cubic-bezier(.4, 0, .2, 1);
   }
 
@@ -92,6 +94,9 @@ body {
   }
 
   body.menu-open {
+    overflow: hidden;
+    max-height: 100vh;
+
     .menu:not(.menu-submenu-collapsed) {
       transform: translate3d(0, 0, 0);
     }
@@ -100,10 +105,18 @@ body {
     .sided-content-with-menu {
       transform: translate3d($menu-width, 0, 0);
     }
+
+    .menu-toggle-hideable {
+      transform: translate3d($menu-collapsed-width, 0, 0);
+    }
   }
 }
 
 @media (min-width: $grid-float-breakpoint) {
+  .menu-toggle-hideable {
+    display: none;
+  }
+
   .sided-content {
     padding-left: $menu-width;
 

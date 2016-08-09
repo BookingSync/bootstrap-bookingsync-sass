@@ -3,7 +3,12 @@
 * bug fixes
   * Fix `menu-body` padding when directly succeeding a `menu-icon`
   * Fix menu for Apps and add `menu-folded`
- 
+
+* improvements
+  * Add support to automatically mask menu toggle button from apps if
+    connected with pushMessage `bookingsync:menu:toggle-button:hide`
+  * Add support for annotated sections with tabulated content
+
 ### 1.0.0.beta2 - 2016-08-07
 
 * improvements
