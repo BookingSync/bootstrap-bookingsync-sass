@@ -64,8 +64,10 @@
   <div class="bs-callout bs-callout-info">
     <h4>Information</h4>
     <p>
-      Using the <code>menu</code> plugin, the iframe will automatically post a message to the parent iframe when clicking the <code>.navbar-toggle.menu-toggle</code> button.
-      The parent iframe using this plugin will automatically monitor this message to toggle the menu on mobile devices.
+      On mobile devices, the parent iframe overlay a toggle button over the iframe to toggle the parent frame menu.
+    </p>
+    <p>
+      This can be replaced by your own toggle button as presented in the <a href="/compositions/#app-admin-with-menu">App admin with menu</a> example.
     </p>
   </div>
 
@@ -76,6 +78,15 @@
   </div>
 </div>
 ~~~ html
+<div class="menu-toggle-hideable">
+  <button type="button" class="navbar-toggle menu-toggle" data-toggle="toggle"
+          data-target="body" data-value="menu-open">
+    <span class="sr-only">Toggle Navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+</div>
 <nav id="sidebar" class="menu menu-fixed flex-col menu-folded">
   ...
 </nav>
@@ -107,8 +118,10 @@
   <div class="bs-callout bs-callout-info">
     <h4>Information</h4>
     <p>
-      Using the <code>menu</code> plugin, the iframe will automatically post a message to the parent iframe when clicking the <code>.navbar-toggle.menu-toggle</code> button.
-      The parent iframe using this plugin will automatically monitor this message to toggle the menu on mobile devices.
+      On mobile devices, the parent iframe overlay a toggle button over the iframe to toggle the parent frame menu.
+    </p>
+    <p>
+      Using the <code>menu</code> plugin, your iframe is able to connect its own menu with the parent's frame one. You simply need to add the class <code>menu-toggle-parent-frame</code> to your toggle button, which will also remove the parent frame toggle button that was initialy present as long as it's having the class <code>menu-toggle-hideable</code>.
     </p>
   </div>
 
@@ -119,6 +132,15 @@
   </div>
 </div>
 ~~~ html
+<div class="menu-toggle-hideable">
+  <button type="button" class="navbar-toggle menu-toggle" data-toggle="toggle"
+          data-target="body" data-value="menu-open">
+    <span class="sr-only">Toggle Navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+</div>
 <nav id="sidebar" class="menu menu-fixed flex-col menu-folded">
   ...
 </nav>
@@ -139,7 +161,8 @@
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle menu-toggle"
+        <button type="button"
+                class="navbar-toggle menu-toggle menu-toggle-parent-frame"
                 data-toggle="toggle"
                 data-target="body" data-value="menu-open">
           <span class="sr-only">Toggle Navigation</span>
@@ -281,6 +304,41 @@
   </div>
 </div>
 
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="tabulated-content">Tabulated content</h3>
+  </div>
+
+  <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" 
+       data-example-id="tabulated-content">
+    <iframe class="bs-example-iframe" src="/embed/tabulated_content/index.html"
+            frameborder="0"></iframe>
+  </div>
+</div>
+~~~ html
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  ...
+</nav>
+<section class="main-content">
+  <div class="sheet">
+    <ul class="nav nav-tabs" data-toggle="stackable" data-target=".stackable-dropdown">
+      <li class="active"><a href="#">Tab 1</a></li>
+      <li><a href="#">Tab 2</a></li>
+      <li class="dropdown pull-right stackable-dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          More <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+        </ul>
+      </li>
+    </ul>
+    <div>
+      <p>Text...</p>
+    </div>
+  </div>
+</section>
+~~~
+
 <div class="example example-responsive">
   <div class="sheet-header">
     <h3 id="annotated-section">Annotated Section</h3>
@@ -322,12 +380,15 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="tabulated-content">Tabulated content</h3>
+    <h3 id="annotated-section-with-tabulated-content">
+      Annotated section with tabulated content
+    </h3>
   </div>
 
   <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" 
-       data-example-id="tabulated-content">
-    <iframe class="bs-example-iframe" src="/embed/tabulated_content/index.html"
+       data-example-id="annotated-section-with-tabulated-content">
+    <iframe class="bs-example-iframe"
+            src="/embed/annotated_section_with_tabulated_content/index.html"
             frameborder="0"></iframe>
   </div>
 </div>
@@ -336,22 +397,29 @@
   ...
 </nav>
 <section class="main-content">
-  <div class="sheet">
-    <ul class="nav nav-tabs" data-toggle="stackable" data-target=".stackable-dropdown">
-      <li class="active"><a href="#">Tab 1</a></li>
-      <li><a href="#">Tab 2</a></li>
-      <li class="dropdown pull-right stackable-dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-          More <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu">
-        </ul>
-      </li>
-    </ul>
-    <div>
-      <p>Text...</p>
+  <section class="annotated-section">
+    <header class="annotated-section-annotation">
+      <h2 class="annotated-section-title">Section Name</h2>
+      <p>Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+      <p><a href="#">More Information</a></p>
+    </header>
+    <div class="annotated-section-content">
+      <ul class="nav nav-tabs" data-toggle="stackable" data-target=".stackable-dropdown">
+        <li class="active"><a href="#">Tab 1</a></li>
+        <li><a href="#">Tab 2</a></li>
+        <li class="dropdown pull-right stackable-dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            More <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+          </ul>
+        </li>
+      </ul>
+      <div>
+        <p>Body</p>
+      </div>
     </div>
-  </div>
+  </section>
 </section>
 ~~~
 

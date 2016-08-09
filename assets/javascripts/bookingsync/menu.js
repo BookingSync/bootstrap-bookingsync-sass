@@ -46,17 +46,44 @@
     }
   });
 
-  $(document).on('click', '.navbar-toggle.menu-toggle', function(event) {
+  $(document).on('click', '.menu-toggle-parent-frame', function(event) {
     parent.postMessage("bookingsync:menu:toggle", "*");
   });
 
-  $(window).load(function() {
-    if ($('iframe.iframe-fullscreen').length > 0) {
+  $(window).ready(function() {
+    var iframes = $('iframe.iframe-fullscreen');
+    var toggleButton = $('.menu-toggle-parent-frame');
+
+    // in parent iframe
+    if (iframes.length > 0) {
+      // Notify ability to hide parent menu-toggle button
+      iframes.each(function(index) {
+        var iframe = this;
+        $(iframe).ready(function() {
+          window.setTimeout(function() {
+            iframe.contentWindow.postMessage("bookingsync:menu:toggle-button:hideable", "*");
+          }, 1000);
+        });
+      });
+
       window.addEventListener("message", function(event) {
+        if (event.data === "bookingsync:menu:toggle-button:hide") {
+          $('.menu-toggle-hideable').hide();
+        }
+
         if (event.data === "bookingsync:menu:toggle") {
           $('body').toggleClass("menu-open");
         }
       }, false);
+    }
+
+    // in app iframe
+    if (toggleButton.length > 0) {
+      window.addEventListener("message", function(event) {
+        if (event.data === "bookingsync:menu:toggle-button:hideable") {
+          parent.postMessage("bookingsync:menu:toggle-button:hide", "*");
+        }
+      });
     }
   });
 }(jQuery);

@@ -9,64 +9,6 @@
   border-radius: $sheet-border-radius;
   margin: $sheet-margin;
   padding: $sheet-padding;
-
-  & > .nav-tabs {
-    background-color: $sheet-navbar-tabs-bg;
-    margin: - $sheet-padding;
-    margin-bottom: $sheet-padding;
-
-    > li > a {
-      margin-right: 0;
-      border-top: 0;
-      border-radius: 0;
-      color: $gray;
-
-      &:hover {
-        color: $gray;
-        background-color: $sheet-navbar-tabs-bg-hover;
-        border-left: 1px solid transparent;
-        border-right: 1px solid transparent;
-        border-radius: 0;
-      }
-    }
-
-    > li.active a {
-      color: $brand-primary;
-      background-color: $sheet-bg;
-
-      &:hover {
-        color: $brand-primary;
-        background-color: $sheet-navbar-tabs-bg-hover;
-        border-top: 0;
-        border-left: 1px solid $gray-lightest;
-        border-right: 1px solid $gray-lightest;
-      }
-    }
-
-    > li:first-of-type a,
-    > li:first-of-type a:hover {
-      border-left: 1px solid transparent;
-    }
-
-    // Dropdown
-    &.nav > li > a:focus,
-    .open > a,
-    .open > a:hover,
-    .open > a:focus {
-      background-color: $sheet-navbar-tabs-bg-hover;
-      border-color: transparent;
-      border-bottom-color: $gray-lightest;
-    }
-
-    > .dropdown >.dropdown-menu {
-      border-top: 0;
-      background-color: $sheet-navbar-tabs-bg-hover;
-    }
-
-    > .pull-right > .dropdown-menu {
-      right: -1px;
-    }
-  }
 }
 
 .sheet-header {
