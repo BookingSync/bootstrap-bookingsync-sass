@@ -91,7 +91,7 @@
         </a>
       </li>
       <li role="presentation">
-        <a href="#" class="menu-link" data-toggle="toggle" data-target="#sidebar" data-value="menu-collapsed">
+        <a href="#" class="menu-link" data-toggle="menu-expand" data-menu="#sidebar" data-submenu="#sidebar-settings">
           <div class="menu-icon menu-link-icon">
             <i class="icon-settings"></i>
           </div>
@@ -134,7 +134,7 @@
     </nav>
   </footer>
 </nav>
-<nav class="menu menu-fixed flex-col menu-submenu">
+<nav id="sidebar-settings" class="menu menu-fixed flex-col menu-submenu menu-submenu-collapsed">
   <header class="menu-header">
     <div class="menu-body menu-header-body">
       <h4 class="menu-header-heading">Settings</h4>
@@ -184,7 +184,7 @@
         </button>
         <div class="navbar-brand-container">
           <span class="navbar-brand">
-            <h1>
+            <h1 class="text-overflow">
 <i class="icon-rental"></i> Rentals</h1>
           </span>
         </div>

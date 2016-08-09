@@ -67,13 +67,15 @@
       <a class="list-group-item" href="/compositions"><i class="styleguide-icon-compositions icon-fw"></i>&nbsp; <span>Compositions</span></a>
       
         <ul class="list-group list-unstyled">
-  <li><a class="list-group-item" href="#core-admin">Core Admin</a></li>
-  <li><a class="list-group-item" href="#app-admin">App Admin</a></li>
+  <li><a class="list-group-item" href="#core-admin">Core admin</a></li>
+  <li><a class="list-group-item" href="#app-admin">App admin</a></li>
+  <li><a class="list-group-item" href="#app-admin">App admin with menu</a></li>
   <li><a class="list-group-item" href="#section">Section</a></li>
   <li><a class="list-group-item" href="#nested-section">Nested section</a></li>
   <li><a class="list-group-item" href="#two-columns">Two columns</a></li>
-  <li><a class="list-group-item" href="#annotated-section">Annotated section</a></li>
   <li><a class="list-group-item" href="#tabulated-content">Tabulated content</a></li>
+  <li><a class="list-group-item" href="#annotated-section">Annotated section</a></li>
+  <li><a class="list-group-item" href="#annotated-section-with-tabulated-content">Annotated section with tabulated content</a></li>
   <li><a class="list-group-item" href="#fullscreen-modal">Fullscreen modal</a></li>
 </ul>
 
@@ -100,6 +102,9 @@
 <pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"sidebar"</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"sidebar-settings"</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col menu-submenu menu-submenu-collapsed"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/nav&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sided-content"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default navbar-fixed-top"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
@@ -120,7 +125,7 @@
         <span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-brand-container"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-brand"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;h1&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-rental"</span><span class="nt">&gt;&lt;/i&gt;</span> Rentals<span class="nt">&lt;/h1&gt;</span>
+            <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-overflow"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-rental"</span><span class="nt">&gt;&lt;/i&gt;</span> Rentals<span class="nt">&lt;/h1&gt;</span>
           <span class="nt">&lt;/span&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
@@ -141,14 +146,16 @@
 
 <div class="example example-responsive">
   <div class="sheet-header">
-    <h3 id="app-admin">App Admin</h3>
+    <h3 id="app-admin">App admin</h3>
   </div>
 
   <div class="bs-callout bs-callout-info">
     <h4>Information</h4>
     <p>
-      Using the <code>menu</code> plugin, the iframe will automatically post a message to the parent iframe when clicking the <code>.navbar-toggle.menu-toggle</code> button.
-      The parent iframe using this plugin will automatically monitor this message to toggle the menu on mobile devices.
+      On mobile devices, the parent iframe overlay a toggle button over the iframe to toggle the parent frame menu.
+    </p>
+    <p>
+      This can be replaced by your own toggle button as presented in the <a href="/compositions/#app-admin-with-menu">App admin with menu</a> example.
     </p>
   </div>
 
@@ -156,27 +163,123 @@
     <iframe class="bs-example-iframe" src="/embed/app_admin/index.html" frameborder="0"></iframe>
   </div>
 </div>
-<pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"sidebar"</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col"</span><span class="nt">&gt;</span>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-toggle-hideable"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle menu-toggle"</span> <span class="na">data-toggle=</span><span class="s">"toggle"</span>
+          <span class="na">data-target=</span><span class="s">"body"</span> <span class="na">data-value=</span><span class="s">"menu-open"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Navigation<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"sidebar"</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col menu-folded"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/nav&gt;</span>
-<span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"iframe-fullscreen"</span> <span class="na">src=</span><span class="s">"/embed/app_admin_content/index.html"</span> <span class="na">frameborder=</span><span class="s">"0"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"sidebar-settings"</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col menu-submenu menu-submenu-collapsed"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sided-content-full"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"iframe-fullscreen"</span>
+          <span class="na">src=</span><span class="s">"/embed/app_admin__content/index.html"</span>
+          <span class="na">frameborder=</span><span class="s">"0"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 
 <span class="c">&lt;!-- iFrame content --&gt;</span>
-<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col menu-submenu"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default navbar-fixed-top"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/nav&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sided-content"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"main-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Body<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre>
+
+<div class="example example-responsive">
+  <div class="sheet-header">
+    <h3 id="app-admin-with-menu">App admin with menu</h3>
+  </div>
+
+  <div class="bs-callout bs-callout-info">
+    <h4>Information</h4>
+    <p>
+      On mobile devices, the parent iframe overlay a toggle button over the iframe to toggle the parent frame menu.
+    </p>
+    <p>
+      Using the <code>menu</code> plugin, your iframe is able to connect its own menu with the parent's frame one. You simply need to add the class <code>menu-toggle-parent-frame</code> to your toggle button, which will also remove the parent frame toggle button that was initialy present as long as it's having the class <code>menu-toggle-hideable</code>.
+    </p>
+  </div>
+
+  <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" data-example-id="app-admin-with-menu">
+    <iframe class="bs-example-iframe" src="/embed/app_admin_with_menu/index.html" frameborder="0"></iframe>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu-toggle-hideable"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle menu-toggle"</span> <span class="na">data-toggle=</span><span class="s">"toggle"</span>
+          <span class="na">data-target=</span><span class="s">"body"</span> <span class="na">data-value=</span><span class="s">"menu-open"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Navigation<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"sidebar"</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col menu-folded"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"sidebar-settings"</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col menu-submenu menu-submenu-collapsed"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sided-content-full"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"iframe-fullscreen"</span>
+          <span class="na">src=</span><span class="s">"/embed/app_admin_with_menu__content/index.html"</span>
+          <span class="na">frameborder=</span><span class="s">"0"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- iFrame content --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"menu menu-fixed flex-col menu-submenu menu-app"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sided-content-with-menu"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default navbar-fixed-top"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
-    ...
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span>
+                <span class="na">class=</span><span class="s">"navbar-toggle menu-toggle menu-toggle-parent-frame"</span>
+                <span class="na">data-toggle=</span><span class="s">"toggle"</span>
+                <span class="na">data-target=</span><span class="s">"body"</span> <span class="na">data-value=</span><span class="s">"menu-open"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Navigation<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle navbar-toggle-context"</span>
+                <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">".navbar-top-collapse"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Navigation<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-brand-container"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-brand"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-overflow"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-rental"</span><span class="nt">&gt;&lt;/i&gt;</span> Rentals<span class="nt">&lt;/h1&gt;</span>
+          <span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse navbar-top-collapse"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-right"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary navbar-btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary navbar-btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Call to action<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/nav&gt;</span>
   <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"main-content"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p&gt;</span>Body<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/section&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre>
 
-<div class="example">
+<div class="example example-responsive">
   <div class="sheet-header">
     <h3 id="section">Section</h3>
   </div>
@@ -197,7 +300,7 @@
       <span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-brand-container"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-brand"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;h1&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-rental"</span><span class="nt">&gt;&lt;/i&gt;</span> Rentals<span class="nt">&lt;/h1&gt;</span>
+          <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-overflow"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"icon-rental"</span><span class="nt">&gt;&lt;/i&gt;</span> Rentals<span class="nt">&lt;/h1&gt;</span>
         <span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -215,7 +318,7 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/section&gt;</span></code></pre>
 
-<div class="example">
+<div class="example example-responsive">
   <div class="sheet-header">
     <h3 id="nested-section">Nested Section</h3>
   </div>
@@ -236,12 +339,13 @@
       <span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-brand-container"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-brand"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;h1&gt;</span>
-            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-breadcrumb"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-calendar"</span><span class="nt">&gt;&lt;/i&gt;</span>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bookings<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-overflow"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-calendar"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-breadcrumb hidden-xs"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Bookings<span class="nt">&lt;/a&gt;</span>
               /
             <span class="nt">&lt;/span&gt;</span>
-            Planning
+            A very long section name
           <span class="nt">&lt;/h1&gt;</span>
         <span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
@@ -269,6 +373,37 @@
     <iframe class="bs-example-iframe" src="/embed/two_columns/index.html" frameborder="0"></iframe>
   </div>
 </div>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="tabulated-content">Tabulated content</h3>
+  </div>
+
+  <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" data-example-id="tabulated-content">
+    <iframe class="bs-example-iframe" src="/embed/tabulated_content/index.html" frameborder="0"></iframe>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default navbar-fixed-top"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"main-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span> <span class="na">data-toggle=</span><span class="s">"stackable"</span> <span class="na">data-target=</span><span class="s">".stackable-dropdown"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown pull-right stackable-dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+          More <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre>
 
 <div class="example example-responsive">
   <div class="sheet-header">
@@ -307,33 +442,42 @@
 
 <div class="example">
   <div class="sheet-header">
-    <h3 id="tabulated-content">Tabulated content</h3>
+    <h3 id="annotated-section-with-tabulated-content">
+      Annotated section with tabulated content
+    </h3>
   </div>
 
-  <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" data-example-id="tabulated-content">
-    <iframe class="bs-example-iframe" src="/embed/tabulated_content/index.html" frameborder="0"></iframe>
+  <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" data-example-id="annotated-section-with-tabulated-content">
+    <iframe class="bs-example-iframe" src="/embed/annotated_section_with_tabulated_content/index.html" frameborder="0"></iframe>
   </div>
 </div>
 <pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default navbar-fixed-top"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/nav&gt;</span>
 <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"main-content"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sheet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span> <span class="na">data-toggle=</span><span class="s">"stackable"</span> <span class="na">data-target=</span><span class="s">".stackable-dropdown"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown pull-right stackable-dropdown"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-          More <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;div&gt;</span>
-      <span class="nt">&lt;p&gt;</span>Text...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"annotated-section"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"annotated-section-annotation"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"annotated-section-title"</span><span class="nt">&gt;</span>Section Name<span class="nt">&lt;/h2&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>More Information<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"annotated-section-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span> <span class="na">data-toggle=</span><span class="s">"stackable"</span> <span class="na">data-target=</span><span class="s">".stackable-dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown pull-right stackable-dropdown"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            More <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Body<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
 <span class="nt">&lt;/section&gt;</span></code></pre>
 
 <div class="example">
