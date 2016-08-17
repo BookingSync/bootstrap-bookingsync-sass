@@ -1,5 +1,10 @@
 ### master
 
+### 1.0.0.beta4 - 2016-08-18
+
+* bug fixes
+  * use `rgba(255, 255, 255, 0)` instead of `transparent` for easier compatibility.
+
 ### 1.0.0.beta3 - 2016-08-09
 
 * bug fixes
