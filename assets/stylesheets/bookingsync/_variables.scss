@@ -221,7 +221,7 @@ $btn-border-radius-large:       $border-radius-large !default;
 //== Forms
 //
 $input-color:                   rgb(106, 117, 141) !default; // #6a758d
-$input-bg:                      transparent !default;
+$input-bg:                      rgba(255, 255, 255, 0) !default;
 $input-border-radius-base:      0 !default;
 $input-border-radius:           $input-border-radius-base !default;
 $input-border-radius-small:     $input-border-radius-base !default;
@@ -229,7 +229,7 @@ $input-border-radius-large:     $input-border-radius-base !default;
 $input-border:                  rgba(30, 50, 100, 0.5) !default;
 $input-border-focus:            $input-color !default;
 $input-height-base:             (($padding-base-vertical * 2) + $font-size-base + 1) !default; // 1 for bottom border
-$input-bg-disabled:             transparent !default;
+$input-bg-disabled:             rgba(255, 255, 255, 0) !default;
 
 $label-color:                   rgba(106, 117, 141, .75) !default;
 
@@ -244,22 +244,22 @@ $label-border-filled:           $input-border !default;
 
 $label-color-disabled:          rgba(106, 117, 141, 0.5) !default;
 
-$input-group-addon-bg:          transparent !default;
+$input-group-addon-bg:          rgba(255, 255, 255, 0) !default;
 $input-group-addon-height:      ($input-height-base + $label-padding-focus) !default;
 $input-group-addon-padding-top: ($label-padding-focus + ($padding-base-vertical / 2)) !default;
 
 $help-text:                     $gray-light !default;
 
 $state-success-text:            #2db859 !default;
-$state-success-bg:              transparent !default;
+$state-success-bg:              rgba(255, 255, 255, 0) !default;
 $state-success-border:          $state-success-text !default;
 
 $state-warning-text:            #f39c12 !default;
-$state-warning-bg:              transparent !default;
+$state-warning-bg:              rgba(255, 255, 255, 0) !default;
 $state-warning-border:          $state-warning-text !default;
 
 $state-danger-text:             #e74c3c !default;
-$state-danger-bg:               transparent !default;
+$state-danger-bg:               rgba(255, 255, 255, 0) !default;
 $state-danger-border:           $state-danger-text !default;
 
 $select-multiple-options-color:             #fff !default;
@@ -279,7 +279,7 @@ $navbar-height:                           70px !default;
 $navbar-default-bg:                       #fff !default;
 $navbar-default-color:                    $gray-dark !default;
 $navbar-default-border:                   $gray-lighter !default;
-$navbar-default-toggle-border-color:      transparent !default;
+$navbar-default-toggle-border-color:      rgba(255, 255, 255, 0) !default;
 $navbar-default-toggle-icon-bar-bg:       $gray-light !default;
 
 $navbar-breadcrumb-brand-logo-height:     30px !default;
@@ -350,14 +350,14 @@ $modal-content-border-color:          $gray-lighter !default;
 $modal-border-radius:                 6px !default;
 $modal-inner-padding:                 30px !default;
 $modal-title-padding:                 $modal-inner-padding !default;
-$modal-backdrop-bg:                   transparent;
+$modal-backdrop-bg:                   rgba(255, 255, 255, 0) !default;
 
 
 //== List group
 //
 $list-group-hover-bg:                 rgba($gray-base, .05) !default;
 $list-group-active-bg:                $gray-lightest !default;
-$list-group-active-child-bg:          transparent !default;
+$list-group-active-child-bg:          rgba(255, 255, 255, 0) !default;
 $list-group-active-child-border:      $list-group-active-bg !default;
 $list-group-active-child-hover-bg:    $list-group-hover-bg !default;
 
@@ -366,7 +366,7 @@ $list-group-active-child-hover-bg:    $list-group-hover-bg !default;
 //
 $breadcrumb-padding-vertical:         0 !default;
 $breadcrumb-padding-horizontal:       0 !default;
-$breadcrumb-bg:                       transparent !default;
+$breadcrumb-bg:                       rgba(255, 255, 255, 0) !default;
 $breadcrumb-color:                    $gray-lighter !default;
 $breadcrumb-active-color:             $headings-color !default;
 $breadcrumb-icon-color:               $gray-light !default;
