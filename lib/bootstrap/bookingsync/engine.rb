@@ -9,6 +9,7 @@ module Bootstrap
             app.config.assets.paths << root.join('assets', sub).to_s
           end
           app.config.assets.precompile << %r(bookingsync/bookingsync-smiles\.(?:eot|svg|ttf|woff2?)$)
+          app.config.assets.precompile << %r(bookingsync/bookingsync-icons\.(?:eot|svg|ttf|woff2?)$)
         end
       end
     end

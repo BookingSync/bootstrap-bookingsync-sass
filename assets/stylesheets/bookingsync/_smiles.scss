@@ -16,7 +16,8 @@
 }
 
 [class^="bs-icon-"], [class*=" bs-icon-"] {
-  font-family: '#{$smiles-font-name}';
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$smiles-font-name}' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
