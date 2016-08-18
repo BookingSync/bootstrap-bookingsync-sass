@@ -1,5 +1,7 @@
 ### master
 
+### 1.0.0.beta5 - 2016-08-18
+
 * bug fixes
   * fix bookingsync-icons precompilation
 

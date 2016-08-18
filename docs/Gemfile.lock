@@ -1,7 +1,7 @@
 PATH
   remote: ../
   specs:
-    bootstrap-bookingsync-sass (1.0.0.beta4)
+    bootstrap-bookingsync-sass (1.0.0.beta5)
       bootstrap-sass (>= 3.3.5)
 
 GEM
@@ -9,7 +9,7 @@ GEM
   specs:
     adsf (1.2.0)
       rack (>= 1.0.0)
-    autoprefixer-rails (6.4.0.1)
+    autoprefixer-rails (6.4.0.2)
       execjs
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
