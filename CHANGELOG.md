@@ -1,5 +1,8 @@
 ### master
 
+* improvements
+  * add icons: `translations`, `external`, `categories`, `navigation`, `amenities`, `template`.
+
 ### 1.0.0.beta5 - 2016-08-18
 
 * bug fixes
