@@ -76,11 +76,13 @@ $icons-font-name:           "bookingsync-icons" !default;
 //** Element ID within SVG icon file.
 $icons-font-svg-id:         "bookingsync_icons" !default;
 
-
+$icon-translations:         "\e902" !default;
+$icon-external:             "\e901" !default;
 $icon-invoice:              "\e900" !default;
 $icon-rental:               "\e904" !default;
 $icon-photo:                "\e93b" !default;
 $icon-video:                "\e965" !default;
+$icon-categories:           "\e995" !default;
 $icon-description:          "\e9ae" !default;
 $icon-contract:             "\e9eb" !default;
 $icon-reservation:          "\e9f9" !default;
@@ -88,6 +90,7 @@ $icon-rates:                "\ea12" !default;
 $icon-payments:             "\ea16" !default;
 $icon-help:                 "\ea1b" !default;
 $icon-map:                  "\ea38" !default;
+$icon-navigation:           "\ea44" !default;
 $icon-calendar:             "\ea62" !default;
 $icon-inbox:                "\ea80" !default;
 $icon-clients:              "\eb0c" !default;
@@ -100,9 +103,11 @@ $icon-reports:              "\eb8b" !default;
 $icon-cleaning:             "\ebfb" !default;
 $icon-notifications:        "\ec09" !default;
 $icon-instant:              "\ec49" !default;
+$icon-amenities:            "\ec5a" !default;
 $icon-applications:         "\ec5d" !default;
 $icon-website:              "\ec97" !default;
 $icon-reviews:              "\ece2" !default;
+$icon-template:             "\eeb0" !default;
 $icon-widget:               "\eecd" !default;
 
 

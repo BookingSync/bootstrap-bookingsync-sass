@@ -36,6 +36,12 @@
   text-align: center;
 }
 
+.icon-translations:before {
+  content: $icon-translations;
+}
+.icon-external:before {
+  content: $icon-external;
+}
 .icon-invoice:before {
   content: $icon-invoice;
 }
@@ -47,6 +53,9 @@
 }
 .icon-video:before {
   content: $icon-video;
+}
+.icon-categories:before {
+  content: $icon-categories;
 }
 .icon-description:before {
   content: $icon-description;
@@ -68,6 +77,9 @@
 }
 .icon-map:before {
   content: $icon-map;
+}
+.icon-navigation:before {
+  content: $icon-navigation;
 }
 .icon-calendar:before {
   content: $icon-calendar;
@@ -105,6 +117,9 @@
 .icon-instant:before {
   content: $icon-instant;
 }
+.icon-amenities:before {
+  content: $icon-amenities;
+}
 .icon-applications:before {
   content: $icon-applications;
 }
@@ -113,6 +128,9 @@
 }
 .icon-reviews:before {
   content: $icon-reviews;
+}
+.icon-template:before {
+  content: $icon-template;
 }
 .icon-widget:before {
   content: $icon-widget;

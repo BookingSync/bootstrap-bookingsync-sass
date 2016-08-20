@@ -4,10 +4,13 @@
   </div>
   <div class="bs-example bs-sheet bs-example-icons" data-example-id="iconography">
     <ul class="list-unstyled">
+      <li><i class="icon-translations"></i> translations</li>
+      <li><i class="icon-external"></i> external</li>
       <li><i class="icon-invoice"></i> invoice</li>
       <li><i class="icon-rental"></i> rental</li>
       <li><i class="icon-photo"></i> photo</li>
       <li><i class="icon-video"></i> video</li>
+      <li><i class="icon-categories"></i> categories</li>
       <li><i class="icon-description"></i> description</li>
       <li><i class="icon-contract"></i> contract</li>
       <li><i class="icon-reservation"></i> reservation</li>
@@ -15,6 +18,7 @@
       <li><i class="icon-payments"></i> payments</li>
       <li><i class="icon-help"></i> help</li>
       <li><i class="icon-map"></i> map</li>
+      <li><i class="icon-navigation"></i> navigation</li>
       <li><i class="icon-calendar"></i> calendar</li>
       <li><i class="icon-inbox"></i> inbox</li>
       <li><i class="icon-clients"></i> clients</li>
@@ -27,9 +31,11 @@
       <li><i class="icon-cleaning"></i> cleaning</li>
       <li><i class="icon-notifications"></i> notifications</li>
       <li><i class="icon-instant"></i> instant</li>
+      <li><i class="icon-amenities"></i> amenities</li>
       <li><i class="icon-applications"></i> applications</li>
       <li><i class="icon-website"></i> website</li>
       <li><i class="icon-reviews"></i> reviews</li>
+      <li><i class="icon-template"></i> template</li>
       <li><i class="icon-widget"></i> widget</li>
     </ul>
   </div>
