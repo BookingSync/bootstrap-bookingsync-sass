@@ -76,6 +76,7 @@
   <li><a class="list-group-item" href="#tabulated-content">Tabulated content</a></li>
   <li><a class="list-group-item" href="#annotated-section">Annotated section</a></li>
   <li><a class="list-group-item" href="#annotated-section-with-tabulated-content">Annotated section with tabulated content</a></li>
+  <li><a class="list-group-item" href="#annotated-section-with-frameless-content">Annotated section with frameless content</a></li>
   <li><a class="list-group-item" href="#fullscreen-modal">Fullscreen modal</a></li>
 </ul>
 
@@ -407,7 +408,7 @@
 
 <div class="example example-responsive">
   <div class="sheet-header">
-    <h3 id="annotated-section">Annotated Section</h3>
+    <h3 id="annotated-section">Annotated section</h3>
   </div>
 
   <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" data-example-id="annotated-section">
@@ -475,6 +476,41 @@
       <span class="nt">&lt;/ul&gt;</span>
       <span class="nt">&lt;div&gt;</span>
         <span class="nt">&lt;p&gt;</span>Body<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre>
+
+<div class="example example-responsive">
+  <div class="sheet-header">
+    <h3 id="annotated-section-with-frameless-content">Annotated section with frameless content</h3>
+  </div>
+
+  <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" data-example-id="annotated-section-with-frameless-content">
+    <iframe class="bs-example-iframe" src="/embed/annotated_section_with_frameless_content/index.html" frameborder="0"></iframe>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default navbar-fixed-top"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"main-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"annotated-section"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"annotated-section-annotation"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"annotated-section-title"</span><span class="nt">&gt;</span>Section Name<span class="nt">&lt;/h2&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>More Information<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"annotated-section-content annotated-section-content-frameless"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Panel 1<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Panel 2<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/section&gt;</span>
