@@ -1,5 +1,7 @@
 ### master
 
+### 1.0.0.beta7 - 2016-08-22
+
 * breaking changes
   * require selects to have a `from-group` div
 
