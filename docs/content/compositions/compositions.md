@@ -341,7 +341,7 @@
 
 <div class="example example-responsive">
   <div class="sheet-header">
-    <h3 id="annotated-section">Annotated Section</h3>
+    <h3 id="annotated-section">Annotated section</h3>
   </div>
 
   <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" 
@@ -417,6 +417,45 @@
       </ul>
       <div>
         <p>Body</p>
+      </div>
+    </div>
+  </section>
+</section>
+~~~
+
+<div class="example example-responsive">
+  <div class="sheet-header">
+    <h3 id="annotated-section-with-frameless-content">Annotated section with frameless content</h3>
+  </div>
+
+  <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" 
+       data-example-id="annotated-section-with-frameless-content">
+    <iframe class="bs-example-iframe" src="/embed/annotated_section_with_frameless_content/index.html"
+            frameborder="0"></iframe>
+  </div>
+</div>
+~~~ html
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  ...
+</nav>
+<section class="main-content">
+  <section class="annotated-section">
+    <header class="annotated-section-annotation">
+      <h2 class="annotated-section-title">Section Name</h2>
+      <p>Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+      <p><a href="#">More Information</a></p>
+    </header>
+    <div class="annotated-section-content annotated-section-content-frameless">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p>Panel 1</p>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p>Panel 2</p>
+        </div>
       </div>
     </div>
   </section>

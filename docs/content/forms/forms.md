@@ -485,14 +485,16 @@
   <div class="bs-example bs-sheet" data-example-id="select">
     <form>
       <div class="select">
-        <label for="destination">Destination</label>
-        <select class="form-control" id="destination">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <select class="form-control" id="destination">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
       </div>
     </form>
   </div>
@@ -500,14 +502,16 @@
 
 ~~~ html
 <div class="select">
-  <label for="destination">Destination</label>
-  <select class="form-control" id="destination">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
-  </select>
+  <div class="form-group">
+    <label for="destination">Destination</label>
+    <select class="form-control" id="destination">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
 </div>
 ~~~
 
@@ -528,28 +532,32 @@
   <div class="bs-example bs-sheet" data-example-id="multiple-select">
     <form>
       <div class="select">
-        <label for="destinations">Destinations</label>
-        <select multiple class="form-control" id="destinations">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+        <div class="form-group">
+          <label for="destinations">Destinations</label>
+          <select multiple class="form-control" id="destinations">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
       </div>
     </form>
   </div>
 </div>
 ~~~ html
 <div class="select">
-  <label for="destinations">Destinations</label>
-  <select multiple class="form-control" id="destinations">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
-  </select>
+  <div class="form-group">
+    <label for="destinations">Destinations</label>
+    <select multiple class="form-control" id="destinations">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
 </div>
 ~~~
 

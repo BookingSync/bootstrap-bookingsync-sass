@@ -21,6 +21,10 @@
     }
   }
 
+  input.default {
+    visibility: hidden;
+  }
+
   .chosen-drop {
     @include box-shadow(none);
     border-radius: 0 0 ($border-radius-base * 2) ($border-radius-base * 2);
@@ -61,6 +65,11 @@
   div b {
     background-position: 0 (($input-height-base - 18 + 10) / 2);
   }
+}
+
+.chosen-container-active.chosen-with-drop .chosen-choices {
+  padding: 1px ceil($grid-gutter-width / 2);
+  margin-top: -3px;
 }
 
 .chosen-container-multi .chosen-choices {

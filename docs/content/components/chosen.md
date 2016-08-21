@@ -15,6 +15,36 @@
   </div>
 
   <div class="bs-example bs-sheet" data-example-id="chosen-select">
+    <div class="select">
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <select class="form-control chosen">
+          <option value=""></option>
+          <option value="One">One</option>
+          <option value="Two">Two</option>
+          <option value="Three">Three</option>
+          <option value="Four">Four</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="select">
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <select class="form-control chosen">
+          <option value="One" selected>One (selected)</option>
+          <option value="Two">Two</option>
+          <option value="Three">Three</option>
+          <option value="Four">Four</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+~~~ HTML
+<div class="select">
+  <div class="form-group">
+    <label for="destination">Destination</label>
     <select class="form-control chosen">
       <option value=""></option>
       <option value="One">One</option>
@@ -24,14 +54,18 @@
     </select>
   </div>
 </div>
-~~~ HTML
-<select class="form-control chosen">
-  <option value=""></option>
-  <option value="One">One</option>
-  <option value="Two">Two</option>
-  <option value="Three">Three</option>
-  <option value="Four">Four</option>
-</select>
+
+<div class="select">
+  <div class="form-group">
+    <label for="destination">Destination</label>
+    <select class="form-control chosen">
+      <option value="One" selected>One (selected)</option>
+      <option value="Two">Two</option>
+      <option value="Three">Three</option>
+      <option value="Four">Four</option>
+    </select>
+  </div>
+</div>
 ~~~
 
 <div class="example">
@@ -51,7 +85,38 @@
   </div>
 
   <div class="bs-example bs-sheet" data-example-id="chosen-multiple-select">
-    <select class="form-control chosen" multiple tabindex="3">
+    <div class="select">
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <select class="form-control chosen" multiple>
+          <option value=""></option>
+          <option value="One">One</option>
+          <option value="Two">Two</option>
+          <option value="Three">Three</option>
+          <option value="Four">Four</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="select">
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <select class="form-control chosen" multiple>
+          <option value=""></option>
+          <option value="One" selected>One (selected)</option>
+          <option value="Two" selected>Two (selected)</option>
+          <option value="Three">Three</option>
+          <option value="Four">Four</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+~~~ HTML
+<div class="select">
+  <div class="form-group">
+    <label for="destination">Destination</label>
+    <select class="form-control chosen" multiple>
       <option value=""></option>
       <option value="One">One</option>
       <option value="Two">Two</option>
@@ -60,12 +125,17 @@
     </select>
   </div>
 </div>
-~~~ HTML
-<select class="form-control chosen" multiple tabindex="3">
-  <option value=""></option>
-  <option value="One">One</option>
-  <option value="Two">Two</option>
-  <option value="Three">Three</option>
-  <option value="Four">Four</option>
-</select>
+
+<div class="select">
+  <div class="form-group">
+    <label for="destination">Destination</label>
+    <select class="form-control chosen" multiple>
+      <option value=""></option>
+      <option value="One" selected>One (selected)</option>
+      <option value="Two" selected>Two (selected)</option>
+      <option value="Three">Three</option>
+      <option value="Four">Four</option>
+    </select>
+  </div>
+</div>
 ~~~
