@@ -11,6 +11,11 @@
   .form-group {
     margin-top: 0;
   }
+
+  button[type="submit"],
+  input[type="submit"] {
+    margin-top: 0;
+  }
 }
 
 // Form groups
@@ -25,10 +30,6 @@
   max-width: 100%;
   margin: 25px 0 0 0;
   padding: $label-padding-focus 0 $padding-base-vertical;
-
-  &:first-of-type {
-    margin-top: 0;
-  }
 
   label {
     position: absolute;
@@ -96,8 +97,6 @@
 }
 
 .select {
-  margin-top: 25px;
-
   label {
     color: $label-color-filled;
     font-size: $label-font-size-filled;
@@ -133,6 +132,16 @@ fieldset[disabled] label {
 .form-control[readonly],
 fieldset[disabled] .form-control {
   opacity: .5;
+}
+
+.radio, .checkbox {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+button[type="submit"],
+input[type="submit"] {
+  margin-top: 25px;
 }
 
 // Common form controls
@@ -239,6 +248,10 @@ fieldset[disabled] .form-control {
   .help-block {
     color: $help-text;
   }
+}
+
+.input-group label {
+  width: inherit;
 }
 
 .has-success .input-group-addon {

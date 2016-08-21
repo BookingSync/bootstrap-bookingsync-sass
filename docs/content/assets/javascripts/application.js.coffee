@@ -3,7 +3,6 @@
 
 //= require 'chosen'
 
-
 $ ->
   $(".chosen").chosen()
 

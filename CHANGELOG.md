@@ -1,5 +1,15 @@
 ### master
 
+* breaking changes
+  * require selects to have a `from-group` div
+
+* bug fixes
+  * fix `select` and `chosen` styles
+  * fix `forms` initialization
+
+* improvements
+  * add support for: frameless annotated section content
+
 ### 1.0.0.beta6 - 2016-08-20
 
 * improvements

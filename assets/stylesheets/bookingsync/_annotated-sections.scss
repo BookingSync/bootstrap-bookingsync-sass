@@ -21,8 +21,15 @@ h2.annotated-section-title {
 
 .annotated-section-content {
   @include make-sm-column(8);
-  border: 1px solid $sheet-border;
-  background-color: $sheet-bg;
-  border-radius: $sheet-border-radius;
-  padding: $sheet-padding;
+
+  &:not(.annotated-section-content-frameless) {
+    border: 1px solid $sheet-border;
+    background-color: $sheet-bg;
+    border-radius: $sheet-border-radius;
+    padding: $sheet-padding;
+  }
+
+  &.annotated-section-content-frameless {
+    padding: 0;
+  }
 }
