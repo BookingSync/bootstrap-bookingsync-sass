@@ -55,6 +55,7 @@ body {
 .main-content {
   overflow: auto;
   padding-top: $navbar-height + 1; // for the navbar-fixed-top border
+  min-height: 100vh;
 
   & > .row {
     padding-top: $sheet-margin;

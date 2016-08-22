@@ -1,5 +1,9 @@
 ### master
 
+* bug fixes
+  * fix `.main-content` height
+  * fix buttons margin when outside of forms
+
 ### 1.0.0.beta8 - 2016-08-22
 
 * breaking changes
