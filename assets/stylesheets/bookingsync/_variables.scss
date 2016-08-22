@@ -147,6 +147,7 @@ $menu-submenu-color:                    $menu-link-color !default;
 $menu-submenu-bg:                       $menu-active-bg !default;
 $menu-submenu-header-color:             $menu-submenu-color !default;
 $menu-submenu-header-bg:                $menu-submenu-bg !default;
+$menu-submenu-header-border-color:      $menu-divider-border-color !default;
 $menu-submenu-icon-size:                12px !default;
 $menu-submenu-link-height:              40px !default;
 $menu-submenu-link-color:               $menu-link-color !default;
@@ -159,11 +160,11 @@ $menu-submenu-active-color:             $menu-submenu-link-hover-color !default;
 $menu-submenu-active-icon-color:        $menu-submenu-link-hover-icon-color !default;
 $menu-submenu-active-bg:                $menu-submenu-link-hover-bg !default;
 
-
 $menu-header-height:                    70px !default;
 $menu-header-icon-size:                 24px !default;
 $menu-header-color:                     #ffffff !default;
 $menu-header-bg:                        $brand-primary !default;
+$menu-header-border-color:              #53b4e1 !default;
 $menu-header-heading-size:              14px !default;
 $menu-header-link-color:                #ffffff !default;
 $menu-header-link-hover-color:          $menu-header-link-color !default;
@@ -173,9 +174,8 @@ $menu-header-submenu-color:             $menu-header-color !default;
 $menu-header-submenu-bg:                $menu-header-bg !default;
 $menu-header-submenu-link-color:        #ffffff !default;
 $menu-header-submenu-link-hover-color:  $menu-header-link-color !default;
-$menu-header-submenu-link-hover-bg:     #53b4e1 !default;
-$menu-header-submenu-border-color:      $menu-header-submenu-link-hover-bg !default;
-
+$menu-header-submenu-link-hover-bg:     $menu-header-border-color !default;
+$menu-header-submenu-border-color:      $menu-header-border-color !default;
 
 $menu-footer-height:                    $menu-link-height !default;
 $menu-footer-icon-size:                 ($menu-link-height * 0.64) !default;
@@ -192,6 +192,13 @@ $menu-footer-submenu-link-color:        $menu-submenu-link-color !default;
 $menu-footer-submenu-link-hover-color:  $menu-submenu-link-hover-color !default;
 $menu-footer-submenu-link-hover-bg:     $menu-submenu-link-hover-bg !default;
 $menu-footer-submenu-border-color:      $menu-link-hover-bg !default;
+
+$menu-submenu-header-submenu-color:             $menu-submenu-header-color !default;
+$menu-submenu-header-submenu-bg:                darken($menu-submenu-bg, 5%) !default;
+$menu-submenu-header-submenu-link-color:        darken($menu-submenu-link-color, 5%) !default;
+$menu-submenu-header-submenu-link-hover-color:  $menu-header-link-color !default;
+$menu-submenu-header-submenu-link-hover-bg:     $menu-submenu-header-submenu-bg !default;
+$menu-submenu-header-submenu-border-color:      $menu-submenu-header-border-color !default;
 
 $menu-default-toggle-icon-bar-bg:       $gray-light !default;
 

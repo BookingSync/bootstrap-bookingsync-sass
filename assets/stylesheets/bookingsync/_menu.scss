@@ -144,12 +144,12 @@ $menu-submenu-width: $menu-width - $menu-collapsed-width;
   color: $menu-header-color;
   z-index: 1000;
   position: static;
+  border-bottom: 1px solid $menu-header-border-color;
 
   a {
     color: $menu-header-link-color;
 
     &:hover {
-      background-color: $menu-header-link-hover-bg;
       color: $menu-header-link-hover-color;
     }
   }
@@ -194,14 +194,32 @@ $menu-submenu-width: $menu-width - $menu-collapsed-width;
   background-color: $menu-header-submenu-bg;
   color: $menu-header-submenu-color;
   border-top: 1px solid $menu-header-submenu-border-color;
+  border-bottom: 1px solid $menu-header-submenu-border-color;
 
-  a {
+  a.menu-link {
     color: $menu-header-submenu-link-color;
-    padding-left: 22px;
+    background-color: $menu-header-submenu-bg;
 
     &:hover {
       background-color: $menu-header-submenu-link-hover-bg;
       color: $menu-header-submenu-link-hover-color;
+    }
+  }
+}
+
+.menu-submenu .menu-header-submenu {
+  background-color: $menu-submenu-header-submenu-bg;
+  color: $menu-submenu-header-submenu-color;
+  border-top: 1px solid $menu-submenu-header-submenu-border-color;
+  border-bottom: 1px solid $menu-submenu-header-submenu-border-color;
+
+  a.menu-link {
+    color: $menu-submenu-header-submenu-link-color;
+    background-color: $menu-submenu-header-submenu-bg;
+
+    &:hover {
+      background-color: $menu-submenu-header-submenu-link-hover-bg;
+      color: $menu-submenu-header-submenu-link-hover-color;
     }
   }
 }
@@ -265,7 +283,7 @@ $menu-submenu-width: $menu-width - $menu-collapsed-width;
 
   a {
     color: $menu-footer-submenu-link-color;
-    padding-left: $menu-collapsed-width;
+    // padding-left: $menu-collapsed-width;
 
     &:hover {
       background-color: $menu-footer-submenu-link-hover-bg;
@@ -284,6 +302,7 @@ $menu-submenu-width: $menu-width - $menu-collapsed-width;
   .menu-header {
     color: $menu-submenu-header-color;
     background-color: $menu-submenu-header-bg;
+    border-bottom: 1px solid $menu-submenu-header-border-color;
   }
 
   .menu-link {
@@ -299,10 +318,12 @@ $menu-submenu-width: $menu-width - $menu-collapsed-width;
         color: $menu-submenu-link-hover-icon-color;
       }
     }
+  }
 
-    .active &,
-    .active:hover &,
-    .active:focus & {
+  .active {
+    .menu-link,
+    .menu-link:hover,
+    .menu-link:focus {
       background-color: $menu-submenu-active-bg;
       color: $menu-submenu-active-color;
 
