@@ -283,7 +283,6 @@ $menu-submenu-width: $menu-width - $menu-collapsed-width;
 
   a {
     color: $menu-footer-submenu-link-color;
-    // padding-left: $menu-collapsed-width;
 
     &:hover {
       background-color: $menu-footer-submenu-link-hover-bg;
