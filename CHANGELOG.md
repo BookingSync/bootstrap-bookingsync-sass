@@ -1,5 +1,7 @@
 ### master
 
+### 1.0.0.beta8 - 2016-08-22
+
 * breaking changes
   * use `menu-link` structure in header and footer submenus.
 
