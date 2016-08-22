@@ -1,5 +1,11 @@
 ### master
 
+* breaking changes
+  * use `menu-link` structure in header and footer submenus.
+
+* improvements
+  * add support for `menu-app`
+
 ### 1.0.0.beta7 - 2016-08-22
 
 * breaking changes

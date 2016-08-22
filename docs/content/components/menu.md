@@ -42,10 +42,18 @@
     <nav id="menu-header-submenu" class="collapse menu-header-submenu">
       <ol>
         <li role="presentation">
-          <a href="#">Bed and Breakfast</a>
+          <a href="#" class="menu-link">
+            <div class="menu-body menu-link-body">
+              Bed and Breakfast
+            </div>
+          </a>
         </li>
-        <li role="presentation" class="active">
-          <a href="#">City Apartments</a>
+        <li role="presentation">
+          <a href="#" class="menu-link">
+            <div class="menu-body menu-link-body">
+              City Apartments
+            </div>
+          </a>
         </li>
       </ol>
     </nav>
@@ -135,14 +143,32 @@
     <nav id="menu-footer-submenu" class="collapse menu-footer-submenu">
       <ol>
         <li role="presentation">
-          <a href="#">Help Center</a>
+          <a href="#" class="menu-link">
+            <div class="menu-icon menu-link-icon">
+            </div>
+            <div class="menu-body menu-link-body">
+              Help Center
+            </div>
+          </a>
         </li>
         <li role="separator" class="divider"></li>
         <li role="presentation">
-          <a href="#">Profile</a>
+          <a href="#" class="menu-link">
+            <div class="menu-icon menu-link-icon">
+            </div>
+            <div class="menu-body menu-link-body">
+              Profile
+            </div>
+          </a>
         </li>
         <li role="presentation" class="active">
-          <a href="#">Logout</a>
+          <a href="#" class="menu-link">
+            <div class="menu-icon menu-link-icon">
+            </div>
+            <div class="menu-body menu-link-body">
+              Logout
+            </div>
+          </a>
         </li>
       </ol>
     </nav>
@@ -179,5 +205,128 @@
       </li>
     </ol>
   </div>
+</nav>
+~~~
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="menu-for-apps">Menu for Apps</h3>
+  </div>
+
+  <div class="bs-callout bs-callout-danger">
+    <h4>Plugin dependency</h4>
+    <p>
+      This component requires BookingSync <code>menu</code> and Bootstrap <code>collapse</code> JS plugins.
+    </p>
+  </div>
+
+  <div class="bs-example bs-sheet bs-example-composition-body"
+       data-example-id="menu-for-apps">
+    <div class="bs-example-iframe-container-desktop">
+      <iframe class="bs-example-iframe" src="/embed/menu_for_apps/index.html"
+              frameborder="0"></iframe>
+    </div>
+  </div>
+</div>
+
+~~~ html
+<nav class="menu menu-fixed flex-col menu-submenu menu-app">
+  <header class="menu-header">
+    <div class="menu-body menu-header-body">
+      <h4 class="menu-header-heading">Awesome App</h4>
+      <small>
+        <a href="#menu-header-submenu"
+           data-toggle="collapse"
+           role="button"
+           aria-expanded="false"
+           aria-controls="menu-header-submenu"
+           class="collapsed">
+          San Francisco
+          <span class="caret"></span>
+        </a>
+      </small>
+    </div>
+    <nav id="menu-header-submenu" class="collapse menu-header-submenu">
+      <ol>
+        <li role="presentation">
+          <a href="#" class="menu-link">
+            <div class="menu-body menu-link-body">
+              French riviera
+            </div>
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu-link">
+            <div class="menu-body menu-link-body">
+              New York
+            </div>
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </header>
+  <div class="menu-body flex-1">
+    <ol>
+      <li role="presentation" class="active">
+        <a href="#" class="menu-link">
+          <div class="menu-body menu-link-body">
+            General
+          </div>
+        </a>
+      </li>
+      <li role="presentation">
+        <a href="#" class="menu-link">
+          <div class="menu-body menu-link-body">
+            Payments
+          </div>
+        </a>
+      </li>
+      <li role="presentation">
+        <a href="#" class="menu-link">
+          <div class="menu-body menu-link-body">
+            Apps
+          </div>
+        </a>
+      </li>
+    </ol>
+  </div>
+  <footer class="menu-footer">
+    <ol>
+      <li role="separator" class="divider"></li>
+      <li role="presentation">
+        <a href="#menu-footer-submenu"
+           data-toggle="collapse"
+           role="button"
+           aria-expanded="false"
+           aria-controls="menu-footer-submenu"
+           class="collapsed menu-link">
+          <div class="menu-body menu-link-body">
+            Settings
+          </div>
+          <div class="menu-caret">
+            <span class="caret"></span>
+          </div>
+        </a>
+      </li>
+    </ol>
+    <nav id="menu-footer-submenu" class="collapse menu-footer-submenu">
+      <ol>
+        <li role="presentation">
+          <a href="#" class="menu-link">
+            <div class="menu-body menu-link-body">
+              Help Center
+            </div>
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="#" class="menu-link">
+            <div class="menu-body menu-link-body">
+              Videos
+            </div>
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </footer>
 </nav>
 ~~~
