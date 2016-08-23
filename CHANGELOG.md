@@ -1,5 +1,8 @@
 ### master
 
+* breaking changes
+  * move brand and gray colors to `_colors.scss`
+
 ### 1.0.0.beta9 - 2016-08-22
 
 * bug fixes

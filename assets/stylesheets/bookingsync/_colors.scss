@@ -10,3 +10,17 @@ $bs-green:         #3db559;
 $bs-yellow:        #f7c332;
 $bs-red:           #e74c3c;
 $bs-lightpurple:   #edeff4;
+
+$brand-primary:                 $bs-lightblue !default;
+$brand-success:                 $bs-green !default;
+$brand-info:                    $bs-lightblue !default;
+$brand-warning:                 $bs-yellow !default;
+$brand-danger:                  $bs-red !default;
+
+$gray-base:                     $bs-darkblue !default;
+$gray-darker:                   $gray-base !default;
+$gray-dark:                     #57668B !default; // rgba($gray-base, .75) !default;
+$gray:                          #57668B !default; // rgba($gray-base, .75) !default;
+$gray-light:                    #8F98B2 !default; // rgba($gray-base, .5) !default;
+$gray-lighter:                  #C7CCD8 !default; // rgba($gray-base, .25) !default;
+$gray-lightest:                 #DDE0E8 !default; // rgba($gray-base, .15) !default;
