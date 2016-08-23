@@ -1,7 +1,7 @@
 PATH
   remote: ../
   specs:
-    bootstrap-bookingsync-sass (1.0.0.beta9)
+    bootstrap-bookingsync-sass (1.0.0.beta10)
       bootstrap-sass (>= 3.3.5)
 
 GEM
