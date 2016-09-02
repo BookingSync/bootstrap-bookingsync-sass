@@ -33,3 +33,21 @@
   margin-top: - ($navbar-height + 1); // for the navbar-fixed-top border
   padding-top: $navbar-height + 1 + $sheet-padding; // for the navbar-fixed-top border
 }
+
+.sheet > .alert:first-child {
+  margin: (-1 * $sheet-padding);
+  margin-bottom: $sheet-padding;
+  border-radius: $sheet-border-radius $sheet-border-radius 0 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.sheet > .alert:last-child {
+  margin: (-1 * $sheet-padding);
+  margin-top: $sheet-padding;
+  border-radius: 0 0 $sheet-border-radius $sheet-border-radius;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
