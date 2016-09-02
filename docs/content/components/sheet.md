@@ -236,3 +236,39 @@
   </div>
 </div>
 ~~~
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="sheet-with-alerts">Sheet with alerts</h3>
+  </div>
+  <div class="bs-example bs-sheet" data-example-id="sheet-with-alerts">
+    <div class="sheet">
+      <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <p>Text...</p>
+      <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <p>Text...</p>
+      <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+    </div>
+  </div>
+</div>
+~~~ html
+<div class="sheet">
+  <div class="alert alert-success" role="alert">
+    <strong>Well done!</strong> You successfully read this important alert message.
+  </div>
+  <p>Text...</p>
+  <div class="alert alert-success" role="alert">
+    <strong>Well done!</strong> You successfully read this important alert message.
+  </div>
+  <p>Text...</p>
+  <div class="alert alert-success" role="alert">
+    <strong>Well done!</strong> You successfully read this important alert message.
+  </div>
+</div>
+~~~

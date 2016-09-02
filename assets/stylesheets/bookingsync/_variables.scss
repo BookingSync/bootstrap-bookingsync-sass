@@ -370,3 +370,15 @@ $breadcrumb-active-color:             $headings-color !default;
 $breadcrumb-icon-color:               $gray-light !default;
 $breadcrumb-link-color:               $gray-light !default;
 $breadcrumb-link-hover-color:         $breadcrumb-link-color !default;
+
+
+//== Alerts
+//
+$alert-success-bg:                    lighten($brand-success, 45%) !default;
+$alert-success-border:                lighten($brand-success, 45%) !default;
+$alert-info-bg:                       lighten($brand-info, 50%) !default;
+$alert-info-border:                   lighten($brand-info, 50%) !default;
+$alert-warning-bg:                    lighten($brand-warning, 35%) !default;
+$alert-warning-border:                lighten($brand-warning, 35%) !default;
+$alert-danger-bg:                     lighten($brand-danger, 35%) !default;
+$alert-danger-border:                 lighten($brand-danger, 35%) !default;
