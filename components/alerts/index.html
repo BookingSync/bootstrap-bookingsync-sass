@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>BookingSync Styleguide</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
+  <link rel="stylesheet" href="/highlight.css">
+
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="/assets/javascripts/application.js"></script>
+
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc 4.1.6">
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand-container">
+        <span class="navbar-brand">
+          <h1>
+            <span class="navbar-breadcrumb">
+              <a href="https://www.bookingsync.com" class="navbar-breadcrumb-brand-logo">
+                <img src="/assets/images/bookingsync.png" alt="BookingSync">
+              </a>
+              /
+            </span>
+            
+          </h1>
+        </span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <section class="main-content container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="panel panel-default">
+  <ul class="list-group list-group-with-icon list-unstyled">
+    <li class="">
+      <a class="list-group-item" href="/brand"><i class="bs-icon-bookingsync bs-icon-fw"></i>&nbsp; <span>Brand</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/forms"><i class="styleguide-icon-forms icon-fw"></i>&nbsp; <span>Forms</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/buttons"><i class="styleguide-icon-buttons icon-fw"></i>&nbsp; <span>Buttons</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/utilities"><i class="styleguide-icon-utilities icon-fw"></i>&nbsp; <span>Utilities</span></a>
+      
+    </li>
+    <li class="expanded active">
+      <a class="list-group-item" href="/components"><i class="styleguide-icon-components icon-fw"></i>&nbsp; <span>Components</span></a>
+      
+        <ul class="list-group list-unstyled">
+  <li><a class="list-group-item" href="#menu">Menu</a></li>
+  <li><a class="list-group-item" href="#menu-for-apps">Menu for Apps</a></li>
+  <li><a class="list-group-item" href="#list-group">List group</a></li>
+  <li><a class="list-group-item" href="#list-group-with-icons">List group with icons</a></li>
+  <li><a class="list-group-item" href="#nested-list-group">Nested list group</a></li>
+  <li><a class="list-group-item" href="#nested-list-group-with-icons">Nested list group with icons</a></li>
+  <li><a class="list-group-item" href="#dropdown">Dropdown</a></li>
+  <li><a class="list-group-item" href="#alerts">Alerts</a></li>
+  <li><a class="list-group-item" href="#dismissible-alerts">Dismissible alerts</a></li>
+  <li><a class="list-group-item" href="#links-in-alerts">Links in alerts</a></li>
+  <li><a class="list-group-item" href="#sheet">Sheet</a></li>
+  <li><a class="list-group-item" href="#sheet-with-header">Sheet with header</a></li>
+  <li><a class="list-group-item" href="#sheet-with-tabs">Sheet with tabs</a></li>
+  <li><a class="list-group-item" href="#sheet-with-stacked-tabs">Sheet with stacked tabs</a></li>
+  <li><a class="list-group-item" href="#sheet-with-auto-stackable-tabs">Sheet with auto-stackable tabs</a></li>
+  <li><a class="list-group-item" href="#sheet-with-alerts">Sheet with alerts</a></li>
+  <li><a class="list-group-item" href="#chosen-select">Chosen select</a></li>
+  <li><a class="list-group-item" href="#chosen-multiple-select">Chosen multiple select</a></li>
+  <li><a class="list-group-item" href="#switch">Switch</a></li>
+  <li><a class="list-group-item" href="#disabled-switch">Disabled switch</a></li>
+  <li><a class="list-group-item" href="#modal">Modal</a></li>
+</ul>
+
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/compositions"><i class="styleguide-icon-compositions icon-fw"></i>&nbsp; <span>Compositions</span></a>
+      
+    </li>
+    <li class="">
+      <a class="list-group-item" href="/ember/"><i class="styleguide-icon-ember icon-fw"></i>&nbsp; <span>Ember Addon</span></a>
+      
+    </li>
+  </ul>
+</div>
+
+        </div>
+        <div class="col-sm-9">
+          <div class="example">
+  <div class="sheet-header">
+    <h3 id="alerts">Alerts</h3>
+  </div>
+  <p>Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes (e.g., <code>.alert-success</code>) for basic alert messages.</p>
+  <div class="bs-example bs-sheet" data-example-id="alerts">
+    <div class="alert alert-success" role="alert">
+      <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <div class="alert alert-info" role="alert">
+      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </div>
+    <div class="alert alert-warning" role="alert">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+    <div class="alert alert-danger" role="alert">
+      <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Well done!<span class="nt">&lt;/strong&gt;</span> You successfully read this important alert message.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Heads up!<span class="nt">&lt;/strong&gt;</span> This alert needs your attention, but it's not super important.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> Better check yourself, you're not looking too good.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Oh snap!<span class="nt">&lt;/strong&gt;</span> Change a few things up and try submitting again.
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="dismissible-alerts">Dismissible alerts</h3>
+  </div>
+  <p>Build on any alert by adding an optional <code>.alert-dismissible</code> and close button.</p>
+
+  <div class="bs-callout bs-callout-warning">
+    <h4>Ensure proper behavior across all devices</h4>
+    <p>
+      Be sure to use the <code>&lt;button&gt;</code> element with the <code>data-dismiss="alert"</code> data attribute.
+    </p>
+  </div>
+
+  <div class="bs-example bs-sheet" data-example-id="dismissible-alerts">
+    <div class="alert alert-warning alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning alert-dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> Better check yourself, you're not looking too good.
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="links-in-alerts">Links in alerts</h3>
+  </div>
+  <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.
+</p>
+
+  <div class="bs-callout bs-callout-warning">
+    <h4>Ensure proper behavior across all devices</h4>
+    <p>
+      Be sure to use the <code>&lt;button&gt;</code> element with the <code>data-dismiss="alert"</code> data attribute.
+    </p>
+  </div>
+
+  <div class="bs-example bs-sheet" data-example-id="dismissible-alerts">
+    <div class="alert alert-success" role="alert">
+      <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message.</a>
+    </div>
+    <div class="alert alert-info" role="alert">
+      <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+    </div>
+    <div class="alert alert-warning" role="alert">
+      <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+    </div>
+    <div class="alert alert-danger" role="alert">
+      <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+    </div>
+  </div>
+</div>
+<pre><code class="language-html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Well done!<span class="nt">&lt;/strong&gt;</span> You successfully read <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>this important alert message.<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Heads up!<span class="nt">&lt;/strong&gt;</span> This <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>alert needs your attention<span class="nt">&lt;/a&gt;</span>, but it's not super important.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> Better check yourself, you're <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>not looking too good<span class="nt">&lt;/a&gt;</span>.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Oh snap!<span class="nt">&lt;/strong&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>Change a few things up<span class="nt">&lt;/a&gt;</span> and try submitting again.
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
