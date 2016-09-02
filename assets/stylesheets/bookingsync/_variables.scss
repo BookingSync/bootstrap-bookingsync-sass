@@ -374,11 +374,11 @@ $breadcrumb-link-hover-color:         $breadcrumb-link-color !default;
 
 //== Alerts
 //
-$alert-success-bg:                    rgba($brand-success, .1) !default;
-$alert-success-border:                rgba($brand-success, .1) !default;
-$alert-info-bg:                       rgba($brand-info, .1) !default;
-$alert-info-border:                   rgba($brand-info, .1) !default;
-$alert-warning-bg:                    rgba($brand-warning, .1) !default;
-$alert-warning-border:                rgba($brand-warning, .1) !default;
-$alert-danger-bg:                     rgba($brand-danger, .1) !default;
-$alert-danger-border:                 rgba($brand-danger, .1) !default;
+$alert-success-bg:                    lighten($brand-success, 45%) !default;
+$alert-success-border:                lighten($brand-success, 45%) !default;
+$alert-info-bg:                       lighten($brand-info, 50%) !default;
+$alert-info-border:                   lighten($brand-info, 50%) !default;
+$alert-warning-bg:                    lighten($brand-warning, 35%) !default;
+$alert-warning-border:                lighten($brand-warning, 35%) !default;
+$alert-danger-bg:                     lighten($brand-danger, 35%) !default;
+$alert-danger-border:                 lighten($brand-danger, 35%) !default;

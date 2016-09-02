@@ -1,5 +1,11 @@
 ### master
 
+* improvements
+  * add support for `.alert-container` and `.alert-container-top` used for flash messages.
+
+* bug fixes
+  * fix `.alert` colors and style
+
 ### 1.0.0.beta10 - 2016-08-23
 
 * breaking changes

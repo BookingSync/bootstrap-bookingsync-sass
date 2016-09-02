@@ -294,6 +294,57 @@
 
 <div class="example example-responsive">
   <div class="sheet-header">
+    <h3 id="section-with-flash">Section with flash</h3>
+  </div>
+
+  <div class="bs-example bs-sheet bs-example-composition-body bs-example-iframe-container-desktop" 
+       data-example-id="section-with-flash">
+    <iframe class="bs-example-iframe" src="/embed/section_with_flash/index.html"
+            frameborder="0"></iframe>
+  </div>
+</div>
+~~~ html
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle navbar-toggle-context"
+              data-toggle="collapse" data-target=".navbar-top-collapse">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand-container">
+        <span class="navbar-brand">
+          <h1 class="text-overflow"><i class="icon-rental"></i> Rentals</h1>
+        </span>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse navbar-top-collapse">
+      <div class="navbar-right">
+        <button class="btn btn-secondary navbar-btn" type="button">Button</button>
+        <button class="btn btn-primary navbar-btn" type="button">Call to action</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="main-content">
+  <div class="alert-container alert-container-top">
+    <div class="alert alert-warning alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+  </div>
+  <div class="sheet">
+    <p>Body</p>
+  </div>
+</section>
+~~~
+
+<div class="example example-responsive">
+  <div class="sheet-header">
     <h3 id="two-columns">Two columns</h3>
   </div>
 
