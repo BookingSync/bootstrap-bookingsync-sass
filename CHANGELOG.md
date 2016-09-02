@@ -1,5 +1,7 @@
 ### master
 
+### 1.0.0.beta11 - 2016-09-03
+
 * improvements
   * add support for `.alert-container` and `.alert-container-top` used for flash messages.
 
