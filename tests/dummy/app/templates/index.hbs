@@ -98,16 +98,13 @@
         </div>
       </div>
 
-      <div class="form-group">
-        <label for="comment">Comment</label>
-        {{one-way-textarea
-          value=currentComment
-          update=(action (mut currentComment))
-          class="form-control"
-          id="comment"
-          rows=3
-        }}
-      </div>
+      {{bsy-textarea
+        label="Comment"
+        value=currentComment
+        update=(action (mut currentComment))
+        inputId="comment"
+        rows=3
+      }}
 
       <div class="checkbox">
         <label>
