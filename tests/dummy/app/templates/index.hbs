@@ -1,8 +1,8 @@
-<section class="annotated-section">
-  <header class="annotated-section-annotation">
+{{#bsy-annotated-section}}
+  {{#bsy-annotated-section.annotation}}
     <h2 class="annotated-section-title">Forms</h2>
-  </header>
-  <div class="annotated-section-content">
+  {{/bsy-annotated-section.annotation}}
+  {{#bsy-annotated-section.content}}
     <form>
       <div class="form-group">
         <label for="email">Email address</label>
@@ -215,14 +215,14 @@
 
       {{#bsy-button type="submit" loadingLabel="Sending..."}}Send invitation{{/bsy-button}}
     </form>
-  </div>
-</section>
+  {{/bsy-annotated-section.content}}
+{{/bsy-annotated-section}}
 
-<section class="annotated-section">
-  <header class="annotated-section-annotation">
+{{#bsy-annotated-section}}
+  {{#bsy-annotated-section.annotation}}
     <h2 class="annotated-section-title">Buttons</h2>
-  </header>
-  <div class="annotated-section-content">
+  {{/bsy-annotated-section.annotation}}
+  {{#bsy-annotated-section.content}}
     {{#bsy-button type="primary"}}Primary{{/bsy-button}}
     {{#bsy-button type="secondary"}}Secondary{{/bsy-button}}
     {{#bsy-button type="secondary-inverse" class="btn-round" loadingLabel=""}}
@@ -230,14 +230,14 @@
     {{/bsy-button}}
     {{#bsy-button type="danger"}}Danger{{/bsy-button}}
     {{#bsy-button type="link"}}Link{{/bsy-button}}
-  </div>
-</section>
+  {{/bsy-annotated-section.content}}
+{{/bsy-annotated-section}}
 
-<section class="annotated-section">
-  <header class="annotated-section-annotation">
+{{#bsy-annotated-section}}
+  {{#bsy-annotated-section.annotation}}
     <h2 class="annotated-section-title">Modal</h2>
-  </header>
-  <div class="annotated-section-content">
+  {{/bsy-annotated-section.annotation}}
+  {{#bsy-annotated-section.content}}
     {{#bsy-button type="primary" click=(action "toggleModal")}}Toggle Modal{{/bsy-button}}
 
     {{#if isShowingModal}}
@@ -271,5 +271,19 @@
         </div>
       {{/modal-dialog}}
     {{/if}}
-  </div>
-</section>
+  {{/bsy-annotated-section.content}}
+{{/bsy-annotated-section}}
+
+{{#bsy-annotated-section}}
+  {{#bsy-annotated-section.annotation}}
+    <h2 class="annotated-section-title">Calendar</h2>
+  {{/bsy-annotated-section.annotation}}
+  {{#bsy-annotated-section.content}}
+    {{#power-calendar as |calendar|}}
+      <div class="calendar">
+        {{calendar.nav}}
+        {{calendar.days}}
+      </div>
+    {{/power-calendar}}
+  {{/bsy-annotated-section.content}}
+{{/bsy-annotated-section}}
