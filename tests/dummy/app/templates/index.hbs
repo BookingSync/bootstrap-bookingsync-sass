@@ -4,40 +4,31 @@
   {{/bsy-annotated-section.annotation}}
   {{#bsy-annotated-section.content}}
     <form>
-      <div class="form-group">
-        <label for="email">Email address</label>
-        {{one-way-input
-          value=currentEmail
-          update=(action (mut currentEmail))
-          class="form-control"
-          type="email"
-          id="email"
-        }}
-      </div>
+      {{bsy-input
+        label="Email address"
+        value=currentEmail
+        update=(action (mut currentEmail))
+        type="email"
+        inputId="email"
+      }}
 
       <div class="row">
         <div class="col-xs-6">
-          <div class="form-group">
-            <label for="firstname">First name</label>
-            {{one-way-input
-              value=currentFirstName
-              update=(action (mut currentFirstName))
-              class="form-control"
-              id="firstname"
-            }}
-          </div>
+          {{bsy-input
+            label="First name"
+            value=currentFirstName
+            update=(action (mut currentFirstName))
+            inputId="firstname"
+          }}
         </div>
 
         <div class="col-xs-6">
-          <div class="form-group">
-            <label for="lastname">Last name</label>
-            {{one-way-input
-              value=currentLastName
-              update=(action (mut currentLastName))
-              class="form-control"
-              id="lastname"
-            }}
-          </div>
+          {{bsy-input
+            label="Last name"
+            value=currentLastName
+            update=(action (mut currentLastName))
+            inputId="lastname"
+          }}
         </div>
       </div>
 
@@ -192,26 +183,19 @@
 
     <h3>Inline form</h3>
     <form class="form-inline">
-      <div class="form-group">
-        <label for="name2">Name</label>
-        {{one-way-input
-          value=currentName
-          update=(action (mut currentName))
-          class="form-control"
-          id="name2"
-        }}
-      </div>
+      {{bsy-input
+        label="Name"
+        value=currentName
+        update=(action (mut currentName))
+        inputId="name2"
+      }}
 
-      <div class="form-group">
-        <label for="email2">Email address</label>
-        {{one-way-input
-          value=currentEmail
-          update=(action (mut currentEmail))
-          class="form-control"
-          type="email"
-          id="email2"
-        }}
-      </div>
+      {{bsy-input
+        label="Email address"
+        value=currentEmail
+        update=(action (mut currentEmail))
+        inputId="email2"
+      }}
 
       {{#bsy-button type="submit" loadingLabel="Sending..."}}Send invitation{{/bsy-button}}
     </form>
