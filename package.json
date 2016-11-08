@@ -1,6 +1,6 @@
 {
-  "name": "@bookingsync/ember-cli-bootstrap-bookingsync-sass",
-  "version": "1.0.0-beta.11",
+  "name": "ember-cli-bootstrap-bookingsync-sass",
+  "version": "1.0.0-beta.11.1",
   "description": "Sass-powered version of Bootstrap with BookingSync theme.",
   "directories": {
     "doc": "doc",
@@ -39,6 +39,7 @@
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-load-initializers": "^0.5.0",
+    "ember-power-calendar": "0.1.4",
     "ember-resolver": "^2.0.3",
     "ember-try": "~0.0.8",
     "loader.js": "^4.0.0"
