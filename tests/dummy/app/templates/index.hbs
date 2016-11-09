@@ -146,7 +146,7 @@
 
 {{#bsy-sheet id="buttons"}}
   {{#bsy-sheet.header}}
-    <h2 class="annotated-section-title">Buttons</h2>
+    <h2>Buttons</h2>
   {{/bsy-sheet.header}}
   {{#bsy-button type="primary"}}Primary{{/bsy-button}}
   {{#bsy-button type="secondary"}}Secondary{{/bsy-button}}
@@ -157,7 +157,7 @@
 
 {{#bsy-sheet id="modal"}}
   {{#bsy-sheet.header}}
-    <h2 class="annotated-section-title">Modal</h2>
+    <h2>Modal</h2>
   {{/bsy-sheet.header}}
   {{#bsy-button type="primary" click=(action "toggleModal")}}Toggle Modal{{/bsy-button}}
 
@@ -186,7 +186,7 @@
 
 {{#bsy-sheet id="calendar"}}
   {{#bsy-sheet.header}}
-    <h2 class="annotated-section-title">Calendar</h2>
+    <h2>Calendar</h2>
   {{/bsy-sheet.header}}
   {{#power-calendar as |calendar|}}
     <div class="calendar">
@@ -194,4 +194,25 @@
       {{calendar.days}}
     </div>
   {{/power-calendar}}
+{{/bsy-sheet}}
+
+{{#bsy-sheet id="alerts"}}
+  {{#bsy-sheet.header}}
+    <h2>Alerts</h2>
+  {{/bsy-sheet.header}}
+  {{#bsy-alert type="success"}}
+    <strong>Well done!</strong> You successfully read this important alert message.
+  {{/bsy-alert}}
+  {{#bsy-alert type="info"}}
+    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+  {{/bsy-alert}}
+  {{#bsy-alert type="warning"}}
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  {{/bsy-alert}}
+  {{#bsy-alert type="danger"}}
+    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+  {{/bsy-alert}}
+  {{#bsy-alert type="warning" dismissible=true}}
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  {{/bsy-alert}}
 {{/bsy-sheet}}
