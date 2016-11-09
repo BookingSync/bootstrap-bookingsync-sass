@@ -49,36 +49,30 @@
 
       <div class="row">
         <div class="col-xs-4">
-          <div class="select">
-            <label for="destination">Destination</label>
-            {{#power-select
-              selected=currentDestination
-              options=cities
-              onchange=(action (mut currentDestination))
-              id="destination"
-              class="form-control"
-              as |name|
-            }}
-              {{name}}
-            {{/power-select}}
-          </div>
+          {{#bsy-select
+            label="Destination"
+            selected=currentDestination
+            options=cities
+            onchange=(action (mut currentDestination))
+            inputId="destination"
+            as |name|
+          }}
+            {{name}}
+          {{/bsy-select}}
         </div>
 
         <div class="col-xs-4">
-          <div class="select">
-            <label for="destination2">Destination</label>
-            {{#power-select
-              selected=currentDestination
-              options=cities
-              searchEnabled=false
-              onchange=(action (mut currentDestination))
-              id="destination2"
-              class="form-control"
-              as |name|
-            }}
-              {{name}}
-            {{/power-select}}
-          </div>
+          {{#bsy-select
+            label="Destination"
+            selected=currentDestination
+            options=cities
+            searchEnabled=false
+            onchange=(action (mut currentDestination))
+            inputId="destination2"
+            as |name|
+          }}
+            {{name}}
+          {{/bsy-select}}
         </div>
 
         <div class="col-xs-4">

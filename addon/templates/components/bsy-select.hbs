@@ -1,0 +1,12 @@
+<label for="{{inputId}}">{{label}}</label>
+{{#power-select
+  selected=selected
+  options=options
+  searchEnabled=searchEnabled
+  onchange=onchange
+  id=inputId
+  class="form-control"
+  as |option name|
+}}
+  {{yield option name}}
+{{/power-select}}
