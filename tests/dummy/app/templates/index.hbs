@@ -123,34 +123,26 @@
       }}
 
       <h3>Radio buttons</h3>
-      <div class="btn-group" role="group" aria-label="...">
-        <div class="btn-group" data-toggle="buttons">
-          <label class="btn btn-secondary active">
-            {{one-way-radio
-              selectedRentalType
-              option="apartment"
-              update=(action (mut selectedRentalType))
-            }}
-            Apartment
-          </label>
-          <label class="btn btn-secondary">
-            {{one-way-radio
-              selectedRentalType
-              option="house"
-              update=(action (mut selectedRentalType))
-            }}
-            House
-          </label>
-          <label class="btn btn-secondary">
-            {{one-way-radio
-              selectedRentalType
-              option="villa"
-              update=(action (mut selectedRentalType))
-            }}
-            Villa
-          </label>
-        </div>
-      </div>
+      {{#bsy-radio-buttons aria-label="Rental Type"}}
+        {{bsy-radio-buttons.button
+          selectedRentalType
+          label="Apartment"
+          option="apartment"
+          update=(action (mut selectedRentalType))
+        }}
+        {{bsy-radio-buttons.button
+          selectedRentalType
+          label="House"
+          option="house"
+          update=(action (mut selectedRentalType))
+        }}
+        {{bsy-radio-buttons.button
+          selectedRentalType
+          label="Villa"
+          option="villa"
+          update=(action (mut selectedRentalType))
+        }}
+      {{/bsy-radio-buttons}}
     </form>
 
     <h3>Inline form</h3>
