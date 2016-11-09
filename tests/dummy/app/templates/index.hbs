@@ -4,9 +4,8 @@
   {{/bsy-annotated-section.annotation}}
   {{#bsy-annotated-section.content}}
     <form>
-      {{bsy-input
+      {{bsy-input currentEmail
         label="Email address"
-        value=currentEmail
         update=(action (mut currentEmail))
         type="email"
         inputId="email"
@@ -14,18 +13,16 @@
 
       <div class="row">
         <div class="col-xs-6">
-          {{bsy-input
+          {{bsy-input currentFirstName
             label="First name"
-            value=currentFirstName
             update=(action (mut currentFirstName))
             inputId="firstname"
           }}
         </div>
 
         <div class="col-xs-6">
-          {{bsy-input
+          {{bsy-input currentLastName
             label="Last name"
-            value=currentLastName
             update=(action (mut currentLastName))
             inputId="lastname"
           }}
@@ -34,9 +31,8 @@
 
       {{#bsy-input-addon}}
         {{#bsy-input-addon.addon}}${{/bsy-input-addon.addon}}
-        {{bsy-input-addon.input
+        {{bsy-input-addon.input currentAmount
           label="Amount"
-          value=currentAmount
           update=(action (mut currentAmount))
           type="number"
           inputId="amount"
@@ -46,9 +42,8 @@
 
       <div class="row">
         <div class="col-xs-4">
-          {{#bsy-select
+          {{#bsy-select currentDestination
             label="Destination"
-            selected=currentDestination
             options=cities
             onchange=(action (mut currentDestination))
             inputId="destination"
@@ -59,9 +54,8 @@
         </div>
 
         <div class="col-xs-4">
-          {{#bsy-select
+          {{#bsy-select currentDestination
             label="Destination"
-            selected=currentDestination
             options=cities
             searchEnabled=false
             onchange=(action (mut currentDestination))
@@ -73,9 +67,8 @@
         </div>
 
         <div class="col-xs-4">
-          {{#bsy-select-multiple
+          {{#bsy-select-multiple currentDestinations
             label="Destinations"
-            selected=currentDestinations
             options=cities
             onchange=(action (mut currentDestinations))
             inputId="destinations"
@@ -86,34 +79,29 @@
         </div>
       </div>
 
-      {{bsy-textarea
+      {{bsy-textarea currentComment
         label="Comment"
-        value=currentComment
         update=(action (mut currentComment))
         inputId="comment"
         rows=3
       }}
 
-      {{bsy-checkbox
-        isChecked
+      {{bsy-checkbox isChecked
         label="Check me out"
         update=(action (mut isChecked))
       }}
 
-      {{bsy-radio
-        selectedRentalType
+      {{bsy-radio selectedRentalType
         label="Apartment"
         option="apartment"
         update=(action (mut selectedRentalType))
       }}
-      {{bsy-radio
-        selectedRentalType
+      {{bsy-radio selectedRentalType
         label="House"
         option="house"
         update=(action (mut selectedRentalType))
       }}
-      {{bsy-radio
-        selectedRentalType
+      {{bsy-radio selectedRentalType
         label="Villa"
         option="villa"
         update=(action (mut selectedRentalType))
@@ -121,20 +109,17 @@
 
       <h3>Radio buttons</h3>
       {{#bsy-radio-buttons aria-label="Rental Type"}}
-        {{bsy-radio-buttons.button
-          selectedRentalType
+        {{bsy-radio-buttons.button selectedRentalType
           label="Apartment"
           option="apartment"
           update=(action (mut selectedRentalType))
         }}
-        {{bsy-radio-buttons.button
-          selectedRentalType
+        {{bsy-radio-buttons.button selectedRentalType
           label="House"
           option="house"
           update=(action (mut selectedRentalType))
         }}
-        {{bsy-radio-buttons.button
-          selectedRentalType
+        {{bsy-radio-buttons.button selectedRentalType
           label="Villa"
           option="villa"
           update=(action (mut selectedRentalType))
@@ -144,16 +129,14 @@
 
     <h3>Inline form</h3>
     <form class="form-inline">
-      {{bsy-input
+      {{bsy-input currentName
         label="Name"
-        value=currentName
         update=(action (mut currentName))
         inputId="name2"
       }}
 
-      {{bsy-input
+      {{bsy-input currentEmail
         label="Email address"
-        value=currentEmail
         update=(action (mut currentEmail))
         inputId="email2"
       }}
