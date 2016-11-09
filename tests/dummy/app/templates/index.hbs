@@ -32,20 +32,17 @@
         </div>
       </div>
 
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-addon">$</div>
-          <label class="control-label" for="amount">Amount</label>
-          {{one-way-input
-            value=currentAmount
-            update=(action (mut currentAmount))
-            class="form-control"
-            type="number"
-            id="amount"
-          }}
-          <div class="input-group-addon">.00</div>
-        </div>
-      </div>
+      {{#bsy-input-addon}}
+        {{#bsy-input-addon.addon}}${{/bsy-input-addon.addon}}
+        {{bsy-input-addon.input
+          label="Amount"
+          value=currentAmount
+          update=(action (mut currentAmount))
+          type="number"
+          inputId="amount"
+        }}
+        {{#bsy-input-addon.addon}}.00{{/bsy-input-addon.addon}}
+      {{/bsy-input-addon}}
 
       <div class="row">
         <div class="col-xs-4">
