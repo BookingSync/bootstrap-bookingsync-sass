@@ -107,41 +107,29 @@
       }}
 
       {{bsy-checkbox
-        label="Check me out"
         isChecked
+        label="Check me out"
         update=(action (mut isChecked))
       }}
 
-      <div class="radio">
-        <label>
-          {{one-way-radio
-            selectedRentalType
-            option="apartment"
-            update=(action (mut selectedRentalType))
-          }}
-          Apartment
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          {{one-way-radio
-            selectedRentalType
-            option="house"
-            update=(action (mut selectedRentalType))
-          }}
-          House
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          {{one-way-radio
-            selectedRentalType
-            option="villa"
-            update=(action (mut selectedRentalType))
-          }}
-          Villa
-        </label>
-      </div>
+      {{bsy-radio
+        selectedRentalType
+        label="Apartment"
+        option="apartment"
+        update=(action (mut selectedRentalType))
+      }}
+      {{bsy-radio
+        selectedRentalType
+        label="House"
+        option="house"
+        update=(action (mut selectedRentalType))
+      }}
+      {{bsy-radio
+        selectedRentalType
+        label="Villa"
+        option="villa"
+        update=(action (mut selectedRentalType))
+      }}
 
       <h3>Radio buttons</h3>
       <div class="btn-group" role="group" aria-label="...">
