@@ -76,19 +76,16 @@
         </div>
 
         <div class="col-xs-4">
-          <div class="select">
-            <label for="destinations">Destinations</label>
-            {{#power-select-multiple
-              selected=currentDestinations
-              options=cities
-              onchange=(action (mut currentDestinations))
-              id="destinations"
-              class="form-control"
-              as |name|
-            }}
-              {{name}}
-            {{/power-select-multiple}}
-          </div>
+          {{#bsy-select-multiple
+            label="Destinations"
+            selected=currentDestinations
+            options=cities
+            onchange=(action (mut currentDestinations))
+            inputId="destinations"
+            as |name|
+          }}
+            {{name}}
+          {{/bsy-select-multiple}}
         </div>
       </div>
 
