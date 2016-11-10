@@ -1,275 +1,218 @@
-<section class="annotated-section">
-  <header class="annotated-section-annotation">
-    <h2 class="annotated-section-title">Forms</h2>
-  </header>
-  <div class="annotated-section-content">
-    <form>
-      <div class="form-group">
-        <label for="email">Email address</label>
-        {{one-way-input
-          value=currentEmail
-          update=(action (mut currentEmail))
-          class="form-control"
-          type="email"
-          id="email"
+{{#bsy-sheet id="forms"}}
+  {{#bsy-sheet.header}}
+    <h2>Forms</h2>
+  {{/bsy-sheet.header}}
+  <form>
+    {{bsy-input currentEmail
+      label="Email address"
+      update=(action (mut currentEmail))
+      type="email"
+      inputId="email"
+    }}
+
+    <div class="row">
+      <div class="col-xs-6">
+        {{bsy-input currentFirstName
+          label="First name"
+          update=(action (mut currentFirstName))
+          inputId="firstname"
         }}
       </div>
 
-      <div class="row">
-        <div class="col-xs-6">
-          <div class="form-group">
-            <label for="firstname">First name</label>
-            {{one-way-input
-              value=currentFirstName
-              update=(action (mut currentFirstName))
-              class="form-control"
-              id="firstname"
-            }}
-          </div>
-        </div>
-
-        <div class="col-xs-6">
-          <div class="form-group">
-            <label for="lastname">Last name</label>
-            {{one-way-input
-              value=currentLastName
-              update=(action (mut currentLastName))
-              class="form-control"
-              id="lastname"
-            }}
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-addon">$</div>
-          <label class="control-label" for="amount">Amount</label>
-          {{one-way-input
-            value=currentAmount
-            update=(action (mut currentAmount))
-            class="form-control"
-            type="number"
-            id="amount"
-          }}
-          <div class="input-group-addon">.00</div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-4">
-          <div class="select">
-            <label for="destination">Destination</label>
-            {{#power-select
-              selected=currentDestination
-              options=cities
-              onchange=(action (mut currentDestination))
-              id="destination"
-              class="form-control"
-              as |name|
-            }}
-              {{name}}
-            {{/power-select}}
-          </div>
-        </div>
-
-        <div class="col-xs-4">
-          <div class="select">
-            <label for="destination2">Destination</label>
-            {{#power-select
-              selected=currentDestination
-              options=cities
-              searchEnabled=false
-              onchange=(action (mut currentDestination))
-              id="destination2"
-              class="form-control"
-              as |name|
-            }}
-              {{name}}
-            {{/power-select}}
-          </div>
-        </div>
-
-        <div class="col-xs-4">
-          <div class="select">
-            <label for="destinations">Destinations</label>
-            {{#power-select-multiple
-              selected=currentDestinations
-              options=cities
-              onchange=(action (mut currentDestinations))
-              id="destinations"
-              class="form-control"
-              as |name|
-            }}
-              {{name}}
-            {{/power-select-multiple}}
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="comment">Comment</label>
-        {{one-way-textarea
-          value=currentComment
-          update=(action (mut currentComment))
-          class="form-control"
-          id="comment"
-          rows=3
+      <div class="col-xs-6">
+        {{bsy-input currentLastName
+          label="Last name"
+          update=(action (mut currentLastName))
+          inputId="lastname"
         }}
       </div>
+    </div>
 
-      <div class="checkbox">
-        <label>
-          {{one-way-checkbox
-            isChecked
-            update=(action (mut isChecked))
-          }}
-          Check me out
-        </label>
-      </div>
+    {{#bsy-input-addon}}
+      {{#bsy-input-addon.addon}}${{/bsy-input-addon.addon}}
+      {{bsy-input-addon.input currentAmount
+        label="Amount"
+        update=(action (mut currentAmount))
+        type="number"
+        inputId="amount"
+      }}
+      {{#bsy-input-addon.addon}}.00{{/bsy-input-addon.addon}}
+    {{/bsy-input-addon}}
 
-      <div class="radio">
-        <label>
-          {{one-way-radio
-            selectedRentalType
-            option="apartment"
-            update=(action (mut selectedRentalType))
-          }}
-          Apartment
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          {{one-way-radio
-            selectedRentalType
-            option="house"
-            update=(action (mut selectedRentalType))
-          }}
-          House
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          {{one-way-radio
-            selectedRentalType
-            option="villa"
-            update=(action (mut selectedRentalType))
-          }}
-          Villa
-        </label>
-      </div>
-
-      <h3>Radio buttons</h3>
-      <div class="btn-group" role="group" aria-label="...">
-        <div class="btn-group" data-toggle="buttons">
-          <label class="btn btn-secondary active">
-            {{one-way-radio
-              selectedRentalType
-              option="apartment"
-              update=(action (mut selectedRentalType))
-            }}
-            Apartment
-          </label>
-          <label class="btn btn-secondary">
-            {{one-way-radio
-              selectedRentalType
-              option="house"
-              update=(action (mut selectedRentalType))
-            }}
-            House
-          </label>
-          <label class="btn btn-secondary">
-            {{one-way-radio
-              selectedRentalType
-              option="villa"
-              update=(action (mut selectedRentalType))
-            }}
-            Villa
-          </label>
-        </div>
-      </div>
-    </form>
-
-    <h3>Inline form</h3>
-    <form class="form-inline">
-      <div class="form-group">
-        <label for="name2">Name</label>
-        {{one-way-input
-          value=currentName
-          update=(action (mut currentName))
-          class="form-control"
-          id="name2"
+    <div class="row">
+      <div class="col-xs-4">
+        {{#bsy-select currentDestination
+          label="Destination"
+          options=cities
+          onchange=(action (mut currentDestination))
+          inputId="destination"
+          as |name|
         }}
+          {{name}}
+        {{/bsy-select}}
       </div>
 
-      <div class="form-group">
-        <label for="email2">Email address</label>
-        {{one-way-input
-          value=currentEmail
-          update=(action (mut currentEmail))
-          class="form-control"
-          type="email"
-          id="email2"
+      <div class="col-xs-4">
+        {{#bsy-select currentDestination
+          label="Destination"
+          options=cities
+          searchEnabled=false
+          onchange=(action (mut currentDestination))
+          inputId="destination2"
+          as |name|
         }}
+          {{name}}
+        {{/bsy-select}}
       </div>
 
-      {{#bsy-button type="submit" loadingLabel="Sending..."}}Send invitation{{/bsy-button}}
-    </form>
-  </div>
-</section>
+      <div class="col-xs-4">
+        {{#bsy-select-multiple currentDestinations
+          label="Destinations"
+          options=cities
+          onchange=(action (mut currentDestinations))
+          inputId="destinations"
+          as |name|
+        }}
+          {{name}}
+        {{/bsy-select-multiple}}
+      </div>
+    </div>
 
-<section class="annotated-section">
-  <header class="annotated-section-annotation">
-    <h2 class="annotated-section-title">Buttons</h2>
-  </header>
-  <div class="annotated-section-content">
-    {{#bsy-button type="primary"}}Primary{{/bsy-button}}
-    {{#bsy-button type="secondary"}}Secondary{{/bsy-button}}
-    {{#bsy-button type="secondary-inverse" class="btn-round" loadingLabel=""}}
-      <span>&times;</span>
-    {{/bsy-button}}
-    {{#bsy-button type="danger"}}Danger{{/bsy-button}}
-    {{#bsy-button type="link"}}Link{{/bsy-button}}
-  </div>
-</section>
+    {{bsy-textarea currentComment
+      label="Comment"
+      update=(action (mut currentComment))
+      inputId="comment"
+      rows=3
+    }}
 
-<section class="annotated-section">
-  <header class="annotated-section-annotation">
-    <h2 class="annotated-section-title">Modal</h2>
-  </header>
-  <div class="annotated-section-content">
-    {{#bsy-button type="primary" click=(action "toggleModal")}}Toggle Modal{{/bsy-button}}
+    {{bsy-checkbox isChecked
+      label="Check me out"
+      update=(action (mut isChecked))
+    }}
 
-    {{#if isShowingModal}}
-      {{#modal-dialog close="toggleModal"
-                      targetAttachment="none"
-                      translucentOverlay=true
-                      overlay-class='modal in'
-                      container-class='modal-dialog'}}
-        <div class="modal-content">
-          <div class="modal-header">
-            {{#bsy-button type="secondary-inverse" class="btn-sm btn-round btn-modal-close"
-                          loadingLabel="" click=(action "toggleModal")}}
-              <span>&times;</span>
-            {{/bsy-button}}
-            <h3 class="modal-title">Modal Name or Headline</h3>
+    {{bsy-radio selectedRentalType
+      label="Apartment"
+      option="apartment"
+      update=(action (mut selectedRentalType))
+    }}
+    {{bsy-radio selectedRentalType
+      label="House"
+      option="house"
+      update=(action (mut selectedRentalType))
+    }}
+    {{bsy-radio selectedRentalType
+      label="Villa"
+      option="villa"
+      update=(action (mut selectedRentalType))
+    }}
+
+    <h3>Radio buttons</h3>
+    {{#bsy-radio-buttons aria-label="Rental Type"}}
+      {{bsy-radio-buttons.button selectedRentalType
+        label="Apartment"
+        option="apartment"
+        update=(action (mut selectedRentalType))
+      }}
+      {{bsy-radio-buttons.button selectedRentalType
+        label="House"
+        option="house"
+        update=(action (mut selectedRentalType))
+      }}
+      {{bsy-radio-buttons.button selectedRentalType
+        label="Villa"
+        option="villa"
+        update=(action (mut selectedRentalType))
+      }}
+    {{/bsy-radio-buttons}}
+  </form>
+
+  <h3>Inline form</h3>
+  <form class="form-inline">
+    {{bsy-input currentName
+      label="Name"
+      update=(action (mut currentName))
+      inputId="name2"
+    }}
+
+    {{bsy-input currentEmail
+      label="Email address"
+      update=(action (mut currentEmail))
+      inputId="email2"
+    }}
+
+    {{#bsy-button type="submit" loadingLabel="Sending..."}}Send invitation{{/bsy-button}}
+  </form>
+{{/bsy-sheet}}
+
+{{#bsy-sheet id="buttons"}}
+  {{#bsy-sheet.header}}
+    <h2>Buttons</h2>
+  {{/bsy-sheet.header}}
+  {{#bsy-button type="primary"}}Primary{{/bsy-button}}
+  {{#bsy-button type="secondary"}}Secondary{{/bsy-button}}
+  {{bsy-button.close}}
+  {{#bsy-button type="danger"}}Danger{{/bsy-button}}
+  {{#bsy-button type="link"}}Link{{/bsy-button}}
+{{/bsy-sheet}}
+
+{{#bsy-sheet id="modal"}}
+  {{#bsy-sheet.header}}
+    <h2>Modal</h2>
+  {{/bsy-sheet.header}}
+  {{#bsy-button type="primary" click=(action "toggleModal")}}Toggle Modal{{/bsy-button}}
+
+  {{#if isShowingModal}}
+    {{#bsy-modal}}
+      {{#bsy-modal.header close=(action "toggleModal")}}
+        <h3 class="modal-title">Modal Name or Headline</h3>
+      {{/bsy-modal.header}}
+      {{#bsy-modal.body}}
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec luctus felis. Nulla a lacus libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam mollis tortor sodales libero euismod, eget suscipit arcu mollis. Nam nibh libero, tempus eu urna convallis, tempor efficitur ex. Donec molestie nibh ac luctus imperdiet. Nulla vitae vulputate ipsum. Phasellus porta gravida odio, in iaculis quam cursus et. Ut ac vehicula erat. Nulla sapien turpis, dapibus vel pellentesque sed, suscipit sit amet nibh. Pellentesque rhoncus nibh porttitor, posuere nulla quis, auctor nunc. Pellentesque fermentum tempor justo, a interdum nulla. Nullam lacus odio, posuere ut posuere hendrerit, semper non velit.</p>
+        <p>Cras sed consequat nunc. Phasellus sed sagittis nibh. Aliquam a vulputate risus. Vestibulum molestie bibendum dolor, vel blandit ipsum malesuada et. Praesent enim nibh, finibus vel luctus id, bibendum vitae eros. Aliquam vel semper diam. Cras elementum molestie eros, ac venenatis quam. Proin fermentum ante eros, mollis vestibulum eros consequat eu. Cras quis lorem vel metus hendrerit porttitor. Nunc hendrerit vitae nunc ut pellentesque. Etiam quis urna ac lorem eleifend ornare. Donec nibh ante, bibendum id pellentesque non, dignissim ut urna. Phasellus congue ultricies ipsum, ut luctus augue pulvinar nec.</p>
+      {{/bsy-modal.body}}
+      {{#bsy-modal.footer}}
+        <div class="row">
+          <div class="col-xs-6">
+            {{#bsy-button type="secondary" class="btn-block" click=(action "toggleModal")}}Close{{/bsy-button}}
           </div>
-          <div class="modal-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec luctus felis. Nulla a lacus libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam mollis tortor sodales libero euismod, eget suscipit arcu mollis. Nam nibh libero, tempus eu urna convallis, tempor efficitur ex. Donec molestie nibh ac luctus imperdiet. Nulla vitae vulputate ipsum. Phasellus porta gravida odio, in iaculis quam cursus et. Ut ac vehicula erat. Nulla sapien turpis, dapibus vel pellentesque sed, suscipit sit amet nibh. Pellentesque rhoncus nibh porttitor, posuere nulla quis, auctor nunc. Pellentesque fermentum tempor justo, a interdum nulla. Nullam lacus odio, posuere ut posuere hendrerit, semper non velit.</p>
-            <p>Cras sed consequat nunc. Phasellus sed sagittis nibh. Aliquam a vulputate risus. Vestibulum molestie bibendum dolor, vel blandit ipsum malesuada et. Praesent enim nibh, finibus vel luctus id, bibendum vitae eros. Aliquam vel semper diam. Cras elementum molestie eros, ac venenatis quam. Proin fermentum ante eros, mollis vestibulum eros consequat eu. Cras quis lorem vel metus hendrerit porttitor. Nunc hendrerit vitae nunc ut pellentesque. Etiam quis urna ac lorem eleifend ornare. Donec nibh ante, bibendum id pellentesque non, dignissim ut urna. Phasellus congue ultricies ipsum, ut luctus augue pulvinar nec.</p>
-          </div>
-          <div class="modal-footer">
-            <div class="row">
-              <div class="col-xs-6">
-                {{#bsy-button type="secondary" class="btn-block" click=(action "toggleModal")}}Close{{/bsy-button}}
-              </div>
-              <div class="col-xs-6">
-                {{#bsy-button type="primary" class="btn-block"}}Save Changes{{/bsy-button}}
-              </div>
-            </div>
+          <div class="col-xs-6">
+            {{#bsy-button type="primary" class="btn-block"}}Save Changes{{/bsy-button}}
           </div>
         </div>
-      {{/modal-dialog}}
-    {{/if}}
-  </div>
-</section>
+      {{/bsy-modal.footer}}
+    {{/bsy-modal}}
+  {{/if}}
+{{/bsy-sheet}}
+
+{{#bsy-sheet id="calendar"}}
+  {{#bsy-sheet.header}}
+    <h2>Calendar</h2>
+  {{/bsy-sheet.header}}
+  {{#power-calendar as |calendar|}}
+    <div class="calendar">
+      {{calendar.nav}}
+      {{calendar.days}}
+    </div>
+  {{/power-calendar}}
+{{/bsy-sheet}}
+
+{{#bsy-sheet id="alerts"}}
+  {{#bsy-sheet.header}}
+    <h2>Alerts</h2>
+  {{/bsy-sheet.header}}
+  {{#bsy-alert type="success"}}
+    <strong>Well done!</strong> You successfully read this important alert message.
+  {{/bsy-alert}}
+  {{#bsy-alert type="info"}}
+    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+  {{/bsy-alert}}
+  {{#bsy-alert type="warning"}}
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  {{/bsy-alert}}
+  {{#bsy-alert type="danger"}}
+    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+  {{/bsy-alert}}
+  {{#bsy-alert type="warning" dismissible=true}}
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  {{/bsy-alert}}
+{{/bsy-sheet}}

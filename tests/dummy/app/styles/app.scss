@@ -1,3 +1,8 @@
 @import "ember-modal-dialog/ember-modal-structure";
 @import "bootstrap-bookingsync";
 @import "ember-power-select";
+@import "ember-power-calendar";
+
+.ember-power-calendar {
+  @include ember-power-calendar($cell-size: 40px);
+}

@@ -1,47 +1,45 @@
-<nav class="menu menu-fixed flex-col">
-  <header class="dropdown">
-    <div class="bar">
-      <img src="/assets/images/bookingsync_white.svg" class="brand-logo"
-           alt="BookingSync">
-    </div>
-  </header>
-  <div class="body flex-1">
-    <ol>
-      <li role="presentation" class="active">
-        <a href="brand">
-          <i class="bs-icon-bookingsync"></i>
-          <span>Brand</span>
-        </a>
-      </li>
-      <li role="presentation">
-        <a href="forms">
-          <i class="styleguide-icon-forms"></i>
-          <span>Forms</span>
-        </a>
-      </li>
-      <li role="presentation">
-        <a href="buttons">
-          <i class="styleguide-icon-buttons"></i>
-          <span>Buttons</span></a>
-      </li>
-      <li role="presentation">
-        <a href="utilities">
-          <i class="styleguide-icon-utilities"></i>
-          <span>Utilities</span>
-        </a>
-      </li>
-      <li role="presentation">
-        <a href="components">
-          <i class="styleguide-icon-components"></i>
-          <span>Components</span>
-        </a>
-      </li>
-      <li role="presentation">
-        <a href="ember/">
-          <i class="styleguide-icon-ember"></i>
-          <span>Ember Addon</span>
-        </a>
-      </li>
-    </ol>
-  </div>
-</nav>
+<div class="panel panel-default">
+  <ul class="list-group list-group-with-icon list-unstyled">
+    <li>
+      <a href="/brand" class="list-group-item">
+        <i class="bs-icon-bookingsync bs-icon-fw"></i>&nbsp; <span>Brand</span>
+      </a>
+    </li>
+    <li>
+      <a href="/forms" class="list-group-item">
+        <i class="styleguide-icon-forms bs-icon-fw"></i>&nbsp; <span>Forms</span>
+      </a>
+    </li>
+    <li>
+      <a href="/buttons" class="list-group-item">
+        <i class="styleguide-icon-buttons bs-icon-fw"></i>&nbsp; <span>Buttons</span>
+      </a>
+    </li>
+    <li>
+      <a href="/utilities" class="list-group-item">
+        <i class="styleguide-icon-utilities bs-icon-fw"></i>&nbsp; <span>Utilities</span>
+      </a>
+    </li>
+    <li>
+      <a href="/components" class="list-group-item">
+        <i class="styleguide-icon-components bs-icon-fw"></i>&nbsp; <span>Components</span>
+      </a>
+    </li>
+    <li>
+      <a href="/compositions" class="list-group-item">
+        <i class="styleguide-icon-compositions bs-icon-fw"></i>&nbsp; <span>Compositions</span>
+      </a>
+    </li>
+    <li class="expanded active">
+      <a href="/brand" class="list-group-item">
+        <i class="styleguide-icon-ember bs-icon-fw"></i>&nbsp; <span>Ember Addon</span>
+      </a>
+      <ul class="list-group list-unstyled">
+        <li><a class="list-group-item" href="#forms">Forms</a></li>
+        <li><a class="list-group-item" href="#buttons">Buttons</a></li>
+        <li><a class="list-group-item" href="#modal">Modal</a></li>
+        <li><a class="list-group-item" href="#calendar">Calendar</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>

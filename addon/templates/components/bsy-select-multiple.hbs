@@ -1,0 +1,11 @@
+<label for="{{inputId}}">{{label}}</label>
+{{#power-select-multiple
+  selected=selected
+  options=options
+  onchange=onchange
+  id=inputId
+  class="form-control"
+  as |option name|
+}}
+  {{yield option name}}
+{{/power-select-multiple}}

@@ -1,7 +1,11 @@
-{{partial "sidebar"}}
-<div class="sided-content">
-  {{partial "navbar"}}
-  <section class="main-content">
-    {{outlet}}
-  </section>
-</div>
+{{partial "navbar"}}
+<section class="main-content container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+      {{partial "sidebar"}}
+    </div>
+    <div class="col-sm-9">
+      {{outlet}}
+    </div>
+  </div>
+</section>
