@@ -239,6 +239,39 @@
 
 <div class="example">
   <div class="sheet-header">
+    <h3 id="sheet-with-stacked-pills">Sheet with stacked pills</h3>
+  </div>
+  <div class="bs-example bs-sheet"
+       data-example-id="sheet-with-stacked-tabs">
+    <div class="sheet row">
+      <ul class="nav nav-pills nav-stacked col-sm-3">
+        <li><a href="#">Tab 1</a></li>
+        <li class="active"><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+        <li><a href="#">Tab 4</a></li>
+      </ul>
+      <div class="col-sm-9">
+        <p>Text...</p>
+      </div>
+    </div>
+  </div>
+</div>
+~~~ html
+<div class="sheet row">
+  <ul class="nav nav-pills nav-stacked col-sm-3">
+    <li><a href="#">Tab 1</a></li>
+    <li class="active"><a href="#">Tab 2</a></li>
+    <li><a href="#">Tab 3</a></li>
+    <li><a href="#">Tab 4</a></li>
+  </ul>
+  <div class="col-sm-9">
+    <p>Text...</p>
+  </div>
+</div>
+~~~
+
+<div class="example">
+  <div class="sheet-header">
     <h3 id="sheet-with-alerts">Sheet with alerts</h3>
   </div>
   <div class="bs-example bs-sheet" data-example-id="sheet-with-alerts">

@@ -57,4 +57,49 @@
       right: -1px;
     }
   }
+
+  & > .nav-pills {
+    background-color: $sheet-navbar-pills-bg;
+    margin: - $sheet-padding;
+    margin-right: $sheet-padding;
+    padding-right: 0;
+
+    > li > a {
+      margin-right: 0;
+      border-top: 0;
+      border-radius: 0;
+      color: $gray;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      border-right: 1px solid $gray-lightest;
+
+      &:hover {
+        color: $gray;
+        background-color: $sheet-navbar-pills-bg-hover;
+        border-radius: 0;
+      }
+    }
+
+    > li.active a {
+      color: $brand-primary;
+      background-color: $sheet-bg;
+      border-top: 1px solid $gray-lightest;
+      border-bottom: 1px solid $gray-lightest;
+      border-right: 1px solid transparent;
+
+      &:hover {
+        color: $brand-primary;
+        background-color: $sheet-navbar-pills-bg-hover;
+      }
+    }
+
+    > li:first-of-type a,
+    > li:first-of-type a:hover {
+      border-top: 1px solid transparent;
+    }
+
+    &.nav-stacked > li + li {
+      margin-top: 0;
+    }
+  }
 }

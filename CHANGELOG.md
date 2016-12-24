@@ -1,5 +1,8 @@
 ### master
 
+* improvements
+  * add `nav-pills` with improved design when first element of a `sheet`
+
 ### 1.0.0.beta11 - 2016-09-03
 
 * improvements
