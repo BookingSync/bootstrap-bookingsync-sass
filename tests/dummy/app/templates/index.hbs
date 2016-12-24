@@ -184,6 +184,30 @@
   {{/if}}
 {{/bsy-sheet}}
 
+{{#bsy-sheet id="tabs"}}
+  {{#bsy-nav class="nav-tabs"}}
+    {{#bsy-nav.item click=(action "sampleAction")}}Tab 1{{/bsy-nav.item}}
+    {{#bsy-nav.item active=true click=(action "sampleAction")}}Tab 2{{/bsy-nav.item}}
+    {{#bsy-nav.item click=(action "sampleAction")}}Tab 3{{/bsy-nav.item}}
+    {{#bsy-nav.item click=(action "sampleAction")}}Tab 4{{/bsy-nav.item}}
+  {{/bsy-nav}}
+  <div>
+    <p>Text...</p>
+  </div>
+{{/bsy-sheet}}
+
+{{#bsy-sheet id="pills" class="row"}}
+  {{#bsy-nav class="nav-pills nav-stacked col-sm-3"}}
+    {{#bsy-nav.item click=(action "sampleAction")}}Tab 1{{/bsy-nav.item}}
+    {{#bsy-nav.item active=true click=(action "sampleAction")}}Tab 2{{/bsy-nav.item}}
+    {{#bsy-nav.item click=(action "sampleAction")}}Tab 3{{/bsy-nav.item}}
+    {{#bsy-nav.item click=(action "sampleAction")}}Tab 4{{/bsy-nav.item}}
+  {{/bsy-nav}}
+  <div class="col-sm-9">
+    <p>Text...</p>
+  </div>
+{{/bsy-sheet}}
+
 {{#bsy-sheet id="calendar"}}
   {{#bsy-sheet.header}}
     <h2>Calendar</h2>

@@ -21,6 +21,10 @@ export default Ember.Controller.extend({
   actions: {
     toggleModal: function() {
       this.toggleProperty('isShowingModal');
+    },
+
+    sampleAction: function() {
+      alert("Sample action");
     }
   }
 });
