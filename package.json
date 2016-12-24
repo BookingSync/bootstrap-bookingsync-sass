@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-bootstrap-bookingsync-sass",
-  "version": "1.0.0-beta.11.2",
+  "version": "1.0.0-beta.12",
   "description": "Sass-powered version of Bootstrap with BookingSync theme.",
   "directories": {
     "doc": "doc",
