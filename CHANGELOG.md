@@ -1,7 +1,8 @@
 ### master
 
 * improvements
-  * add `nav-pills` with improved design when first element of a `sheet`
+  * add `nav-pills` with improved design when first element of a `sheet`.
+  * Ember `bsy-modal` automatically handle `body` class assignment.
 
 ### 1.0.0.beta11 - 2016-09-03
 

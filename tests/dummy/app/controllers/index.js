@@ -21,11 +21,6 @@ export default Ember.Controller.extend({
   actions: {
     toggleModal: function() {
       this.toggleProperty('isShowingModal');
-      if (this.get('isShowingModal') === true) {
-        $('body').addClass('modal-open');
-      } else {
-        $('body').removeClass('modal-open');
-      }
     }
   }
 });
