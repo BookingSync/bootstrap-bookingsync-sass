@@ -1,5 +1,8 @@
 ### master
 
+* improvements
+  * update layout when using top level container and footer
+
 ### 1.0.0.beta12 - 2016-12-24
 
 * improvements
