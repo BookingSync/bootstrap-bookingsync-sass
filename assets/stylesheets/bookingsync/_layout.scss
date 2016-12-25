@@ -7,6 +7,16 @@ body {
   min-height: 100vh;
 }
 
+body:not(.fullscreen) > .container {
+  overflow: auto;
+  padding-top: 71px;
+  min-height: 100vh;
+}
+
+body > .footer {
+  padding-bottom: 0px;
+}
+
 .navbar.navbar-fixed-top {
   margin-bottom: 0;
 
