@@ -21,3 +21,5 @@ docs/crash.log
 /libpeerconnection.log
 npm-debug.log
 testem.log
+/bootstrap-bookingsync-sass.iml
+/.idea/
