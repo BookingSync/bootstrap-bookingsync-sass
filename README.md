@@ -218,9 +218,10 @@ You can find out more information on the CSP addon page [here](https://github.co
 The blueprints should generate this setup for you on install but if needed you can manually install Bootstrap BookingSync styles in `app/styles/app.scss` using:
 
 ```scss
-@import "ember-power-select";
 @import "ember-modal-dialog/ember-modal-structure";
 @import "bootstrap-bookingsync";
+@import "ember-power-select";
+@import "ember-power-calendar";
 ```
 
 Make sure the file has `.scss` extension (or `.sass` for Sass syntax). If you have just generated a new Ember app, it may come with a `.css` file instead.
