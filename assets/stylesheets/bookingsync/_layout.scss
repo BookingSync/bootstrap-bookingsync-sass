@@ -90,7 +90,7 @@ body > .footer {
   display: block;
 }
 
-@media (max-width: $grid-float-breakpoint) {
+@media (max-width: $grid-float-breakpoint-max) {
   // .menu, // Already set
   .menu-submenu,
   .sided-content,
