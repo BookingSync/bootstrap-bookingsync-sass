@@ -1,5 +1,7 @@
 ### master
 
+### 1.0.1 - 2017-02-12
+
 * bug fixes
   * fix menu and navigation on tablet (768px width) devices.
   * fix menu z-index.
