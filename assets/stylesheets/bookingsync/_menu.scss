@@ -21,7 +21,7 @@ $menu-submenu-width: $menu-width - $menu-collapsed-width;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  z-index: 9000;
+  z-index: $zindex-navbar;
   transition: width 0.2s cubic-bezier(.4,0,.2,1), transform 0.2s cubic-bezier(.4,0,.2,1);
 
   ol {
@@ -142,7 +142,7 @@ $menu-submenu-width: $menu-width - $menu-collapsed-width;
 .menu-header {
   background-color: $menu-header-bg;
   color: $menu-header-color;
-  z-index: 1000;
+  z-index: $zindex-navbar;
   position: static;
   border-bottom: 1px solid $menu-header-border-color;
 
@@ -227,7 +227,7 @@ $menu-submenu-width: $menu-width - $menu-collapsed-width;
 .menu-footer {
   background-color: $menu-footer-bg;
   color: $menu-footer-color;
-  z-index: 1000;
+  z-index: $zindex-navbar;
   position: static;
 
   a {
@@ -296,7 +296,7 @@ $menu-submenu-width: $menu-width - $menu-collapsed-width;
   margin-left: $menu-collapsed-width;
   color: $menu-submenu-color;
   background-color: $menu-submenu-bg;
-  z-index: 8000;
+  z-index: $zindex-navbar;
 
   .menu-header {
     color: $menu-submenu-header-color;

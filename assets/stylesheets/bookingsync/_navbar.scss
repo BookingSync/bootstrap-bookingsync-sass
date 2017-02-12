@@ -35,7 +35,7 @@
   }
 }
 
-@media (max-width: $grid-float-breakpoint) {
+@media (max-width: $grid-float-breakpoint-max) {
   .navbar-breadcrumb-brand-logo {
     position: relative;
     display: inline-block;
