@@ -2,7 +2,8 @@
 
 * bug fixes
   * fix menu and navigation on tablet (768px width) devices.
-  * fix menu z-index
+  * fix menu z-index.
+  * fix tabs styling when active tab is also focused.
 
 ### 1.0.0 - 2016-12-25
 
