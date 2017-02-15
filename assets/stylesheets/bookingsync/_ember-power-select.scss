@@ -4,11 +4,9 @@ $ember-power-select-disabled-background-color: #fff !default;
 $ember-power-select-multiple-selection-background-color: #fff !default;
 $ember-power-select-highlighted-background: $gray-lightest !default;
 $ember-power-select-selected-background: #fff !default;
-
 // Texts
 $ember-power-select-text-color: $input-color !default;
 $ember-power-select-highlighted-color: $input-color !default;
-
 // Borders
 $ember-power-select-border-color: $gray-lighter !default;
 $ember-power-select-focus-border-color: $gray-lighter !default;
@@ -16,14 +14,11 @@ $ember-power-select-multiple-option-border-color: transparent !default;
 $ember-power-select-multiple-option-border: 0 !default;
 $ember-power-select-default-border-radius: 4px !default;
 $ember-power-select-trigger-default-border-radius: $ember-power-select-default-border-radius !default;
-
 // Borders radius
 $ember-power-select-default-border-radius: $border-radius-large !default; // General border radius
-
 // Other
 $ember-power-select-line-height: 2.45 !default;
 $ember-power-select-focus-outline: 0 !default;
-
 html .ember-basic-dropdown--below .ember-power-select-trigger[aria-expanded="true"],
 html .ember-basic-dropdown--in-place .ember-power-select-trigger[aria-expanded="true"] {
   border-top-left-radius: $ember-power-select-trigger-default-border-radius;
@@ -63,15 +58,18 @@ html .ember-basic-dropdown--in-place .ember-power-select-multiple-trigger[aria-e
 html .ember-power-select-trigger:focus,
 html .ember-basic-dropdown--focus-inside .ember-power-select-trigger {
   border-bottom-color: $label-border-focus;
-  border-bottom-width: 2px;
+  box-shadow: 0 1px 0 0 $label-border-focus;
 }
 
 html .ember-basic-dropdown--below .ember-power-select-trigger {
   border: 1px solid $ember-power-select-focus-border-color;
+  box-shadow: 0 1px 0 0 $ember-power-select-focus-border-color;
+  box-sizing: border-box;
 }
 
 html .ember-basic-dropdown--below .ember-power-select-trigger:focus {
   border: 1px solid $ember-power-select-focus-border-color;
+  box-shadow: 0 1px 0 0 $ember-power-select-focus-border-color;
 }
 
 html .ember-power-select-dropdown.ember-basic-dropdown--below,
@@ -87,11 +85,9 @@ html .ember-basic-dropdown--in-place .ember-power-select-dropdown {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   content: $icon-search;
   position: absolute;
   margin-left: 5px;
@@ -119,7 +115,6 @@ html .ember-power-select-multiple-remove-btn {
 html .ember-power-select-option[aria-selected="true"] {
   background-color: $select-multiple-options-selected-bg;
   color: $select-multiple-options-selected-color;
-
   &:hover {
     background-color: $select-multiple-options-selected-bg;
     cursor: default;
