@@ -1,5 +1,10 @@
 ### master
 
+### 1.0.1 - 2017-02-16
+
+* improvements
+  * fix power select shifting the bottom content on focus.
+
 ### 1.0.1 - 2017-02-12
 
 * bug fixes
