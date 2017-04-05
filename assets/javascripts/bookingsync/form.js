@@ -5,10 +5,10 @@
  * Licensed under MIT (https://github.com/BookingSync/styleguide/blob/master/LICENSE)
  * ======================================================================== */
 
-+function ($) {
++function ($, document) {
   'use strict';
 
-  $(document).on('ready', function() {
+  $(document).on('DOMContentLoaded', function() {
     $('.form-group .form-control').each(function (index, e) {
       if (!!$(e).val()) {
         $(e).parents('.form-group').addClass('filled');
@@ -47,4 +47,4 @@
       }
     });
   });
-}(jQuery);
+}(jQuery, document);

@@ -5,7 +5,8 @@ const BsyInputComponent = Ember.Component.extend({
   layout,
   tagName: "div",
   classNames: "form-group",
-  type: "text"
+  type: "text",
+  classNameBindings: ["value:filled"]
 });
 
 BsyInputComponent.reopenClass({

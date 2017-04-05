@@ -1,5 +1,9 @@
 ### master
 
+* bug fixes
+ * Ember Add-on: add 'filled' class-name to input, textarea with value.
+ * `form.js` to use more correct `DOMContentLoaded` event instead of `ready`.
+ 
 * improvements
   * fix power select shifting the bottom content on focus.
 
