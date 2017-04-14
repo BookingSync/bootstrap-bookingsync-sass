@@ -6,6 +6,8 @@
  
 * improvements
   * fix power select shifting the bottom content on focus.
+  * add icons `icon-trash` and `icon-clone`
+  * embed icons and smiles fonts within CSS
 
 ### 1.0.1 - 2017-02-12
 
