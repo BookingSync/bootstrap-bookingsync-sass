@@ -1,5 +1,7 @@
 ### master
 
+### 1.0.2 - 2017-04-14
+
 * bug fixes
  * Ember Add-on: add 'filled' class-name to input, textarea with value.
  * `form.js` to use more correct `DOMContentLoaded` event instead of `ready`.
