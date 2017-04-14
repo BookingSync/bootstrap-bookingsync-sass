@@ -34,14 +34,8 @@ $dl-horizontal-narrow-offset:   120px !default;
 
 //** Load fonts from this directory.
 
-// If $bootstrap-bookingsync-sass-asset-helper if used, provide path relative to the assets load path.
-// This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-$smiles-font-path: if($bootstrap-bookingsync-sass-asset-helper, "bookingsync/", "../fonts/bookingsync/") !default;
-
 //** File name for smiles font files.
 $smiles-font-name:          "bookingsync-smiles" !default;
-//** Element ID within SVG icon file.
-$smiles-font-svg-id:        "bookingsync_smiles" !default;
 
 $bs-icon-bigboss:           "\e600" !default;
 $bs-icon-boss:              "\e601" !default;
@@ -53,15 +47,12 @@ $bs-icon-tongue:            "\e606" !default;
 $bs-icon-winkface:          "\e607" !default;
 $bs-icon-winktongue:        "\e608" !default;
 
-// If $bootstrap-bookingsync-sass-asset-helper if used, provide path relative to the assets load path.
-// This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-$icons-font-path: if($bootstrap-bookingsync-sass-asset-helper, "bookingsync/", "../fonts/bookingsync/") !default;
 
 //** File name for icons font files.
 $icons-font-name:           "bookingsync-icons" !default;
-//** Element ID within SVG icon file.
-$icons-font-svg-id:         "bookingsync_icons" !default;
 
+$icon-trash:                "\e903" !default;
+$icon-clone:                "\e905" !default;
 $icon-translations:         "\e902" !default;
 $icon-external:             "\e901" !default;
 $icon-invoice:              "\e900" !default;

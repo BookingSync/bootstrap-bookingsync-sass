@@ -37,6 +37,8 @@
       <li><i class="icon-reviews"></i> reviews</li>
       <li><i class="icon-template"></i> template</li>
       <li><i class="icon-widget"></i> widget</li>
+      <li><i class="icon-trash"></i> trash</li>
+      <li><i class="icon-clone"></i> clone</li>
     </ul>
   </div>
 </div>
