@@ -55,3 +55,18 @@
   </tr>
 </table>
 ~~~
+
+<div class="example">
+  <div class="sheet-header">
+    <h3 id="text-utils">Text Utils</h3>
+  </div>
+  
+  <p>`.text-nowrap`</p>
+
+  <div class="bs-example bs-sheet" data-example-id="vertical-alignment">
+    <span class="text-nowrap">Don't wrap text, Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+  </div>
+</div>
+~~~ html
+<span class="text-nowrap">Don't wrap text, Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+~~~
