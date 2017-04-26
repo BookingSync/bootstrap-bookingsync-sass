@@ -17,6 +17,9 @@
   * fix menu and navigation on tablet (768px width) devices.
   * fix menu z-index.
   * fix tabs styling when active tab is also focused.
+  
+* improvements
+  * add `.text-nowrap` util class
 
 ### 1.0.0 - 2016-12-25
 
