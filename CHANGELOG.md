@@ -1,5 +1,10 @@
 ### master
 
+### 1.0.3 - 2017-04-27
+
+* bug fixes
+  * remove fonts from broccoli pipeline
+  
 ### 1.0.2 - 2017-04-14
 
 * bug fixes
