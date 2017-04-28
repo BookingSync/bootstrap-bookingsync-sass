@@ -15,7 +15,6 @@ module.exports = {
     this.assetsPath = path.join(this.root, 'assets');
     this.vendorPath = path.join('vendor', 'ember-cli-bootstrap-bookingsync-sass');
     this.vendorJavascriptsPath = path.join(this.vendorPath, 'javascripts', 'bookingsync');
-    this.vendorFontsPath = path.join(this.vendorPath, 'fonts', 'bookingsync');
 
     if (process.env.EMBER_CLI_FASTBOOT) {
       this.ui.writeLine('bootstrap-bookingsync-sass: no JS enabled [FastBoot]');
@@ -24,17 +23,6 @@ module.exports = {
       target.import(path.join(this.vendorJavascriptsPath, 'stackable.js'));
       target.import(path.join(this.vendorJavascriptsPath, 'switch.js'));
     }
-
-    target.import(path.join(this.vendorFontsPath, 'bookingsync-smiles.eot'),   { destDir: '/fonts/bookingsync' });
-    target.import(path.join(this.vendorFontsPath, 'bookingsync-smiles.svg'),   { destDir: '/fonts/bookingsync' });
-    target.import(path.join(this.vendorFontsPath, 'bookingsync-smiles.ttf'),   { destDir: '/fonts/bookingsync' });
-    target.import(path.join(this.vendorFontsPath, 'bookingsync-smiles.woff'),  { destDir: '/fonts/bookingsync' });
-    target.import(path.join(this.vendorFontsPath, 'bookingsync-smiles.woff2'), { destDir: '/fonts/bookingsync' });
-    target.import(path.join(this.vendorFontsPath, 'bookingsync-icons.eot'),    { destDir: '/fonts/bookingsync' });
-    target.import(path.join(this.vendorFontsPath, 'bookingsync-icons.svg'),    { destDir: '/fonts/bookingsync' });
-    target.import(path.join(this.vendorFontsPath, 'bookingsync-icons.ttf'),    { destDir: '/fonts/bookingsync' });
-    target.import(path.join(this.vendorFontsPath, 'bookingsync-icons.woff'),   { destDir: '/fonts/bookingsync' });
-    target.import(path.join(this.vendorFontsPath, 'bookingsync-icons.woff2'),  { destDir: '/fonts/bookingsync' });
   },
 
   contentFor: function(type) {
@@ -60,13 +48,7 @@ module.exports = {
       destDir: '/ember-cli-bootstrap-bookingsync-sass/javascripts'
     });
 
-    var fontsPath = path.join(this.assetsPath, 'fonts');
-    var fontsTree = new Funnel(this.treeGenerator(fontsPath), {
-      srcDir: '/',
-      destDir: '/ember-cli-bootstrap-bookingsync-sass/fonts'
-    });
-
-    var vendorTrees = new BroccoliMergeTrees([javascriptsTree, fontsTree]);
+    var vendorTrees = new BroccoliMergeTrees([javascriptsTree]);
 
     return vendorTrees;
   },
