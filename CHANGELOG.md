@@ -1,5 +1,7 @@
 ### master
 
+### 1.0.4 - 2017-06-14
+
 * bug fixes
   * fix label mixed with value for `select` input
 
