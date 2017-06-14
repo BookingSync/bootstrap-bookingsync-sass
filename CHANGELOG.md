@@ -1,16 +1,21 @@
 ### master
 
+### 1.0.4 - 2017-06-14
+
+* bug fixes
+  * fix label mixed with value for `select` input
+
 ### 1.0.3 - 2017-04-28
 
 * bug fixes
   * remove fonts from broccoli pipeline
-  
+
 ### 1.0.2 - 2017-04-14
 
 * bug fixes
  * Ember Add-on: add 'filled' class-name to input, textarea with value.
  * `form.js` to use more correct `DOMContentLoaded` event instead of `ready`.
- 
+
 * improvements
   * fix power select shifting the bottom content on focus.
   * add icons `icon-trash` and `icon-clone`
@@ -22,7 +27,7 @@
   * fix menu and navigation on tablet (768px width) devices.
   * fix menu z-index.
   * fix tabs styling when active tab is also focused.
-  
+
 * improvements
   * add `.text-nowrap` util class
 
@@ -140,7 +145,7 @@
   * Add styling for Ember Power Select
   * Improve Buttons styling
   * Add Buttons loading animation
-  * Add `list-group` support with nesting and icons support 
+  * Add `list-group` support with nesting and icons support
   * Add `.sided-content` to use with `menu`
   * Add `.navbar-breadcrumb`
 
