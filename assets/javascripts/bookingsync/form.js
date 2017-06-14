@@ -5,14 +5,16 @@
  * Licensed under MIT (https://github.com/BookingSync/styleguide/blob/master/LICENSE)
  * ======================================================================== */
 
+var setInputFilledValue = function(elt) {
+  $(elt).parents('.form-group').toggleClass('filled', !!$(elt).val());
+};
+
 +function ($, document) {
   'use strict';
 
   $(document).on('DOMContentLoaded', function() {
     $('.form-group .form-control').each(function (index, e) {
-      if (!!$(e).val()) {
-        $(e).parents('.form-group').addClass('filled');
-      }
+      setInputFilledValue(e)
     });
     $('.checkbox input[type="checkbox"][disabled]').each(function (index, e) {
       $(e).parents('.checkbox').addClass('disabled');
@@ -39,12 +41,10 @@
     });
     $(document).on('blur', '.form-group .form-control', function (e) {
       $(e.target).parents('.form-group').removeClass('focused');
-
-      if (!$(e.target).val()) {
-        $(e.target).parents('.form-group').removeClass('filled');
-      } else {
-        $(e.target).parents('.form-group').addClass('filled');
-      }
+      setInputFilledValue(e.target)
+    });
+    $(document).on('change', '.select .form-group .form-control', function (e) {
+      setInputFilledValue(e.target)
     });
   });
 }(jQuery, document);
