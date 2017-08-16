@@ -229,7 +229,6 @@ Make sure the file has `.scss` extension (or `.sass` for Sass syntax). If you ha
 ### Running
 
 #### Prerequisites
-
 You will need the following things properly installed on your computer.
 
 * [Node.js](http://nodejs.org/) (latest stable version, v7.7.1 at 2017-08-16)
