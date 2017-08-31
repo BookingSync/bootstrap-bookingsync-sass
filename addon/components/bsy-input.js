@@ -8,8 +8,8 @@ const BsyInputComponent = Component.extend({
   tagName: "div",
   classNames: "form-group",
   type: "text",
-  classNameBindings: ["value:filled"],
-  inputClass: '',
+  classNameBindings: ["value:filled", "icon:has-icon"],
+  inputClass: 'input',
 
   inputClassNames: computed('inputClass', function () {
     const inputClass = this.get('inputClass');

@@ -64,6 +64,27 @@
     transition-timing-function: cubic-bezier(.4,0,.2,1);
   }
 
+  &.has-icon {
+    i {
+      position: absolute;
+      bottom: 15px;
+      color: $gray-light;
+      &.icon-input {
+        bottom: 12px;
+      }
+      &.icon-input-lg {
+        bottom: 20px;
+        font-size: 20px;
+      }
+    }
+    input {
+      padding-left: 20px;
+      &.input-lg {
+        padding-left: 30px;
+      }
+    }
+  }
+
   &.filled label {
     color: $label-color-filled;
     font-size: $label-font-size-filled;

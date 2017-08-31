@@ -1,4 +1,7 @@
 <label for="{{id}}">{{label}}</label>
+{{#if icon}}
+  <i class="icon-{{icon}} icon-{{inputClass}}"></i>
+{{/if}}
 {{one-way-input
   value=value
   update=update
