@@ -1,6 +1,6 @@
 <label for="{{id}}">{{label}}</label>
 {{#if icon}}
-  <i class="icon-{{icon}} icon-{{inputClass}}"></i>
+  <i class="icon-{{icon}} icon--{{if size size "default"}}"></i>
 {{/if}}
 {{one-way-input
   value=value

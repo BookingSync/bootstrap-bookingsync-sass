@@ -9,12 +9,12 @@ const BsyInputComponent = Component.extend({
   classNames: "form-group",
   type: "text",
   classNameBindings: ["value:filled", "icon:has-icon"],
-  inputClass: 'input',
+  size: null, // sm, lg
 
-  inputClassNames: computed('inputClass', function () {
-    const inputClass = this.get('inputClass');
-    if (inputClass) {
-      return `form-control ${inputClass}`;
+  inputClassNames: computed('size', function () {
+    const size = this.get('size');
+    if (size) {
+      return `form-control input-${size}`;
     }
     return "form-control";
   })

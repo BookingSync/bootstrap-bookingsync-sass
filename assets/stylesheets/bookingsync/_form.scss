@@ -65,20 +65,25 @@
   }
 
   &.has-icon {
+
     i {
       position: absolute;
       bottom: 15px;
       color: $gray-light;
-      &.icon-input {
+
+      &.icon--default {
         bottom: 12px;
       }
-      &.icon-input-lg {
+
+      &.icon--lg {
         bottom: 20px;
         font-size: 20px;
       }
     }
+
     input {
       padding-left: 20px;
+
       &.input-lg {
         padding-left: 30px;
       }
