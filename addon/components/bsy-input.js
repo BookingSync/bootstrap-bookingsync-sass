@@ -17,6 +17,13 @@ const BsyInputComponent = Component.extend({
       return `form-control input-${size}`;
     }
     return "form-control";
+  }),
+
+  iconSize: computed('size', function () {
+    const size = this.get('size');
+    if (size) {
+      return `icon--${size}`;
+    }
   })
 });
 
