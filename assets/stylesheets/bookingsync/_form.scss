@@ -68,15 +68,15 @@
 
     i {
       position: absolute;
-      bottom: 15px;
+      bottom: 12px;
       color: $gray-light;
 
-      &.icon--default {
-        bottom: 12px;
+      &.icon--sm {
+        bottom: 14px;
       }
 
       &.icon--lg {
-        bottom: 20px;
+        bottom: 18px;
         font-size: 20px;
       }
     }
