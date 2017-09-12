@@ -8,8 +8,6 @@
       update=(action (mut currentEmail))
       type="email"
       inputId="email"
-      icon="notifications"
-      size="lg"
     }}
 
     <div class="row">
@@ -29,6 +27,27 @@
         }}
       </div>
     </div>
+
+    {{bsy-input
+        currentFirstName
+        label="Large first name with icon"
+        update=(action (mut currentFirstName))
+        inputId="firstname"
+        icon="owner"
+        size="lg"}}
+    {{bsy-input
+        currentFirstName
+        label="Default first name with icon"
+        update=(action (mut currentFirstName))
+        inputId="firstname"
+        icon="owner"}}
+    {{bsy-input
+        currentFirstName
+        label="Small first name with icon"
+        update=(action (mut currentFirstName))
+        inputId="firstname"
+        icon="owner"
+        size="sm"}}
 
     {{#bsy-input-addon}}
       {{#bsy-input-addon.addon}}${{/bsy-input-addon.addon}}
@@ -88,7 +107,7 @@
     }}
 
     {{bsy-checkbox isChecked
-      label="Check me out"
+        label="Check me out"
       update=(action (mut isChecked))
     }}
 
