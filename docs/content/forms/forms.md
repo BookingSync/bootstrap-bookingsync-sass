@@ -1233,8 +1233,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
       </div>
       <div class="form-group has-icon">
         <label for="inputGroupSmall">Small input group</label>
-        <i class="icon-notifications"></i>
-        <input class="form-control" type="text" id="inputGroupSmall">
+        <i class="icon-notifications icon--sm"></i>
+        <input class="form-control input-sm" type="text" id="inputGroupSmall">
       </div>
     </form>
   </div>
@@ -1254,8 +1254,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
   </div>
   <div class="form-group has-icon">
     <label for="inputGroupSmall">Small input group</label>
-    <i class="icon-notifications"></i>
-    <input class="form-control" type="text" id="inputGroupSmall">
+    <i class="icon-notifications icon--sm"></i>
+    <input class="form-control input-sm" type="text" id="inputGroupSmall">
   </div>
 </form>
 ~~~
