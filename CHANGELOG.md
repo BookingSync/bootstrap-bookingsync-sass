@@ -1,7 +1,5 @@
 ### master
 
-### 1.0.5 - 2017-09-08
-
 * improvements
   * option for adding icon and classes to input
 
