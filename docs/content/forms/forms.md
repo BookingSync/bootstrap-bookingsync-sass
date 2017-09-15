@@ -1212,6 +1212,56 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a blandit quam
 
 <div class="example">
   <div class="sheet-header">
+    <h3 id="input-group-with-icon">Input group with icon</h3>
+  </div>
+
+  <p>Add icon to input field adding class <code>.has-icon</code> to the <code>.form-group</code>. 
+  Create bigger or smaller icons using classes like <code>.icon--lg</code>. Use these classes 
+  in conjunction with <code>.input-lg</code> for the input field for example to match its height.</p>
+
+  <div class="bs-example bs-sheet" data-example-id="input-group-with-icon">
+    <form>
+      <div class="form-group has-icon">
+        <label for="inputGroupLarge">Large input group</label>
+        <i class="icon-notifications icon--lg"></i>
+        <input class="form-control input-lg" type="text" id="inputGroupLarge">
+      </div>
+      <div class="form-group has-icon">
+        <label for="inputGroupDefault">Default input group</label>
+        <i class="icon-notifications"></i>
+        <input class="form-control" type="text" id="inputGroupDefault">
+      </div>
+      <div class="form-group has-icon">
+        <label for="inputGroupSmall">Small input group</label>
+        <i class="icon-notifications icon--sm"></i>
+        <input class="form-control input-sm" type="text" id="inputGroupSmall">
+      </div>
+    </form>
+  </div>
+</div>
+
+~~~ html
+<form>
+  <div class="form-group has-icon">
+    <label for="inputGroupLarge">Large input group</label>
+    <i class="icon-notifications icon--lg"></i>
+    <input class="form-control input-lg" type="text" id="inputGroupLarge">
+  </div>
+  <div class="form-group has-icon">
+    <label for="inputGroupDefault">Default input group</label>
+    <i class="icon-notifications"></i>
+    <input class="form-control" type="text" id="inputGroupDefault">
+  </div>
+  <div class="form-group has-icon">
+    <label for="inputGroupSmall">Small input group</label>
+    <i class="icon-notifications icon--sm"></i>
+    <input class="form-control input-sm" type="text" id="inputGroupSmall">
+  </div>
+</form>
+~~~
+
+<div class="example">
+  <div class="sheet-header">
     <h3 id="height-sizing">Height sizing</h3>
   </div>
 

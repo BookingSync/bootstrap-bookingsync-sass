@@ -28,6 +28,27 @@
       </div>
     </div>
 
+    {{bsy-input
+        currentFirstName
+        label="Large first name with icon"
+        update=(action (mut currentFirstName))
+        inputId="firstNameLarge"
+        icon="owner"
+        size="lg"}}
+    {{bsy-input
+        currentFirstName
+        label="Default first name with icon"
+        update=(action (mut currentFirstName))
+        inputId="firstNameDefault"
+        icon="owner"}}
+    {{bsy-input
+        currentFirstName
+        label="Small first name with icon"
+        update=(action (mut currentFirstName))
+        inputId="firstNameSmall"
+        icon="owner"
+        size="sm"}}
+
     {{#bsy-input-addon}}
       {{#bsy-input-addon.addon}}${{/bsy-input-addon.addon}}
       {{bsy-input-addon.input currentAmount
