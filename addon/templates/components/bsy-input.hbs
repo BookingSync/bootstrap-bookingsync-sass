@@ -1,4 +1,6 @@
-<label for="{{id}}">{{label}}</label>
+{{#if label}}
+  <label for="{{id}}">{{label}}</label>
+{{/if}}
 {{#if icon}}
   <i class="icon-{{icon}} {{iconSize}}"></i>
 {{/if}}

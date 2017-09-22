@@ -1,4 +1,6 @@
-<label for="{{id}}">{{label}}</label>
+{{#if label}}
+  <label for="{{id}}">{{label}}</label>
+{{/if}}
 {{one-way-textarea
   value=value
   update=update
