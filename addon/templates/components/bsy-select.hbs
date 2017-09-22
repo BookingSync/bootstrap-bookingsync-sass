@@ -1,10 +1,13 @@
-<label for="{{inputId}}">{{label}}</label>
+{{#if label}}
+  <label for="{{inputId}}">{{label}}</label>
+{{/if}}
 {{#power-select
   selected=selected
   options=options
   searchEnabled=searchEnabled
   searchField=searchField
   onchange=onchange
+  placeholder=placeholder
   id=inputId
   class="form-control"
   as |option name|
