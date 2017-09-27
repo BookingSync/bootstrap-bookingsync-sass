@@ -10,7 +10,6 @@
     border-radius: $input-border-radius;
     @include box-shadow(none);
     padding: 0 $grid-gutter-width 0 0;
-    height: $input-height-base;
 
     &.chosen-default span {
       visibility: hidden;
@@ -70,6 +69,10 @@
 .chosen-container-active.chosen-with-drop .chosen-choices {
   padding: 1px ceil($grid-gutter-width / 2);
   margin-top: -3px;
+}
+
+.chosen-container-single .chosen-single {
+  height: $input-height-base;
 }
 
 .chosen-container-multi .chosen-choices {
