@@ -7,6 +7,7 @@
 
 * bug fixes
   * fix label mixed with value for `select` input
+  * fix height for chosen multiple select container
 
 ### 1.0.3 - 2017-04-28
 
