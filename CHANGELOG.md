@@ -1,13 +1,15 @@
 ### master
 
+### 1.0.5 - 2017-10-01
+
 * improvements
   * option for adding icon and classes to input
+  * fix height for chosen multiple select container
 
 ### 1.0.4 - 2017-06-14
 
 * bug fixes
   * fix label mixed with value for `select` input
-  * fix height for chosen multiple select container
 
 ### 1.0.3 - 2017-04-28
 
