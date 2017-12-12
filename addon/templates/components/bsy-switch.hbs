@@ -1,7 +1,10 @@
-<div class="switch-animate">
-  <span class="switch-left switch-small">ON</span>
-  <label class="switch-small">
-    {{one-way-checkbox checked=isChecked update=(action (mut isChecked))}}
-  </label>
-  <span class="switch-right switch-small">OFF</span>
-</div>
+{{value}}
+
+{{x-toggle
+  value=value
+  theme=theme
+  size=size
+  showLabels=showLabels
+  onLabel=onLabel
+  offLabel=offLabel
+  onToggle=(action (mut value))}}

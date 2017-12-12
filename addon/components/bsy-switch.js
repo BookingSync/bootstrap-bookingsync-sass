@@ -5,8 +5,11 @@ const { Component } = Ember;
 
 export default Component.extend({
   layout,
-  classNames: 'make-switch has-switch switch-small',
-  classNameBindings: ['isChecked:switch-on:switch-off'],
-
-  isChecked: false
+  theme: "light",
+  size: "small",
+  showLabels: false,
+  onLabel: 'On',
+  offLabel: 'Off',
+  value: false,
+  disabled: false,
 });
