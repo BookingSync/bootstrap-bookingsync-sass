@@ -3,6 +3,8 @@
     <h2>Forms</h2>
   {{/bsy-sheet.header}}
   <form>
+    {{bsy-switch checked=isChecked}}
+
     {{bsy-input currentEmail
       label="Email address"
       update=(action (mut currentEmail))
@@ -261,5 +263,3 @@
     <strong>Warning!</strong> Better check yourself, you're not looking too good.
   {{/bsy-alert}}
 {{/bsy-sheet}}
-
-{{bsy-switch checked=val onChange=(action (mut val) (not val))}}

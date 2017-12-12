@@ -1,7 +1,12 @@
 import Ember from 'ember';
 import layout from '../templates/components/bsy-switch';
 
-export default Ember.Component.extend({
+const { Component } = Ember;
+
+export default Component.extend({
   layout,
-  classNames: ['make-switch']
+  classNames: 'make-switch has-switch switch-small',
+  classNameBindings: ['isChecked:switch-on:switch-off'],
+
+  isChecked: false
 });
