@@ -3,8 +3,6 @@
     <h2>Forms</h2>
   {{/bsy-sheet.header}}
   <form>
-    {{bsy-switch checked=isChecked}}
-
     {{bsy-input currentEmail
       label="Email address"
       update=(action (mut currentEmail))
@@ -176,6 +174,13 @@
   {{bsy-button.close}}
   {{#bsy-button type="danger"}}Danger{{/bsy-button}}
   {{#bsy-button type="link"}}Link{{/bsy-button}}
+{{/bsy-sheet}}
+
+{{#bsy-sheet}}
+  {{#bsy-sheet.header}}
+    <h2>Switch</h2>
+  {{/bsy-sheet.header}}
+  {{bsy-switch size="medium"}}
 {{/bsy-sheet}}
 
 {{#bsy-sheet id="modal"}}
