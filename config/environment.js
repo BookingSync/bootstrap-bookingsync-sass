@@ -8,7 +8,6 @@ module.exports = function(environment/*, appConfig */) {
 
   ENV['ember-toggle'] = {
     includedThemes: ['light'],
-    excludedThemes: ['flip', 'default', 'flip', 'ios', 'skewed', 'flat'],
     excludeBaseStyles: false,
     defaultTheme: 'light',
     defaultSize: 'small',

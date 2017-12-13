@@ -5,8 +5,8 @@ const { Component } = Ember;
 
 export default Component.extend({
   layout,
-  theme: "light",
-  size: "small",
+  theme: 'light',
+  size: 'small',
   showLabels: false,
   onLabel: 'On',
   offLabel: 'Off',
