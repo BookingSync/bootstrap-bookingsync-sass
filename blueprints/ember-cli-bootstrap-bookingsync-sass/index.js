@@ -8,7 +8,8 @@ module.exports = {
         'ember-cli-bootstrap-sassy',
         'ember-one-way-controls',
         'ember-power-select',
-        'ember-modal-dialog'
+        'ember-modal-dialog',
+        'ember-tooltips',
       ]
     });
   }
