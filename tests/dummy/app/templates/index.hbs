@@ -180,7 +180,17 @@
   {{#bsy-sheet.header}}
     <h2>Switch</h2>
   {{/bsy-sheet.header}}
-  {{bsy-switch size="medium"}}
+  <div class="row">
+    <div class="col-md-4">
+      <span>Small(default):</span>{{bsy-switch}}
+    </div>
+    <div class="col-md-4">
+      <span>Medium:</span>{{bsy-switch size="medium"}}
+    </div>
+    <div class="col-md-4">
+      <span>Large:</span>{{bsy-switch size="large"}}
+    </div>
+  </div>
 {{/bsy-sheet}}
 
 {{#bsy-sheet id="modal"}}
