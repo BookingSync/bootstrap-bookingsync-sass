@@ -1,6 +1,7 @@
 // Overides for ember-tooltips
 
-.tooltip-inner {
+.ember-popover .tooltip-inner {
   background: #fff;
   color: $gray-light;
+  font-family: inherit;
 }
