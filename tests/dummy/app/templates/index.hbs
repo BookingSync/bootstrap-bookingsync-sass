@@ -10,6 +10,16 @@
       inputId="email"
     }}
 
+    {{#bsy-sheet}}
+      {{#bsy-sheet.header}}
+        <h4>Sheet</h4>
+        {{bsy-tooltip event="click" text="I'm a tooltip"}}
+        <!-- {{#bsy-popover event="click"}}
+          "bracoooo"
+        {{/bsy-popover}} -->
+      {{/bsy-sheet.header}}
+    {{/bsy-sheet}}
+
     <div class="row">
       <div class="col-xs-6">
         {{bsy-input currentFirstName
@@ -260,4 +270,25 @@
   {{#bsy-alert type="warning" dismissible=true}}
     <strong>Warning!</strong> Better check yourself, you're not looking too good.
   {{/bsy-alert}}
+{{/bsy-sheet}}
+
+{{#bsy-sheet id="tooltip-popover"}}
+  {{#bsy-sheet.header}}
+    <h2>Tooltip/Popover</h2>
+  {{/bsy-sheet.header}}
+  {{#bsy-button type="primary"}}
+    Hover me
+    {{bsy-tooltip text="Tooltip"}}
+  {{/bsy-button}}
+  {{#bsy-button type="secondary"}}
+    Hover me
+    {{#bsy-popover}}
+      {{#bsy-sheet}}
+        {{#bsy-sheet.header}}
+          <h2>Popover</h2>
+        {{/bsy-sheet.header}}
+        <p>Body</p>
+      {{/bsy-sheet}}
+    {{/bsy-popover}}
+  {{/bsy-button}}
 {{/bsy-sheet}}
