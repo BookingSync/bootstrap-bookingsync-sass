@@ -7,7 +7,7 @@ export default Component.extend({
   layout,
   tagName: '',
   theme: 'light',
-  size: 'small',
+  size: 'medium',
   showLabels: false,
   onLabel: 'On',
   offLabel: 'Off',

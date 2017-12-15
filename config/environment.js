@@ -10,7 +10,7 @@ module.exports = function(environment/*, appConfig */) {
     includedThemes: ['light'],
     excludeBaseStyles: false,
     defaultTheme: 'light',
-    defaultSize: 'small',
+    defaultSize: 'medium',
   };
 
   return ENV;
