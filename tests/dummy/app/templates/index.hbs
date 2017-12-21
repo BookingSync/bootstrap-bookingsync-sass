@@ -264,21 +264,16 @@
 
 {{#bsy-sheet id="tooltip-popover"}}
   {{#bsy-sheet.header}}
-    <h2>Tooltip/Popover</h2>
+    <h2>Popover</h2>
   {{/bsy-sheet.header}}
   {{#bsy-button type="primary"}}
     Hover me
-    {{bsy-tooltip text="Tooltip"}}
-  {{/bsy-button}}
-  {{#bsy-button type="secondary"}}
-    Hover me
     {{#bsy-popover}}
-      {{#bsy-sheet}}
-        {{#bsy-sheet.header}}
-          <h2>Popover</h2>
-        {{/bsy-sheet.header}}
-        <p>Body</p>
-      {{/bsy-sheet}}
+      <ul class="list-unstyled">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
     {{/bsy-popover}}
   {{/bsy-button}}
 {{/bsy-sheet}}

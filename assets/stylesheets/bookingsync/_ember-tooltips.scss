@@ -4,12 +4,6 @@
   font-size: 14px;
 }
 
-.ember-tooltip, .tooltip-inner {
-  background: $brand-primary;
-  border-color: $brand-primary;
-  text-align: left;
-}
-
 .ember-tooltip-arrow {
   border-top-color: inherit !important;
 }
@@ -17,4 +11,5 @@
 .ember-popover .tooltip-inner {
   background: #fff;
   color: $gray-dark;
+  text-align: left;
 }
