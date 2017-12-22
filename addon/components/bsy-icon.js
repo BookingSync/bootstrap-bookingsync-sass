@@ -23,9 +23,9 @@ const BsyIconComponent = Component.extend({
   }),
 
   iconType: computed('type', function() {
-    let size = this.get('type');
+    let type = this.get('type');
 
-    if (size) {
+    if (type) {
       return `icon-${this.get('type')}`;
     }
   })
