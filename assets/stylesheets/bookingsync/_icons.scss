@@ -31,6 +31,34 @@
   text-align: center;
 }
 
+.icon-sm {
+  font-size: .75em;
+}
+
+.icon-md {
+  font-size: 2em;
+}
+
+.icon-lg {
+  font-size: 3em;
+}
+
+.icon-success {
+  color: #2db859;
+}
+
+.icon-info {
+  color: #31708f;
+}
+
+.icon-warning {
+  color: #f39c12;
+}
+
+.icon-danger {
+  color: #e74c3c;
+}
+
 .icon-ban {
   &:before {
     content: $icon-ban;
