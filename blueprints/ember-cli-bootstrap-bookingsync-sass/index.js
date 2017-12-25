@@ -11,5 +11,9 @@ module.exports = {
         'ember-modal-dialog'
       ]
     });
+  },
+
+  afterInstall() {
+    return this.addBowerPackageToProject('sweetalert2');
   }
 };
