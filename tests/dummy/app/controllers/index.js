@@ -1,6 +1,10 @@
 import Ember from "ember";
 
+const { inject: { service } } = Ember;
+
 export default Ember.Controller.extend({
+  bsySwal: service(),
+
   currentName: 'John Doe',
   currentFirstName: 'John',
   currentLastName: 'Doe',
@@ -24,7 +28,11 @@ export default Ember.Controller.extend({
     },
 
     sampleAction: function() {
-      alert("Sample action");
+      this.get('bsySwal').confirm(
+        'BookingSync Alert!',
+        'add message here',
+        'success'
+      );
     }
   }
 });
