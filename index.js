@@ -24,7 +24,7 @@ module.exports = {
       target.import(path.join(this.vendorJavascriptsPath, 'switch.js'));
       target.import(path.join(app.bowerDirectory, '/sweetalert2/dist/sweetalert2.js'));
       target.import(path.join(app.bowerDirectory, '/sweetalert2/dist/sweetalert2.css'));
-      target.import('vendor/shims/sweetalert.js');
+      target.import(path.join(this.treePaths.vendor, 'shims', 'sweetalert.js'));
     }
   },
 
