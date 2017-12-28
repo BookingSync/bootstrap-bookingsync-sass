@@ -10,7 +10,7 @@ module.exports = {
 
   included: function(app, parentAddon) {
     var target = (parentAddon || app);
-    this._super.included(target);
+    this._super.included.apply(this, arguments);
 
     this.assetsPath = path.join(this.root, 'assets');
     this.vendorPath = path.join('vendor', 'ember-cli-bootstrap-bookingsync-sass');
@@ -24,7 +24,7 @@ module.exports = {
       target.import(path.join(this.vendorJavascriptsPath, 'switch.js'));
       target.import(path.join(app.bowerDirectory, '/sweetalert2/dist/sweetalert2.js'));
       target.import(path.join(app.bowerDirectory, '/sweetalert2/dist/sweetalert2.css'));
-      app.import('vendor/shims/sweetalert.js');
+      this.import('vendor/shims/sweetalert.js');
     }
   },
 
