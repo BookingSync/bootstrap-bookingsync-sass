@@ -3,7 +3,7 @@ import Ember from "ember";
 const { inject: { service } } = Ember;
 
 export default Ember.Controller.extend({
-  bsySwal: service(),
+  bsyPopup: service(),
 
   currentName: 'John Doe',
   currentFirstName: 'John',
@@ -28,11 +28,17 @@ export default Ember.Controller.extend({
     },
 
     sampleAction: function() {
-      this.get('bsySwal').confirm(
-        'BookingSync Alert!',
-        'add message here',
-        'success'
-      );
+      alert("Sample action");
+    },
+
+    openPopup() {
+      this.get('bsyPopup').alert({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Yes, delete it!'
+      });
     }
   }
 });
