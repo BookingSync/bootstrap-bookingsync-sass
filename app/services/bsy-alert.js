@@ -1,1 +1,1 @@
-export { default } from 'ember-cli-bootstrap-bookingsync-sass/services/bsy-popup';
+export { default } from 'ember-cli-bootstrap-bookingsync-sass/services/bsy-alert';

@@ -1,7 +1,7 @@
-.swal2-container {
-  font-family: inherit;
+.swal2-popup {
+  font-family: $font-family-sans-serif;
 }
 
-.swal2-popup {
-  font-family: inherit;
+.swal2-icon {
+  display: none !important;
 }

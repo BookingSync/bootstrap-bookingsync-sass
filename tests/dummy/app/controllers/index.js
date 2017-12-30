@@ -3,7 +3,7 @@ import Ember from "ember";
 const { inject: { service } } = Ember;
 
 export default Ember.Controller.extend({
-  bsyPopup: service(),
+  bsyAlert: service(),
 
   currentName: 'John Doe',
   currentFirstName: 'John',
@@ -32,7 +32,7 @@ export default Ember.Controller.extend({
     },
 
     openPopup() {
-      this.get('bsyPopup').alert({
+      this.get('bsyAlert').alert({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
         type: 'warning',

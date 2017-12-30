@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('service:bsy-popup', 'Unit | Service | bsy popup', {
+moduleFor('service:bsy-alert', 'Unit | Service | bsy alert', {
   // Specify the other units that are required for this test.
   // needs: ['service:foo']
 });
