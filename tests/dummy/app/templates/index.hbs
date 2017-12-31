@@ -176,6 +176,23 @@
   {{#bsy-button type="link"}}Link{{/bsy-button}}
 {{/bsy-sheet}}
 
+{{#bsy-sheet}}
+  {{#bsy-sheet.header}}
+    <h2>Switch</h2>
+  {{/bsy-sheet.header}}
+  <div class="row">
+    <div class="col-md-4">
+      <span>Small:</span>{{bsy-switch size="small"}}
+    </div>
+    <div class="col-md-4">
+      <span>Medium(default):</span>{{bsy-switch}}
+    </div>
+    <div class="col-md-4">
+      <span>Large:</span>{{bsy-switch size="large"}}
+    </div>
+  </div>
+{{/bsy-sheet}}
+
 {{#bsy-sheet id="modal"}}
   {{#bsy-sheet/header}}
     <h2>Modal</h2>

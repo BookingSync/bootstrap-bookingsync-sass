@@ -43,6 +43,7 @@
     "ember-power-calendar": "0.7.1",
     "ember-resolver": "4.0.0",
     "ember-source": "~2.17.0",
+    "ember-toggle": "5.2.1",
     "ember-try": "0.2.22",
     "eslint-plugin-ember": "5.0.3",
     "loader.js": "4.2.3"

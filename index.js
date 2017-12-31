@@ -21,7 +21,6 @@ module.exports = {
     } else {
       target.import(path.join(this.vendorJavascriptsPath, 'form.js'));
       target.import(path.join(this.vendorJavascriptsPath, 'stackable.js'));
-      target.import(path.join(this.vendorJavascriptsPath, 'switch.js'));
     }
   },
 
