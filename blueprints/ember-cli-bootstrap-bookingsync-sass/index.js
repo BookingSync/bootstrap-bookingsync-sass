@@ -9,7 +9,8 @@ module.exports = {
         'ember-one-way-controls',
         'ember-power-select',
         'ember-modal-dialog',
-        'ember-tooltips@3.0.0-beta.2',
+        'ember-toggle',
+        'ember-tooltips@3.0.0-beta.2'
       ]
     });
   }
