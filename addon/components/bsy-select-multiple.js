@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 import layout from '../templates/components/bsy-select-multiple';
 
-const BsySelectMultipleComponent = Ember.Component.extend({
+const BsySelectMultipleComponent = Component.extend({
   layout,
   tagName: "div",
   classNames: "select"
