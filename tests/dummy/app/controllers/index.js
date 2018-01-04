@@ -38,7 +38,6 @@ export default Controller.extend({
       this.get('bsyAlert').alert({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
-        type: 'warning',
         showCancelButton: true,
         confirmButtonText: 'Yes, delete it!'
       });
