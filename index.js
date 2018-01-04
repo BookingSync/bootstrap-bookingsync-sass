@@ -1,4 +1,3 @@
-/* jshint node: true */
 'use strict';
 
 var path = require('path');
@@ -21,7 +20,6 @@ module.exports = {
     } else {
       target.import(path.join(this.vendorJavascriptsPath, 'form.js'));
       target.import(path.join(this.vendorJavascriptsPath, 'stackable.js'));
-      target.import(path.join(this.vendorJavascriptsPath, 'switch.js'));
       target.import(path.join(app.bowerDirectory, '/sweetalert2/dist/sweetalert2.js'));
       target.import(path.join(app.bowerDirectory, '/sweetalert2/dist/sweetalert2.css'));
     }

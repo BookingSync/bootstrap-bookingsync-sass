@@ -1,0 +1,9 @@
+// Overides for ember-toggle addon
+
+.x-toggle-component {
+  display: inline-block;
+}
+
+.x-toggle:checked + label > .x-toggle-light.x-toggle-btn {
+  background: $brand-primary;
+}

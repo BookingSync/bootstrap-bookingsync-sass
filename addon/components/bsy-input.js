@@ -1,7 +1,6 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed } from '@ember/object';
 import layout from '../templates/components/bsy-input';
-
-const { Component, computed } = Ember;
 
 const BsyInputComponent = Component.extend({
   layout,
