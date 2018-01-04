@@ -1,8 +1,8 @@
-import Ember from 'ember';
-const { computed } = Ember;
+import Component from '@ember/component';
+import { computed } from '@ember/object';
 import layout from '../../templates/components/bsy-radio-buttons/button';
 
-const BsyRadioButtonsButtonComponent = Ember.Component.extend({
+const BsyRadioButtonsButtonComponent = Component.extend({
   layout,
   tagName: 'label',
   classNames: 'btn btn-secondary',

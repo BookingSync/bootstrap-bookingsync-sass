@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 import layout from '../../templates/components/bsy-input-addon/input';
 
-const BsyInputAddonInputComponent = Ember.Component.extend({
+const BsyInputAddonInputComponent = Component.extend({
   layout,
   tagName: "div",
   type: "text"
