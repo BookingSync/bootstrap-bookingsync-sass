@@ -15,6 +15,6 @@ module.exports = {
   },
 
   afterInstall() {
-    return this.addBowerPackageToProject('sweetalert2');
+    return this.addPackageToProject('sweetalert2');
   }
 };

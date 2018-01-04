@@ -61,7 +61,8 @@
     "ember-cli-htmlbars-inline-precompile": "1.0.2",
     "ember-modal-dialog": "2.4.1",
     "ember-one-way-controls": "3.0.1",
-    "ember-power-select": "1.10.4"
+    "ember-power-select": "1.10.4",
+    "sweetalert2": "^7.3.2"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",

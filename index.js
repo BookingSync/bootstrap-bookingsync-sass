@@ -20,8 +20,9 @@ module.exports = {
     } else {
       target.import(path.join(this.vendorJavascriptsPath, 'form.js'));
       target.import(path.join(this.vendorJavascriptsPath, 'stackable.js'));
-      target.import(path.join(app.bowerDirectory, '/sweetalert2/dist/sweetalert2.js'));
-      target.import(path.join(app.bowerDirectory, '/sweetalert2/dist/sweetalert2.css'));
+      target.import('node_modules/sweetalert2/dist/sweetalert2.js');
+      target.import('node_modules/sweetalert2/dist/sweetalert2.css');
+      app.import('vendor/shims/sweetalert.js');
     }
   },
 

@@ -1,5 +1,6 @@
-import Ember from 'ember';
+import Service from '@ember/service'
+import swal from 'sweetalert';
 
-export default Ember.Service.extend({
-  alert: window.swal,
+export default Service.extend({
+  alert: swal,
 });
