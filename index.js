@@ -22,7 +22,7 @@ module.exports = {
       target.import(path.join(this.vendorJavascriptsPath, 'stackable.js'));
       target.import('node_modules/sweetalert2/dist/sweetalert2.js');
       target.import('node_modules/sweetalert2/dist/sweetalert2.css');
-      app.import('vendor/shims/sweetalert.js');
+      target.import(path.join(this.root, 'vendor', 'shims', 'sweetalert.js'));
     }
   },
 
@@ -34,6 +34,9 @@ module.exports = {
 
   treeForStyles: function(tree) {
     var stylesheetsPath = path.join(this.assetsPath, 'stylesheets');
+    let sweetalertTree = new Funnel(path.join(this.project.root, 'node_modules', 'dist'), {
+      files: ['sweetalert2.scss']
+    });
     var assetsTree = new Funnel(this.treeGenerator(stylesheetsPath), {
       srcDir: '/',
       destDir: '/app/styles'
@@ -44,12 +47,15 @@ module.exports = {
 
   treeForVendor: function(tree) {
     var javascriptsPath = path.join(this.assetsPath, 'javascripts');
+    let sweetalertTree = new Funnel(path.join(this.project.root, 'node_modules', 'dist'), {
+      files: ['sweetalert2.js']
+    });
     var javascriptsTree = new Funnel(this.treeGenerator(javascriptsPath), {
       srcDir: '/',
       destDir: '/ember-cli-bootstrap-bookingsync-sass/javascripts'
     });
 
-    var vendorTrees = new BroccoliMergeTrees([javascriptsTree]);
+    var vendorTrees = new BroccoliMergeTrees([javascriptsTree, sweetalertTree]);
 
     return vendorTrees;
   },
