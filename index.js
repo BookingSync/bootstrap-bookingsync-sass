@@ -29,7 +29,7 @@ module.exports = {
     }
   },
 
-  treeForStyles: function(tree) {
+  treeForStyles: function() {
     var stylesheetsPath = path.join(this.assetsPath, 'stylesheets');
     var assetsTree = new Funnel(this.treeGenerator(stylesheetsPath), {
       srcDir: '/',
@@ -39,7 +39,7 @@ module.exports = {
     return assetsTree;
   },
 
-  treeForVendor: function(tree) {
+  treeForVendor: function() {
     var javascriptsPath = path.join(this.assetsPath, 'javascripts');
     var javascriptsTree = new Funnel(this.treeGenerator(javascriptsPath), {
       srcDir: '/',
