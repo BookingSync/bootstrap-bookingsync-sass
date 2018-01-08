@@ -176,10 +176,25 @@
   {{#bsy-button type="link"}}Link{{/bsy-button}}
 {{/bsy-sheet}}
 
-{{#bsy-sheet}}
-  {{#bsy-sheet.header}}
+{{#bsy-sheet id="icons"}}
+  {{#bsy-sheet/header}}
+    <h2>Icons</h2>
+  {{/bsy-sheet/header}}
+  {{bsy-icon "child"}}
+  {{bsy-icon "child" type="success"}}
+  {{bsy-icon "child" type="info"}}
+  {{bsy-icon "child" type="warning"}}
+  {{bsy-icon "child" type="danger"}}
+  {{bsy-icon "child" size="sm"}}
+  {{bsy-icon "child" size="md"}}
+  {{bsy-icon "child" size="lg"}}
+  {{bsy-icon "child" size="lg" fixedWidth=true}}
+{{/bsy-sheet}}
+
+{{#bsy-sheet id="modal"}}
+  {{#bsy-sheet/header}}
     <h2>Switch</h2>
-  {{/bsy-sheet.header}}
+  {{/bsy-sheet/header}}
   <div class="row">
     <div class="col-md-4">
       <span>Small:</span>{{bsy-switch size="small"}}
