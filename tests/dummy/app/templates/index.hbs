@@ -50,14 +50,14 @@
         size="sm"}}
 
     {{#bsy-input-addon}}
-      {{#bsy-input-addon.addon}}${{/bsy-input-addon.addon}}
-      {{bsy-input-addon.input currentAmount
+      {{#bsy-input-addon/addon}}${{/bsy-input-addon/addon}}
+      {{bsy-input-addon/input currentAmount
         label="Amount"
         update=(action (mut currentAmount))
         type="number"
         inputId="amount"
       }}
-      {{#bsy-input-addon.addon}}.00{{/bsy-input-addon.addon}}
+      {{#bsy-input-addon/addon}}.00{{/bsy-input-addon/addon}}
     {{/bsy-input-addon}}
 
     <div class="row">
@@ -129,17 +129,17 @@
 
     <h3>Radio buttons</h3>
     {{#bsy-radio-buttons aria-label="Rental Type"}}
-      {{bsy-radio-buttons.button selectedRentalType
+      {{bsy-radio-buttons/button selectedRentalType
         label="Apartment"
         option="apartment"
         update=(action (mut selectedRentalType))
       }}
-      {{bsy-radio-buttons.button selectedRentalType
+      {{bsy-radio-buttons/button selectedRentalType
         label="House"
         option="house"
         update=(action (mut selectedRentalType))
       }}
-      {{bsy-radio-buttons.button selectedRentalType
+      {{bsy-radio-buttons/button selectedRentalType
         label="Villa"
         option="villa"
         update=(action (mut selectedRentalType))
@@ -166,9 +166,9 @@
 {{/bsy-sheet}}
 
 {{#bsy-sheet id="buttons"}}
-  {{#bsy-sheet.header}}
+  {{#bsy-sheet/header}}
     <h2>Buttons</h2>
-  {{/bsy-sheet.header}}
+  {{/bsy-sheet/header}}
   {{#bsy-button type="primary"}}Primary{{/bsy-button}}
   {{#bsy-button type="secondary"}}Secondary{{/bsy-button}}
   {{bsy-button.close}}
@@ -177,9 +177,9 @@
 {{/bsy-sheet}}
 
 {{#bsy-sheet id="icons"}}
-  {{#bsy-sheet.header}}
+  {{#bsy-sheet/header}}
     <h2>Icons</h2>
-  {{/bsy-sheet.header}}
+  {{/bsy-sheet/header}}
   {{bsy-icon "child"}}
   {{bsy-icon "child" type="success"}}
   {{bsy-icon "child" type="info"}}
@@ -192,21 +192,38 @@
 {{/bsy-sheet}}
 
 {{#bsy-sheet id="modal"}}
-  {{#bsy-sheet.header}}
+  {{#bsy-sheet/header}}
+    <h2>Switch</h2>
+  {{/bsy-sheet/header}}
+  <div class="row">
+    <div class="col-md-4">
+      <span>Small:</span>{{bsy-switch size="small"}}
+    </div>
+    <div class="col-md-4">
+      <span>Medium(default):</span>{{bsy-switch}}
+    </div>
+    <div class="col-md-4">
+      <span>Large:</span>{{bsy-switch size="large"}}
+    </div>
+  </div>
+{{/bsy-sheet}}
+
+{{#bsy-sheet id="modal"}}
+  {{#bsy-sheet/header}}
     <h2>Modal</h2>
-  {{/bsy-sheet.header}}
+  {{/bsy-sheet/header}}
   {{#bsy-button type="primary" click=(action "toggleModal")}}Toggle Modal{{/bsy-button}}
 
   {{#if isShowingModal}}
     {{#bsy-modal}}
-      {{#bsy-modal.header close=(action "toggleModal")}}
+      {{#bsy-modal/header close=(action "toggleModal")}}
         <h3 class="modal-title">Modal Name or Headline</h3>
-      {{/bsy-modal.header}}
-      {{#bsy-modal.body}}
+      {{/bsy-modal/header}}
+      {{#bsy-modal/body}}
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec luctus felis. Nulla a lacus libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam mollis tortor sodales libero euismod, eget suscipit arcu mollis. Nam nibh libero, tempus eu urna convallis, tempor efficitur ex. Donec molestie nibh ac luctus imperdiet. Nulla vitae vulputate ipsum. Phasellus porta gravida odio, in iaculis quam cursus et. Ut ac vehicula erat. Nulla sapien turpis, dapibus vel pellentesque sed, suscipit sit amet nibh. Pellentesque rhoncus nibh porttitor, posuere nulla quis, auctor nunc. Pellentesque fermentum tempor justo, a interdum nulla. Nullam lacus odio, posuere ut posuere hendrerit, semper non velit.</p>
         <p>Cras sed consequat nunc. Phasellus sed sagittis nibh. Aliquam a vulputate risus. Vestibulum molestie bibendum dolor, vel blandit ipsum malesuada et. Praesent enim nibh, finibus vel luctus id, bibendum vitae eros. Aliquam vel semper diam. Cras elementum molestie eros, ac venenatis quam. Proin fermentum ante eros, mollis vestibulum eros consequat eu. Cras quis lorem vel metus hendrerit porttitor. Nunc hendrerit vitae nunc ut pellentesque. Etiam quis urna ac lorem eleifend ornare. Donec nibh ante, bibendum id pellentesque non, dignissim ut urna. Phasellus congue ultricies ipsum, ut luctus augue pulvinar nec.</p>
-      {{/bsy-modal.body}}
-      {{#bsy-modal.footer}}
+      {{/bsy-modal/body}}
+      {{#bsy-modal/footer}}
         <div class="row">
           <div class="col-xs-6">
             {{#bsy-button type="secondary" class="btn-block" click=(action "toggleModal")}}Close{{/bsy-button}}
@@ -215,17 +232,17 @@
             {{#bsy-button type="primary" class="btn-block"}}Save Changes{{/bsy-button}}
           </div>
         </div>
-      {{/bsy-modal.footer}}
+      {{/bsy-modal/footer}}
     {{/bsy-modal}}
   {{/if}}
 {{/bsy-sheet}}
 
 {{#bsy-sheet id="tabs"}}
   {{#bsy-nav class="nav-tabs"}}
-    {{#bsy-nav.item click=(action "sampleAction")}}Tab 1{{/bsy-nav.item}}
-    {{#bsy-nav.item active=true click=(action "sampleAction")}}Tab 2{{/bsy-nav.item}}
-    {{#bsy-nav.item click=(action "sampleAction")}}Tab 3{{/bsy-nav.item}}
-    {{#bsy-nav.item click=(action "sampleAction")}}Tab 4{{/bsy-nav.item}}
+    {{#bsy-nav/item click=(action "sampleAction")}}Tab 1{{/bsy-nav/item}}
+    {{#bsy-nav/item active=true click=(action "sampleAction")}}Tab 2{{/bsy-nav/item}}
+    {{#bsy-nav/item click=(action "sampleAction")}}Tab 3{{/bsy-nav/item}}
+    {{#bsy-nav/item click=(action "sampleAction")}}Tab 4{{/bsy-nav/item}}
   {{/bsy-nav}}
   <div>
     <p>Text...</p>
@@ -234,10 +251,10 @@
 
 {{#bsy-sheet id="pills" class="row"}}
   {{#bsy-nav class="nav-pills nav-stacked col-sm-3"}}
-    {{#bsy-nav.item click=(action "sampleAction")}}Tab 1{{/bsy-nav.item}}
-    {{#bsy-nav.item active=true click=(action "sampleAction")}}Tab 2{{/bsy-nav.item}}
-    {{#bsy-nav.item click=(action "sampleAction")}}Tab 3{{/bsy-nav.item}}
-    {{#bsy-nav.item click=(action "sampleAction")}}Tab 4{{/bsy-nav.item}}
+    {{#bsy-nav/item click=(action "sampleAction")}}Tab 1{{/bsy-nav/item}}
+    {{#bsy-nav/item active=true click=(action "sampleAction")}}Tab 2{{/bsy-nav/item}}
+    {{#bsy-nav/item click=(action "sampleAction")}}Tab 3{{/bsy-nav/item}}
+    {{#bsy-nav/item click=(action "sampleAction")}}Tab 4{{/bsy-nav/item}}
   {{/bsy-nav}}
   <div class="col-sm-9">
     <p>Text...</p>
@@ -245,9 +262,9 @@
 {{/bsy-sheet}}
 
 {{#bsy-sheet id="calendar"}}
-  {{#bsy-sheet.header}}
+  {{#bsy-sheet/header}}
     <h2>Calendar</h2>
-  {{/bsy-sheet.header}}
+  {{/bsy-sheet/header}}
   {{#power-calendar as |calendar|}}
     <div class="calendar">
       {{calendar.nav}}
@@ -257,9 +274,9 @@
 {{/bsy-sheet}}
 
 {{#bsy-sheet id="alerts"}}
-  {{#bsy-sheet.header}}
+  {{#bsy-sheet/header}}
     <h2>Alerts</h2>
-  {{/bsy-sheet.header}}
+  {{/bsy-sheet/header}}
   {{#bsy-alert type="success"}}
     <strong>Well done!</strong> You successfully read this important alert message.
   {{/bsy-alert}}

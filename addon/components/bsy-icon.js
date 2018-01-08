@@ -1,6 +1,5 @@
-import Ember from 'ember';
-
-const { Component, computed } = Ember;
+import Component from '@ember/component';
+import { computed } from '@ember/object';
 
 const BsyIconComponent = Component.extend({
   classNameBindings: ['iconClass', 'iconSize', 'iconType', 'fixedWidth:icon-fw'],
