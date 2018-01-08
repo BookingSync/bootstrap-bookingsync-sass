@@ -1,8 +1,8 @@
-import Ember from 'ember';
-const { computed } = Ember;
+import Component from '@ember/component';
+import { computed } from '@ember/object';
 import layout from '../templates/components/bsy-alert';
 
-export default Ember.Component.extend({
+export default Component.extend({
   layout,
   classNames: 'alert',
   classNameBindings: ['typeClassName', 'dismissibleClassName'],
