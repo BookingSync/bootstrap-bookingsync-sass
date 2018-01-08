@@ -82,8 +82,8 @@ module.exports = {
       target.import('node_modules/sweetalert2/dist/sweetalert2.js');
       target.import('node_modules/sweetalert2/dist/sweetalert2.css');
     } else {
-      target.import(path.join(this.root, 'vendor', 'sweetalert2.js'));
-      target.import(path.join(this.root, 'vendor', 'sweetalert2.css'));
+      this.import('vendor/sweetalert2.js');
+      this.import('vendor/sweetalert2.css');
     }
   }
 };
