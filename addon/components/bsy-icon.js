@@ -5,29 +5,24 @@ const { Component, computed } = Ember;
 const BsyIconComponent = Component.extend({
   classNameBindings: ['iconClass', 'iconSize', 'iconType', 'fixedWidth:icon-fw'],
 
-  name: null,
-  size: null,
-  type: null,
+  name: '',
+  size: '',
+  type: '',
   fixedWidth: false,
 
   iconClass: computed('name', function() {
-    return `icon-${this.get('name')}`;
+    let name = this.get('name');
+    return name ? `icon-${name}` : '';
   }),
 
   iconSize: computed('size', function() {
     let size = this.get('size');
-
-    if (size) {
-      return `icon-${this.get('size')}`;
-    }
+    return size ? `icon-${size}` : '';
   }),
 
   iconType: computed('type', function() {
     let type = this.get('type');
-
-    if (type) {
-      return `icon-${this.get('type')}`;
-    }
+    return type ? `icon-${type}` : '';
   })
 });
 
