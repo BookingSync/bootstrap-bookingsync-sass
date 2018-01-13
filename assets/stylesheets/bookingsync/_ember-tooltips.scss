@@ -1,0 +1,15 @@
+// Overides for ember-tooltips
+
+.tooltip {
+  font-size: 14px;
+}
+
+.ember-tooltip-arrow {
+  border-top-color: inherit !important;
+}
+
+.ember-popover .tooltip-inner {
+  background: #fff;
+  color: $gray-dark;
+  text-align: left;
+}

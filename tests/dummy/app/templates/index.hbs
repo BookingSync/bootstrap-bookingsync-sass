@@ -293,3 +293,19 @@
     <strong>Warning!</strong> Better check yourself, you're not looking too good.
   {{/bsy-alert}}
 {{/bsy-sheet}}
+
+{{#bsy-sheet id="tooltip-popover"}}
+  {{#bsy-sheet.header}}
+    <h2>Popover</h2>
+  {{/bsy-sheet.header}}
+  {{#bsy-button type="primary"}}
+    Hover me
+    {{#bsy-popover}}
+      <ul class="list-unstyled">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
+    {{/bsy-popover}}
+  {{/bsy-button}}
+{{/bsy-sheet}}

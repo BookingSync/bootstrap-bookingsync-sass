@@ -10,6 +10,7 @@ module.exports = {
         'ember-power-select',
         'ember-modal-dialog',
         'ember-toggle',
+        'ember-tooltips@3.0.0-beta.2'
       ]
     });
   }
