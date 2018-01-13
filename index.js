@@ -35,7 +35,7 @@ module.exports = {
     }
   },
 
-  treeForStyles: function(tree) {
+  treeForStyles: function() {
     let stylesheetsPath = path.join(this.assetsPath, 'stylesheets');
     let assetsTree = new Funnel(this.treeGenerator(stylesheetsPath), {
       srcDir: '/',
@@ -45,7 +45,7 @@ module.exports = {
     return assetsTree;
   },
 
-  treeForVendor: function(tree) {
+  treeForVendor: function() {
     let javascriptsPath = path.join(this.assetsPath, 'javascripts');
     let vendorTrees = [];
     let javascriptsTree = new Funnel(this.treeGenerator(javascriptsPath), {

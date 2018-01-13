@@ -1,9 +1,14 @@
 import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
-import { A } from '@ember/array';
 
 export default Controller.extend({
   bsyAlert: service(),
+
+  init() {
+    this._super(...arguments);
+    this.cities = ['Barcelona', 'Nevache', 'Sivota'];
+    this.currentDestinations = ['Nevache', 'Sivota'];
+  },
 
   currentName: 'John Doe',
   currentFirstName: 'John',
@@ -14,16 +19,12 @@ export default Controller.extend({
 
   // Used by radio
   selectedRentalType: 'apartment',
-
-  // Used for select
-  currentDestination: 'Nevache',
-
   // Used for modal
   isShowingModal: false,
-
-  cities: A(['Barcelona', 'Nevache', 'Sivota']),
-  currentDestinations: A(['Nevache', 'Sivota']),
-
+  // Used for select
+  currentDestination: 'Nevache',
+  cities: null,
+  currentDestinations: null,
 
   actions: {
     toggleModal: function() {

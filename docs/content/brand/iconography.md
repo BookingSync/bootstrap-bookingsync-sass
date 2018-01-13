@@ -39,6 +39,21 @@
       <li><i class="icon-widget"></i> widget</li>
       <li><i class="icon-trash"></i> trash</li>
       <li><i class="icon-clone"></i> clone</li>
+      <li><i class="icon-calendar-empty"></i> external</li>
+      <li><i class="icon-lock"></i> external</li>
+      <li><i class="icon-bars"></i> external</li>
+      <li><i class="icon-calendar-planning"></i> external</li>
+      <li><i class="icon-activity"></i> external</li>
+      <li><i class="icon-child"></i> external</li>
+      <li><i class="icon-couple"></i> external</li>
+      <li><i class="icon-print"></i> external</li>
+      <li><i class="icon-eye"></i> external</li>
+      <li><i class="icon-user"></i> external</li>
+      <li><i class="icon-invoice"></i> external</li>
+      <li><i class="icon-checkmark"></i> external</li>
+      <li><i class="icon-circle"></i> external</li>
+      <li><i class="icon-inline"></i> external</li>
+      <li><i class="icon-cross"></i> external</li>
     </ul>
   </div>
 </div>
@@ -71,6 +86,21 @@
   <li><i class="icon-website"></i> website</li>
   <li><i class="icon-reviews"></i> reviews</li>
   <li><i class="icon-widget"></i> widget</li>
+  <li><i class="icon-calendar-empty"></i> calendar-empty</li>
+  <li><i class="icon-lock"></i> lock</li>
+  <li><i class="icon-bars"></i> bars</li>
+  <li><i class="icon-calendar-planning"></i> calendar-planning</li>
+  <li><i class="icon-activity"></i> activity</li>
+  <li><i class="icon-child"></i> child</li>
+  <li><i class="icon-couple"></i> couple</li>
+  <li><i class="icon-print"></i> print</li>
+  <li><i class="icon-eye"></i> eye</li>
+  <li><i class="icon-user"></i> user</li>
+  <li><i class="icon-invoice"></i> invoice</li>
+  <li><i class="icon-checkmark"></i> checkmark</li>
+  <li><i class="icon-circle"></i> circle</li>
+  <li><i class="icon-inline"></i> inline</li>
+  <li><i class="icon-cross"></i> cross</li>
 </ul>
 ~~~
 
