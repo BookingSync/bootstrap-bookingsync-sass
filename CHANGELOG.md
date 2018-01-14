@@ -1,5 +1,10 @@
 ### master
 
+* improvements
+  * upgrade ember to 2.18
+  * add icons `icon-activity`, `icon-bars`, `icon-ban`, `icon-calendar-empty`, `icon-calendar-planning`, `icon-child`, `icon-checkmark`, `icon-circle`, `icon-couple`, `icon-cross`, `icon-eye`, `icon-inline`, `icon-invoice`, `icon-lock` and `icon-print`
+  * add `bsy-icon`, `bsy-switch` and `bsy-popover` components
+
 ### 1.0.5 - 2017-10-01
 
 * improvements
