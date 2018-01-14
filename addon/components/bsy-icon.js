@@ -2,6 +2,7 @@ import Component from '@ember/component';
 import { computed } from '@ember/object';
 
 const BsyIconComponent = Component.extend({
+  tagName: 'i',
   classNameBindings: ['iconClass', 'iconSize', 'iconType', 'fixedWidth:icon-fw'],
 
   name: '',
