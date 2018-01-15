@@ -1,44 +1,24 @@
-.swal2-buttonswrapper {
-  justify-content: right !important;
-  flex-direction: row-reverse !important;
-}
+.bsy-dialog {
+  .swal2-buttonswrapper {
+    justify-content: flex-end;
 
-.swal2-popup {
-  font-family: $font-family-sans-serif;
-}
+    .swal2-confirm {
+      margin-left: 5px;
+    }
+  }
 
-.swal2-confirm {
-  background-color: $bs-green !important;
-}
+  .swal2-title {
+    color: $headings-color;
+    font-weight: 400;
+    font-size: 22px;
+  }
 
-.swal2-cancel {
-  background-color: white !important;
-  color: $gray-dark !important;
-  border: 1px $gray-lighter solid !important;
-}
+  .swal2-title, .swal2-content {
+    text-align: left;
+  }
 
-.swal2-title {
-  color: $headings-color !important;
-  font-weight: 400 !important;
-  font-size: 22px !important;
-}
-
-.swal2-content {
-  font-size: 16px !important;
-  font-weight: 400 !important;
-}
-
-.swal2-title, .swal2-content {
-  text-align: left !important;
-}
-
-.swal2-styled {
-  font-weight: normal !important;
-  font-size: 14px !important;
-  padding: 6px 12px !important;
-  line-height: 1.42857 !important;
-  border-radius: 2px !important;
-  &:focus {
-    box-shadow: none !important;
+  .swal2-content {
+    font-size: 16px;
+    font-weight: 400;
   }
 }

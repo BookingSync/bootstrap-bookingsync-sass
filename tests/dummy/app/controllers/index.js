@@ -36,12 +36,10 @@ export default Controller.extend({
     },
 
     openPopup() {
-      this.get('bsyDialog').alert({
-        title: 'Are you sure?',
-        text: 'You won\'t be able to revert this!',
-        showCancelButton: true,
-        confirmButtonText: 'Yes, delete it!'
-      });
+      this.get('bsyDialog').alert(
+        'Good job!',
+        'You clicked the button'
+      );
     }
   }
 });

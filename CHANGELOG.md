@@ -1,5 +1,8 @@
 ### master
 
+* improvements
+  * add `bsy-dialog` service
+
 ### 1.0.5 - 2017-10-01
 
 * improvements
