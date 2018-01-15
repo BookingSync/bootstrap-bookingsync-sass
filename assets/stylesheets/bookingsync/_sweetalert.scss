@@ -1,0 +1,24 @@
+.bsy-dialog {
+  .swal2-buttonswrapper {
+    justify-content: flex-end;
+
+    .swal2-confirm {
+      margin-left: 5px;
+    }
+  }
+
+  .swal2-title {
+    color: $headings-color;
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .swal2-title, .swal2-content {
+    text-align: left;
+  }
+
+  .swal2-content {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

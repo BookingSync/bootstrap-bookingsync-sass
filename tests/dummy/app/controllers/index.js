@@ -1,6 +1,9 @@
 import Controller from '@ember/controller';
+import { inject as service } from '@ember/service';
 
 export default Controller.extend({
+  bsyDialog: service(),
+
   init() {
     this._super(...arguments);
     this.cities = ['Barcelona', 'Nevache', 'Sivota'];
@@ -29,7 +32,14 @@ export default Controller.extend({
     },
 
     sampleAction: function() {
-      alert("Sample action");
+      alert('Sample action');
+    },
+
+    openPopup() {
+      this.get('bsyDialog').alert(
+        'Good job!',
+        'You clicked the button'
+      );
     }
   }
 });

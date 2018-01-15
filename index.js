@@ -1,14 +1,18 @@
 'use strict';
 
-var path = require('path');
-var Funnel = require('broccoli-funnel');
-var BroccoliMergeTrees = require('broccoli-merge-trees');
+let path = require('path');
+let Funnel = require('broccoli-funnel');
+let BroccoliMergeTrees = require('broccoli-merge-trees');
+let VersionChecker = require('ember-cli-version-checker');
+
+let checker = new VersionChecker(this);
+let emberCliVersion = checker.for('ember-cli');
 
 module.exports = {
   name: 'ember-cli-bootstrap-bookingsync-sass',
 
   included: function(app, parentAddon) {
-    var target = (parentAddon || app);
+    let target = (parentAddon || app);
     this._super.included(target);
 
     this.assetsPath = path.join(this.root, 'assets');
@@ -20,6 +24,8 @@ module.exports = {
     } else {
       target.import(path.join(this.vendorJavascriptsPath, 'form.js'));
       target.import(path.join(this.vendorJavascriptsPath, 'stackable.js'));
+      this._importSweetAlert(target);
+      target.import(path.join(this.root, 'vendor', 'shims', 'sweetalert.js'));
     }
   },
 
@@ -30,8 +36,8 @@ module.exports = {
   },
 
   treeForStyles: function() {
-    var stylesheetsPath = path.join(this.assetsPath, 'stylesheets');
-    var assetsTree = new Funnel(this.treeGenerator(stylesheetsPath), {
+    let stylesheetsPath = path.join(this.assetsPath, 'stylesheets');
+    let assetsTree = new Funnel(this.treeGenerator(stylesheetsPath), {
       srcDir: '/',
       destDir: '/app/styles'
     });
@@ -40,19 +46,44 @@ module.exports = {
   },
 
   treeForVendor: function() {
-    var javascriptsPath = path.join(this.assetsPath, 'javascripts');
-    var javascriptsTree = new Funnel(this.treeGenerator(javascriptsPath), {
+    let javascriptsPath = path.join(this.assetsPath, 'javascripts');
+    let vendorTrees = [];
+    let javascriptsTree = new Funnel(this.treeGenerator(javascriptsPath), {
       srcDir: '/',
       destDir: '/ember-cli-bootstrap-bookingsync-sass/javascripts'
     });
 
-    var vendorTrees = new BroccoliMergeTrees([javascriptsTree]);
+    if (!this._canImportNodeModules()) {
+      let sweetalertTree = new Funnel(
+        path.join(this.project.root, 'node_modules', 'sweetalert2', 'dist'), {
+          files: ['sweetalert2.js', 'sweetalert2.css']
+        }
+      );
 
-    return vendorTrees;
+      vendorTrees.push(javascriptsTree, sweetalertTree);
+    } else {
+      vendorTrees.push(javascriptsTree);
+    }
+
+    return new BroccoliMergeTrees(vendorTrees);
   },
 
   // TODO: Remove once stable.
   isDevelopingAddon: function() {
     return true;
+  },
+
+  _canImportNodeModules() {
+    return emberCliVersion.gte('2.15.0');
+  },
+
+  _importSweetAlert(target) {
+    if (this._canImportNodeModules()) {
+      target.import('node_modules/sweetalert2/dist/sweetalert2.js');
+      target.import('node_modules/sweetalert2/dist/sweetalert2.css');
+    } else {
+      this.import('vendor/sweetalert2.js');
+      this.import('vendor/sweetalert2.css');
+    }
   }
 };

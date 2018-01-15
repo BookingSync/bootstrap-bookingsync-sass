@@ -13,5 +13,9 @@ module.exports = {
         'ember-tooltips@3.0.0-beta.2'
       ]
     });
+  },
+
+  afterInstall() {
+    return this.addPackageToProject('sweetalert2');
   }
 };

@@ -192,7 +192,7 @@
   {{bsy-icon "child" size="lg" fixedWidth=true}}
 {{/bsy-sheet}}
 
-{{#bsy-sheet id="modal"}}
+{{#bsy-sheet id="switch"}}
   {{#bsy-sheet/header}}
     <h2>Switch</h2>
   {{/bsy-sheet/header}}
@@ -295,7 +295,7 @@
   {{/bsy-alert}}
 {{/bsy-sheet}}
 
-{{#bsy-sheet id="tooltip-popover"}}
+{{#bsy-sheet id="popover"}}
   {{#bsy-sheet.header}}
     <h2>Popover</h2>
   {{/bsy-sheet.header}}
@@ -309,4 +309,11 @@
       </ul>
     {{/bsy-popover}}
   {{/bsy-button}}
+{{/bsy-sheet}}
+
+{{#bsy-sheet id="bsy-swal"}}
+  {{#bsy-sheet/header}}
+    <h2>Dialogs</h2>
+  {{/bsy-sheet/header}}
+  {{#bsy-button type="primary" click=(action "openPopup")}}Click me{{/bsy-button}}
 {{/bsy-sheet}}
