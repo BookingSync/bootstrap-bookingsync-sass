@@ -2,7 +2,7 @@ import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 
 export default Controller.extend({
-  bsyAlert: service(),
+  bsyDialog: service(),
 
   init() {
     this._super(...arguments);
@@ -32,13 +32,13 @@ export default Controller.extend({
     },
 
     sampleAction: function() {
-      alert("Sample action");
+      alert('Sample action');
     },
 
     openPopup() {
-      this.get('bsyAlert').alert({
+      this.get('bsyDialog').alert({
         title: 'Are you sure?',
-        text: "You won't be able to revert this!",
+        text: 'You won\'t be able to revert this!',
         showCancelButton: true,
         confirmButtonText: 'Yes, delete it!'
       });
