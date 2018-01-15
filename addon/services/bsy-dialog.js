@@ -12,7 +12,8 @@ export default Service.extend({
       reverseButtons: true,
       focusConfirm: false,
       focusCancel: false,
-      customClass: 'bsy-dialog'
+      customClass: 'bsy-dialog',
+      showCancelButton: true
     });
   },
 
