@@ -25,7 +25,6 @@ module.exports = {
       target.import(path.join(this.vendorJavascriptsPath, 'form.js'));
       target.import(path.join(this.vendorJavascriptsPath, 'stackable.js'));
       this._importSweetAlert(target);
-      target.import(path.join(this.root, 'vendor', 'shims', 'sweetalert.js'));
     }
   },
 
