@@ -25,7 +25,7 @@ module.exports = {
       target.import(path.join(this.vendorJavascriptsPath, 'form.js'));
       target.import(path.join(this.vendorJavascriptsPath, 'stackable.js'));
       this._importSweetAlert(target);
-      target.import(path.join(this.root, 'vendor', 'shims', 'sweetalert.js'));
+      this.import('vendor/sweetalert.js');
     }
   },
 
@@ -53,6 +53,12 @@ module.exports = {
       destDir: '/ember-cli-bootstrap-bookingsync-sass/javascripts'
     });
 
+    // NOTE: Fixing issues with shim import in apps
+    let sweetalertShimTree = new Funnel(path.join(this.root, 'vendor'), {
+        files: ['sweetalert.js']
+      }
+    );
+
     if (!this._canImportNodeModules()) {
       let sweetalertTree = new Funnel(
         path.join(this.project.root, 'node_modules', 'sweetalert2', 'dist'), {
@@ -60,9 +66,9 @@ module.exports = {
         }
       );
 
-      vendorTrees.push(javascriptsTree, sweetalertTree);
+      vendorTrees.push(javascriptsTree, sweetalertTree, sweetalertShimTree);
     } else {
-      vendorTrees.push(javascriptsTree);
+      vendorTrees.push(javascriptsTree, sweetalertShimTree);
     }
 
     return new BroccoliMergeTrees(vendorTrees);
