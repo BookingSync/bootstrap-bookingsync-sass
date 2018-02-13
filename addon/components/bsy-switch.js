@@ -3,7 +3,8 @@ import layout from '../templates/components/bsy-switch';
 
 export default Component.extend({
   layout,
-  tagName: '',
+  classNames: ['bsy-switch'],
+
   theme: 'light',
   size: 'medium',
   showLabels: false,

@@ -16,6 +16,6 @@ module.exports = {
   },
 
   afterInstall() {
-    return this.addPackageToProject('sweetalert2');
+    return this.addPackageToProject('sweetalert2@7.3.5');
   }
 };
