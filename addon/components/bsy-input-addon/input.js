@@ -9,7 +9,7 @@ const BsyInputAddonInputComponent = Component.extend({
 });
 
 BsyInputAddonInputComponent.reopenClass({
-  positionalParams: ['value', 'placeholder']
+  positionalParams: ['value']
 });
 
 export default BsyInputAddonInputComponent;

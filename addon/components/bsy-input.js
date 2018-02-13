@@ -27,7 +27,7 @@ const BsyInputComponent = Component.extend({
 });
 
 BsyInputComponent.reopenClass({
-  positionalParams: ['value', 'placeholder']
+  positionalParams: ['value']
 });
 
 export default BsyInputComponent;
