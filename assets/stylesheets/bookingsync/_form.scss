@@ -89,7 +89,8 @@
     }
   }
 
-  &.filled label {
+  &.filled label,
+  .filled label {
     color: $label-color-filled;
     font-size: $label-font-size-filled;
     top: 0;

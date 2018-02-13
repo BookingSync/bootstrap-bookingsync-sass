@@ -7,7 +7,7 @@ const BsyInputComponent = Component.extend({
   tagName: "div",
   classNames: "form-group",
   type: "text",
-  classNameBindings: ["value:filled", "icon:has-icon"],
+  classNameBindings: ["value:filled", "placeholder:filled", "icon:has-icon"],
   size: null, // sm, lg
 
   inputClassNames: computed('size', function () {
@@ -27,7 +27,7 @@ const BsyInputComponent = Component.extend({
 });
 
 BsyInputComponent.reopenClass({
-  positionalParams: ['value']
+  positionalParams: ['value', 'placeholder']
 });
 
 export default BsyInputComponent;
