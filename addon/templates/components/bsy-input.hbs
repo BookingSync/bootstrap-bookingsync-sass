@@ -2,9 +2,9 @@
 {{#if icon}}
   <i class="icon-{{icon}} {{iconSize}}"></i>
 {{/if}}
-{{one-way-input
+{{input
   value=value
-  update=update
+  oninput=update
   class=inputClassNames
   type=type
   id=inputId

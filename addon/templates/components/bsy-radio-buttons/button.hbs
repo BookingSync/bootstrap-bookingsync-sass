@@ -1,6 +1,7 @@
-{{one-way-radio
-  paramValue
-  option=option
-  update=update
+{{input
+  type="radio"
+  name=groupValue
+  checked=(eq paramValue option)
+  click=(action (mut paramValue) option)
 }}
 {{label}}

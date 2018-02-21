@@ -28,26 +28,27 @@
       </div>
     </div>
 
-    {{bsy-input
-        currentFirstName
-        label="Large first name with icon"
-        update=(action (mut currentFirstName))
-        inputId="firstNameLarge"
-        icon="owner"
-        size="lg"}}
-    {{bsy-input
-        currentFirstName
-        label="Default first name with icon"
-        update=(action (mut currentFirstName))
-        inputId="firstNameDefault"
-        icon="owner"}}
-    {{bsy-input
-        currentFirstName
-        label="Small first name with icon"
-        update=(action (mut currentFirstName))
-        inputId="firstNameSmall"
-        icon="owner"
-        size="sm"}}
+    {{bsy-input currentFirstName
+      label="Large first name with icon"
+      update=(action (mut currentFirstName))
+      inputId="firstNameLarge"
+      icon="owner"
+      size="lg"
+    }}
+    {{bsy-input currentFirstName
+      placeholder="First name"
+      label="Default first name with icon"
+      update=(action (mut currentFirstName))
+      inputId="firstNameDefault"
+      icon="owner"
+    }}
+    {{bsy-input currentFirstName
+      label="Small first name with icon"
+      update=(action (mut currentFirstName))
+      inputId="firstNameSmall"
+      icon="owner"
+      size="sm"
+    }}
 
     {{#bsy-input-addon}}
       {{#bsy-input-addon/addon}}${{/bsy-input-addon/addon}}
@@ -112,37 +113,37 @@
     }}
 
     {{bsy-radio selectedRentalType
+      groupValue="rentalType"
       label="Apartment"
       option="apartment"
-      update=(action (mut selectedRentalType))
     }}
     {{bsy-radio selectedRentalType
+      groupValue="rentalType"
       label="House"
       option="house"
-      update=(action (mut selectedRentalType))
     }}
     {{bsy-radio selectedRentalType
+      groupValue="rentalType"
       label="Villa"
       option="villa"
-      update=(action (mut selectedRentalType))
     }}
 
     <h3>Radio buttons</h3>
     {{#bsy-radio-buttons aria-label="Rental Type"}}
       {{bsy-radio-buttons/button selectedRentalType
+        groupValue="rentalType"
         label="Apartment"
         option="apartment"
-        update=(action (mut selectedRentalType))
       }}
       {{bsy-radio-buttons/button selectedRentalType
+        groupValue="rentalType"
         label="House"
         option="house"
-        update=(action (mut selectedRentalType))
       }}
       {{bsy-radio-buttons/button selectedRentalType
+        groupValue="rentalType"
         label="Villa"
         option="villa"
-        update=(action (mut selectedRentalType))
       }}
     {{/bsy-radio-buttons}}
   </form>

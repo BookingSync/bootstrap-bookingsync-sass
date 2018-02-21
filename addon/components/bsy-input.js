@@ -7,6 +7,9 @@ const BsyInputComponent = Component.extend({
   tagName: "div",
   classNames: "form-group",
   type: "text",
+  readonly: false,
+  placeholder: '',
+  disabled: false,
   classNameBindings: ["value:filled", "placeholder:filled", "icon:has-icon"],
   size: null, // sm, lg
 

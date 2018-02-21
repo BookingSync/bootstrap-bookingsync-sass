@@ -6,6 +6,7 @@
   * add `bsy-icon`, `bsy-switch` and `bsy-popover` components
   * add icon option to `bsy-button` component
   * add `bsy-dialog` service
+  * remove `one-way-controls`
 
 ### 1.0.5 - 2017-10-01
 
