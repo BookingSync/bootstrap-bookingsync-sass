@@ -5,7 +5,9 @@ const BsyTextareaComponent = Component.extend({
   layout,
   tagName: "div",
   classNames: "form-group",
-  classNameBindings: ["value:filled"]
+  classNameBindings: ["value:filled"],
+
+  update() {}
 });
 
 BsyTextareaComponent.reopenClass({
