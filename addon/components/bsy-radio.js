@@ -4,11 +4,11 @@ import layout from '../templates/components/bsy-radio';
 const BsyRadioComponent = Component.extend({
   layout,
   tagName: "div",
-  classNames: "radio"
+  classNames: "radio",
 });
 
 BsyRadioComponent.reopenClass({
-  positionalParams: ['paramValue']
+  positionalParams: ['value']
 });
 
 export default BsyRadioComponent;

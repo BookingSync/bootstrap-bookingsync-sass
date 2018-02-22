@@ -120,7 +120,25 @@
       border-color: $label-color-focus;
     }
   }
+
+  &:not(.filled):not(.focused) {
+    &.has-icon {
+      label {
+        left: 20px;
+        top: 22px;
+      }
+    }
+
+    &.has-icon.form-group--lg {
+      label {
+        left: 25px;
+        top: 35px;
+      }
+    }
+  }
 }
+
+
 
 .select {
   label {

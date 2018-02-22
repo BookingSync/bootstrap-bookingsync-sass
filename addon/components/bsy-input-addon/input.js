@@ -4,8 +4,10 @@ import layout from '../../templates/components/bsy-input-addon/input';
 const BsyInputAddonInputComponent = Component.extend({
   layout,
   tagName: "div",
-  classNameBindings: ["value:filled", "placeholder:filled"],
-  type: "text"
+  classNameBindings: ["value:filled"],
+  type: "text",
+
+  update() {}
 });
 
 BsyInputAddonInputComponent.reopenClass({
