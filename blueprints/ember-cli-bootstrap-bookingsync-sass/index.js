@@ -6,16 +6,12 @@ module.exports = {
       packages: [
         'ember-cli-sass',
         'ember-cli-bootstrap-sassy',
-        'ember-one-way-controls',
         'ember-power-select',
         'ember-modal-dialog',
         'ember-toggle',
-        'ember-tooltips@3.0.0-beta.2'
+        'ember-tooltips@3.0.0-beta.2',
+        'sweetalert2@7.3.5'
       ]
     });
-  },
-
-  afterInstall() {
-    return this.addPackageToProject('sweetalert2@7.3.5');
   }
 };
