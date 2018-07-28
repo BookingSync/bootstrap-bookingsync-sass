@@ -509,6 +509,11 @@
     content: $icon-reply;
   }
 }
+.icon-info-emptystate {
+  &:before {
+    content: $icon-info-emptystate;
+  }
+}
 .icon-star-empty {
   &:before {
     content: $icon-star-empty;
