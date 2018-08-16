@@ -157,6 +157,7 @@ $menu-submenu-width: $menu-width - $menu-collapsed-width;
 
 .menu-header {
   display: flex;
+  flex: 0 0 $menu-header-height;
   align-items: center;
   background-color: $menu-header-bg;
   color: $menu-header-color;
