@@ -11,7 +11,7 @@ let emberCliVersion = checker.for('ember-cli');
 module.exports = {
   name: 'ember-cli-bootstrap-bookingsync-sass',
 
-  included: function(app, parentAddon) {
+  included(app, parentAddon) {
     let target = (parentAddon || app);
     this._super.included(target);
 
@@ -29,13 +29,13 @@ module.exports = {
     }
   },
 
-  contentFor: function(type) {
+  contentFor(type) {
     if (type === 'head') {
       return '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300">';
     }
   },
 
-  treeForStyles: function() {
+  treeForStyles() {
     let stylesheetsPath = path.join(this.assetsPath, 'stylesheets');
     let assetsTree = new Funnel(this.treeGenerator(stylesheetsPath), {
       srcDir: '/',
@@ -45,7 +45,7 @@ module.exports = {
     return assetsTree;
   },
 
-  treeForVendor: function() {
+  treeForVendor() {
     let javascriptsPath = path.join(this.assetsPath, 'javascripts');
     let vendorTrees = [];
     let javascriptsTree = new Funnel(this.treeGenerator(javascriptsPath), {
@@ -55,8 +55,8 @@ module.exports = {
 
     // NOTE: Fixing issues with shim import in apps
     let sweetalertShimTree = new Funnel(path.join(this.root, 'vendor'), {
-        files: ['sweetalert.js']
-      }
+      files: ['sweetalert.js']
+    }
     );
 
     if (!this._canImportNodeModules()) {
@@ -75,7 +75,7 @@ module.exports = {
   },
 
   // TODO: Remove once stable.
-  isDevelopingAddon: function() {
+  isDevelopingAddon() {
     return true;
   },
 
