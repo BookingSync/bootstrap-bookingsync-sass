@@ -6,14 +6,14 @@ export default Component.extend({
   layout,
   tagName: 'a',
   classNames: 'nav-link',
-  classNameBindings: ["activeClassName"],
+  classNameBindings: ['activeClassName'],
   active: false,
 
   activeClassName: computed('active', function() {
     if (this.get('active') === true) {
-      return "active";
+      return 'active';
     } else {
-      return "";
+      return '';
     }
   })
 });

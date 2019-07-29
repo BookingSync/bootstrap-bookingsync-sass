@@ -2,7 +2,7 @@ import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { find, click } from 'ember-native-dom-helpers';
+import { click } from 'ember-native-dom-helpers';
 
 module('Integration | Component | bsy-checkbox', function(hooks) {
   setupRenderingTest(hooks);

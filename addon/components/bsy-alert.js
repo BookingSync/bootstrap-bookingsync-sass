@@ -11,17 +11,15 @@ export default Component.extend({
   dismissible: false,
 
   typeClassName: computed('type', function() {
-    return 'alert-' + this.get('type');
+    return `alert-${this.type}`;
   }),
 
   dismissibleClassName: computed('dismissible', function() {
-    if (this.get('dismissible') === true) {
-      return 'alert-dismissible';
-    }
+    return this.dismissible ? 'alert-dismissible' : '';
   }),
 
   actions: {
-    dismiss: function() {
+    dismiss() {
       this._renderNode.destroy();
     }
   }

@@ -3,6 +3,6 @@ import layout from '../../templates/components/bsy-modal/footer';
 
 export default Component.extend({
   layout,
-  tagName: "div",
-  classNames: "modal-footer"
+  tagName: 'div',
+  classNames: 'modal-footer'
 });

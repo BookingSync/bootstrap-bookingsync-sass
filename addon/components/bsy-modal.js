@@ -4,7 +4,7 @@ import layout from '../templates/components/bsy-modal';
 
 export default Component.extend({
   layout,
-  tagName: "div",
+  tagName: 'div',
 
   didRender() {
     this._super(...arguments);

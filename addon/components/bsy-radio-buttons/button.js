@@ -11,7 +11,7 @@ const BsyRadioButtonsButtonComponent = Component.extend({
 
   activeClassName: computed('value', function() {
     return isEqual(this.get('value'), this.get('option'));
-  }).readOnly(),
+  }).readOnly()
 });
 
 BsyRadioButtonsButtonComponent.reopenClass({

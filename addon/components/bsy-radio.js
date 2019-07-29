@@ -3,8 +3,8 @@ import layout from '../templates/components/bsy-radio';
 
 const BsyRadioComponent = Component.extend({
   layout,
-  tagName: "div",
-  classNames: "radio",
+  tagName: 'div',
+  classNames: 'radio'
 });
 
 BsyRadioComponent.reopenClass({
