@@ -4,6 +4,7 @@ import layout from '../templates/components/bsy-button';
 
 export default Component.extend({
   layout,
+
   tagName: 'button',
   classNames: 'btn',
   classNameBindings: ['typeClassName', 'loadingClassName'],
@@ -11,15 +12,15 @@ export default Component.extend({
   loadingLabel: 'Loading...',
 
   typeClassName: computed('type', function() {
-    if (this.get('type') === 'submit') {
+    if (this.type === 'submit') {
       return 'btn-primary';
     } else {
-      return `btn-${  this.get('type')}`;
+      return `btn-${this.type}`;
     }
   }),
 
   loadingClassName: computed('isLoading', function() {
-    if (this.get('isLoading') === true) {
+    if (this.isLoading) {
       return 'btn-loading';
     } else {
       return '';
@@ -28,7 +29,7 @@ export default Component.extend({
 
   click() {
     this.set('isLoading', true);
-    this.$().prop('disabled', 'disabled');
-    this.$().text(this.get('loadingLabel'));
+    this.element.disabled = true;
+    this.element.textContent = this.loadingLabel;
   }
 });
