@@ -1,24 +1,26 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render, find } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('bsy-nav/item', 'Integration | Component | bsy nav/item', {
-  integration: true
-});
+module('Integration | Component | bsy nav/item', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });"
+  test('it renders', async function(assert) {
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });"
 
-  this.render(hbs`{{bsy-nav/item}}`);
+    await render(hbs`{{bsy-nav/item}}`);
 
-  assert.equal(this.$().text().trim(), '');
+    assert.dom('*').hasText('');
 
-  // Template block usage:"
-  this.render(hbs`
-    {{#bsy-nav/item}}
-      template block text
-    {{/bsy-nav/item}}
-  `);
+    // Template block usage:"
+    await render(hbs`
+      {{#bsy-nav/item}}
+        template block text
+      {{/bsy-nav/item}}
+    `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
+    assert.dom('*').hasText('template block text');
+  });
 });

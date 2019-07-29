@@ -1,12 +1,14 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 import { find } from 'ember-native-dom-helpers';
 
-moduleForComponent('bsy-textarea', 'Integration | Component | bsy-textarea', {
-  integration: true
-});
+module('Integration | Component | bsy-textarea', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('It renders a textarea', function(assert) {
-  this.render(hbs`{{bsy-textarea}}`);
-  assert.ok(find('textarea'), 'a textarea was rendered');
+  test('It renders a textarea', async function(assert) {
+    await render(hbs`{{bsy-textarea}}`);
+    assert.dom('textarea').exists('a textarea was rendered');
+  });
 });
