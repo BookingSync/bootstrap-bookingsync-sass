@@ -9,7 +9,7 @@ let checker = new VersionChecker(this);
 let emberCliVersion = checker.for('ember-cli');
 
 module.exports = {
-  name: 'ember-cli-bootstrap-bookingsync-sass',
+  name: require('./package').name,
 
   included(app, parentAddon) {
     let target = (parentAddon || app);
@@ -72,11 +72,6 @@ module.exports = {
     }
 
     return new BroccoliMergeTrees(vendorTrees);
-  },
-
-  // TODO: Remove once stable.
-  isDevelopingAddon() {
-    return true;
   },
 
   _canImportNodeModules() {
