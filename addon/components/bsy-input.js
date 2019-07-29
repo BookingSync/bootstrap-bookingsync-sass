@@ -1,6 +1,9 @@
+import Ember from 'ember';
 import Component from '@ember/component';
 import { computed } from '@ember/object';
 import layout from '../templates/components/bsy-input';
+
+const { generateGuid } = Ember;
 
 const BsyInputComponent = Component.extend({
   layout,
@@ -24,19 +27,17 @@ const BsyInputComponent = Component.extend({
   }),
 
   iconSize: computed('size', function() {
-    let size = this.get('size');
-
-    if (size) {
-      return `icon--${size}`;
-    }
+    let { size } = this;
+    return size ? `icon--${size}` : '';
   }),
 
   formGroupSize: computed('size', function() {
-    let size = this.get('size');
+    let { size } = this;
+    return size ? `form-group--${size}` : '';
+  }),
 
-    if (size) {
-      return `form-group--${size}`;
-    }
+  inputId: computed(function() {
+    return generateGuid();
   }),
 
   update() {}
