@@ -1,7 +1,7 @@
 module.exports = {
-  normalizeEntityName: function() {},
+  normalizeEntityName() {},
 
-  beforeInstall: function() {
+  beforeInstall() {
     return this.addAddonsToProject({
       packages: [
         'ember-cli-sass',
@@ -9,8 +9,7 @@ module.exports = {
         'ember-power-select',
         'ember-modal-dialog',
         'ember-toggle',
-        'ember-tooltips@3.0.0-beta.2',
-        'sweetalert2@7.3.5'
+        'ember-tooltips'
       ]
     });
   }

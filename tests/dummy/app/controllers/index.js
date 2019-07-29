@@ -1,9 +1,6 @@
 import Controller from '@ember/controller';
-import { inject as service } from '@ember/service';
 
 export default Controller.extend({
-  bsyDialog: service(),
-
   init() {
     this._super(...arguments);
     this.cities = ['Barcelona', 'Nevache', 'Sivota'];

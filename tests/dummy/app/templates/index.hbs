@@ -56,18 +56,18 @@
 
     <div class="row">
       <div class="col-xs-4">
-        {{!-- {{#bsy-select currentDestination
+        {{#bsy-select currentDestination
           label="Destination"
           options=cities
           onchange=(action (mut currentDestination))
           as |name|
         }}
           {{name}}
-        {{/bsy-select}} --}}
+        {{/bsy-select}}
       </div>
 
       <div class="col-xs-4">
-        {{!-- {{#bsy-select currentDestination
+        {{#bsy-select currentDestination
           label="Destination"
           options=cities
           searchEnabled=false
@@ -75,18 +75,18 @@
           as |name|
         }}
           {{name}}
-        {{/bsy-select}} --}}
+        {{/bsy-select}}
       </div>
 
       <div class="col-xs-4">
-        {{!-- {{#bsy-select-multiple currentDestinations
+        {{#bsy-select-multiple currentDestinations
           label="Destinations"
           options=cities
           onchange=(action (mut currentDestinations))
           as |name|
         }}
           {{name}}
-        {{/bsy-select-multiple}} --}}
+        {{/bsy-select-multiple}}
       </div>
     </div>
 
@@ -296,11 +296,4 @@
       </ul>
     {{/bsy-popover}}
   {{/bsy-button}}
-{{/bsy-sheet}}
-
-{{#bsy-sheet id="bsy-swal"}}
-  {{#bsy-sheet/header}}
-    <h2>Dialogs</h2>
-  {{/bsy-sheet/header}}
-  {{#bsy-button type="primary" click=(action "openPopup")}}Click me{{/bsy-button}}
 {{/bsy-sheet}}
