@@ -1,8 +1,7 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+import { click, render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { click } from 'ember-native-dom-helpers';
 
 module('Integration | Component | bsy-checkbox', function(hooks) {
   setupRenderingTest(hooks);
@@ -73,6 +72,6 @@ module('Integration | Component | bsy-checkbox', function(hooks) {
 
   test('classNames is not passed as an html attribute', async function(assert) {
     await render(hbs`{{bsy-checkbox classNames="testing"}}`);
-    assert.dom('input').hasAttribute('classnames', undefined);
+    assert.dom('input').hasNoAttribute('classnames');
   });
 });

@@ -12,7 +12,7 @@ module('Integration | Component | bsy nav', function(hooks) {
 
     await render(hbs`{{bsy-nav}}`);
 
-    assert.dom('*').hasText('');
+    assert.dom().hasText('');
 
     // Template block usage:"
     await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | bsy nav', function(hooks) {
       {{/bsy-nav}}
     `);
 
-    assert.dom('*').hasText('template block text');
+    assert.dom().hasText('template block text');
   });
 });

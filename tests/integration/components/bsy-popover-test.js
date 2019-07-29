@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+import { render, triggerEvent } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Component | bsy popover', function(hooks) {
@@ -12,7 +12,7 @@ module('Integration | Component | bsy popover', function(hooks) {
 
     await render(hbs`{{bsy-popover}}`);
 
-    assert.dom('*').hasText('');
+    assert.dom().hasText('');
 
     // Template block usage:"
     await render(hbs`
@@ -21,6 +21,8 @@ module('Integration | Component | bsy popover', function(hooks) {
       {{/bsy-popover}}
     `);
 
-    assert.dom('*').hasText('template block text');
+    await triggerEvent(this.element, 'mouseenter');
+
+    assert.dom().hasText('template block text');
   });
 });

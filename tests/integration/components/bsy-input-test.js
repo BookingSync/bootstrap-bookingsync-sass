@@ -1,9 +1,8 @@
 import { run } from '@ember/runloop';
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+import { fillIn, blur, render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { fillIn, blur } from 'ember-native-dom-helpers';
 
 module('Integration | Component | bsy-input', function(hooks) {
   setupRenderingTest(hooks);
@@ -99,17 +98,17 @@ module('Integration | Component | bsy-input', function(hooks) {
 
   test('positionalParamValue is not passed as an html attribute', async function(assert) {
     await render(hbs`{{bsy-input "testing"}}`);
-    assert.dom('input').hasAttribute('positionalparamvalue', undefined);
+    assert.dom('input').hasNoAttribute('positionalparamvalue');
   });
 
   test('classNames is not passed as an html attribute', async function(assert) {
     await render(hbs`{{bsy-input classNames="testing"}}`);
-    assert.dom('input').hasAttribute('classnames', undefined);
+    assert.dom('input').hasNoAttribute('classnames');
   });
 
   test('update is not passed as an html attribute', async function(assert) {
     await render(hbs`{{bsy-input update=(action (mut value))}}`);
-    assert.dom('input').hasAttribute('update', undefined);
+    assert.dom('input').hasNoAttribute('update');
   });
 
   test('Does not update value when it is destroyed', async function(assert) {

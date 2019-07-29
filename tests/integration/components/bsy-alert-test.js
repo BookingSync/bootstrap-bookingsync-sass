@@ -12,7 +12,7 @@ module('Integration | Component | bsy alert', function(hooks) {
 
     await render(hbs`{{bsy-alert}}`);
 
-    assert.dom('*').hasText('');
+    assert.dom().hasText('');
 
     // Template block usage:"
     await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | bsy alert', function(hooks) {
       {{/bsy-alert}}
     `);
 
-    assert.dom('*').hasText('template block text');
+    assert.dom().hasText('template block text');
   });
 });
