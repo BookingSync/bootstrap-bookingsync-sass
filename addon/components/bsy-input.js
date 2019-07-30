@@ -17,23 +17,15 @@ const BsyInputComponent = Component.extend({
   size: null, // sm, lg
 
   inputClassNames: computed('size', function() {
-    let size = this.get('size');
-
-    if (size) {
-      return `form-control input-${size}`;
-    }
-
-    return 'form-control';
+    return this.size ? `form-control input-${this.size}` : 'form-control';
   }),
 
   iconSize: computed('size', function() {
-    let { size } = this;
-    return size ? `icon--${size}` : '';
+    return this.size ? `icon--${this.size}` : '';
   }),
 
   formGroupSize: computed('size', function() {
-    let { size } = this;
-    return size ? `form-group--${size}` : '';
+    return this.size ? `form-group--${this.size}` : '';
   }),
 
   inputId: computed(function() {
