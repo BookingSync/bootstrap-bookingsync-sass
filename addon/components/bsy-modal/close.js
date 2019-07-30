@@ -3,5 +3,5 @@ import layout from '../../templates/components/bsy-modal/close';
 
 export default Component.extend({
   layout,
-  tagName: "div"
+  tagName: 'div'
 });

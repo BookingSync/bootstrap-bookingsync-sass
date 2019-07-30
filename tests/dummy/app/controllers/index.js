@@ -1,9 +1,6 @@
 import Controller from '@ember/controller';
-import { inject as service } from '@ember/service';
 
 export default Controller.extend({
-  bsyDialog: service(),
-
   init() {
     this._super(...arguments);
     this.cities = ['Barcelona', 'Nevache', 'Sivota'];
@@ -15,7 +12,7 @@ export default Controller.extend({
   currentLastName: 'Doe',
   currentEmail: 'john@example.com',
   currentAmount: 123,
-  currentComment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a fermentum ex, at malesuada sapien. In quis nisl diam. Ut mattis volutpat massa vel porta. Suspendisse aliquam accumsan justo. Morbi non augue risus. Integer congue, eros ac condimentum scelerisque, odio ante laoreet mauris, vitae faucibus ex nisi ut mauris. Nunc imperdiet ex felis, tempus viverra lorem lobortis quis. Curabitur molestie tempor orci et tincidunt. Suspendisse vestibulum aliquet diam, a lobortis lorem pretium eu. Etiam accumsan ex at odio iaculis, at malesuada augue faucibus. Mauris vitae risus sed magna dapibus dapibus ac quis eros. Sed cursus placerat porta.",
+  currentComment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a fermentum ex, at malesuada sapien. In quis nisl diam. Ut mattis volutpat massa vel porta. Suspendisse aliquam accumsan justo. Morbi non augue risus. Integer congue, eros ac condimentum scelerisque, odio ante laoreet mauris, vitae faucibus ex nisi ut mauris. Nunc imperdiet ex felis, tempus viverra lorem lobortis quis. Curabitur molestie tempor orci et tincidunt. Suspendisse vestibulum aliquet diam, a lobortis lorem pretium eu. Etiam accumsan ex at odio iaculis, at malesuada augue faucibus. Mauris vitae risus sed magna dapibus dapibus ac quis eros. Sed cursus placerat porta.',
 
   // Used by radio
   selectedRentalType: 'apartment',
@@ -27,11 +24,11 @@ export default Controller.extend({
   currentDestinations: null,
 
   actions: {
-    toggleModal: function() {
+    toggleModal() {
       this.toggleProperty('isShowingModal');
     },
 
-    sampleAction: function() {
+    sampleAction() {
       alert('Sample action');
     },
 

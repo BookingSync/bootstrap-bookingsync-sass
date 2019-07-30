@@ -1,18 +1,17 @@
-import $ from 'jquery';
 import Component from '@ember/component';
 import layout from '../templates/components/bsy-modal';
 
 export default Component.extend({
   layout,
-  tagName: "div",
+  tagName: 'div',
 
   didRender() {
     this._super(...arguments);
-    $('body').addClass('modal-open');
+    document.body.classList.add('modal-open');
   },
 
   willDestroyElement() {
     this._super(...arguments);
-    $('body').removeClass('modal-open');
+    document.body.classList.remove('modal-open');
   }
 });

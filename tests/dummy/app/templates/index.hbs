@@ -7,7 +7,6 @@
       label="Email address"
       update=(action (mut currentEmail))
       type="email"
-      inputId="email"
     }}
 
     <div class="row">
@@ -15,7 +14,6 @@
         {{bsy-input currentFirstName
           label="First name"
           update=(action (mut currentFirstName))
-          inputId="firstname"
         }}
       </div>
 
@@ -23,7 +21,6 @@
         {{bsy-input currentLastName
           label="Last name"
           update=(action (mut currentLastName))
-          inputId="lastname"
         }}
       </div>
     </div>
@@ -31,7 +28,6 @@
     {{bsy-input currentFirstName
       label="Large first name with icon"
       update=(action (mut currentFirstName))
-      inputId="firstNameLarge"
       icon="owner"
       size="lg"
     }}
@@ -39,13 +35,11 @@
       placeholder="First name"
       label="Default first name with icon"
       update=(action (mut currentFirstName))
-      inputId="firstNameDefault"
       icon="owner"
     }}
     {{bsy-input currentFirstName
       label="Small first name with icon"
       update=(action (mut currentFirstName))
-      inputId="firstNameSmall"
       icon="owner"
       size="sm"
     }}
@@ -56,7 +50,6 @@
         label="Amount"
         update=(action (mut currentAmount))
         type="number"
-        inputId="amount"
       }}
       {{#bsy-input-addon/addon}}.00{{/bsy-input-addon/addon}}
     {{/bsy-input-addon}}
@@ -67,7 +60,6 @@
           label="Destination"
           options=cities
           onchange=(action (mut currentDestination))
-          inputId="destination"
           as |name|
         }}
           {{name}}
@@ -80,7 +72,6 @@
           options=cities
           searchEnabled=false
           onchange=(action (mut currentDestination))
-          inputId="destination2"
           as |name|
         }}
           {{name}}
@@ -92,7 +83,6 @@
           label="Destinations"
           options=cities
           onchange=(action (mut currentDestinations))
-          inputId="destinations"
           as |name|
         }}
           {{name}}
@@ -103,7 +93,6 @@
     {{bsy-textarea currentComment
       label="Comment"
       update=(action (mut currentComment))
-      inputId="comment"
       rows=3
     }}
 
@@ -153,13 +142,11 @@
     {{bsy-input currentName
       label="Name"
       update=(action (mut currentName))
-      inputId="name2"
     }}
 
     {{bsy-input currentEmail
       label="Email address"
       update=(action (mut currentEmail))
-      inputId="email2"
     }}
 
     {{#bsy-button type="submit" loadingLabel="Sending..."}}Send invitation{{/bsy-button}}
@@ -267,12 +254,11 @@
   {{#bsy-sheet/header}}
     <h2>Calendar</h2>
   {{/bsy-sheet/header}}
-  {{#power-calendar as |calendar|}}
-    <div class="calendar">
-      {{calendar.nav}}
-      {{calendar.days}}
-    </div>
-  {{/power-calendar}}
+
+  <PowerCalendar as |calendar|>
+    <calendar.Nav/>
+    <calendar.Days/>
+  </PowerCalendar>
 {{/bsy-sheet}}
 
 {{#bsy-sheet id="alerts"}}
@@ -310,11 +296,4 @@
       </ul>
     {{/bsy-popover}}
   {{/bsy-button}}
-{{/bsy-sheet}}
-
-{{#bsy-sheet id="bsy-swal"}}
-  {{#bsy-sheet/header}}
-    <h2>Dialogs</h2>
-  {{/bsy-sheet/header}}
-  {{#bsy-button type="primary" click=(action "openPopup")}}Click me{{/bsy-button}}
 {{/bsy-sheet}}

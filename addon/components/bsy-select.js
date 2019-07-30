@@ -3,8 +3,8 @@ import layout from '../templates/components/bsy-select';
 
 const BsySelectComponent = Component.extend({
   layout,
-  tagName: "div",
-  classNames: "select"
+  tagName: 'div',
+  classNames: 'select'
 });
 
 BsySelectComponent.reopenClass({

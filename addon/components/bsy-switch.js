@@ -11,5 +11,5 @@ export default Component.extend({
   onLabel: 'On',
   offLabel: 'Off',
   value: false,
-  disabled: false,
+  disabled: false
 });

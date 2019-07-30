@@ -1,34 +1,29 @@
 import Component from '@ember/component';
 import { computed } from '@ember/object';
+import { bool } from '@ember/object/computed';
 import layout from '../templates/components/bsy-button';
 
 export default Component.extend({
   layout,
-  tagName: "button",
-  classNames: "btn",
-  classNameBindings: ["typeClassName", "loadingClassName"],
+
+  tagName: 'button',
+  classNames: 'btn',
+  classNameBindings: ['typeClassName', 'loadingClassName'],
+  attributeBindings: ['disabled'],
   isLoading: false,
-  loadingLabel: "Loading...",
+  loadingLabel: 'Loading...',
+
+  disabled: bool('isLoading'),
 
   typeClassName: computed('type', function() {
-    if (this.get('type') === "submit") {
-      return "btn-primary";
-    } else {
-      return "btn-" + this.get('type');
-    }
+    return this.type === 'submit' ? 'btn-primary' : `btn-${this.type}`;
   }),
 
   loadingClassName: computed('isLoading', function() {
-    if (this.get('isLoading') === true) {
-      return "btn-loading";
-    } else {
-      return "";
-    }
+    return this.isLoading ? 'btn-loading' : '';
   }),
 
-  click: function() {
-    this.set("isLoading", true);
-    this.$().prop('disabled', 'disabled');
-    this.$().text(this.get("loadingLabel"));
+  click() {
+    this.set('isLoading', true);
   }
 });

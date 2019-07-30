@@ -231,14 +231,12 @@ Make sure the file has `.scss` extension (or `.sass` for Sass syntax). If you ha
 #### Prerequisites
 You will need the following things properly installed on your computer.
 
-* [Node.js](http://nodejs.org/) (latest stable version, v7.7.1 at 2017-08-16)
-* [Bower](http://bower.io/)
+* [Node.js](http://nodejs.org/) (latest stable version, v10.16.0 at 2019-05-28)
 * [Ember CLI](http://www.ember-cli.com/)
-* [yarn](https://yarnpkg.com/en/)
+* [npm](https://www.npmjs.com/get-npm)
 
 #### Installation
-* `yarn`
-* `bower install`
+* `npm install`
 
 #### Starting
 * `ember server`
@@ -252,7 +250,8 @@ You will need the following things properly installed on your computer.
 
 ### Building
 
-* `ember build`
+Usage
+------------------------------------------------------------------------------
 
 ### Deploying Ember documentation to global styleguide documentation
 

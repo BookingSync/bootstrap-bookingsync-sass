@@ -1,5 +1,9 @@
-{{#if icon}}
+{{#if this.icon}}
   <i class="icon-{{icon}}"></i>
 {{/if}}
 
-{{yield}}
+{{#if this.isLoading}}
+  {{this.loadingLabel}}
+{{else}}
+  {{yield}}
+{{/if}}
