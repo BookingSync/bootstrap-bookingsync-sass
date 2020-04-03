@@ -8,8 +8,10 @@ module Bootstrap
           %w(stylesheets javascripts fonts images).each do |sub|
             app.config.assets.paths << root.join('assets', sub).to_s
           end
-          app.config.assets.precompile << %r(bookingsync/bookingsync-smiles\.(?:eot|svg|ttf|woff2?)$)
-          app.config.assets.precompile << %r(bookingsync/bookingsync-icons\.(?:eot|svg|ttf|woff2?)$)
+          %w(eot svg ttf woff2).each do |format|
+            app.config.assets.precompile << "bookingsync/bookingsync-smiles.#{format}"
+            app.config.assets.precompile << "bookingsync/bookingsync-icons.#{format}"
+          end
         end
       end
     end

@@ -7,6 +7,7 @@
   * add icon option to `bsy-button` component
   * add `bsy-dialog` service
   * remove `one-way-controls`
+  * adjust Rails engine to make it work with Sprockets 4
 
 ### 1.0.5 - 2017-10-01
 
