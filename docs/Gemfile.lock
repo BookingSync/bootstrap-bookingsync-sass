@@ -71,21 +71,19 @@ GEM
     nanoc-sprockets3 (1.0.5)
       sprockets (~> 3.2, >= 3.0.0)
     nenv (0.3.0)
-    nokogiri (1.10.1)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     notiffany (0.1.0)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    posix-spawn (0.3.11)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    pygments.rb (0.6.3)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.2.0)
-    rack (2.0.6)
-    rake (12.3.2)
+    pygments.rb (1.2.1)
+      multi_json (>= 1.0.0)
+    rack (2.2.2)
+    rake (13.0.1)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -102,7 +100,6 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    yajl-ruby (1.2.3)
 
 PLATFORMS
   ruby
@@ -124,4 +121,4 @@ DEPENDENCIES
   uglifier
 
 BUNDLED WITH
-   1.16.3
+   1.17.2
