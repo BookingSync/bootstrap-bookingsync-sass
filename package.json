@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-bootstrap-bookingsync-sass",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Sass-powered version of Bootstrap with BookingSync theme.",
   "keywords": [
     "ember-addon",
