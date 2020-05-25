@@ -1,7 +1,3 @@
-.ember-modal-wrapper .modal.in {
-  display: block;
-}
-
 .modal-content {
   border-radius: $modal-border-radius;
   @include box-shadow(0 3px 30px $gray-lightest);

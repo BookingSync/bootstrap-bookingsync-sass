@@ -1,1 +1,0 @@
-export { default } from 'ember-cli-bootstrap-bookingsync-sass/components/bsy-modal/close';
