@@ -1,4 +1,5 @@
 require "bootstrap/bookingsync/version"
+
 module Bootstrap
   module BookingSync
     class << self
@@ -10,9 +11,16 @@ module Bootstrap
           register_rails_engine
         elsif sprockets?
           register_sprockets
+        elsif defined?(::Sass) && ::Sass.respond_to?(:load_paths)
+          # The deprecated `sass` gem:
+          ::Sass.load_paths << stylesheets_path
         end
 
-        configure_sass
+        if defined?(::Sass::Script::Value::Number)
+          # Set precision to 6 as per:
+          # https://github.com/twbs/bootstrap/blob/da717b03e6e72d7a61c007acb9223b9626ae5ee5/package.json#L28
+          ::Sass::Script::Number.precision = [6, ::Sass::Script::Number.precision].max
+        end
       end
 
       # Paths
@@ -50,15 +58,6 @@ module Bootstrap
       end
 
       private
-
-      def configure_sass
-        require 'sass'
-
-        ::Sass.load_paths << stylesheets_path
-
-        # bootstrap requires minimum precision of 8, see https://github.com/twbs/bootstrap-sass/issues/409
-        ::Sass::Script::Number.precision = [8, ::Sass::Script::Number.precision].max
-      end
 
       def register_compass_extension
         ::Compass::Frameworks.register(

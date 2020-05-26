@@ -22,11 +22,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.styleguide-icon-ember {
-  &:before {
-    content: $styleguide-icon-ember;
-  }
-}
 .styleguide-icon-forms {
   &:before {
     content: $styleguide-icon-forms;

@@ -1,5 +1,11 @@
 ### master
 
+* improvements
+  * Fix Rails 6+ with Sprockets support
+
+* breaking changes
+  * remove Ember support
+
 ### 2.0.0 - 2020-04-06
 
 * improvements

@@ -42,12 +42,5 @@
         <%= items["/compositions/_navbar.*"].compiled_content %>
       <% end %>
     </li>
-    <li class="<%= "expanded active" if @item_rep.path.start_with?("/ember") %>">
-      <%= link_to('<i class="styleguide-icon-ember icon-fw"></i>&nbsp; <span>Ember Addon</span>',
-        "/ember/", { class: "list-group-item" }) %>
-      <% if @item_rep.path.start_with?("/ember") %>
-        <%= items["/ember/_navbar.*"].compiled_content %>
-      <% end %>
-    </li>
   </ul>
 </div>

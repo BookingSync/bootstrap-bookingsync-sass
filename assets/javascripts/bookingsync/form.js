@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/BookingSync/styleguide/blob/master/LICENSE)
  * ======================================================================== */
 
-let setInputFilledValue = function(elt) {
+var setInputFilledValue = function(elt) {
   $(elt).parents('.form-group').toggleClass('filled', !!$(elt).val());
 };
 
