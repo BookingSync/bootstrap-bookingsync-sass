@@ -5,7 +5,7 @@ GEM
       rack (>= 1.0.0)
     autoprefixer-rails (9.7.6)
       execjs
-    bootstrap-bookingsync-sass (2.0.0)
+    bootstrap-bookingsync-sass (3.0.0)
       bootstrap-sass (>= 3.3.5)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
@@ -105,7 +105,7 @@ PLATFORMS
 
 DEPENDENCIES
   adsf
-  bootstrap-bookingsync-sass
+  bootstrap-bookingsync-sass (>= 3.0.0)
   coderay
   coffee-script
   guard-bundler

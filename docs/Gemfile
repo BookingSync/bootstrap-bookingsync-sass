@@ -14,4 +14,4 @@ gem 'uglifier'
 gem 'sass'
 gem 'coffee-script'
 gem 'nanoc-sprockets3'
-gem "bootstrap-bookingsync-sass"
+gem "bootstrap-bookingsync-sass", '>= 3.0.0'
