@@ -1,5 +1,7 @@
 ### master
 
+### 3.0.0 - 2020-05-26
+
 * improvements
   * Fix Rails 6+ with Sprockets support
 
